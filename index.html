@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personagem</title>
 
+    <link rel="stylesheet" href="./style/estilo_ficha.css">
+
 </head>
 <body>
     <!-- #Titulo Ficha -->
     <h1 id="nPersonage">Nome do Personage</h1>
+    
     <div class="Informações da Ficha">
         <p id="nJogador"></p>
         <p id="NivelPoder"></p>
     </div>
 
-    <!-- #Atributos -->
-    <h2>Habilidades</h2>
+    <!-- #Habilidades -->
+    <div class="Separador">
+        <h2>Habilidades</h2>
+    </div>
+
     <table>
         <tr>
             <tr>
@@ -51,7 +57,9 @@
     </table>
 
     <!-- #Defesas -->
-    <h2>Defesas</h2>
+    <div class="Separador">
+        <h2>Defesas</h2>
+    </div>
     <table class="defesas">
         <tr>
             <th>Aparar</th>
@@ -69,18 +77,54 @@
         </tr>
     </table>
 
-    <h2>Ofensiva</h1>
+    <div class="Separador">
+        <h2>Ofensiva</h2>
+    </div>
+    
     <div class="ofensiva">
 
     </div>
 
-    <!-- #Perícias -->`
-    <h2>Perícias</h1>
-    <table class="perícias">
+    <!-- #Poderes -->
+    <div class="Separador">
+        <h2>Poderes</h2>
+    </div>
+    
+    <div id="poderes">
+        
+    </div>
+
+    <div class="Separador">
+        <h2>Vantagens</h2>
+    </div>
+    <table class="vantagens">
+        <div id="vantagens">
+
+        </div>
+    </table>
+
+    <!-- #Perícias -->
+    <div class="Separador">
+        <h2>Perícias</h1>
+    </div>
+
+    <table class="pericias">
         <div id="pericias_padrao">
             
         </div>
     </table>
+    <table class="extrapericias">
+        <div id="extra_pericias">
+
+        </div>
+    </table>
+    
+    <div class="Separador">
+        <h2>Complicações</h2>
+    </div>
+
+    <div id="complicacoes">
+    </div>
 
 </body>
     <script src="_js/scrpit.js"></script>

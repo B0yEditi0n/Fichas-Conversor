@@ -1,5 +1,5 @@
 //Importar json
-(fetch("Nolhan Homes.json")
+(fetch('Personagem nº 1.json')
   .then(res => res.json()
   .then(json => gera_modelo(json))))
 
@@ -42,12 +42,141 @@ function gera_modelo(ficha){
   /**********************************************************************************
    * Perícia
   ***********************************************************************************/ 
-  htmlDado = '<tr>'
-  for(i=0; i++; i <= ficha['characters'][0]['skills'].length){
+
+  htmlDado = '<table>'
+  for(i=0;(i) <= ficha['characters'][0]['skills'].length - 1; i++){
     Pericianome = ficha['characters'][0]['skills'][i]['name']  
     GradPericia = ficha['characters'][0]['skills'][i]['rank']
-    htmlDado += `<th>${Pericianome}: ${GradPericia}</th>`
-     
+
+    //baseado em qual habilidade?
+    //força 0 Vigor 1 Agilidade 2 Destreza 3 Luta 4 Intelecto 5 Prontidao 6 Presença 7
+    switch (ficha['characters'][0]['skills'][i]['id']){
+      case 3001: //Acrobacias
+
+        bonus = ficha['characters'][0]['abilities'][2]['rank']
+        break;
+      case 3002: //Atletismo
+        bonus = ficha['characters'][0]['abilities'][0]['rank']
+        break;
+      case 3003: //Enganação
+        bonus = ficha['characters'][0]['abilities'][7]['rank']
+        break;
+      case 3004: //Furtividade 
+        bonus = ficha['characters'][0]['abilities'][2]['rank']
+        break;
+      case 3005: //Intimidação
+        bonus = ficha['characters'][0]['abilities'][7]['rank']
+        break;
+      case 3006: //Intuição
+        bonus = ficha['characters'][0]['abilities'][6]['rank']
+        break; 
+      case 3007: //Investigação
+        if(GradPericia == 0){
+          bonus = 0;
+        }else{bonus = ficha['characters'][0]['abilities'][5]['rank']}
+        break; 
+      case 3008: //Percepção
+        bonus = ficha['characters'][0]['abilities'][6]['rank']
+        break;
+      case 3009: //Persuasão
+        bonus = ficha['characters'][0]['abilities'][7]['rank']
+        break;
+      case 3010: //Prestidigitação
+        if(GradPericia == 0){ 
+          bonus = 0
+        }
+        else{bonus = ficha['characters'][0]['abilities'][3]['rank']}
+        
+        break;
+      case 3011: //Tecnologia
+        if(GradPericia == 0){ 
+          bonus = 0
+        }
+        else{bonus = ficha['characters'][0]['abilities'][5]['rank']}
+        break;
+      case 3012: //Tratamento
+        if(GradPericia == 0){
+          bonus = 0
+        }
+        else{bonus = ficha['characters'][0]['abilities'][5]['rank']}        
+        break;
+      case 3013: //Veiculos
+        bonus = ficha['characters'][0]['abilities'][3]['rank']
+        break;        
+
+    }
+        
+    htmlDado += `<tr><th>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</th></tr>`
+       
+
+    //quebra de pagina
+    if( i == Math.floor(ficha['characters'][0]['skills'].length/2)){
+      htmlDado += `</tr><tr>`
+    }
+    
   }
-  htmlDado += `<tr>`
+  htmlDado += `</table>`
+
   document.getElementById('pericias_padrao').innerHTML = htmlDado;
+
+  /**********************************************************************************
+   * Pericias Extras
+   * ********************************************************************************/
+
+  htmlDado += `<table>`
+  
+  for(i=0; i <= ficha['characters'][0]['extraSkills'].length -1; i++){
+    //Especialidade 
+    console.log(i);
+
+    if(ficha['characters'][0]['extraSkills'][i]['name'].startsWith('Especialidade')){
+      bonus = ficha['characters'][0]['abilities'][5]['rank']
+    }
+    if(ficha['characters'][0]['extraSkills'][i]['name'].startsWith('Combate À Distância')){
+      bonus = ficha['characters'][0]['abilities'][3]['rank']
+    }
+    if(ficha['characters'][0]['extraSkills'][i]['name'].startsWith('Combate Corpo-a-corpo')){
+      bonus = ficha['characters'][0]['abilities'][4]['rank']
+    }
+
+    Pericianome = ficha['characters'][0]['extraSkills'][i]['name']
+    GradPericia = ficha['characters'][0]['extraSkills'][i]['rank']
+    
+    htmlDado += `<tr><th>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</th></tr>`
+    
+  }  
+  htmlDado += '</table>'
+
+  document.getElementById('extra_pericias').innerHTML = htmlDado;
+
+  /**********************************************************************************
+  * Vantagem
+  ***********************************************************************************/     
+    htmlDado = '<table>'
+    for(i=0; i <= ficha['characters'][0]['advantages'].length - 1; i++){
+      console.log(ficha['characters'][0]['advantages'][i])
+      if (ficha['characters'][0]['advantages'][i]['rank'] > 1){
+        htmlDado += `<tr><th>${ficha['characters'][0]['advantages'][i]['name']}[${ficha['characters'][0]['advantages'][i]['rank']}]</th></tr>`
+      }
+      else{
+        htmlDado += `<tr><th>${ficha['characters'][0]['advantages'][i]['name']}</th></tr>`  
+      }
+    }
+    htmlDado += `</table>`
+    document.getElementById('vantagens').innerHTML = htmlDado
+
+    /**********************************************************************************
+     * Complicações
+     **********************************************************************************/
+    htmlDado = '<UL>'
+    for(i=0; i <= ficha['characters'][0]['complications'].length - 1; i++){
+      htmlDado += `<LI><strong>${ficha['characters'][0]['complications'][i]['title']}:</strong> ${ficha['characters'][0]['complications'][i]['description']}</LI>`
+    }
+    htmlDado += '</UL>'
+    document.getElementById('complicacoes').innerHTML = htmlDado
+    /**********************************************************************************
+    * Poderes
+    ***********************************************************************************/
+    document.getElementById('poderes')
+  
+} 
