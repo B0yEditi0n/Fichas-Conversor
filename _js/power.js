@@ -1,4 +1,16 @@
 //src/Database/Effects.ts
+function callPower(power){    
+    buildPower = new chosePower();
+    console.log(power)
+    document.getElementById('poderes').innerHTML += buildPower.startSelect(power)
+}
+
+// função utilizada para construir itens dos arranjos
+function tablePowerItem(powerItens){
+    reBuild = new chosePower()
+    return(reBuild.startSelect(powerItens))
+
+}
 
 class powerLayout{
     //Poderes comuns
@@ -14,10 +26,7 @@ class powerLayout{
     multiPower(nowPower){
         var table_html
         table_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
-        
-        for(i=0; i <= nowPower['powers'].length - 1; i++){
-            table_html += tablePowerItem(nowPower['powers'])
-        }
+        table_html += tablePowerItem(nowPower['powers'])
         table_html += '</td></tr></table>'
         
         return (table_html)
@@ -26,12 +35,7 @@ class powerLayout{
     powerArry(nowPower){
         var arry_html
         arry_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
-        
-        for (i = 0; i <= nowPower['alternateEffects'].length -1; i++){
-            arry_html += tablePowerItem(nowPower['alternateEffects'])
-            //arry_html += powerItem.choseAbilities(nowPower['alternateEffects'])
-        }
-
+        arry_html += tablePowerItem(nowPower['alternateEffects'])
         arry_html += '</td></tr></table>'
         return (arry_html)
         
@@ -42,7 +46,7 @@ class chosePower extends powerLayout{
         var i 
         var html = ''
         for(i=0; i <= (powers.length - 1); i++){                     
-            
+            console.log(powers[i]['effectID'])
             switch (powers[i]['effectID']){
                 case 5046: //Múltiplos Efeitos                
                     html += this.multiPower(powers[i])
@@ -50,11 +54,9 @@ class chosePower extends powerLayout{
                 case 5042: //Arranjo            
                     html += this.powerArry(powers[i])                                
                     break;
-                case 5013: //Dano
-                    console.log('como está o json')
-                    console.log(powers[i])
+                case 5013: //Dano                    
                     html += this.outherPower(powers[i], 'Dano')
-                    //break;
+                    break;
                 case 5001: // Aflição
                     break;
                 default:
@@ -65,17 +67,4 @@ class chosePower extends powerLayout{
         }
         return (html)
     }
-}
-
-function callPower(power){    
-    buildPower = new chosePower();
-    console.log(power)
-    document.getElementById('poderes').innerHTML += buildPower.startSelect(power)
-}
-
-function tablePowerItem(powerItens){
-    reBuild = new chosePower()
-    //console.log(powerItens)
-    return(reBuild.startSelect(powerItens))
-
 }

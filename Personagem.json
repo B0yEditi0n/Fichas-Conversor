@@ -1,1 +1,783 @@
-{"characters":[{"id":553938352500.8301,"name":"Personagem nº 1","playerName":"","powerLevel":10,"pointsPerLevel":15,"totalPoints":150,"isPC":true,"isMinion":false,"abilities":[{"id":1001,"name":"Força","abrev":"FOR","description":"A Força mede o poder muscular puro, e a habilidade de usá-lo. O seu modificador de Força se aplica a: <br/>• Dano causado pelo seu ataque desarmado e ataques baseados em força; <br/>• Quão longe pode saltar (baseado na perícia Atletismo); <br/>• O quanto de peso consegue levantar, carregar e arremessar; <br/>• Perícia de Atletismo.","rank":0,"isNull":false},{"id":1002,"name":"Vigor","abrev":"VIG","description":"Vigor é constituição, saúde e robustez física em geral. Vigor é importante porque afeta a habilidade do personagem de resistir à maior parte das formas de dano. O seu bônus de Vigor se aplica a: <br/>• Defesa <b>Resistência</b>, para resistir dano; <br/>• Defesa <b>Fortitude</b>, para resistir efeitos visando a saúde do personagem; <br/>• Teste de Vigor para resistir coisas afetando a saúde de seu personagem, quando uma perícia específica não é apropriada.","rank":0,"isNull":false},{"id":1003,"name":"Agilidade","abrev":"AGI","description":"Agilidade é equilíbrio, velocidade e coordenação física em geral. O valor de sua Agilidade se aplica a: <br/>• Defesa <b>Esquiva</b>, para evitar ataques à distância e outros perigos; <br/>• Bônus de Iniciativa, para agir primeiro em combate; <br/>• Perícias <b>Acrobacias</b> e <b>Furtividade</b>; <br/>• Testes de Agilidade para façanhas de coordenação, movimentos robustos e rapidez quando uma perícia específica não é apropriada.","rank":0,"isNull":false},{"id":1004,"name":"Destreza","abrev":"DES","description":"Destreza mede a coordenação entre as mãos e olhos, precisão e destreza manual. O valor de sua Destreza se aplica a: <br/>• Testes de ataques à distância; <br/>• Perícias de <b>Prestidigitação</b> e <b>Veículos</b>; <br/>• Testes de Destreza para façanhas de controle preciso e delicado quando uma perícia específica não é apropriada.","rank":0,"isNull":false},{"id":1005,"name":"Luta","abrev":"LUT","description":"Luta mede a habilidade de seu personagem em combate corpo-a-corpo, desde atingir o alvo até desviar de qualquer contra-ataque. O valor de Luta se aplica a: <br/>• Testes de ataques corpo-a-corpo; <br/>• Defesa <b>Aparar</b>, para evitar ataques corpo-a-corpo.","rank":0,"isNull":false},{"id":1006,"name":"Intelecto","abrev":"INT","description":"Intelecto cobre a habilidade de razão e aprendizado. Um personagem com Intelecto alto tende a ser conhecedor e bem-educado. Seu valor de Intelecto se aplica a: <br/>• Perícias de <b>Especialidade</b>, <b>Investigação</b>, <b>Tecnologia</b> e <b>Tratamento</b>; <br/>• Testes de Intelecto para resolver problemas usando raciocínio puro quando uma perícia específica não é apropriada.","rank":6,"isNull":false},{"id":1007,"name":"Prontidão","abrev":"PRO","description":"Enquanto a Intelecto cobre o raciocínio, a Prontidão descreve atenção, bom senso, intuição e força de vontade. Um personagem com alta Inteligência e baixa Prontidão pode ser um típico “professor avoado”, inteligente, mas distraído. Por outro lado, um personagem não muito brilhante (baixo Intelecto) pode ter muito bom senso (alta Prontidão). O valor de Prontidão se aplica a: <br/>• Defesa <b>Vontade</b>, para resistir ataques na sua mente; <br/>• Perícias <b>Intuição</b> e <b>Percepção</b>; <br/>• Testes de Prontidão para resolver tarefas de intuição quando uma perícia específica não é apropriada.","rank":0,"isNull":false},{"id":1008,"name":"Presença","abrev":"PRE","description":"Presença é força de personalidade, persuasão, capacidade de liderança e aparência física. Presença é útil para heróis que pretendem ser líderes, assim como para aqueles que querem incutir medo nos corações dos criminosos com sua presença. O seu modificador de Presença se aplica a: <br/>• Perícias <b>Enganação</b>, <b>Intimidação</b> e <b>Persuasão</b>; <br/>• Testes de Presença para influenciar outros através da força de personalidade quando uma perícia específica não é apropriada. ","rank":0,"isNull":false}],"defenses":[{"id":2001,"name":"Esquiva","rank":0,"description":"Defesa Esquiva é baseada no valor de Agilidade. Isso inclui tempo de reação, rapidez e coordenação em geral, usada para desviar de ataques à distância e outros perigos onde reflexos e velocidade são importantes."},{"id":2002,"name":"Aparar","rank":0,"description":"Defesa Aparar é baseada no valor de Luta. É a habilidade de se abaixar, contra-atacar e desviar das tentativas de um oponente lhe acertar em combate corpo-a-corpo através de uma habilidade de luta superior."},{"id":2003,"name":"Resistência","rank":0,"description":"Defesa Resistência é baseada no valor de Vigor e é a resistência direta contra danos ou ferimentos, e é a durabilidade em geral."},{"id":2004,"name":"Fortitude","rank":0,"description":"Defesa Fortitude é baseada no valor de Vigor e mede a saúde e resistência do personagem contra ameaças como venenos e doenças. Incorpora a constituição, metabolismo e imunidade."},{"id":2005,"name":"Vontade","rank":0,"description":"Defesa Vontade é baseada no valor de Prontidão. Mede a estabilidade mental, a paciência, determinação, autoconfiança, autoconsciência e força de vontade, usadas para resistir ataques mentais ou espirituais."}],"skills":[{"id":3001,"name":"Acrobacias","rank":0,"description":"<p><small>Agilidade - Apenas Treinado</small></p><p>Use Acrobacia para virar, rolar, mergulhar, cair e realizar outras manobras acrobáticas, assim como manter seu equilíbrio sobre circunstâncias difíceis.</p><p><b>Cair</b>: Você pode fazer um teste de Acrobacias (CD 5) para reduzir o dano de uma queda, reduzindo o dano por 1 por grau de sucesso. Uma queda reduzida a dano 0 não causa dano e você rapidamente fica de pé como ação livre. Do contrário, você está caído até o final da queda.</p><p><b>Equilibrando-se</b>: Você pode manter seu equilíbrio e se mover em uma superfície com sua velocidade terra menos 1 com um teste bem-sucedido de Acrobacias contra a CD da superfície. Um grau de falha indica que você gasta sua ação de movimento apenas mantendo seu equilíbrio e não se move, enquanto dois graus ou mais de falha significa que você perde seu equilíbrio e cai.</p><p>Você é vulnerável enquanto se equilibrando. Aceitando um aumento de +5 na CD de Acrobacias, você não fica vulnerável. Se você falhar um teste de salvamento enquanto se equilibra, faça um teste de Acrobacias adicional contra a CD original para evitar cair.</p><p><b>Ficar em Pé</b>: Você pode fazer um teste de Acrobacias CD 20 para ir de caído para em pé como ação livre em vez de uma ação de movimento. Falha no teste significa que você continua caído.</p><p><b>Manobras</b>: Você pode fazer testes de Acrobacias para várias façanhas ou manobras acrobáticas, desde back-flips para pular sobre um oponente (e ficar atrás deles), saltar para cima de uma borda, rolar através de obstáculos e assim em diante. O Mestre define a CD. Sucesso significa que você realiza a manobra enquanto falha significa que você não consegue e a falha por dois ou mais graus geralmente resulta se escorrega e cai deitado (e pode sofrer efeitos adicionais, dependendo da façanha). Uma manobra com sucesso pode conceder um bônus circunstancial para as ações que seguirem, se o Mestre achar adequado.</p>"},{"id":3002,"name":"Atletismo","rank":0,"description":"<p><small>Força</small></p><p>Use Atletismo para façanhas físicas como escalar, pular, cavalgar em montarias e nadar.</p><p><b>Correr</b>: Você pode fazer um teste de CD 15 de Atletismo como ação livre para correr mais rápido: um ou mais graus de sucesso aumentam sua velocidade terrestre em +1 por uma rodada.</p><p><b>Escalar</b>: Com sucesso no teste de Atletismo, você pode subir um declive, parece ou outra superfície inclinada com sua velocidade terrestre menos 2 como uma ação de movimento. Uma superfície totalmente suave, plana e vertical não pode ser escalada sem o <i>Escalar Paredes</i> do efeito Movimento. Uma falha num teste de Atletismo indica que não obteve progresso, enquanto uma falha de dois ou mais graus significa que você cai da altura que alcançou (a não ser se tiver com algum equipamento de segurança que previna queda). Faça um teste de Atletismo para se segurar (CD igual ao teste inicial +10). Você é vulnerável enquanto escala a não ser se aceitar um aumento de +5 na classe de dificuldade.</p><p><b>Caindo</b>: Dano de queda inflige causa dano 4 mais duas vezes a distância caída, até um máximo de dano 16. Uma queda com dano 0 ou menor, como uma queda de 2 metros ou menos, não causa dano. Você fica caído no chão no fim da queda. Você pode usar Acrobacias para reduzir o dano da queda.</p><p><b>Nadar</b>: Um teste com sucesso de Atletismo contra CD 10 permite que você nade com sua velocidade terrestre menos 2 como ação de movimento. Se o teste falhar, você não faz progresso através da água durante a ação. Com mais de um grau de falha, você vai para debaixo d'água. Se estiver debaixo d'água, você deve segurar sua respiração para evitar afogamento.</p><p><b>Saltar</b>: O resultado de um teste de Atletismo é a distância (em pés) você pode fazer em um salto à distância correndo. Se fizer o teste parado, divida a distância pela metade. Se fizer o teste verticalmente (reto para cima) divida a distância por 5, se fizer o salto parado, divida a distância por 10.</p><p>Seu bônus de Atletismo + 10 é a distância base que você pode saltar em circunstâncias rotineiras. Então, se o herói com bônus de +10 em Atletismo pode fazer um salto à distância de 20 pés (6 metros), um salto à distância parado de 10 pés (3 metros), um salto vertical de 4 pés (1,2 metros) e um salto vertical parado de 2 pés (0,6 metros) como rotina.</p><p><b>Super-Salto</b>: Se desejar que seu herói salte dezenas, centenas ou até milhares de metros, veja o efeito Saltar.</p>"},{"id":3003,"name":"Enganação","rank":0,"description":"<p><small>Presença - Interação</small></p><p>Enganação é a perícia de fazer outros acreditarem no que você quer que eles acreditem. Cobre coisas como atuação, blefar, conversa rápida , trapaças e subterfúgio.</p><p><b>Blefar</b>: Faça um teste de Enganação para contar uma mentira crível ou conseguir convencer alguém a lhe ajudar em algo. Um blefe geralmente é oposto contra o teste de Enganação ou Intuição de alguém. Circunstâncias favoráveis e não favoráveis pesam muito no resultado. Há dois tipos de situações para enfrentar: ou o que você fala é difícil de acreditar ou vai contra o interesse pessoal, natureza ou personalidade do alvo.</p><p><b>Disfarce</b>: Você pode usar maquiagem, trajes e outros apetrechos para mudar sua aparência. Seu teste de Enganação determina a eficácia do disfarce oposto ao resultado do teste de percepção dos outros. O Mestre faz um teste de Enganação secretamente para você não ter certeza quão bem o disfarce aguenta sob vigilância.</p><p><b>Fintar</b>: Você pode usar Enganação como ação padrão para induzir o alvo ao erro em combate. Faça um teste de Enganação como uma ação padrão contra o melhor entre a Enganação ou Intuição do alvo. Se seu resultado tiver sucesso, o alvo fica vulnerável contra seu próximo ataque, até o fim da próxima rodada (veja condição Vulnerável).</p><p><b>Alusão</b>: Você pode usar Enganação para enviar mensagens encobertas usando jogo de palavras e duplo sentido enquanto, aparentemente, fala outras coisas. A CD para mensagens básicas é 10. Mensagens complexas ou tentando comunicar informações novas tem CD 15 ou 20 respectivamente. O recipiente da mensagem deve fazer um teste de Intuição contra a mesma CD para entender.</p>"},{"id":3004,"name":"Furtividade","rank":0,"description":"<p><small>Agilidade</small><p>Você é habilidoso em andar despercebido. Enquanto usando Furtividade, você se move igual ao seu valor de velocidade menos 1 sem penalidades. Mais rápido que isso, até sua velocidade total, você recebe uma penalidade de -5 para seus testes de Furtividade.</p><p><b>Escondendo-se</b>: Se tiver que se cobrir ou se esconder, faça um teste de Furtividade oposto pelo teste de Percepção do observador, para se esconder e andar sem ser notado. Se outros estiverem cientes de sua presença, você não pode usar Furtividade para ficar se manter despercebido. Você pode correr para ao redor de uma esquina para sair de seu campo de visão e então usar Furtividade, mas os outros vão saber para o caminho que foi.</p><p><b>Perseguir</b>: Você pode usar Furtividade para seguir alguém na sua velocidade normal. Isso assume que você tem alguma cobertura ou camuflagem (uma multidão de pessoas, sombras, névoa, etc.). Se o sujeito está preocupado em ser seguido, ele pode fazer um teste de Percepção (oposto por seu teste de Furtividade) toda vez que ele muda de curso (entrar numa esquina, sair de um prédio, assim em diante). Se seu alvo não tiver suspeitas, ele recebe apenas um teste de Percepção por cena. Se o alvo lhe nota, faça um teste de Enganação, oposto pela Intuição. Se tiver sucesso, você consegue passar sua presença como coincidência e continuar seguindo enquanto uma falha, ou ser notado uma segunda vez, significa que o alvo sabe que tem algo estranho acontecendo e reage de acordo.</p>"},{"id":3005,"name":"Intimidação","rank":0,"description":"<p><small>Presença - Interação</small></p><p>Você pode usar ameaças (tanto reais e implícitas) para fazer os outros fazer o que você quer.</p><p><b>Coagir</b>: Faça um teste de Intimidação oposto pela Intuição ou Vontade do personagem (qual for a maior). Se o teste obtiver sucesso, você pode tratar o alvo como amigável, mas apenas para ações realizadas dentro de sua presença. Isso é, o alvo mantém sua atitude normal, mas conversará, dará sugestões, oferecerá ajuda limitada ou até falará em sua defesa enquanto intimidado. O alvo coopera, mas não significa necessariamente que vai obedecer todas suas vontades ou fazer algo que o colocará em perigo diretamente.</p><p><b>Desmoralizar</b>: Você pode usar Intimidação em combate como ação padrão para enfraquecer a confiança do seu oponente. Faça um teste de Intimidação como ação padrão. Se tiver sucesso, o alvo fica prejudicado (penalidade circunstancial de -2 em testes) até o fim do próximo turno. Com quatro ou mais graus de sucesso, o alvo fica desabilitado (uma penalidade de -5) até o fim do próximo turno.</p><p><b>Intimidar Capangas</b>: Você pode intimidar um grupo inteiro de capangas – todos que podem vê-lo e ouvi-lo – com apenas um teste. Se o grupo tiver em vantagem sobre você, você sofre a penalidade normal em seu teste. Compare seu resultado com apenas um teste de resistência feito pelo Mestre para o grupo inteiro. Seu teste de Intimidação deve ter o mesmo efeito em todos membros do grupo (isso é, não poderá desmoralizar alguns e coagir outros, por exemplo).</p>"},{"id":3006,"name":"Intuição","rank":0,"description":"<p><small>Prontidão</small><p>Você pode dizer as intenções verdadeiras de alguém e seus sentimentos prestando atenção em coisas como linguagem corporal, entonação e sua própria intuição.</p><p>Um sucesso em testes de Intuição pode permiti-lo resistir a efeitos de perícias de interação, se tornando ciente da intenção verdadeira da outra pessoa. Você pode usar essa perícia para dizer se alguém está agindo estranhamente ou avaliar confiabilidade.</p><p><b>Alusão</b>: Você pode usar Intuição para captar mensagens escondidas enviadas pela perícia Enganação.</p><p><b>Avaliar</b>: Com um teste de Intuição, oposto pela Enganação, você pode dizer se alguém é confiável e honrável (ou se não é) assim que o conhece. Você pode fazer um teste de Intuição (CD 20) para avaliar uma situação social, entendendo o clima geral e as atitudes prevalecentes . Dois ou mais graus de falha no teste significa que você interpreta mal os sinais, então o Mestre pode querer fazer esse teste em segredo para você.</p><p><b>Detectar Ilusão</b>: O Mestre pode fazer um teste secreto de Intuição para determinar se seu herói sente a natureza verdadeira de uma ilusão (CD 10 + graduação de Ilusão). Sucesso significa que você fica atento as falhas da ilusão, sentindo que não é real. Veja efeito Ilusão.</p><p><b>Detectar Influência</b>: Você pode fazer um teste de Intuição para notar alguém agindo por influência externa. A CD é 10 + graduação do efeito ou perícia afetando o alvo. Se você tiver sucesso, você nota que o sujeito não está agindo completamente sob sua própria vontade. Três ou mais graus de sucesso pode dar uma ideia geral do que estiver lhe influenciando (ou talvez até quem, dependendo da situação e da opinião do Mestre).</p><p><b>Resistir Influência</b>: Faça um teste de Intuição quando solicitado para resistir ou superar os efeitos de certas perícias de interação como Enganação ou Intimidação. Se o resultado do seu teste exceder do seu oponente, você não é afetado pela tentativa de lhe influenciar.</p>"},{"id":3007,"name":"Investigação","rank":0,"description":"<p><small>Intelecto - Apenas Treinado</small></p><p>Você sabe como procurar e estudar pistas, obter informações através de entrevistas e vigilância, e analisar evidência para ajudar resolver crimes. O Mestre pode fazer testes de Investigação por você em segredo, para que não saiba exatamente o que achou ou se perdeu alguma coisa.</p><p><b>Procurar</b>: Você pode buscar uma área por pistas, itens escondidos, armadilhas e outros detalhes. Percepção permite que você note imediatamente coisas, enquanto um teste de Investigação permite captar os detalhes com algum esforço.<p>A CD do teste de Investigação para encontrar um objeto escondido geralmente é oposto pelo teste de Furtividade ou Prestidigitação de quem o escondeu.</p><p><b>Mais Utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"},{"id":3008,"name":"Percepção","rank":0,"description":"<p><small>Prontidão</small></p><p>Use essa perícia para notar e captar coisas. Discernir detalhes – como ouvir claramente uma conversa ou ler um texto à distância – requer ao menos três graus de sucesso no teste de Percepção.</p><p>Geralmente, você tem uma penalidade circunstancial de -1 em teste de Percepção a cada 3 metros entre você e o que você está tentando perceber. Então, ouvir um barulho a 15 metros é um modificador de -5 para seu teste de Percepção, por exemplo.</p><p>O Mestre geralmente faz os testes de Percepção secretamente para que não saiba se há nada lá fora ou simplesmente falhou de em notar. Os usos comuns de Percepção são:</p><p><b>Ouvir</b>: Faça um teste contra a CD baseada em quão alto é o barulho ou contra o teste oposto de Furtividade. Conversações normais são CD 10, barulho suave é CD 10. Ouvir através de uma porta é CD +5, +15 para uma parede sólida. Enquanto estiver dormindo, ouvir algo bem suficiente para acordar é +10 na CD.</p><p><b>Ver</b>: Faça um teste contra a CD baseada em quão visível é o objeto ou contra um teste oposto de Furtividade. Algo à vista é CD 0, enquanto algo sutil ou fácil de deixar passar pode ser uma CD 5, 10 ou mais. Percepção visual também é usado para detectar alguém disfarçado (veja perícia Enganação) ou notar objetos escondidos (veja perícia Prestidigitação).</p><p><b>Outros Sentidos</b>: Você pode fazer testes de Percepção envolvendo outros sentidos também (veja Poderes para mais em sentidos). Notando algo óbvio para aquele sentido é uma CD 0. Coisas menos óbvias são CD 10 ou mais, coisas escondidas são CD 20 ou mais e discernir detalhes requer ao menos três graus de sucesso, como de costume.</p><p>Você pode fazer um teste de Percepção toda vez que tiver a oportunidade de notar algo novo. Como uma ação de movimento, você pode tentar notar algo que falhou de notar previamente (ou acreditou que perdeu de ver).</p><p>Vários efeitos sensoriais provêm modificadores em testes de Percepção, com Poderes.</p>"},{"id":3009,"name":"Persuasão","rank":0,"description":"<p><small>Presença - Interação</small></p><p>Você é habilidoso em lidar com pessoas, desde etiqueta e reuniões sociais para um jeitinho com as palavras e conversar publicamente, todas que ajudam você passar suas opiniões, fazer uma boa impressão, negociações e conseguir fazer pessoas verem as coisas de sua maneira.</p><p>Em negociações, todos os participantes rolam testes de Persuasão para ver quem ganha a vantagem. Testes opostos também resolvem casos onde dois defensores alegam casos opostos perante um terceiro.</p><p>Você pode melhorar a atitude de outros com teste de Persuasão CD 15. Sucesso melhora a atitude em um grau, enquanto a cada dois graus adicionais melhora por ainda mais um passo. Falha significa nenhuma alteração enquanto mais de um grau de falha piora em um grau! Em caso de um alvo hostil ele pode até mesmo atacar o personagem ou interferir nas suas ações se piorar.</p><p>Se o teste de Persuasão falhar, tentar novamente é fútil; o alvo está com a cabeça feita contra seus argumentos. Ao critério do Mestre, você pode tentar novamente quando a situação mudar de alguma maneira: você encontrar uma nova aproximação de seu argumento, novas evidências surgirem, e assim em diante. O Mestre pode considerá-lo em desvantagem diante de negociações futuras, impondo uma penalidade circunstancial também.</p><p>Veja mais em \"Descrições Extendidas\" no Painel de Perícias.</p>"},{"id":3010,"name":"Prestidigitação","rank":0,"description":"<p><small>Destreza - Manipulação</small></p><p>Você pode realizar feitos habilidosos como um ilusionista como fazer objetos pequenos desaparecer, surrupiar bolsos, escapar de amarras e assim e diante. Mágicos de palco usam Prestidigitação legitimamente como perícia de performance, mas é mais reconhecida por suas aplicações criminosas.</p><p><b>Escondendo Itens</b>: Você pode usar Prestidigitação para esconder itens pequenos em você, fazendo o resultado do teste ser a CD de um teste de Investigação ou Percepção para encontrar.</p><p><b>Contorcionista</b>: Você pode usar Prestidigitação para contorcer seu corpo. Faça um teste de CD 30 de Prestidigitação para se encaixar em um espaço apertado demais para seus ombros, mas amplo suficiente para sua cabeça, ou passar braço por uma abertura ampla suficiente para sua mão, mas apertada demais para o restante do seu braço.</p><p><b>Escapando</b>: Faça um teste de Prestidigitação para escapar de vários tipos de amarras. Isso leva um minuto por teste.</p><p><b>Mais utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"},{"id":3011,"name":"Tecnologia","rank":0,"description":"<p><small>Intelecto – Apenas Treinado – Requer Ferramentas</small></p><p>Tecnologia cobre operar, construir, reparar e atividades em geral com dispositivos e equipamentos eletrônicos. Sem as ferramentas apropriadas, você recebe uma penalidade de -5 em testes de Tecnologia para circunstâncias bem desfavoráveis.</p><p><b>Operando</b>: Maioria das operações com equipamento tecnológico não requer um teste de perícia e pode ser feito destreinado. Usando um dispositivo que não é familiar requer um teste, com a CD determinada por quão exótico ou incomum o dispositivo, de simples (CD 10) a altamente avançado (CD 25 ou mais).</p><p><b>Construindo</b>: A dificuldade e o tempo necessário para fazer o item depende da complexidade, como mostrado na tabela Construindo Itens. Se seu teste de Tecnologia obtiver sucesso, você tem o item feito depois do tempo necessário. Se o teste falhar, você não produz um item usável no final do período e todo tempo e material foi gasto. Mais de um grau de falha no teste pode resultar num acidente ou outro efeito colateral, ao critério do Mestre.</p><p><b>Reparos</b>: Você pode usar tecnologia para reparar itens danificados, com uma CD -5 para a CD de construir o item e -2 a graduação de Tempo. Então, você pode reparar um item complexo em oito horas (graduação de Tempo de 12) com CD de 20. Falha significa que gastou o tempo, mas não teve progresso, enquanto falha por dois ou mais graus pode danificar mais o item ou causar um acidente iguais aos propensos da criação do item.</p><p><b>Mais utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"},{"id":3012,"name":"Tratamento","rank":0,"description":"<p><small>Intelecto – Apenas Treinado – Manipulação – Requer Ferramentas</small></p><p>Você é treinado em tratar ferimentos e doenças. A CD do teste e a eficácia do Tratamento depende da tarefa:</p><p>Se não tiver o equipamento médico e suprimentos apropriados, você recebe uma penalidade de -5 no seu teste. Se o alvo tiver alguma biologia incomum (um alienígena, por exemplo), você também sofre uma penalidade circunstancial.</p><p>Você pode usar a perícia de Tratamento, mas apenas para diagnóstico, prover cuidado ou tratar doenças e venenos. Você recebe uma penalidade de -5 em testes quando tratando de si mesmo.</p><p><b>Estabilizar</b>: Como uma ação padrão, um teste com sucesso de Tratamento estabiliza um personagem moribundo.</p><p><b>Diagnóstico</b>: Você pode diagnosticar doenças e ferimentos com um olhar para tratar depois. Isso leva ao menos um minuto. Ao critério do Mestre, um teste com sucesso provê um bônus de +2 em testes futuros de Tratamento.</p><p><b>Mais utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"},{"id":3013,"name":"Veículos","rank":0,"description":"<p><small>Destreza – Apenas Treinado – Manipulação</small></p><p>Use essa perícia para operar veículos, desde terrestres como carros até barcos, aviões ou então naves-espaciais!</p><p>As tarefas de rotina, como a operação normal de veículos conhecidos, não requerem testes e podem até ser feitas sem treinamentos para alguns veículos, particularmente os comuns, como carros. Faça um teste somente ao operar o veículo em uma situação estressante ou dramática, como ser perseguido ou atacado, ou tentar chegar a um destino em um período limitado de tempo.</p><p>Você pode fazer teste de Veículos para realizar várias manobras com um veículo:</p><p>Note que a perícia Veículos não cobre cavalgar animais de montaria. Para isso use a Especialidade: Cavalgar, com base em Agilidade usando as mesmas diretrizes dadas para os testes de Veículos. Ao critério do Mestre, habilidades como Atletismo podem servir para cavalgar em montarias (talvez com penalidade circunstancial), especialmente se cavalgar for uma habilidade incomum, como no mundo moderno.</p>"}],"extraSkills":[{"id":189289905327.85892,"name":"Especialidade: Magia","rank":5,"description":"","trait":"Magia"},{"id":420106347717.879,"name":"Especialidade: Tratamento","rank":4,"description":"","trait":"Tratamento"},{"id":1166314943058.3984,"name":"Combate À Distância: artesmarciasi","rank":4,"description":"","chosenAttacks":{"id":1166314943058.3984,"descriptor":"artesmarciasi","list":[2]},"isRanged":true}],"advantages":[],"languages":[{"id":1549378421029.9631,"text":"Língua Nativa"}],"powers":[{"id":1587144464394.8508,"name":"Pancada","rank":1,"description":"","effect":{"id":5013,"name":"Dano","type":1,"baseCost":1,"rank":1,"maxRank":-1,"range":1,"action":1,"duration":1,"resistedBy":"Resistência","affectedTrait":"Nenhum","description":"<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Resistência.</li></ul><p>Você pode causar dano em um alvo realizando um ataque corpo-a-corpo. A natureza exata do seu Dano fica à sua escolha, dependendo da aprovação do mestre. Pode ser qualquer coisa, de um soco poderoso ou garras afiadas a campos de energia. O alvo se defende com Resistência.</p><table style='border: 2px solid black; border-radius: 10px;' class='GoldenCells'><tr><tr> <th colspan='2'><b>TESTE DE SALVAMENTO CONTRA DANO</b></th> </tr><tr> <td colspan='2'><hr></td> </tr><tr> <td colspan='2'><center><b>Resistência contra (Graduação em Dano + 15)</b></center></td> </tr><tr><td><b>Sucesso</b>:</td> <td>o dano não tem efeito.</td></tr><tr><td><b>Falha (um grau)</b>:</td> <td>o alvo sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (dois graus)</b>:</td> <td>o alvo fica tonto até o fim de seu próximo turno e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (três graus)</b>:</td> <td>o alvo fica abatido e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano. Caso o alvo fique abatido de novo, aplique o quarto grau do efeito. A condição abatido continua até que o alvo se recupere (veja Recuperação, a seguir).</td></tr><tr><td><b>Falha (quatro graus)</b>:</td> <td>o alvo fica incapacitado.</td></tr></table><p>As penalidades para testes de Resistência são cumulativas, então um alvo que falhe em três salvamentos contra Dano sofre uma penalidade total de –3.</p><p>Caso um alvo incapacitado falhe em um teste de salvamento contra Dano, sua condição muda para moribundo. Um alvo moribundo que falhe em um teste de salvamento contra Dano está morto.</p><br><p><b>FORÇA E DANO</b></p><hr><p>Força concede um efeito de Dano \"embutido\": a habilidade de bater em coisas! Você pode aplicar modificadores de efeito no Dano causado por sua Força, tornando-o em um efeito Penetrante ou até mesmo de Área! Você também pode ter Efeitos Alternativos para seu Dano de Força; veja o modificador Efeito Alternativo para detalhes. Como outros efeitos de Dano, o Dano de Força de um personagem tem alcance perto e duração instantânea como padrão.</p><p>Se você quiser, um efeito Dano pode ser baseado em Força — algo como uma arma corpo-a-corpo —, o que permite que seu Dano de Força se some a ele. Você soma suas graduações de Força e Dano para determinar a graduação do ataque. Todos os modificadores aplicados ao seu Dano devem se aplicar à sua graduação de Força para seu bônus de dano se beneficiar deles. No entanto, qualquer decréscimo à sua Força reduz o total que você pode somar ao seu Dano, e Força negativa diminui o seu Dano!</p><p>Da mesma forma, qualquer coisa que o impeça de exercer sua Força também o impede de usar efeitos de Dano baseados em Força. Se você não puder impulsionar seu punho, também não pode impulsionar uma espada. Por outro lado, uma lâmina laser causa o mesmo dano, mesmo que você não possa exercer toda a sua Força.</p><br><p><b>CAUSANDO DANO A OBJETOS</b></p><hr><p>Objetos (alvos sem graduação de Vigor) sofrem dano de maneira parecida a outros alvos. Resultados como tonto e abatido não têm efeito prático em objetos inanimados, uma vez que eles não usam ações. Já constructos, que podem usar ações, ficam tontos e abatidos normalmente.</p><p>Objetos inanimados são indefesos por definição e, assim, passíveis de ataques finais (veja Ataques Finais no Ação & Aventura): você pode escolher entre realizar um ataque como um teste de rotina ou como um teste de ataque normal, neste caso ganhando um acerto crítico caso acerte (bônus de +5 no efeito).</p><p>Atacar um objeto segurado ou vestido por outro personagem é uma ação quebrar (veja Quebrar).</p><p>Caso a intenção de um atacante seja entortar, quebrar ou destruir um objeto, então dois graus de falha no teste de Resistência resultam em entortar ou quebrar (como fazer um buraco ao socar um objeto), enquanto três graus ou mais de falha significam que o objeto é destruído (estilhaçado, feito em pedaços, etc.)</p><p style='padding-left: 10px;'><i><b>Exemplo</b>: Lady Liberdade, resgatando pessoas de um incêndio, fica presa em meio a destroços que desabaram do teto. A jogadora decide abrir caminho por entre os destroços a socos. Uma vez que está buscando causar o máximo de dano possível, decide fazer um teste de ataque normal (em vez de um teste de rotina). Dado seu bônus de ataque, ela só vai errar se rolar 1 natural. O mestre decide que os tijolos, argamassa e as vigas pesadas têm uma Resistência 9 e faz um teste de Resistência, rolando 4, contra a CD 30 (o Dano de Lady Liberdade + 15). Um resultado de 13 são três graus de falha, então ela atravessa os destroços e limpa o caminho, levando as pessoas para segurança!</i></p><p>A Resistência de alguns materiais comuns são mostradas abaixo. As graduações listadas são para uma espessura de 2,5 centímetros (graduação de distância –7) do material: aplique +1 cada vez que aumentar a espessura em uma graduação de distância, e –1 cada vez que diminuí-la. Assim, 50 centímetros de pedra (graduação de distância –4) têm Resistência 8. Equipamento tem Resistência baseada no material de que é feito. Dispositivos têm Resistência básica igual ao total de pontos do dispositivo divididos por 5 (arredondados para baixo, mínimo 1).</p><br><center><table style='border: 2px solid black; border-radius: 10px;' border='2'><tr> <th colspan='2' class='GoldenCells'><b>Resistência dos Materiais</b></th> </tr><tr><td class='LightGoldenCells'><b>Material</td><td class='LightGoldenCells'><b>Resistência</b></td></tr><tr><td class='NoBGCells'>Papel, solo</td><td class='NoBGCells'>0</td></tr><tr><td class='LightGoldenCells'>Corda, gelo, vidro</td><td class='LightGoldenCells'>1</td></tr><tr><td class='NoBGCells'>Madeira</td><td class='NoBGCells'>3</td></tr><tr><td class='LightGoldenCells'>Pedra</td><td class='LightGoldenCells'>5</td></tr><tr><td class='NoBGCells'>Ferro</td><td class='NoBGCells'>7</td></tr><tr><td class='LightGoldenCells'>Concreto reforçado</td><td class='LightGoldenCells'>8</td></tr><tr><td class='NoBGCells'>Aço</td><td class='NoBGCells'>9</td></tr><tr><td class='LightGoldenCells'>Titânio</td><td class='LightGoldenCells'>15</td></tr><tr><td class='NoBGCells'>Super-ligas</td><td class='NoBGCells'>20+</td></tr></table></center><br><p><b>RECUPERAÇÃO</b></p><hr><p>Alvos vivos removem uma condição de dano por minuto de descanso, começando pela pior condição e voltando. Assim, um personagem ferido se recupera de estar incapacitado, então abatido, tonto e, finalmente, remove a penalidade de Resistência de –1.</p><p>Os efeitos Cura e Recuperação podem acelerar esse processo. Ferimentos duradouros ou mais sérios são tratados como complicações (veja Ferimentos Duradouros).</p><p>Objetos, que não têm Vigor, não se recuperam de dano. A menos que tenham um efeito como Regeneração, precisam ser consertados (veja a perícia Tecnologia).</p>","exclusiveModifiers":[],"unavaliableModifiers":[10021,11000,11015]},"baseCost":1,"maxRank":-1,"resistedBy":"Resistência","affectedTrait":"Nenhum","descriptors":[],"isActive":true,"typeID":1,"actionID":1,"rangeID":1,"durationID":1,"extras":[],"flaws":[],"flats":[],"alternateEffects":[{"id":1257899045266.0479,"name":"safanão","rank":1,"description":"","effect":{"id":5001,"name":"Aflição","type":1,"range":1,"action":1,"duration":1,"baseCost":1,"rank":1,"maxRank":-1,"resistedBy":"","affectedTrait":"","description":"<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Fortitude/Vontade.</li></ul><p>Você pode impor uma condição ou condições debilitantes como um ataque de toque. Você define as condições a cada grau de falha que sua Aflição causa no momento da compra e não pode mudar elas. Graus maiores de falha substituem os menores e não acumulam. Veja as possíveis condições para cada grau de falha abaixo. O alvo resiste com Fortitude ou Vontade (quando o efeito é escolhido): </p><table class='GoldenCells'><tr> <th colspan='2'><b>Teste de Resistência de Aflição</b></th> </tr><tr> <td class='LightGoldenCells' colspan='2'><b>Fortitude ou Vontade vs. CD (graduação de Aflição + 10)</b></td> </tr><tr> <td><b>Sucesso</b></td> <td>Sem efeito</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (um grau)</b></td> <td class='LightGoldenCells'>O alvo está tonto, em transe, fadigado, impedido, prejudicado, ou vulnerável (escolha um).</td> </tr><tr> <td><b>Falha (dois graus)</b></td> <td>O alvo está compelido, indefeso, desabilitado, exausto, imóvel, caído ou atordoado (escolha um).</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (três graus)</b></td> <td class='LightGoldenCells'>O alvo está adormecido, controlado, incapacitado, paralisado, transformado ou desatento (escolha um).</td> </tr></table><br><p>Alvo de Aflição faz teste de resistência ao final de cada turno para tirar condições do primeiro e segundo grau. Condições de terceiro grau requerem um minuto de recuperação ou ajuda exterior, como a perícia Tratamento ou o efeito Cura (CD 10 + graduação).</p>","exclusiveModifiers":[],"unavaliableModifiers":[10011,10012,10020,11000,11015,11017,11018]},"baseCost":1,"maxRank":-1,"resistedBy":"Esquiva","affectedTrait":"","descriptors":[],"isActive":true,"typeID":1,"actionID":1,"rangeID":1,"durationID":1,"extras":[],"flaws":[],"flats":[],"alternateEffects":[],"removable":0,"extraEfforts":[],"isAlternateEffect":true,"isDynamicEffect":false,"conditions":{"firstDegree":"tonto","secondDegree":"atordoado","thirdDegree":"Incapacitado"},"overcomedBy":"Força"}],"removable":0,"extraEfforts":[],"isAlternateEffect":false,"isDynamicEffect":false,"strengthBased":false,"strengthRanks":0},{"id":1451518513131.9321,"name":"Controle Mental","rank":8,"description":"","effect":{"id":5001,"name":"Aflição","type":1,"range":1,"action":1,"duration":1,"baseCost":1,"rank":1,"maxRank":-1,"resistedBy":"","affectedTrait":"","description":"<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Fortitude/Vontade.</li></ul><p>Você pode impor uma condição ou condições debilitantes como um ataque de toque. Você define as condições a cada grau de falha que sua Aflição causa no momento da compra e não pode mudar elas. Graus maiores de falha substituem os menores e não acumulam. Veja as possíveis condições para cada grau de falha abaixo. O alvo resiste com Fortitude ou Vontade (quando o efeito é escolhido): </p><table class='GoldenCells'><tr> <th colspan='2'><b>Teste de Resistência de Aflição</b></th> </tr><tr> <td class='LightGoldenCells' colspan='2'><b>Fortitude ou Vontade vs. CD (graduação de Aflição + 10)</b></td> </tr><tr> <td><b>Sucesso</b></td> <td>Sem efeito</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (um grau)</b></td> <td class='LightGoldenCells'>O alvo está tonto, em transe, fadigado, impedido, prejudicado, ou vulnerável (escolha um).</td> </tr><tr> <td><b>Falha (dois graus)</b></td> <td>O alvo está compelido, indefeso, desabilitado, exausto, imóvel, caído ou atordoado (escolha um).</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (três graus)</b></td> <td class='LightGoldenCells'>O alvo está adormecido, controlado, incapacitado, paralisado, transformado ou desatento (escolha um).</td> </tr></table><br><p>Alvo de Aflição faz teste de resistência ao final de cada turno para tirar condições do primeiro e segundo grau. Condições de terceiro grau requerem um minuto de recuperação ou ajuda exterior, como a perícia Tratamento ou o efeito Cura (CD 10 + graduação).</p>","exclusiveModifiers":[],"unavaliableModifiers":[10011,10012,10020,11000,11015,11017,11018]},"baseCost":1,"maxRank":-1,"resistedBy":"Vontade","affectedTrait":"","descriptors":[],"isActive":true,"typeID":1,"actionID":1,"rangeID":1,"durationID":1,"extras":[{"id":10038,"name":"Condição Extra","rank":1,"description":"<p>Sua Aflição impõe uma condição adicional por grau de sucesso. Com uma aplicação desse extra, sua Aflição ganha uma condição adicional por grau de sucesso. Então, com uma aplicação deste extra, sua Aflição impõe duas condições- tal como Tonto e Impedido, ou Comprometido e Vulnerável- em vez de apenas uma. Com duas aplicações deste extra, impõe três condições e assim vai. Como condições mutuamente incompatíveis são geralmente gastas, Aflição com este Extra geralmente tem a falha Grau Limitado junta.</p>","extra":true,"flat":false,"ranked":true,"maxRank":3,"hasTrait":false,"traitText":"","parcial":0,"instanceID":-1},{"id":10039,"name":"Condição Variável","rank":1,"description":"<p>Um efeito de Aflição com este modificador pode variar as condições que impõe. Escolha as condições quando a Aflição for usada em vez de quando o efeito é adquirido. A Aflição ainda é limitada ao seu grau de efeito causado no alvo a não ser se tiver o modificador Cumulativo também.</p><p><b> +2 por graduação. +1 por graduação se for apenas um grau de Aflição for Variável (primeiro, segundo ou terceiro), escolhido quando este efeito é comprado.</b></p>","extra":true,"flat":false,"ranked":true,"maxRank":2,"hasTrait":false,"traitText":"","parcial":0,"instanceID":-1},{"id":10040,"name":"Cumulativo","rank":1,"description":"<p>Normalmente, Aflição não tem efeito cumulativo no mesmo alvo, então conseguindo dois resultados de um grau, uma após o outro, não tem mais do que o efeito de um grau no alvo; você tem que conseguir um grau maior com mais um ataque para substituir o resultado inicial. Aflição Cumulativa adiciona graus maiores para os existentes. Por exemplo, se acertar o inimigo e impor a condição Vulnerável (um grau) e então atacar novamente e conseguir um grau de efeito novamente, você impõe um segundo grau.</p>","extra":true,"flat":false,"ranked":false,"maxRank":1,"hasTrait":false,"traitText":"","parcial":0,"instanceID":-1},{"id":10041,"name":"Progressivo","rank":2,"description":"<p>Este modificador causa a Aflição de aumentar incrementalmente sem necessidade de esforço do personagem. Se seu alvo falha no teste de Resistência no fim da Aflição, o efeito não apenas persiste, como o efeito aumenta por um grau! Então se o alvo afetado pelo primeiro grau de uma Aflição Progressiva que falha em resistir, segue para o segundo grau no início de sua próxima rodada. Um teste com sucesso contra a Aflição acaba com o efeito como normalmente.</p>","extra":true,"flat":false,"ranked":false,"maxRank":2,"hasTrait":false,"traitText":"","parcial":0,"instanceID":-1}],"flaws":[{"id":11026,"name":"Recuperação Instantânea","rank":1,"description":"<p>Similar ao feito Reversível, o alvo de uma Aflição com esse modificador se recupera automaticamente, sem necessidade de teste, no final de sua rodada em qual a duração acaba. Então, por exemplo, Aflição instantânea dura uma rodada, enquanto uma Aflição Sustentada dura enquanto não for mais mantida.</p>","extra":false,"flat":false,"ranked":false,"maxRank":1,"hasTrait":false,"traitText":"","parcial":0,"instanceID":-1}],"flats":[],"alternateEffects":[],"removable":0,"extraEfforts":[],"isAlternateEffect":false,"isDynamicEffect":false,"conditions":{"firstDegree":"Tonto","secondDegree":"Compelido","thirdDegree":"controlado"},"overcomedBy":"Vontade"},{"id":1487601409938.4763,"name":"Voo","rank":1,"description":"","effect":{"id":5040,"name":"Voo","baseCost":2,"rank":1,"maxRank":-1,"type":4,"range":0,"action":3,"duration":3,"resistedBy":"Nenhum","affectedTrait":"Nenhum","description":"<b>Efeito de Poder</b><ul><li><b>Custo</b>: 2 por graduação.</li><li><b>Tipo</b>: Movimento.</li><li><b>Ação</b>: Livre.</li><li><b>Distância</b>: Pessoal.</li><li><b>Duração</b>: Sustentada.</li></ul><p>Você pode voar, incluindo flutuar em um mesmo lugar. Você tem uma graduação de velocidade de voo igual à sua graduação neste efeito.</p>","exclusiveModifiers":[],"unavaliableModifiers":[]},"baseCost":2,"maxRank":-1,"resistedBy":"Nenhum","affectedTrait":"Nenhum","descriptors":[],"isActive":true,"typeID":4,"actionID":3,"rangeID":0,"durationID":3,"extras":[],"flaws":[],"flats":[],"alternateEffects":[],"removable":0,"extraEfforts":[],"isAlternateEffect":false,"isDynamicEffect":false},{"id":1275180686280.1633,"name":"Criar","rank":1,"description":"","effect":{"id":5011,"name":"Criar","baseCost":2,"rank":1,"maxRank":-1,"type":2,"range":2,"action":1,"duration":3,"resistedBy":"Esquiva","affectedTrait":"Nenhum","description":"<b>Efeito de Poder</b><ul><li><b>Custo</b>: 2 por graduação.</li><li><b>Tipo</b>: Controle.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: A Distância.</li><li><b>Duração</b>: Sustentada.</li><li><b>Salvamento</b>: Esquiva.</li></ul><p>Você pode formar objetos sólidos a partir do nada. Eles podem ser feitos de pedra, gelo, energia solidificada ou algum outro tipo de meio, dependendo dos descritores.</p><p>Você pode fazer qualquer forma geométrica simples ou objeto comum (como um cubo, esfera, domo, martelo, lente, disco, etc.). O mestre tem a palavra final se um objeto é complexo demais para este efeito. No geral, seus objetos não podem ter partes móveis mais complexas que uma dobradiça. Eles podem ser ocos ou maciços, opacos ou transparentes, e você escolhe quando usa o efeito, limitado por seus descritores e pelo julgamento do mestre.</p><p>Você pode criar um objeto com uma graduação máxima de volume igual à sua graduação neste efeito e Resistência igual à sua graduação neste efeito. Objetos criados podem ser danificados ou quebrados como objetos comuns. Eles também desaparecem se você parar de mantê-los. Você pode reparar qualquer dano a um objeto criado à vontade, usando seu efeito de novo (em essência, \"recriando\" o objeto). Seus objetos criados são estacionários uma vez que você os tenha criado, embora outros efeitos possam movê-los. Assuma que um objeto criado tem graduação de massa igual à sua graduação de volume.</p><p><b>Objetos criados, Cobertura e Camuflagem</b></p><hr><p>Um objeto criado pode conceder cobertura ou camuflagem (caso seja opaco) da mesma forma que um objeto comum. A cobertura concedida por um objeto criado pode bloquear ataques vindos de fora, mas também bloqueia ataques realizados de dentro. Ataques que acertem o objeto servindo de cobertura causam dano ao objeto normalmente (veja Danificando Objetos). Efeitos indiretos podem passar a cobertura concedida por um objeto criado da mesma forma que com qualquer outra cobertura (veja o modificador Indireto). O modificador Seletivo permite que você mude a cobertura e a camuflagem concedidas por seus objetos.</p><p><b>Prendendo com Objetos</b></p><hr><p>Você pode prender um alvo dentro de um objeto oco e grande o suficiente (uma gaiola ou bolha, por exemplo). Isso exige tanto um teste de ataque contra a Esquiva do alvo quanto um teste de salvamento de Esquiva contra a graduação do efeito. Um personagem preso pode fugir do objeto normalmente. Outras condições impostas sobre o alvo que não sejam apenas prendê-lo exigem efeitos separados, como Aflições (veja Aflição), que você pode querer adquirir como um Efeito Alternativo de Criar (veja Efeito Alternativo).</p><p><b>Derrubando Objetos</b></p><hr><p>Derrubar um objeto criado sobre um alvo é tratado como um ataque com Efeito de Área baseado no tamanho do objeto (veja o extra Área). O objeto causa dano igual à sua Resistência, e os alvos devem fazer um teste de esquiva para evitar o objeto. Um teste bem sucedido significa que o alvo não sofre dano (em vez de metade do dano, como sempre). Enquanto um objeto criado tem potencial para ser usado como uma arma improvisada, o efeito não pode criar ataques ou outros efeitos; você deve adquirir esses efeitos separadamente (talvez como Efeitos Alternativos).</p><p><b>Suportando Peso</b></p><hr><p>Caso um objeto criado precise suportar algum peso — ele é criado como uma ponte ou para apoiar uma estrutura enfraquecida, por exemplo —, ele tem uma Força efetiva igual à sua graduação. Você pode usar um objeto criado como “apoio”, usando uma ação padrão e se concentrando, aumentando sua Força em 1 até o início da sua próxima rodada. Você também pode usar esforço extra para aumentar a Força de um objeto criado por uma rodada, e esses modificadores são cumulativos.</p>","exclusiveModifiers":[],"unavaliableModifiers":[10014,10026,11000]},"baseCost":2,"maxRank":-1,"resistedBy":"Esquiva","affectedTrait":"Nenhum","descriptors":[],"isActive":true,"typeID":2,"actionID":1,"rangeID":2,"durationID":3,"extras":[],"flaws":[],"flats":[],"alternateEffects":[],"removable":0,"extraEfforts":[],"isAlternateEffect":false,"isDynamicEffect":false},{"id":1558836135960.3184,"name":"Mete Soco","rank":0,"description":"","effect":{"id":5042,"name":"- Arranjo -","type":0,"action":3,"range":0,"duration":3,"baseCost":0,"rank":0,"maxRank":-1,"resistedBy":"Nenhum","affectedTrait":"Nenhum","description":"Arranjo é um conjunto de poderes, qual só pode ser usado um por vez.","exclusiveModifiers":[],"unavaliableModifiers":[10002,10003,10004,10005,10006,10007,100010,10011,10012,10014,10016,10017,10018,10019,10020,10021,10023,10024,10026,10027,10030,10031,10031,10032,10033,10034,10036,10037,11000,11003,11004,11008,11009,11010,11011,11012,11014,11015,11018,11019,11022,11023]},"baseCost":0,"maxRank":-1,"resistedBy":"Nenhum","affectedTrait":"Nenhum","descriptors":[],"isActive":true,"typeID":0,"actionID":3,"rangeID":0,"durationID":3,"extras":[],"flaws":[],"flats":[],"alternateEffects":[{"id":976617132313.1566,"name":"Característica","rank":1,"description":"","effect":{"id":5005,"name":"Característica","type":0,"range":0,"action":0,"duration":5,"baseCost":1,"rank":1,"maxRank":-1,"resistedBy":"Nenhum","affectedTrait":"Nenhum","description":"<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Geral.</li><li><b>Ação</b>: Nenhuma.</li><li><b>Distância</b>: Pessoal.</li><li><b>Duração</b>: Permanente.</li></ul><p>Você tem uma ou mais características menores, efeitos que lhe concedem uma habilidade ocasionalmente útil, uma por graduação. Este efeito é essencialmente uma versão da vantagem Benefício, mas um poder em vez de uma virtude de habilidade, talento ou formação social. Por exemplo, a imunidade diplomática ou a riqueza são Benefícios; pele, a capacidade de imitar sons ou um compartimento escondido em sua perna oca são características. Depende do Mestre sobre quais capacidades são qualificadas como Característica; geralmente, se não haver efeito real no jogo, é apenas um descritor. Se lhe conceder um benefício no sistema, pode ser um Adicional. Não há necessidade de definir todo Adicional possível que o personagem possa ter aos mínimos detalhes.</p><p>Algumas Características podem ter duração sustentada em vez de permanente, sem mudança no custo. Isso se encaixa para algumas Características que o personagem usa e mantêm em vez de tê-los como características passivas, sem exigir esforço algum.</p><h2>Exemplo de Características</h2><ul><li><b>Compartimento Interno:</b> Você pode carregar uma porção do que carrega dentro de seu corpo! Você tem um bolso ou compartimento de algum tipo capaz de carregar objetos com graduação de tamanho que não sejam maior que 3 menos seu tamanho (tamanho -5 para um humano normal de tamanho -2).</li><li><b>Efeito Especial:</b> Você tem algum tipo de efeito, como uma rajada de vento no momento dramático, iluminação ideal ou uma música-tema. O mestre pode conceder-lhe um bônus de +2 por circunstâncias favoráveis quando seu efeito especial pode impressionar outras pessoas ou ajudá-lo de outra forma.</li><li><b>Estômago de Ferro:</b> Você pode comer qualquer coisa não tóxica sem efeitos negativos, não importa quão desagradável seja: estragada ou nojenta ou picante, por exemplo.</li><li><b>Inércia Temporal:</b> Você pode imitar quase qualquer som que ouvir, dando-lhe um bônus de +10 em testes de Enganação para convencer outros que os sons são reais.</li><li><b>Inércia Temporal:</b> Você está \"ancorado\" de alguma forma ao contínuo do espaço-tempo, sendo imune a mudanças na história. Você lembra da versão “verdadeira” de eventos históricos, mesmo que ninguém mais lembre.</li><li><b>Mudança Rápida:</b> Você pode trocar de roupas – como entrar ou sair de seu traje – como uma ação livre. Com duas graduações, pode mudar para qualquer traje à vontade.</li><li><b>Pelo Protetor:</b> Você tem uma cobertura de pelos que o protege do calor e frio intenso, dando-lhe imunidade a esses ambientes.</li></ul>","exclusiveModifiers":[],"unavaliableModifiers":[10012,10014,10017,10020,10026,11000]},"baseCost":1,"maxRank":-1,"resistedBy":"Nenhum","affectedTrait":"Nenhum","descriptors":[],"isActive":false,"typeID":0,"actionID":0,"rangeID":0,"durationID":5,"extras":[],"flaws":[],"flats":[],"alternateEffects":[],"removable":0,"extraEfforts":[],"isAlternateEffect":true,"isDynamicEffect":false},{"id":763280906228.7255,"name":"Dano","rank":1,"description":"","effect":{"id":5013,"name":"Dano","type":1,"baseCost":1,"rank":1,"maxRank":-1,"range":1,"action":1,"duration":1,"resistedBy":"Resistência","affectedTrait":"Nenhum","description":"<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Resistência.</li></ul><p>Você pode causar dano em um alvo realizando um ataque corpo-a-corpo. A natureza exata do seu Dano fica à sua escolha, dependendo da aprovação do mestre. Pode ser qualquer coisa, de um soco poderoso ou garras afiadas a campos de energia. O alvo se defende com Resistência.</p><table style='border: 2px solid black; border-radius: 10px;' class='GoldenCells'><tr><tr> <th colspan='2'><b>TESTE DE SALVAMENTO CONTRA DANO</b></th> </tr><tr> <td colspan='2'><hr></td> </tr><tr> <td colspan='2'><center><b>Resistência contra (Graduação em Dano + 15)</b></center></td> </tr><tr><td><b>Sucesso</b>:</td> <td>o dano não tem efeito.</td></tr><tr><td><b>Falha (um grau)</b>:</td> <td>o alvo sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (dois graus)</b>:</td> <td>o alvo fica tonto até o fim de seu próximo turno e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (três graus)</b>:</td> <td>o alvo fica abatido e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano. Caso o alvo fique abatido de novo, aplique o quarto grau do efeito. A condição abatido continua até que o alvo se recupere (veja Recuperação, a seguir).</td></tr><tr><td><b>Falha (quatro graus)</b>:</td> <td>o alvo fica incapacitado.</td></tr></table><p>As penalidades para testes de Resistência são cumulativas, então um alvo que falhe em três salvamentos contra Dano sofre uma penalidade total de –3.</p><p>Caso um alvo incapacitado falhe em um teste de salvamento contra Dano, sua condição muda para moribundo. Um alvo moribundo que falhe em um teste de salvamento contra Dano está morto.</p><br><p><b>FORÇA E DANO</b></p><hr><p>Força concede um efeito de Dano \"embutido\": a habilidade de bater em coisas! Você pode aplicar modificadores de efeito no Dano causado por sua Força, tornando-o em um efeito Penetrante ou até mesmo de Área! Você também pode ter Efeitos Alternativos para seu Dano de Força; veja o modificador Efeito Alternativo para detalhes. Como outros efeitos de Dano, o Dano de Força de um personagem tem alcance perto e duração instantânea como padrão.</p><p>Se você quiser, um efeito Dano pode ser baseado em Força — algo como uma arma corpo-a-corpo —, o que permite que seu Dano de Força se some a ele. Você soma suas graduações de Força e Dano para determinar a graduação do ataque. Todos os modificadores aplicados ao seu Dano devem se aplicar à sua graduação de Força para seu bônus de dano se beneficiar deles. No entanto, qualquer decréscimo à sua Força reduz o total que você pode somar ao seu Dano, e Força negativa diminui o seu Dano!</p><p>Da mesma forma, qualquer coisa que o impeça de exercer sua Força também o impede de usar efeitos de Dano baseados em Força. Se você não puder impulsionar seu punho, também não pode impulsionar uma espada. Por outro lado, uma lâmina laser causa o mesmo dano, mesmo que você não possa exercer toda a sua Força.</p><br><p><b>CAUSANDO DANO A OBJETOS</b></p><hr><p>Objetos (alvos sem graduação de Vigor) sofrem dano de maneira parecida a outros alvos. Resultados como tonto e abatido não têm efeito prático em objetos inanimados, uma vez que eles não usam ações. Já constructos, que podem usar ações, ficam tontos e abatidos normalmente.</p><p>Objetos inanimados são indefesos por definição e, assim, passíveis de ataques finais (veja Ataques Finais no Ação & Aventura): você pode escolher entre realizar um ataque como um teste de rotina ou como um teste de ataque normal, neste caso ganhando um acerto crítico caso acerte (bônus de +5 no efeito).</p><p>Atacar um objeto segurado ou vestido por outro personagem é uma ação quebrar (veja Quebrar).</p><p>Caso a intenção de um atacante seja entortar, quebrar ou destruir um objeto, então dois graus de falha no teste de Resistência resultam em entortar ou quebrar (como fazer um buraco ao socar um objeto), enquanto três graus ou mais de falha significam que o objeto é destruído (estilhaçado, feito em pedaços, etc.)</p><p style='padding-left: 10px;'><i><b>Exemplo</b>: Lady Liberdade, resgatando pessoas de um incêndio, fica presa em meio a destroços que desabaram do teto. A jogadora decide abrir caminho por entre os destroços a socos. Uma vez que está buscando causar o máximo de dano possível, decide fazer um teste de ataque normal (em vez de um teste de rotina). Dado seu bônus de ataque, ela só vai errar se rolar 1 natural. O mestre decide que os tijolos, argamassa e as vigas pesadas têm uma Resistência 9 e faz um teste de Resistência, rolando 4, contra a CD 30 (o Dano de Lady Liberdade + 15). Um resultado de 13 são três graus de falha, então ela atravessa os destroços e limpa o caminho, levando as pessoas para segurança!</i></p><p>A Resistência de alguns materiais comuns são mostradas abaixo. As graduações listadas são para uma espessura de 2,5 centímetros (graduação de distância –7) do material: aplique +1 cada vez que aumentar a espessura em uma graduação de distância, e –1 cada vez que diminuí-la. Assim, 50 centímetros de pedra (graduação de distância –4) têm Resistência 8. Equipamento tem Resistência baseada no material de que é feito. Dispositivos têm Resistência básica igual ao total de pontos do dispositivo divididos por 5 (arredondados para baixo, mínimo 1).</p><br><center><table style='border: 2px solid black; border-radius: 10px;' border='2'><tr> <th colspan='2' class='GoldenCells'><b>Resistência dos Materiais</b></th> </tr><tr><td class='LightGoldenCells'><b>Material</td><td class='LightGoldenCells'><b>Resistência</b></td></tr><tr><td class='NoBGCells'>Papel, solo</td><td class='NoBGCells'>0</td></tr><tr><td class='LightGoldenCells'>Corda, gelo, vidro</td><td class='LightGoldenCells'>1</td></tr><tr><td class='NoBGCells'>Madeira</td><td class='NoBGCells'>3</td></tr><tr><td class='LightGoldenCells'>Pedra</td><td class='LightGoldenCells'>5</td></tr><tr><td class='NoBGCells'>Ferro</td><td class='NoBGCells'>7</td></tr><tr><td class='LightGoldenCells'>Concreto reforçado</td><td class='LightGoldenCells'>8</td></tr><tr><td class='NoBGCells'>Aço</td><td class='NoBGCells'>9</td></tr><tr><td class='LightGoldenCells'>Titânio</td><td class='LightGoldenCells'>15</td></tr><tr><td class='NoBGCells'>Super-ligas</td><td class='NoBGCells'>20+</td></tr></table></center><br><p><b>RECUPERAÇÃO</b></p><hr><p>Alvos vivos removem uma condição de dano por minuto de descanso, começando pela pior condição e voltando. Assim, um personagem ferido se recupera de estar incapacitado, então abatido, tonto e, finalmente, remove a penalidade de Resistência de –1.</p><p>Os efeitos Cura e Recuperação podem acelerar esse processo. Ferimentos duradouros ou mais sérios são tratados como complicações (veja Ferimentos Duradouros).</p><p>Objetos, que não têm Vigor, não se recuperam de dano. A menos que tenham um efeito como Regeneração, precisam ser consertados (veja a perícia Tecnologia).</p>","exclusiveModifiers":[],"unavaliableModifiers":[10021,11000,11015]},"baseCost":1,"maxRank":-1,"resistedBy":"Resistência","affectedTrait":"Nenhum","descriptors":[],"isActive":false,"typeID":1,"actionID":1,"rangeID":1,"durationID":1,"extras":[],"flaws":[],"flats":[],"alternateEffects":[],"removable":0,"extraEfforts":[],"isAlternateEffect":true,"isDynamicEffect":false,"strengthBased":false,"strengthRanks":0},{"id":191324348513.0706,"name":"Extra Aumentado","rank":0,"description":"","effect":{"id":5049,"name":"Extra Aumentado","type":0,"action":1,"range":0,"duration":3,"baseCost":0,"rank":0,"maxRank":-1,"resistedBy":"Nenhum","affectedTrait":"","description":"<p>Este poder age como um container para extras que afetam poderes diferetes no personagem ou uma variedade de efeitos. Por exemplo, um personagem que pode fazer disparos a longa distância com qualquer arma pode acrescentar o extra Distância Aumentada. Você deve usar o extra Descritor Variável para mostrar quais efeitos adicionais este extra pode afetar.</p>","exclusiveModifiers":[],"unavaliableModifiers":[]},"baseCost":0,"maxRank":-1,"resistedBy":"Nenhum","affectedTrait":"","descriptors":[],"isActive":false,"typeID":0,"actionID":1,"rangeID":0,"durationID":3,"extras":[],"flaws":[],"flats":[],"alternateEffects":[],"removable":0,"extraEfforts":[],"isAlternateEffect":true,"isDynamicEffect":false}],"removable":0,"extraEfforts":[],"isAlternateEffect":false,"isDynamicEffect":false,"autoBasePowerAjust":true,"autoRankAjust":false}],"equipment":[],"complicationCount":0,"complications":[],"errors":[],"personalInfo":{"heroicName":"Personagem nº 1","realName":"","gender":0,"otherGender":"","age":25,"height":170,"weight":70,"hair":"","eyes":"","story":"","customInfoCC":0,"customs":[]},"gallery":[""],"journals":[]}]}
+{
+    "characters": [
+        {
+            "id": 553938352500.8301,
+            "name": "Personagem nº 1",
+            "playerName": "",
+            "powerLevel": 10,
+            "pointsPerLevel": 15,
+            "totalPoints": 150,
+            "isPC": true,
+            "isMinion": false,
+            "abilities": [
+                {
+                    "id": 1001,
+                    "name": "Força",
+                    "abrev": "FOR",
+                    "description": "A Força mede o poder muscular puro, e a habilidade de usá-lo. O seu modificador de Força se aplica a: <br/>• Dano causado pelo seu ataque desarmado e ataques baseados em força; <br/>• Quão longe pode saltar (baseado na perícia Atletismo); <br/>• O quanto de peso consegue levantar, carregar e arremessar; <br/>• Perícia de Atletismo.",
+                    "rank": 0,
+                    "isNull": false
+                },
+                {
+                    "id": 1002,
+                    "name": "Vigor",
+                    "abrev": "VIG",
+                    "description": "Vigor é constituição, saúde e robustez física em geral. Vigor é importante porque afeta a habilidade do personagem de resistir à maior parte das formas de dano. O seu bônus de Vigor se aplica a: <br/>• Defesa <b>Resistência</b>, para resistir dano; <br/>• Defesa <b>Fortitude</b>, para resistir efeitos visando a saúde do personagem; <br/>• Teste de Vigor para resistir coisas afetando a saúde de seu personagem, quando uma perícia específica não é apropriada.",
+                    "rank": 0,
+                    "isNull": false
+                },
+                {
+                    "id": 1003,
+                    "name": "Agilidade",
+                    "abrev": "AGI",
+                    "description": "Agilidade é equilíbrio, velocidade e coordenação física em geral. O valor de sua Agilidade se aplica a: <br/>• Defesa <b>Esquiva</b>, para evitar ataques à distância e outros perigos; <br/>• Bônus de Iniciativa, para agir primeiro em combate; <br/>• Perícias <b>Acrobacias</b> e <b>Furtividade</b>; <br/>• Testes de Agilidade para façanhas de coordenação, movimentos robustos e rapidez quando uma perícia específica não é apropriada.",
+                    "rank": 0,
+                    "isNull": false
+                },
+                {
+                    "id": 1004,
+                    "name": "Destreza",
+                    "abrev": "DES",
+                    "description": "Destreza mede a coordenação entre as mãos e olhos, precisão e destreza manual. O valor de sua Destreza se aplica a: <br/>• Testes de ataques à distância; <br/>• Perícias de <b>Prestidigitação</b> e <b>Veículos</b>; <br/>• Testes de Destreza para façanhas de controle preciso e delicado quando uma perícia específica não é apropriada.",
+                    "rank": 0,
+                    "isNull": false
+                },
+                {
+                    "id": 1005,
+                    "name": "Luta",
+                    "abrev": "LUT",
+                    "description": "Luta mede a habilidade de seu personagem em combate corpo-a-corpo, desde atingir o alvo até desviar de qualquer contra-ataque. O valor de Luta se aplica a: <br/>• Testes de ataques corpo-a-corpo; <br/>• Defesa <b>Aparar</b>, para evitar ataques corpo-a-corpo.",
+                    "rank": 0,
+                    "isNull": false
+                },
+                {
+                    "id": 1006,
+                    "name": "Intelecto",
+                    "abrev": "INT",
+                    "description": "Intelecto cobre a habilidade de razão e aprendizado. Um personagem com Intelecto alto tende a ser conhecedor e bem-educado. Seu valor de Intelecto se aplica a: <br/>• Perícias de <b>Especialidade</b>, <b>Investigação</b>, <b>Tecnologia</b> e <b>Tratamento</b>; <br/>• Testes de Intelecto para resolver problemas usando raciocínio puro quando uma perícia específica não é apropriada.",
+                    "rank": 6,
+                    "isNull": false
+                },
+                {
+                    "id": 1007,
+                    "name": "Prontidão",
+                    "abrev": "PRO",
+                    "description": "Enquanto a Intelecto cobre o raciocínio, a Prontidão descreve atenção, bom senso, intuição e força de vontade. Um personagem com alta Inteligência e baixa Prontidão pode ser um típico “professor avoado”, inteligente, mas distraído. Por outro lado, um personagem não muito brilhante (baixo Intelecto) pode ter muito bom senso (alta Prontidão). O valor de Prontidão se aplica a: <br/>• Defesa <b>Vontade</b>, para resistir ataques na sua mente; <br/>• Perícias <b>Intuição</b> e <b>Percepção</b>; <br/>• Testes de Prontidão para resolver tarefas de intuição quando uma perícia específica não é apropriada.",
+                    "rank": 0,
+                    "isNull": false
+                },
+                {
+                    "id": 1008,
+                    "name": "Presença",
+                    "abrev": "PRE",
+                    "description": "Presença é força de personalidade, persuasão, capacidade de liderança e aparência física. Presença é útil para heróis que pretendem ser líderes, assim como para aqueles que querem incutir medo nos corações dos criminosos com sua presença. O seu modificador de Presença se aplica a: <br/>• Perícias <b>Enganação</b>, <b>Intimidação</b> e <b>Persuasão</b>; <br/>• Testes de Presença para influenciar outros através da força de personalidade quando uma perícia específica não é apropriada. ",
+                    "rank": 0,
+                    "isNull": false
+                }
+            ],
+            "defenses": [
+                {
+                    "id": 2001,
+                    "name": "Esquiva",
+                    "rank": 0,
+                    "description": "Defesa Esquiva é baseada no valor de Agilidade. Isso inclui tempo de reação, rapidez e coordenação em geral, usada para desviar de ataques à distância e outros perigos onde reflexos e velocidade são importantes."
+                },
+                {
+                    "id": 2002,
+                    "name": "Aparar",
+                    "rank": 0,
+                    "description": "Defesa Aparar é baseada no valor de Luta. É a habilidade de se abaixar, contra-atacar e desviar das tentativas de um oponente lhe acertar em combate corpo-a-corpo através de uma habilidade de luta superior."
+                },
+                {
+                    "id": 2003,
+                    "name": "Resistência",
+                    "rank": 0,
+                    "description": "Defesa Resistência é baseada no valor de Vigor e é a resistência direta contra danos ou ferimentos, e é a durabilidade em geral."
+                },
+                {
+                    "id": 2004,
+                    "name": "Fortitude",
+                    "rank": 0,
+                    "description": "Defesa Fortitude é baseada no valor de Vigor e mede a saúde e resistência do personagem contra ameaças como venenos e doenças. Incorpora a constituição, metabolismo e imunidade."
+                },
+                {
+                    "id": 2005,
+                    "name": "Vontade",
+                    "rank": 0,
+                    "description": "Defesa Vontade é baseada no valor de Prontidão. Mede a estabilidade mental, a paciência, determinação, autoconfiança, autoconsciência e força de vontade, usadas para resistir ataques mentais ou espirituais."
+                }
+            ],
+            "skills": [
+                {
+                    "id": 3001,
+                    "name": "Acrobacias",
+                    "rank": 0,
+                    "description": "<p><small>Agilidade - Apenas Treinado</small></p><p>Use Acrobacia para virar, rolar, mergulhar, cair e realizar outras manobras acrobáticas, assim como manter seu equilíbrio sobre circunstâncias difíceis.</p><p><b>Cair</b>: Você pode fazer um teste de Acrobacias (CD 5) para reduzir o dano de uma queda, reduzindo o dano por 1 por grau de sucesso. Uma queda reduzida a dano 0 não causa dano e você rapidamente fica de pé como ação livre. Do contrário, você está caído até o final da queda.</p><p><b>Equilibrando-se</b>: Você pode manter seu equilíbrio e se mover em uma superfície com sua velocidade terra menos 1 com um teste bem-sucedido de Acrobacias contra a CD da superfície. Um grau de falha indica que você gasta sua ação de movimento apenas mantendo seu equilíbrio e não se move, enquanto dois graus ou mais de falha significa que você perde seu equilíbrio e cai.</p><p>Você é vulnerável enquanto se equilibrando. Aceitando um aumento de +5 na CD de Acrobacias, você não fica vulnerável. Se você falhar um teste de salvamento enquanto se equilibra, faça um teste de Acrobacias adicional contra a CD original para evitar cair.</p><p><b>Ficar em Pé</b>: Você pode fazer um teste de Acrobacias CD 20 para ir de caído para em pé como ação livre em vez de uma ação de movimento. Falha no teste significa que você continua caído.</p><p><b>Manobras</b>: Você pode fazer testes de Acrobacias para várias façanhas ou manobras acrobáticas, desde back-flips para pular sobre um oponente (e ficar atrás deles), saltar para cima de uma borda, rolar através de obstáculos e assim em diante. O Mestre define a CD. Sucesso significa que você realiza a manobra enquanto falha significa que você não consegue e a falha por dois ou mais graus geralmente resulta se escorrega e cai deitado (e pode sofrer efeitos adicionais, dependendo da façanha). Uma manobra com sucesso pode conceder um bônus circunstancial para as ações que seguirem, se o Mestre achar adequado.</p>"
+                },
+                {
+                    "id": 3002,
+                    "name": "Atletismo",
+                    "rank": 0,
+                    "description": "<p><small>Força</small></p><p>Use Atletismo para façanhas físicas como escalar, pular, cavalgar em montarias e nadar.</p><p><b>Correr</b>: Você pode fazer um teste de CD 15 de Atletismo como ação livre para correr mais rápido: um ou mais graus de sucesso aumentam sua velocidade terrestre em +1 por uma rodada.</p><p><b>Escalar</b>: Com sucesso no teste de Atletismo, você pode subir um declive, parece ou outra superfície inclinada com sua velocidade terrestre menos 2 como uma ação de movimento. Uma superfície totalmente suave, plana e vertical não pode ser escalada sem o <i>Escalar Paredes</i> do efeito Movimento. Uma falha num teste de Atletismo indica que não obteve progresso, enquanto uma falha de dois ou mais graus significa que você cai da altura que alcançou (a não ser se tiver com algum equipamento de segurança que previna queda). Faça um teste de Atletismo para se segurar (CD igual ao teste inicial +10). Você é vulnerável enquanto escala a não ser se aceitar um aumento de +5 na classe de dificuldade.</p><p><b>Caindo</b>: Dano de queda inflige causa dano 4 mais duas vezes a distância caída, até um máximo de dano 16. Uma queda com dano 0 ou menor, como uma queda de 2 metros ou menos, não causa dano. Você fica caído no chão no fim da queda. Você pode usar Acrobacias para reduzir o dano da queda.</p><p><b>Nadar</b>: Um teste com sucesso de Atletismo contra CD 10 permite que você nade com sua velocidade terrestre menos 2 como ação de movimento. Se o teste falhar, você não faz progresso através da água durante a ação. Com mais de um grau de falha, você vai para debaixo d'água. Se estiver debaixo d'água, você deve segurar sua respiração para evitar afogamento.</p><p><b>Saltar</b>: O resultado de um teste de Atletismo é a distância (em pés) você pode fazer em um salto à distância correndo. Se fizer o teste parado, divida a distância pela metade. Se fizer o teste verticalmente (reto para cima) divida a distância por 5, se fizer o salto parado, divida a distância por 10.</p><p>Seu bônus de Atletismo + 10 é a distância base que você pode saltar em circunstâncias rotineiras. Então, se o herói com bônus de +10 em Atletismo pode fazer um salto à distância de 20 pés (6 metros), um salto à distância parado de 10 pés (3 metros), um salto vertical de 4 pés (1,2 metros) e um salto vertical parado de 2 pés (0,6 metros) como rotina.</p><p><b>Super-Salto</b>: Se desejar que seu herói salte dezenas, centenas ou até milhares de metros, veja o efeito Saltar.</p>"
+                },
+                {
+                    "id": 3003,
+                    "name": "Enganação",
+                    "rank": 0,
+                    "description": "<p><small>Presença - Interação</small></p><p>Enganação é a perícia de fazer outros acreditarem no que você quer que eles acreditem. Cobre coisas como atuação, blefar, conversa rápida , trapaças e subterfúgio.</p><p><b>Blefar</b>: Faça um teste de Enganação para contar uma mentira crível ou conseguir convencer alguém a lhe ajudar em algo. Um blefe geralmente é oposto contra o teste de Enganação ou Intuição de alguém. Circunstâncias favoráveis e não favoráveis pesam muito no resultado. Há dois tipos de situações para enfrentar: ou o que você fala é difícil de acreditar ou vai contra o interesse pessoal, natureza ou personalidade do alvo.</p><p><b>Disfarce</b>: Você pode usar maquiagem, trajes e outros apetrechos para mudar sua aparência. Seu teste de Enganação determina a eficácia do disfarce oposto ao resultado do teste de percepção dos outros. O Mestre faz um teste de Enganação secretamente para você não ter certeza quão bem o disfarce aguenta sob vigilância.</p><p><b>Fintar</b>: Você pode usar Enganação como ação padrão para induzir o alvo ao erro em combate. Faça um teste de Enganação como uma ação padrão contra o melhor entre a Enganação ou Intuição do alvo. Se seu resultado tiver sucesso, o alvo fica vulnerável contra seu próximo ataque, até o fim da próxima rodada (veja condição Vulnerável).</p><p><b>Alusão</b>: Você pode usar Enganação para enviar mensagens encobertas usando jogo de palavras e duplo sentido enquanto, aparentemente, fala outras coisas. A CD para mensagens básicas é 10. Mensagens complexas ou tentando comunicar informações novas tem CD 15 ou 20 respectivamente. O recipiente da mensagem deve fazer um teste de Intuição contra a mesma CD para entender.</p>"
+                },
+                {
+                    "id": 3004,
+                    "name": "Furtividade",
+                    "rank": 0,
+                    "description": "<p><small>Agilidade</small><p>Você é habilidoso em andar despercebido. Enquanto usando Furtividade, você se move igual ao seu valor de velocidade menos 1 sem penalidades. Mais rápido que isso, até sua velocidade total, você recebe uma penalidade de -5 para seus testes de Furtividade.</p><p><b>Escondendo-se</b>: Se tiver que se cobrir ou se esconder, faça um teste de Furtividade oposto pelo teste de Percepção do observador, para se esconder e andar sem ser notado. Se outros estiverem cientes de sua presença, você não pode usar Furtividade para ficar se manter despercebido. Você pode correr para ao redor de uma esquina para sair de seu campo de visão e então usar Furtividade, mas os outros vão saber para o caminho que foi.</p><p><b>Perseguir</b>: Você pode usar Furtividade para seguir alguém na sua velocidade normal. Isso assume que você tem alguma cobertura ou camuflagem (uma multidão de pessoas, sombras, névoa, etc.). Se o sujeito está preocupado em ser seguido, ele pode fazer um teste de Percepção (oposto por seu teste de Furtividade) toda vez que ele muda de curso (entrar numa esquina, sair de um prédio, assim em diante). Se seu alvo não tiver suspeitas, ele recebe apenas um teste de Percepção por cena. Se o alvo lhe nota, faça um teste de Enganação, oposto pela Intuição. Se tiver sucesso, você consegue passar sua presença como coincidência e continuar seguindo enquanto uma falha, ou ser notado uma segunda vez, significa que o alvo sabe que tem algo estranho acontecendo e reage de acordo.</p>"
+                },
+                {
+                    "id": 3005,
+                    "name": "Intimidação",
+                    "rank": 0,
+                    "description": "<p><small>Presença - Interação</small></p><p>Você pode usar ameaças (tanto reais e implícitas) para fazer os outros fazer o que você quer.</p><p><b>Coagir</b>: Faça um teste de Intimidação oposto pela Intuição ou Vontade do personagem (qual for a maior). Se o teste obtiver sucesso, você pode tratar o alvo como amigável, mas apenas para ações realizadas dentro de sua presença. Isso é, o alvo mantém sua atitude normal, mas conversará, dará sugestões, oferecerá ajuda limitada ou até falará em sua defesa enquanto intimidado. O alvo coopera, mas não significa necessariamente que vai obedecer todas suas vontades ou fazer algo que o colocará em perigo diretamente.</p><p><b>Desmoralizar</b>: Você pode usar Intimidação em combate como ação padrão para enfraquecer a confiança do seu oponente. Faça um teste de Intimidação como ação padrão. Se tiver sucesso, o alvo fica prejudicado (penalidade circunstancial de -2 em testes) até o fim do próximo turno. Com quatro ou mais graus de sucesso, o alvo fica desabilitado (uma penalidade de -5) até o fim do próximo turno.</p><p><b>Intimidar Capangas</b>: Você pode intimidar um grupo inteiro de capangas – todos que podem vê-lo e ouvi-lo – com apenas um teste. Se o grupo tiver em vantagem sobre você, você sofre a penalidade normal em seu teste. Compare seu resultado com apenas um teste de resistência feito pelo Mestre para o grupo inteiro. Seu teste de Intimidação deve ter o mesmo efeito em todos membros do grupo (isso é, não poderá desmoralizar alguns e coagir outros, por exemplo).</p>"
+                },
+                {
+                    "id": 3006,
+                    "name": "Intuição",
+                    "rank": 0,
+                    "description": "<p><small>Prontidão</small><p>Você pode dizer as intenções verdadeiras de alguém e seus sentimentos prestando atenção em coisas como linguagem corporal, entonação e sua própria intuição.</p><p>Um sucesso em testes de Intuição pode permiti-lo resistir a efeitos de perícias de interação, se tornando ciente da intenção verdadeira da outra pessoa. Você pode usar essa perícia para dizer se alguém está agindo estranhamente ou avaliar confiabilidade.</p><p><b>Alusão</b>: Você pode usar Intuição para captar mensagens escondidas enviadas pela perícia Enganação.</p><p><b>Avaliar</b>: Com um teste de Intuição, oposto pela Enganação, você pode dizer se alguém é confiável e honrável (ou se não é) assim que o conhece. Você pode fazer um teste de Intuição (CD 20) para avaliar uma situação social, entendendo o clima geral e as atitudes prevalecentes . Dois ou mais graus de falha no teste significa que você interpreta mal os sinais, então o Mestre pode querer fazer esse teste em segredo para você.</p><p><b>Detectar Ilusão</b>: O Mestre pode fazer um teste secreto de Intuição para determinar se seu herói sente a natureza verdadeira de uma ilusão (CD 10 + graduação de Ilusão). Sucesso significa que você fica atento as falhas da ilusão, sentindo que não é real. Veja efeito Ilusão.</p><p><b>Detectar Influência</b>: Você pode fazer um teste de Intuição para notar alguém agindo por influência externa. A CD é 10 + graduação do efeito ou perícia afetando o alvo. Se você tiver sucesso, você nota que o sujeito não está agindo completamente sob sua própria vontade. Três ou mais graus de sucesso pode dar uma ideia geral do que estiver lhe influenciando (ou talvez até quem, dependendo da situação e da opinião do Mestre).</p><p><b>Resistir Influência</b>: Faça um teste de Intuição quando solicitado para resistir ou superar os efeitos de certas perícias de interação como Enganação ou Intimidação. Se o resultado do seu teste exceder do seu oponente, você não é afetado pela tentativa de lhe influenciar.</p>"
+                },
+                {
+                    "id": 3007,
+                    "name": "Investigação",
+                    "rank": 0,
+                    "description": "<p><small>Intelecto - Apenas Treinado</small></p><p>Você sabe como procurar e estudar pistas, obter informações através de entrevistas e vigilância, e analisar evidência para ajudar resolver crimes. O Mestre pode fazer testes de Investigação por você em segredo, para que não saiba exatamente o que achou ou se perdeu alguma coisa.</p><p><b>Procurar</b>: Você pode buscar uma área por pistas, itens escondidos, armadilhas e outros detalhes. Percepção permite que você note imediatamente coisas, enquanto um teste de Investigação permite captar os detalhes com algum esforço.<p>A CD do teste de Investigação para encontrar um objeto escondido geralmente é oposto pelo teste de Furtividade ou Prestidigitação de quem o escondeu.</p><p><b>Mais Utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"
+                },
+                {
+                    "id": 3008,
+                    "name": "Percepção",
+                    "rank": 0,
+                    "description": "<p><small>Prontidão</small></p><p>Use essa perícia para notar e captar coisas. Discernir detalhes – como ouvir claramente uma conversa ou ler um texto à distância – requer ao menos três graus de sucesso no teste de Percepção.</p><p>Geralmente, você tem uma penalidade circunstancial de -1 em teste de Percepção a cada 3 metros entre você e o que você está tentando perceber. Então, ouvir um barulho a 15 metros é um modificador de -5 para seu teste de Percepção, por exemplo.</p><p>O Mestre geralmente faz os testes de Percepção secretamente para que não saiba se há nada lá fora ou simplesmente falhou de em notar. Os usos comuns de Percepção são:</p><p><b>Ouvir</b>: Faça um teste contra a CD baseada em quão alto é o barulho ou contra o teste oposto de Furtividade. Conversações normais são CD 10, barulho suave é CD 10. Ouvir através de uma porta é CD +5, +15 para uma parede sólida. Enquanto estiver dormindo, ouvir algo bem suficiente para acordar é +10 na CD.</p><p><b>Ver</b>: Faça um teste contra a CD baseada em quão visível é o objeto ou contra um teste oposto de Furtividade. Algo à vista é CD 0, enquanto algo sutil ou fácil de deixar passar pode ser uma CD 5, 10 ou mais. Percepção visual também é usado para detectar alguém disfarçado (veja perícia Enganação) ou notar objetos escondidos (veja perícia Prestidigitação).</p><p><b>Outros Sentidos</b>: Você pode fazer testes de Percepção envolvendo outros sentidos também (veja Poderes para mais em sentidos). Notando algo óbvio para aquele sentido é uma CD 0. Coisas menos óbvias são CD 10 ou mais, coisas escondidas são CD 20 ou mais e discernir detalhes requer ao menos três graus de sucesso, como de costume.</p><p>Você pode fazer um teste de Percepção toda vez que tiver a oportunidade de notar algo novo. Como uma ação de movimento, você pode tentar notar algo que falhou de notar previamente (ou acreditou que perdeu de ver).</p><p>Vários efeitos sensoriais provêm modificadores em testes de Percepção, com Poderes.</p>"
+                },
+                {
+                    "id": 3009,
+                    "name": "Persuasão",
+                    "rank": 0,
+                    "description": "<p><small>Presença - Interação</small></p><p>Você é habilidoso em lidar com pessoas, desde etiqueta e reuniões sociais para um jeitinho com as palavras e conversar publicamente, todas que ajudam você passar suas opiniões, fazer uma boa impressão, negociações e conseguir fazer pessoas verem as coisas de sua maneira.</p><p>Em negociações, todos os participantes rolam testes de Persuasão para ver quem ganha a vantagem. Testes opostos também resolvem casos onde dois defensores alegam casos opostos perante um terceiro.</p><p>Você pode melhorar a atitude de outros com teste de Persuasão CD 15. Sucesso melhora a atitude em um grau, enquanto a cada dois graus adicionais melhora por ainda mais um passo. Falha significa nenhuma alteração enquanto mais de um grau de falha piora em um grau! Em caso de um alvo hostil ele pode até mesmo atacar o personagem ou interferir nas suas ações se piorar.</p><p>Se o teste de Persuasão falhar, tentar novamente é fútil; o alvo está com a cabeça feita contra seus argumentos. Ao critério do Mestre, você pode tentar novamente quando a situação mudar de alguma maneira: você encontrar uma nova aproximação de seu argumento, novas evidências surgirem, e assim em diante. O Mestre pode considerá-lo em desvantagem diante de negociações futuras, impondo uma penalidade circunstancial também.</p><p>Veja mais em \"Descrições Extendidas\" no Painel de Perícias.</p>"
+                },
+                {
+                    "id": 3010,
+                    "name": "Prestidigitação",
+                    "rank": 0,
+                    "description": "<p><small>Destreza - Manipulação</small></p><p>Você pode realizar feitos habilidosos como um ilusionista como fazer objetos pequenos desaparecer, surrupiar bolsos, escapar de amarras e assim e diante. Mágicos de palco usam Prestidigitação legitimamente como perícia de performance, mas é mais reconhecida por suas aplicações criminosas.</p><p><b>Escondendo Itens</b>: Você pode usar Prestidigitação para esconder itens pequenos em você, fazendo o resultado do teste ser a CD de um teste de Investigação ou Percepção para encontrar.</p><p><b>Contorcionista</b>: Você pode usar Prestidigitação para contorcer seu corpo. Faça um teste de CD 30 de Prestidigitação para se encaixar em um espaço apertado demais para seus ombros, mas amplo suficiente para sua cabeça, ou passar braço por uma abertura ampla suficiente para sua mão, mas apertada demais para o restante do seu braço.</p><p><b>Escapando</b>: Faça um teste de Prestidigitação para escapar de vários tipos de amarras. Isso leva um minuto por teste.</p><p><b>Mais utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"
+                },
+                {
+                    "id": 3011,
+                    "name": "Tecnologia",
+                    "rank": 0,
+                    "description": "<p><small>Intelecto – Apenas Treinado – Requer Ferramentas</small></p><p>Tecnologia cobre operar, construir, reparar e atividades em geral com dispositivos e equipamentos eletrônicos. Sem as ferramentas apropriadas, você recebe uma penalidade de -5 em testes de Tecnologia para circunstâncias bem desfavoráveis.</p><p><b>Operando</b>: Maioria das operações com equipamento tecnológico não requer um teste de perícia e pode ser feito destreinado. Usando um dispositivo que não é familiar requer um teste, com a CD determinada por quão exótico ou incomum o dispositivo, de simples (CD 10) a altamente avançado (CD 25 ou mais).</p><p><b>Construindo</b>: A dificuldade e o tempo necessário para fazer o item depende da complexidade, como mostrado na tabela Construindo Itens. Se seu teste de Tecnologia obtiver sucesso, você tem o item feito depois do tempo necessário. Se o teste falhar, você não produz um item usável no final do período e todo tempo e material foi gasto. Mais de um grau de falha no teste pode resultar num acidente ou outro efeito colateral, ao critério do Mestre.</p><p><b>Reparos</b>: Você pode usar tecnologia para reparar itens danificados, com uma CD -5 para a CD de construir o item e -2 a graduação de Tempo. Então, você pode reparar um item complexo em oito horas (graduação de Tempo de 12) com CD de 20. Falha significa que gastou o tempo, mas não teve progresso, enquanto falha por dois ou mais graus pode danificar mais o item ou causar um acidente iguais aos propensos da criação do item.</p><p><b>Mais utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"
+                },
+                {
+                    "id": 3012,
+                    "name": "Tratamento",
+                    "rank": 0,
+                    "description": "<p><small>Intelecto – Apenas Treinado – Manipulação – Requer Ferramentas</small></p><p>Você é treinado em tratar ferimentos e doenças. A CD do teste e a eficácia do Tratamento depende da tarefa:</p><p>Se não tiver o equipamento médico e suprimentos apropriados, você recebe uma penalidade de -5 no seu teste. Se o alvo tiver alguma biologia incomum (um alienígena, por exemplo), você também sofre uma penalidade circunstancial.</p><p>Você pode usar a perícia de Tratamento, mas apenas para diagnóstico, prover cuidado ou tratar doenças e venenos. Você recebe uma penalidade de -5 em testes quando tratando de si mesmo.</p><p><b>Estabilizar</b>: Como uma ação padrão, um teste com sucesso de Tratamento estabiliza um personagem moribundo.</p><p><b>Diagnóstico</b>: Você pode diagnosticar doenças e ferimentos com um olhar para tratar depois. Isso leva ao menos um minuto. Ao critério do Mestre, um teste com sucesso provê um bônus de +2 em testes futuros de Tratamento.</p><p><b>Mais utilidades</b>: Ver em \"Descrições Extendidas\" no Painel de Perícias.</p>"
+                },
+                {
+                    "id": 3013,
+                    "name": "Veículos",
+                    "rank": 0,
+                    "description": "<p><small>Destreza – Apenas Treinado – Manipulação</small></p><p>Use essa perícia para operar veículos, desde terrestres como carros até barcos, aviões ou então naves-espaciais!</p><p>As tarefas de rotina, como a operação normal de veículos conhecidos, não requerem testes e podem até ser feitas sem treinamentos para alguns veículos, particularmente os comuns, como carros. Faça um teste somente ao operar o veículo em uma situação estressante ou dramática, como ser perseguido ou atacado, ou tentar chegar a um destino em um período limitado de tempo.</p><p>Você pode fazer teste de Veículos para realizar várias manobras com um veículo:</p><p>Note que a perícia Veículos não cobre cavalgar animais de montaria. Para isso use a Especialidade: Cavalgar, com base em Agilidade usando as mesmas diretrizes dadas para os testes de Veículos. Ao critério do Mestre, habilidades como Atletismo podem servir para cavalgar em montarias (talvez com penalidade circunstancial), especialmente se cavalgar for uma habilidade incomum, como no mundo moderno.</p>"
+                }
+            ],
+            "extraSkills": [
+                {
+                    "id": 189289905327.85892,
+                    "name": "Especialidade: Magia",
+                    "rank": 5,
+                    "description": "",
+                    "trait": "Magia"
+                },
+                {
+                    "id": 420106347717.879,
+                    "name": "Especialidade: Tratamento",
+                    "rank": 4,
+                    "description": "",
+                    "trait": "Tratamento"
+                },
+                {
+                    "id": 1166314943058.3984,
+                    "name": "Combate À Distância: artesmarciasi",
+                    "rank": 4,
+                    "description": "",
+                    "chosenAttacks": {
+                        "id": 1166314943058.3984,
+                        "descriptor": "artesmarciasi",
+                        "list": [
+                            2
+                        ]
+                    },
+                    "isRanged": true
+                }
+            ],
+            "advantages": [],
+            "languages": [
+                {
+                    "id": 1549378421029.9631,
+                    "text": "Língua Nativa"
+                }
+            ],
+            "powers": [
+                {
+                    "id": 1587144464394.8508,
+                    "name": "Pancada",
+                    "rank": 1,
+                    "description": "",
+                    "effect": {
+                        "id": 5013,
+                        "name": "Dano",
+                        "type": 1,
+                        "baseCost": 1,
+                        "rank": 1,
+                        "maxRank": -1,
+                        "range": 1,
+                        "action": 1,
+                        "duration": 1,
+                        "resistedBy": "Resistência",
+                        "affectedTrait": "Nenhum",
+                        "description": "<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Resistência.</li></ul><p>Você pode causar dano em um alvo realizando um ataque corpo-a-corpo. A natureza exata do seu Dano fica à sua escolha, dependendo da aprovação do mestre. Pode ser qualquer coisa, de um soco poderoso ou garras afiadas a campos de energia. O alvo se defende com Resistência.</p><table style='border: 2px solid black; border-radius: 10px;' class='GoldenCells'><tr><tr> <th colspan='2'><b>TESTE DE SALVAMENTO CONTRA DANO</b></th> </tr><tr> <td colspan='2'><hr></td> </tr><tr> <td colspan='2'><center><b>Resistência contra (Graduação em Dano + 15)</b></center></td> </tr><tr><td><b>Sucesso</b>:</td> <td>o dano não tem efeito.</td></tr><tr><td><b>Falha (um grau)</b>:</td> <td>o alvo sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (dois graus)</b>:</td> <td>o alvo fica tonto até o fim de seu próximo turno e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (três graus)</b>:</td> <td>o alvo fica abatido e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano. Caso o alvo fique abatido de novo, aplique o quarto grau do efeito. A condição abatido continua até que o alvo se recupere (veja Recuperação, a seguir).</td></tr><tr><td><b>Falha (quatro graus)</b>:</td> <td>o alvo fica incapacitado.</td></tr></table><p>As penalidades para testes de Resistência são cumulativas, então um alvo que falhe em três salvamentos contra Dano sofre uma penalidade total de –3.</p><p>Caso um alvo incapacitado falhe em um teste de salvamento contra Dano, sua condição muda para moribundo. Um alvo moribundo que falhe em um teste de salvamento contra Dano está morto.</p><br><p><b>FORÇA E DANO</b></p><hr><p>Força concede um efeito de Dano \"embutido\": a habilidade de bater em coisas! Você pode aplicar modificadores de efeito no Dano causado por sua Força, tornando-o em um efeito Penetrante ou até mesmo de Área! Você também pode ter Efeitos Alternativos para seu Dano de Força; veja o modificador Efeito Alternativo para detalhes. Como outros efeitos de Dano, o Dano de Força de um personagem tem alcance perto e duração instantânea como padrão.</p><p>Se você quiser, um efeito Dano pode ser baseado em Força — algo como uma arma corpo-a-corpo —, o que permite que seu Dano de Força se some a ele. Você soma suas graduações de Força e Dano para determinar a graduação do ataque. Todos os modificadores aplicados ao seu Dano devem se aplicar à sua graduação de Força para seu bônus de dano se beneficiar deles. No entanto, qualquer decréscimo à sua Força reduz o total que você pode somar ao seu Dano, e Força negativa diminui o seu Dano!</p><p>Da mesma forma, qualquer coisa que o impeça de exercer sua Força também o impede de usar efeitos de Dano baseados em Força. Se você não puder impulsionar seu punho, também não pode impulsionar uma espada. Por outro lado, uma lâmina laser causa o mesmo dano, mesmo que você não possa exercer toda a sua Força.</p><br><p><b>CAUSANDO DANO A OBJETOS</b></p><hr><p>Objetos (alvos sem graduação de Vigor) sofrem dano de maneira parecida a outros alvos. Resultados como tonto e abatido não têm efeito prático em objetos inanimados, uma vez que eles não usam ações. Já constructos, que podem usar ações, ficam tontos e abatidos normalmente.</p><p>Objetos inanimados são indefesos por definição e, assim, passíveis de ataques finais (veja Ataques Finais no Ação & Aventura): você pode escolher entre realizar um ataque como um teste de rotina ou como um teste de ataque normal, neste caso ganhando um acerto crítico caso acerte (bônus de +5 no efeito).</p><p>Atacar um objeto segurado ou vestido por outro personagem é uma ação quebrar (veja Quebrar).</p><p>Caso a intenção de um atacante seja entortar, quebrar ou destruir um objeto, então dois graus de falha no teste de Resistência resultam em entortar ou quebrar (como fazer um buraco ao socar um objeto), enquanto três graus ou mais de falha significam que o objeto é destruído (estilhaçado, feito em pedaços, etc.)</p><p style='padding-left: 10px;'><i><b>Exemplo</b>: Lady Liberdade, resgatando pessoas de um incêndio, fica presa em meio a destroços que desabaram do teto. A jogadora decide abrir caminho por entre os destroços a socos. Uma vez que está buscando causar o máximo de dano possível, decide fazer um teste de ataque normal (em vez de um teste de rotina). Dado seu bônus de ataque, ela só vai errar se rolar 1 natural. O mestre decide que os tijolos, argamassa e as vigas pesadas têm uma Resistência 9 e faz um teste de Resistência, rolando 4, contra a CD 30 (o Dano de Lady Liberdade + 15). Um resultado de 13 são três graus de falha, então ela atravessa os destroços e limpa o caminho, levando as pessoas para segurança!</i></p><p>A Resistência de alguns materiais comuns são mostradas abaixo. As graduações listadas são para uma espessura de 2,5 centímetros (graduação de distância –7) do material: aplique +1 cada vez que aumentar a espessura em uma graduação de distância, e –1 cada vez que diminuí-la. Assim, 50 centímetros de pedra (graduação de distância –4) têm Resistência 8. Equipamento tem Resistência baseada no material de que é feito. Dispositivos têm Resistência básica igual ao total de pontos do dispositivo divididos por 5 (arredondados para baixo, mínimo 1).</p><br><center><table style='border: 2px solid black; border-radius: 10px;' border='2'><tr> <th colspan='2' class='GoldenCells'><b>Resistência dos Materiais</b></th> </tr><tr><td class='LightGoldenCells'><b>Material</td><td class='LightGoldenCells'><b>Resistência</b></td></tr><tr><td class='NoBGCells'>Papel, solo</td><td class='NoBGCells'>0</td></tr><tr><td class='LightGoldenCells'>Corda, gelo, vidro</td><td class='LightGoldenCells'>1</td></tr><tr><td class='NoBGCells'>Madeira</td><td class='NoBGCells'>3</td></tr><tr><td class='LightGoldenCells'>Pedra</td><td class='LightGoldenCells'>5</td></tr><tr><td class='NoBGCells'>Ferro</td><td class='NoBGCells'>7</td></tr><tr><td class='LightGoldenCells'>Concreto reforçado</td><td class='LightGoldenCells'>8</td></tr><tr><td class='NoBGCells'>Aço</td><td class='NoBGCells'>9</td></tr><tr><td class='LightGoldenCells'>Titânio</td><td class='LightGoldenCells'>15</td></tr><tr><td class='NoBGCells'>Super-ligas</td><td class='NoBGCells'>20+</td></tr></table></center><br><p><b>RECUPERAÇÃO</b></p><hr><p>Alvos vivos removem uma condição de dano por minuto de descanso, começando pela pior condição e voltando. Assim, um personagem ferido se recupera de estar incapacitado, então abatido, tonto e, finalmente, remove a penalidade de Resistência de –1.</p><p>Os efeitos Cura e Recuperação podem acelerar esse processo. Ferimentos duradouros ou mais sérios são tratados como complicações (veja Ferimentos Duradouros).</p><p>Objetos, que não têm Vigor, não se recuperam de dano. A menos que tenham um efeito como Regeneração, precisam ser consertados (veja a perícia Tecnologia).</p>",
+                        "exclusiveModifiers": [],
+                        "unavaliableModifiers": [
+                            10021,
+                            11000,
+                            11015
+                        ]
+                    },
+                    "baseCost": 1,
+                    "maxRank": -1,
+                    "resistedBy": "Resistência",
+                    "affectedTrait": "Nenhum",
+                    "descriptors": [],
+                    "isActive": true,
+                    "typeID": 1,
+                    "actionID": 1,
+                    "rangeID": 1,
+                    "durationID": 1,
+                    "extras": [],
+                    "flaws": [],
+                    "flats": [],
+                    "alternateEffects": [
+                        {
+                            "id": 1257899045266.0479,
+                            "name": "safanão",
+                            "rank": 1,
+                            "description": "",
+                            "effect": {
+                                "id": 5001,
+                                "name": "Aflição",
+                                "type": 1,
+                                "range": 1,
+                                "action": 1,
+                                "duration": 1,
+                                "baseCost": 1,
+                                "rank": 1,
+                                "maxRank": -1,
+                                "resistedBy": "",
+                                "affectedTrait": "",
+                                "description": "<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Fortitude/Vontade.</li></ul><p>Você pode impor uma condição ou condições debilitantes como um ataque de toque. Você define as condições a cada grau de falha que sua Aflição causa no momento da compra e não pode mudar elas. Graus maiores de falha substituem os menores e não acumulam. Veja as possíveis condições para cada grau de falha abaixo. O alvo resiste com Fortitude ou Vontade (quando o efeito é escolhido): </p><table class='GoldenCells'><tr> <th colspan='2'><b>Teste de Resistência de Aflição</b></th> </tr><tr> <td class='LightGoldenCells' colspan='2'><b>Fortitude ou Vontade vs. CD (graduação de Aflição + 10)</b></td> </tr><tr> <td><b>Sucesso</b></td> <td>Sem efeito</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (um grau)</b></td> <td class='LightGoldenCells'>O alvo está tonto, em transe, fadigado, impedido, prejudicado, ou vulnerável (escolha um).</td> </tr><tr> <td><b>Falha (dois graus)</b></td> <td>O alvo está compelido, indefeso, desabilitado, exausto, imóvel, caído ou atordoado (escolha um).</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (três graus)</b></td> <td class='LightGoldenCells'>O alvo está adormecido, controlado, incapacitado, paralisado, transformado ou desatento (escolha um).</td> </tr></table><br><p>Alvo de Aflição faz teste de resistência ao final de cada turno para tirar condições do primeiro e segundo grau. Condições de terceiro grau requerem um minuto de recuperação ou ajuda exterior, como a perícia Tratamento ou o efeito Cura (CD 10 + graduação).</p>",
+                                "exclusiveModifiers": [],
+                                "unavaliableModifiers": [
+                                    10011,
+                                    10012,
+                                    10020,
+                                    11000,
+                                    11015,
+                                    11017,
+                                    11018
+                                ]
+                            },
+                            "baseCost": 1,
+                            "maxRank": -1,
+                            "resistedBy": "Esquiva",
+                            "affectedTrait": "",
+                            "descriptors": [],
+                            "isActive": true,
+                            "typeID": 1,
+                            "actionID": 1,
+                            "rangeID": 1,
+                            "durationID": 1,
+                            "extras": [],
+                            "flaws": [],
+                            "flats": [],
+                            "alternateEffects": [],
+                            "removable": 0,
+                            "extraEfforts": [],
+                            "isAlternateEffect": true,
+                            "isDynamicEffect": false,
+                            "conditions": {
+                                "firstDegree": "tonto",
+                                "secondDegree": "atordoado",
+                                "thirdDegree": "Incapacitado"
+                            },
+                            "overcomedBy": "Força"
+                        }
+                    ],
+                    "removable": 0,
+                    "extraEfforts": [],
+                    "isAlternateEffect": false,
+                    "isDynamicEffect": false,
+                    "strengthBased": false,
+                    "strengthRanks": 0
+                },
+                {
+                    "id": 1451518513131.9321,
+                    "name": "Controle Mental",
+                    "rank": 8,
+                    "description": "",
+                    "effect": {
+                        "id": 5001,
+                        "name": "Aflição",
+                        "type": 1,
+                        "range": 1,
+                        "action": 1,
+                        "duration": 1,
+                        "baseCost": 1,
+                        "rank": 1,
+                        "maxRank": -1,
+                        "resistedBy": "",
+                        "affectedTrait": "",
+                        "description": "<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Fortitude/Vontade.</li></ul><p>Você pode impor uma condição ou condições debilitantes como um ataque de toque. Você define as condições a cada grau de falha que sua Aflição causa no momento da compra e não pode mudar elas. Graus maiores de falha substituem os menores e não acumulam. Veja as possíveis condições para cada grau de falha abaixo. O alvo resiste com Fortitude ou Vontade (quando o efeito é escolhido): </p><table class='GoldenCells'><tr> <th colspan='2'><b>Teste de Resistência de Aflição</b></th> </tr><tr> <td class='LightGoldenCells' colspan='2'><b>Fortitude ou Vontade vs. CD (graduação de Aflição + 10)</b></td> </tr><tr> <td><b>Sucesso</b></td> <td>Sem efeito</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (um grau)</b></td> <td class='LightGoldenCells'>O alvo está tonto, em transe, fadigado, impedido, prejudicado, ou vulnerável (escolha um).</td> </tr><tr> <td><b>Falha (dois graus)</b></td> <td>O alvo está compelido, indefeso, desabilitado, exausto, imóvel, caído ou atordoado (escolha um).</td> </tr><tr> <td class='LightGoldenCells'><b>Falha (três graus)</b></td> <td class='LightGoldenCells'>O alvo está adormecido, controlado, incapacitado, paralisado, transformado ou desatento (escolha um).</td> </tr></table><br><p>Alvo de Aflição faz teste de resistência ao final de cada turno para tirar condições do primeiro e segundo grau. Condições de terceiro grau requerem um minuto de recuperação ou ajuda exterior, como a perícia Tratamento ou o efeito Cura (CD 10 + graduação).</p>",
+                        "exclusiveModifiers": [],
+                        "unavaliableModifiers": [
+                            10011,
+                            10012,
+                            10020,
+                            11000,
+                            11015,
+                            11017,
+                            11018
+                        ]
+                    },
+                    "baseCost": 1,
+                    "maxRank": -1,
+                    "resistedBy": "Vontade",
+                    "affectedTrait": "",
+                    "descriptors": [],
+                    "isActive": true,
+                    "typeID": 1,
+                    "actionID": 1,
+                    "rangeID": 1,
+                    "durationID": 1,
+                    "extras": [
+                        {
+                            "id": 10038,
+                            "name": "Condição Extra",
+                            "rank": 1,
+                            "description": "<p>Sua Aflição impõe uma condição adicional por grau de sucesso. Com uma aplicação desse extra, sua Aflição ganha uma condição adicional por grau de sucesso. Então, com uma aplicação deste extra, sua Aflição impõe duas condições- tal como Tonto e Impedido, ou Comprometido e Vulnerável- em vez de apenas uma. Com duas aplicações deste extra, impõe três condições e assim vai. Como condições mutuamente incompatíveis são geralmente gastas, Aflição com este Extra geralmente tem a falha Grau Limitado junta.</p>",
+                            "extra": true,
+                            "flat": false,
+                            "ranked": true,
+                            "maxRank": 3,
+                            "hasTrait": false,
+                            "traitText": "",
+                            "parcial": 0,
+                            "instanceID": -1
+                        },
+                        {
+                            "id": 10039,
+                            "name": "Condição Variável",
+                            "rank": 1,
+                            "description": "<p>Um efeito de Aflição com este modificador pode variar as condições que impõe. Escolha as condições quando a Aflição for usada em vez de quando o efeito é adquirido. A Aflição ainda é limitada ao seu grau de efeito causado no alvo a não ser se tiver o modificador Cumulativo também.</p><p><b> +2 por graduação. +1 por graduação se for apenas um grau de Aflição for Variável (primeiro, segundo ou terceiro), escolhido quando este efeito é comprado.</b></p>",
+                            "extra": true,
+                            "flat": false,
+                            "ranked": true,
+                            "maxRank": 2,
+                            "hasTrait": false,
+                            "traitText": "",
+                            "parcial": 0,
+                            "instanceID": -1
+                        },
+                        {
+                            "id": 10040,
+                            "name": "Cumulativo",
+                            "rank": 1,
+                            "description": "<p>Normalmente, Aflição não tem efeito cumulativo no mesmo alvo, então conseguindo dois resultados de um grau, uma após o outro, não tem mais do que o efeito de um grau no alvo; você tem que conseguir um grau maior com mais um ataque para substituir o resultado inicial. Aflição Cumulativa adiciona graus maiores para os existentes. Por exemplo, se acertar o inimigo e impor a condição Vulnerável (um grau) e então atacar novamente e conseguir um grau de efeito novamente, você impõe um segundo grau.</p>",
+                            "extra": true,
+                            "flat": false,
+                            "ranked": false,
+                            "maxRank": 1,
+                            "hasTrait": false,
+                            "traitText": "",
+                            "parcial": 0,
+                            "instanceID": -1
+                        },
+                        {
+                            "id": 10041,
+                            "name": "Progressivo",
+                            "rank": 2,
+                            "description": "<p>Este modificador causa a Aflição de aumentar incrementalmente sem necessidade de esforço do personagem. Se seu alvo falha no teste de Resistência no fim da Aflição, o efeito não apenas persiste, como o efeito aumenta por um grau! Então se o alvo afetado pelo primeiro grau de uma Aflição Progressiva que falha em resistir, segue para o segundo grau no início de sua próxima rodada. Um teste com sucesso contra a Aflição acaba com o efeito como normalmente.</p>",
+                            "extra": true,
+                            "flat": false,
+                            "ranked": false,
+                            "maxRank": 2,
+                            "hasTrait": false,
+                            "traitText": "",
+                            "parcial": 0,
+                            "instanceID": -1
+                        }
+                    ],
+                    "flaws": [
+                        {
+                            "id": 11026,
+                            "name": "Recuperação Instantânea",
+                            "rank": 1,
+                            "description": "<p>Similar ao feito Reversível, o alvo de uma Aflição com esse modificador se recupera automaticamente, sem necessidade de teste, no final de sua rodada em qual a duração acaba. Então, por exemplo, Aflição instantânea dura uma rodada, enquanto uma Aflição Sustentada dura enquanto não for mais mantida.</p>",
+                            "extra": false,
+                            "flat": false,
+                            "ranked": false,
+                            "maxRank": 1,
+                            "hasTrait": false,
+                            "traitText": "",
+                            "parcial": 0,
+                            "instanceID": -1
+                        }
+                    ],
+                    "flats": [],
+                    "alternateEffects": [],
+                    "removable": 0,
+                    "extraEfforts": [],
+                    "isAlternateEffect": false,
+                    "isDynamicEffect": false,
+                    "conditions": {
+                        "firstDegree": "Tonto",
+                        "secondDegree": "Compelido",
+                        "thirdDegree": "controlado"
+                    },
+                    "overcomedBy": "Vontade"
+                },
+                {
+                    "id": 1487601409938.4763,
+                    "name": "Voo",
+                    "rank": 1,
+                    "description": "",
+                    "effect": {
+                        "id": 5040,
+                        "name": "Voo",
+                        "baseCost": 2,
+                        "rank": 1,
+                        "maxRank": -1,
+                        "type": 4,
+                        "range": 0,
+                        "action": 3,
+                        "duration": 3,
+                        "resistedBy": "Nenhum",
+                        "affectedTrait": "Nenhum",
+                        "description": "<b>Efeito de Poder</b><ul><li><b>Custo</b>: 2 por graduação.</li><li><b>Tipo</b>: Movimento.</li><li><b>Ação</b>: Livre.</li><li><b>Distância</b>: Pessoal.</li><li><b>Duração</b>: Sustentada.</li></ul><p>Você pode voar, incluindo flutuar em um mesmo lugar. Você tem uma graduação de velocidade de voo igual à sua graduação neste efeito.</p>",
+                        "exclusiveModifiers": [],
+                        "unavaliableModifiers": []
+                    },
+                    "baseCost": 2,
+                    "maxRank": -1,
+                    "resistedBy": "Nenhum",
+                    "affectedTrait": "Nenhum",
+                    "descriptors": [],
+                    "isActive": true,
+                    "typeID": 4,
+                    "actionID": 3,
+                    "rangeID": 0,
+                    "durationID": 3,
+                    "extras": [],
+                    "flaws": [],
+                    "flats": [],
+                    "alternateEffects": [],
+                    "removable": 0,
+                    "extraEfforts": [],
+                    "isAlternateEffect": false,
+                    "isDynamicEffect": false
+                },
+                {
+                    "id": 1275180686280.1633,
+                    "name": "Criar",
+                    "rank": 1,
+                    "description": "",
+                    "effect": {
+                        "id": 5011,
+                        "name": "Criar",
+                        "baseCost": 2,
+                        "rank": 1,
+                        "maxRank": -1,
+                        "type": 2,
+                        "range": 2,
+                        "action": 1,
+                        "duration": 3,
+                        "resistedBy": "Esquiva",
+                        "affectedTrait": "Nenhum",
+                        "description": "<b>Efeito de Poder</b><ul><li><b>Custo</b>: 2 por graduação.</li><li><b>Tipo</b>: Controle.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: A Distância.</li><li><b>Duração</b>: Sustentada.</li><li><b>Salvamento</b>: Esquiva.</li></ul><p>Você pode formar objetos sólidos a partir do nada. Eles podem ser feitos de pedra, gelo, energia solidificada ou algum outro tipo de meio, dependendo dos descritores.</p><p>Você pode fazer qualquer forma geométrica simples ou objeto comum (como um cubo, esfera, domo, martelo, lente, disco, etc.). O mestre tem a palavra final se um objeto é complexo demais para este efeito. No geral, seus objetos não podem ter partes móveis mais complexas que uma dobradiça. Eles podem ser ocos ou maciços, opacos ou transparentes, e você escolhe quando usa o efeito, limitado por seus descritores e pelo julgamento do mestre.</p><p>Você pode criar um objeto com uma graduação máxima de volume igual à sua graduação neste efeito e Resistência igual à sua graduação neste efeito. Objetos criados podem ser danificados ou quebrados como objetos comuns. Eles também desaparecem se você parar de mantê-los. Você pode reparar qualquer dano a um objeto criado à vontade, usando seu efeito de novo (em essência, \"recriando\" o objeto). Seus objetos criados são estacionários uma vez que você os tenha criado, embora outros efeitos possam movê-los. Assuma que um objeto criado tem graduação de massa igual à sua graduação de volume.</p><p><b>Objetos criados, Cobertura e Camuflagem</b></p><hr><p>Um objeto criado pode conceder cobertura ou camuflagem (caso seja opaco) da mesma forma que um objeto comum. A cobertura concedida por um objeto criado pode bloquear ataques vindos de fora, mas também bloqueia ataques realizados de dentro. Ataques que acertem o objeto servindo de cobertura causam dano ao objeto normalmente (veja Danificando Objetos). Efeitos indiretos podem passar a cobertura concedida por um objeto criado da mesma forma que com qualquer outra cobertura (veja o modificador Indireto). O modificador Seletivo permite que você mude a cobertura e a camuflagem concedidas por seus objetos.</p><p><b>Prendendo com Objetos</b></p><hr><p>Você pode prender um alvo dentro de um objeto oco e grande o suficiente (uma gaiola ou bolha, por exemplo). Isso exige tanto um teste de ataque contra a Esquiva do alvo quanto um teste de salvamento de Esquiva contra a graduação do efeito. Um personagem preso pode fugir do objeto normalmente. Outras condições impostas sobre o alvo que não sejam apenas prendê-lo exigem efeitos separados, como Aflições (veja Aflição), que você pode querer adquirir como um Efeito Alternativo de Criar (veja Efeito Alternativo).</p><p><b>Derrubando Objetos</b></p><hr><p>Derrubar um objeto criado sobre um alvo é tratado como um ataque com Efeito de Área baseado no tamanho do objeto (veja o extra Área). O objeto causa dano igual à sua Resistência, e os alvos devem fazer um teste de esquiva para evitar o objeto. Um teste bem sucedido significa que o alvo não sofre dano (em vez de metade do dano, como sempre). Enquanto um objeto criado tem potencial para ser usado como uma arma improvisada, o efeito não pode criar ataques ou outros efeitos; você deve adquirir esses efeitos separadamente (talvez como Efeitos Alternativos).</p><p><b>Suportando Peso</b></p><hr><p>Caso um objeto criado precise suportar algum peso — ele é criado como uma ponte ou para apoiar uma estrutura enfraquecida, por exemplo —, ele tem uma Força efetiva igual à sua graduação. Você pode usar um objeto criado como “apoio”, usando uma ação padrão e se concentrando, aumentando sua Força em 1 até o início da sua próxima rodada. Você também pode usar esforço extra para aumentar a Força de um objeto criado por uma rodada, e esses modificadores são cumulativos.</p>",
+                        "exclusiveModifiers": [],
+                        "unavaliableModifiers": [
+                            10014,
+                            10026,
+                            11000
+                        ]
+                    },
+                    "baseCost": 2,
+                    "maxRank": -1,
+                    "resistedBy": "Esquiva",
+                    "affectedTrait": "Nenhum",
+                    "descriptors": [],
+                    "isActive": true,
+                    "typeID": 2,
+                    "actionID": 1,
+                    "rangeID": 2,
+                    "durationID": 3,
+                    "extras": [],
+                    "flaws": [],
+                    "flats": [],
+                    "alternateEffects": [],
+                    "removable": 0,
+                    "extraEfforts": [],
+                    "isAlternateEffect": false,
+                    "isDynamicEffect": false
+                },
+                {
+                    "id": 1558836135960.3184,
+                    "name": "Mete Soco",
+                    "rank": 0,
+                    "description": "",
+                    "effect": {
+                        "id": 5042,
+                        "name": "- Arranjo -",
+                        "type": 0,
+                        "action": 3,
+                        "range": 0,
+                        "duration": 3,
+                        "baseCost": 0,
+                        "rank": 0,
+                        "maxRank": -1,
+                        "resistedBy": "Nenhum",
+                        "affectedTrait": "Nenhum",
+                        "description": "Arranjo é um conjunto de poderes, qual só pode ser usado um por vez.",
+                        "exclusiveModifiers": [],
+                        "unavaliableModifiers": [
+                            10002,
+                            10003,
+                            10004,
+                            10005,
+                            10006,
+                            10007,
+                            100010,
+                            10011,
+                            10012,
+                            10014,
+                            10016,
+                            10017,
+                            10018,
+                            10019,
+                            10020,
+                            10021,
+                            10023,
+                            10024,
+                            10026,
+                            10027,
+                            10030,
+                            10031,
+                            10031,
+                            10032,
+                            10033,
+                            10034,
+                            10036,
+                            10037,
+                            11000,
+                            11003,
+                            11004,
+                            11008,
+                            11009,
+                            11010,
+                            11011,
+                            11012,
+                            11014,
+                            11015,
+                            11018,
+                            11019,
+                            11022,
+                            11023
+                        ]
+                    },
+                    "baseCost": 0,
+                    "maxRank": -1,
+                    "resistedBy": "Nenhum",
+                    "affectedTrait": "Nenhum",
+                    "descriptors": [],
+                    "isActive": true,
+                    "typeID": 0,
+                    "actionID": 3,
+                    "rangeID": 0,
+                    "durationID": 3,
+                    "extras": [],
+                    "flaws": [],
+                    "flats": [],
+                    "alternateEffects": [
+                        {
+                            "id": 976617132313.1566,
+                            "name": "Característica",
+                            "rank": 1,
+                            "description": "",
+                            "effect": {
+                                "id": 5005,
+                                "name": "Característica",
+                                "type": 0,
+                                "range": 0,
+                                "action": 0,
+                                "duration": 5,
+                                "baseCost": 1,
+                                "rank": 1,
+                                "maxRank": -1,
+                                "resistedBy": "Nenhum",
+                                "affectedTrait": "Nenhum",
+                                "description": "<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Geral.</li><li><b>Ação</b>: Nenhuma.</li><li><b>Distância</b>: Pessoal.</li><li><b>Duração</b>: Permanente.</li></ul><p>Você tem uma ou mais características menores, efeitos que lhe concedem uma habilidade ocasionalmente útil, uma por graduação. Este efeito é essencialmente uma versão da vantagem Benefício, mas um poder em vez de uma virtude de habilidade, talento ou formação social. Por exemplo, a imunidade diplomática ou a riqueza são Benefícios; pele, a capacidade de imitar sons ou um compartimento escondido em sua perna oca são características. Depende do Mestre sobre quais capacidades são qualificadas como Característica; geralmente, se não haver efeito real no jogo, é apenas um descritor. Se lhe conceder um benefício no sistema, pode ser um Adicional. Não há necessidade de definir todo Adicional possível que o personagem possa ter aos mínimos detalhes.</p><p>Algumas Características podem ter duração sustentada em vez de permanente, sem mudança no custo. Isso se encaixa para algumas Características que o personagem usa e mantêm em vez de tê-los como características passivas, sem exigir esforço algum.</p><h2>Exemplo de Características</h2><ul><li><b>Compartimento Interno:</b> Você pode carregar uma porção do que carrega dentro de seu corpo! Você tem um bolso ou compartimento de algum tipo capaz de carregar objetos com graduação de tamanho que não sejam maior que 3 menos seu tamanho (tamanho -5 para um humano normal de tamanho -2).</li><li><b>Efeito Especial:</b> Você tem algum tipo de efeito, como uma rajada de vento no momento dramático, iluminação ideal ou uma música-tema. O mestre pode conceder-lhe um bônus de +2 por circunstâncias favoráveis quando seu efeito especial pode impressionar outras pessoas ou ajudá-lo de outra forma.</li><li><b>Estômago de Ferro:</b> Você pode comer qualquer coisa não tóxica sem efeitos negativos, não importa quão desagradável seja: estragada ou nojenta ou picante, por exemplo.</li><li><b>Inércia Temporal:</b> Você pode imitar quase qualquer som que ouvir, dando-lhe um bônus de +10 em testes de Enganação para convencer outros que os sons são reais.</li><li><b>Inércia Temporal:</b> Você está \"ancorado\" de alguma forma ao contínuo do espaço-tempo, sendo imune a mudanças na história. Você lembra da versão “verdadeira” de eventos históricos, mesmo que ninguém mais lembre.</li><li><b>Mudança Rápida:</b> Você pode trocar de roupas – como entrar ou sair de seu traje – como uma ação livre. Com duas graduações, pode mudar para qualquer traje à vontade.</li><li><b>Pelo Protetor:</b> Você tem uma cobertura de pelos que o protege do calor e frio intenso, dando-lhe imunidade a esses ambientes.</li></ul>",
+                                "exclusiveModifiers": [],
+                                "unavaliableModifiers": [
+                                    10012,
+                                    10014,
+                                    10017,
+                                    10020,
+                                    10026,
+                                    11000
+                                ]
+                            },
+                            "baseCost": 1,
+                            "maxRank": -1,
+                            "resistedBy": "Nenhum",
+                            "affectedTrait": "Nenhum",
+                            "descriptors": [],
+                            "isActive": false,
+                            "typeID": 0,
+                            "actionID": 0,
+                            "rangeID": 0,
+                            "durationID": 5,
+                            "extras": [],
+                            "flaws": [],
+                            "flats": [],
+                            "alternateEffects": [],
+                            "removable": 0,
+                            "extraEfforts": [],
+                            "isAlternateEffect": true,
+                            "isDynamicEffect": false
+                        },
+                        {
+                            "id": 763280906228.7255,
+                            "name": "Dano",
+                            "rank": 1,
+                            "description": "",
+                            "effect": {
+                                "id": 5013,
+                                "name": "Dano",
+                                "type": 1,
+                                "baseCost": 1,
+                                "rank": 1,
+                                "maxRank": -1,
+                                "range": 1,
+                                "action": 1,
+                                "duration": 1,
+                                "resistedBy": "Resistência",
+                                "affectedTrait": "Nenhum",
+                                "description": "<b>Efeito de Poder</b><ul><li><b>Custo</b>: 1 por graduação.</li><li><b>Tipo</b>: Ataque.</li><li><b>Ação</b>: Padrão.</li><li><b>Distância</b>: Perto.</li><li><b>Duração</b>: Instantânea.</li><li><b>Salvamento</b>: Resistência.</li></ul><p>Você pode causar dano em um alvo realizando um ataque corpo-a-corpo. A natureza exata do seu Dano fica à sua escolha, dependendo da aprovação do mestre. Pode ser qualquer coisa, de um soco poderoso ou garras afiadas a campos de energia. O alvo se defende com Resistência.</p><table style='border: 2px solid black; border-radius: 10px;' class='GoldenCells'><tr><tr> <th colspan='2'><b>TESTE DE SALVAMENTO CONTRA DANO</b></th> </tr><tr> <td colspan='2'><hr></td> </tr><tr> <td colspan='2'><center><b>Resistência contra (Graduação em Dano + 15)</b></center></td> </tr><tr><td><b>Sucesso</b>:</td> <td>o dano não tem efeito.</td></tr><tr><td><b>Falha (um grau)</b>:</td> <td>o alvo sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (dois graus)</b>:</td> <td>o alvo fica tonto até o fim de seu próximo turno e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano.</td></tr><tr><td><b>Falha (três graus)</b>:</td> <td>o alvo fica abatido e sofre uma penalidade de circunstância de –1 nos próximos salvamentos contra dano. Caso o alvo fique abatido de novo, aplique o quarto grau do efeito. A condição abatido continua até que o alvo se recupere (veja Recuperação, a seguir).</td></tr><tr><td><b>Falha (quatro graus)</b>:</td> <td>o alvo fica incapacitado.</td></tr></table><p>As penalidades para testes de Resistência são cumulativas, então um alvo que falhe em três salvamentos contra Dano sofre uma penalidade total de –3.</p><p>Caso um alvo incapacitado falhe em um teste de salvamento contra Dano, sua condição muda para moribundo. Um alvo moribundo que falhe em um teste de salvamento contra Dano está morto.</p><br><p><b>FORÇA E DANO</b></p><hr><p>Força concede um efeito de Dano \"embutido\": a habilidade de bater em coisas! Você pode aplicar modificadores de efeito no Dano causado por sua Força, tornando-o em um efeito Penetrante ou até mesmo de Área! Você também pode ter Efeitos Alternativos para seu Dano de Força; veja o modificador Efeito Alternativo para detalhes. Como outros efeitos de Dano, o Dano de Força de um personagem tem alcance perto e duração instantânea como padrão.</p><p>Se você quiser, um efeito Dano pode ser baseado em Força — algo como uma arma corpo-a-corpo —, o que permite que seu Dano de Força se some a ele. Você soma suas graduações de Força e Dano para determinar a graduação do ataque. Todos os modificadores aplicados ao seu Dano devem se aplicar à sua graduação de Força para seu bônus de dano se beneficiar deles. No entanto, qualquer decréscimo à sua Força reduz o total que você pode somar ao seu Dano, e Força negativa diminui o seu Dano!</p><p>Da mesma forma, qualquer coisa que o impeça de exercer sua Força também o impede de usar efeitos de Dano baseados em Força. Se você não puder impulsionar seu punho, também não pode impulsionar uma espada. Por outro lado, uma lâmina laser causa o mesmo dano, mesmo que você não possa exercer toda a sua Força.</p><br><p><b>CAUSANDO DANO A OBJETOS</b></p><hr><p>Objetos (alvos sem graduação de Vigor) sofrem dano de maneira parecida a outros alvos. Resultados como tonto e abatido não têm efeito prático em objetos inanimados, uma vez que eles não usam ações. Já constructos, que podem usar ações, ficam tontos e abatidos normalmente.</p><p>Objetos inanimados são indefesos por definição e, assim, passíveis de ataques finais (veja Ataques Finais no Ação & Aventura): você pode escolher entre realizar um ataque como um teste de rotina ou como um teste de ataque normal, neste caso ganhando um acerto crítico caso acerte (bônus de +5 no efeito).</p><p>Atacar um objeto segurado ou vestido por outro personagem é uma ação quebrar (veja Quebrar).</p><p>Caso a intenção de um atacante seja entortar, quebrar ou destruir um objeto, então dois graus de falha no teste de Resistência resultam em entortar ou quebrar (como fazer um buraco ao socar um objeto), enquanto três graus ou mais de falha significam que o objeto é destruído (estilhaçado, feito em pedaços, etc.)</p><p style='padding-left: 10px;'><i><b>Exemplo</b>: Lady Liberdade, resgatando pessoas de um incêndio, fica presa em meio a destroços que desabaram do teto. A jogadora decide abrir caminho por entre os destroços a socos. Uma vez que está buscando causar o máximo de dano possível, decide fazer um teste de ataque normal (em vez de um teste de rotina). Dado seu bônus de ataque, ela só vai errar se rolar 1 natural. O mestre decide que os tijolos, argamassa e as vigas pesadas têm uma Resistência 9 e faz um teste de Resistência, rolando 4, contra a CD 30 (o Dano de Lady Liberdade + 15). Um resultado de 13 são três graus de falha, então ela atravessa os destroços e limpa o caminho, levando as pessoas para segurança!</i></p><p>A Resistência de alguns materiais comuns são mostradas abaixo. As graduações listadas são para uma espessura de 2,5 centímetros (graduação de distância –7) do material: aplique +1 cada vez que aumentar a espessura em uma graduação de distância, e –1 cada vez que diminuí-la. Assim, 50 centímetros de pedra (graduação de distância –4) têm Resistência 8. Equipamento tem Resistência baseada no material de que é feito. Dispositivos têm Resistência básica igual ao total de pontos do dispositivo divididos por 5 (arredondados para baixo, mínimo 1).</p><br><center><table style='border: 2px solid black; border-radius: 10px;' border='2'><tr> <th colspan='2' class='GoldenCells'><b>Resistência dos Materiais</b></th> </tr><tr><td class='LightGoldenCells'><b>Material</td><td class='LightGoldenCells'><b>Resistência</b></td></tr><tr><td class='NoBGCells'>Papel, solo</td><td class='NoBGCells'>0</td></tr><tr><td class='LightGoldenCells'>Corda, gelo, vidro</td><td class='LightGoldenCells'>1</td></tr><tr><td class='NoBGCells'>Madeira</td><td class='NoBGCells'>3</td></tr><tr><td class='LightGoldenCells'>Pedra</td><td class='LightGoldenCells'>5</td></tr><tr><td class='NoBGCells'>Ferro</td><td class='NoBGCells'>7</td></tr><tr><td class='LightGoldenCells'>Concreto reforçado</td><td class='LightGoldenCells'>8</td></tr><tr><td class='NoBGCells'>Aço</td><td class='NoBGCells'>9</td></tr><tr><td class='LightGoldenCells'>Titânio</td><td class='LightGoldenCells'>15</td></tr><tr><td class='NoBGCells'>Super-ligas</td><td class='NoBGCells'>20+</td></tr></table></center><br><p><b>RECUPERAÇÃO</b></p><hr><p>Alvos vivos removem uma condição de dano por minuto de descanso, começando pela pior condição e voltando. Assim, um personagem ferido se recupera de estar incapacitado, então abatido, tonto e, finalmente, remove a penalidade de Resistência de –1.</p><p>Os efeitos Cura e Recuperação podem acelerar esse processo. Ferimentos duradouros ou mais sérios são tratados como complicações (veja Ferimentos Duradouros).</p><p>Objetos, que não têm Vigor, não se recuperam de dano. A menos que tenham um efeito como Regeneração, precisam ser consertados (veja a perícia Tecnologia).</p>",
+                                "exclusiveModifiers": [],
+                                "unavaliableModifiers": [
+                                    10021,
+                                    11000,
+                                    11015
+                                ]
+                            },
+                            "baseCost": 1,
+                            "maxRank": -1,
+                            "resistedBy": "Resistência",
+                            "affectedTrait": "Nenhum",
+                            "descriptors": [],
+                            "isActive": false,
+                            "typeID": 1,
+                            "actionID": 1,
+                            "rangeID": 1,
+                            "durationID": 1,
+                            "extras": [],
+                            "flaws": [],
+                            "flats": [],
+                            "alternateEffects": [],
+                            "removable": 0,
+                            "extraEfforts": [],
+                            "isAlternateEffect": true,
+                            "isDynamicEffect": false,
+                            "strengthBased": false,
+                            "strengthRanks": 0
+                        },
+                        {
+                            "id": 191324348513.0706,
+                            "name": "Extra Aumentado",
+                            "rank": 0,
+                            "description": "",
+                            "effect": {
+                                "id": 5049,
+                                "name": "Extra Aumentado",
+                                "type": 0,
+                                "action": 1,
+                                "range": 0,
+                                "duration": 3,
+                                "baseCost": 0,
+                                "rank": 0,
+                                "maxRank": -1,
+                                "resistedBy": "Nenhum",
+                                "affectedTrait": "",
+                                "description": "<p>Este poder age como um container para extras que afetam poderes diferetes no personagem ou uma variedade de efeitos. Por exemplo, um personagem que pode fazer disparos a longa distância com qualquer arma pode acrescentar o extra Distância Aumentada. Você deve usar o extra Descritor Variável para mostrar quais efeitos adicionais este extra pode afetar.</p>",
+                                "exclusiveModifiers": [],
+                                "unavaliableModifiers": []
+                            },
+                            "baseCost": 0,
+                            "maxRank": -1,
+                            "resistedBy": "Nenhum",
+                            "affectedTrait": "",
+                            "descriptors": [],
+                            "isActive": false,
+                            "typeID": 0,
+                            "actionID": 1,
+                            "rangeID": 0,
+                            "durationID": 3,
+                            "extras": [],
+                            "flaws": [],
+                            "flats": [],
+                            "alternateEffects": [],
+                            "removable": 0,
+                            "extraEfforts": [],
+                            "isAlternateEffect": true,
+                            "isDynamicEffect": false
+                        }
+                    ],
+                    "removable": 0,
+                    "extraEfforts": [],
+                    "isAlternateEffect": false,
+                    "isDynamicEffect": false,
+                    "autoBasePowerAjust": true,
+                    "autoRankAjust": false
+                }
+            ],
+            "equipment": [],
+            "complicationCount": 0,
+            "complications": [],
+            "errors": [],
+            "personalInfo": {
+                "heroicName": "Personagem nº 1",
+                "realName": "",
+                "gender": 0,
+                "otherGender": "",
+                "age": 25,
+                "height": 170,
+                "weight": 70,
+                "hair": "",
+                "eyes": "",
+                "story": "",
+                "customInfoCC": 0,
+                "customs": []
+            },
+            "gallery": [
+                ""
+            ],
+            "journals": []
+        }
+    ]
+}
