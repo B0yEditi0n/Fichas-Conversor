@@ -1,5 +1,6 @@
+
 //Importar json
-(fetch('Personagem nº 1.json')
+(fetch('Nolham - Caio.json')
   .then(res => res.json()
   .then(json => gera_modelo(json))))
 
@@ -106,7 +107,7 @@ function gera_modelo(ficha){
 
     }
         
-    htmlDado += `<tr><th>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</th></tr>`
+    htmlDado += `<tr><td>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</td></tr>`
        
 
     //quebra de pagina
@@ -127,7 +128,6 @@ function gera_modelo(ficha){
   
   for(i=0; i <= ficha['characters'][0]['extraSkills'].length -1; i++){
     //Especialidade 
-    console.log(i);
 
     if(ficha['characters'][0]['extraSkills'][i]['name'].startsWith('Especialidade')){
       bonus = ficha['characters'][0]['abilities'][5]['rank']
@@ -142,7 +142,7 @@ function gera_modelo(ficha){
     Pericianome = ficha['characters'][0]['extraSkills'][i]['name']
     GradPericia = ficha['characters'][0]['extraSkills'][i]['rank']
     
-    htmlDado += `<tr><th>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</th></tr>`
+    htmlDado += `<tr><td>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</td></tr>`
     
   }  
   htmlDado += '</table>'
@@ -154,12 +154,11 @@ function gera_modelo(ficha){
   ***********************************************************************************/     
     htmlDado = '<table>'
     for(i=0; i <= ficha['characters'][0]['advantages'].length - 1; i++){
-      console.log(ficha['characters'][0]['advantages'][i])
       if (ficha['characters'][0]['advantages'][i]['rank'] > 1){
-        htmlDado += `<tr><th>${ficha['characters'][0]['advantages'][i]['name']}[${ficha['characters'][0]['advantages'][i]['rank']}]</th></tr>`
+        htmlDado += `<tr><td>${ficha['characters'][0]['advantages'][i]['name']}[${ficha['characters'][0]['advantages'][i]['rank']}]</td></tr>`
       }
       else{
-        htmlDado += `<tr><th>${ficha['characters'][0]['advantages'][i]['name']}</th></tr>`  
+        htmlDado += `<tr><td>${ficha['characters'][0]['advantages'][i]['name']}</td></tr>`  
       }
     }
     htmlDado += `</table>`
@@ -168,15 +167,17 @@ function gera_modelo(ficha){
     /**********************************************************************************
      * Complicações
      **********************************************************************************/
+    
     htmlDado = '<UL>'
-    for(i=0; i <= ficha['characters'][0]['complications'].length - 1; i++){
+    for(i = 0; i <= ficha['characters'][0]['complications'].length - 1; i++){
       htmlDado += `<LI><strong>${ficha['characters'][0]['complications'][i]['title']}:</strong> ${ficha['characters'][0]['complications'][i]['description']}</LI>`
     }
     htmlDado += '</UL>'
     document.getElementById('complicacoes').innerHTML = htmlDado
+    
     /**********************************************************************************
     * Poderes
     ***********************************************************************************/
-    document.getElementById('poderes')
+    callPower(ficha['characters'][0]['powers'])
   
 } 
