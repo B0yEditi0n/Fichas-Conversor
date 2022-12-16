@@ -1,7 +1,7 @@
 //src/Database/Effects.ts
 
 class powerLayout{
-    
+    //Poderes comuns
     outherPower(nowPower, effect){
         var item_html
         item_html = `<strong>${nowPower['name']}:</strong> `
@@ -10,17 +10,19 @@ class powerLayout{
         console.log(item_html)
         return (item_html);
     }
+    //Poderes combinados pergunte pro bernardo
     multiPower(nowPower){
         var table_html
         table_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
         
         for(i=0; i <= nowPower['powers'].length - 1; i++){
-            //table_html += powerItem.choseAbilities(nowPower['powers'])
+            table_html += tablePowerItem(nowPower['powers'])
         }
         table_html += '</td></tr></table>'
         
         return (table_html)
     }
+    //Aranjo de Poder
     powerArry(nowPower){
         var arry_html
         arry_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
@@ -49,12 +51,15 @@ class chosePower extends powerLayout{
                     html += this.powerArry(powers[i])                                
                     break;
                 case 5013: //Dano
-                    html += this.otherPower(powers[i], 'Dano')
+                    console.log('como está o json')
+                    console.log(powers[i])
+                    html += this.outherPower(powers[i], 'Dano')
                     //break;
                 case 5001: // Aflição
                     break;
                 default:
-                    html += this.otherPowers(powers[i], 'Desonhecido')
+                    
+                    html += this.outherPower(powers[i], 'Desonhecido')
     
             }      
         }
@@ -70,7 +75,7 @@ function callPower(power){
 
 function tablePowerItem(powerItens){
     reBuild = new chosePower()
-    console.log(powerItens)
-    //return(reBuild.startSelect(powerItens))
+    //console.log(powerItens)
+    return(reBuild.startSelect(powerItens))
 
 }
