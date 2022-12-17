@@ -1,8 +1,20 @@
 
 //Importar json
-(fetch('Nolham - Caio.json')
-  .then(res => res.json()
-  .then(json => gera_modelo(json))))
+// Personagem nº.json
+// Nolham - Caio.json
+pathFicha = 'Nolham - Caio.json'
+// (fetch('Nolham - Caio.json')
+//   .then(res => res.json()
+//   .then(json => gera_modelo(json)))
+//   )
+async function getJson(patch) {
+  const getFile = await fetch(patch);
+  const Exportjson = await getFile.json();
+  return(Exportjson)
+}
+callPower()
+gera_modelo()
+
 
 //Atomatizador de Trocas de Dados
 function Elemento(idElemento, pJson){
@@ -10,7 +22,9 @@ function Elemento(idElemento, pJson){
 }
 
 // não é possivel fazer ponteiros...
-function gera_modelo(ficha){
+async function gera_modelo(){
+  ficha = JSON
+  ficha = await getJson(pathFicha)
   /**********************************************************************************
    * Titulo da Ficha
   ***********************************************************************************/
@@ -178,6 +192,7 @@ function gera_modelo(ficha){
     /**********************************************************************************
     * Poderes
     ***********************************************************************************/
-    callPower(ficha['characters'][0]['powers'])
+
+  
   
 } 

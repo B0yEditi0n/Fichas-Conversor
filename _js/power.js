@@ -1,21 +1,36 @@
+//import data from ;
 //src/Database/Effects.ts
-function callPower(power){    
+// async function getJson(patch) {
+//     const getFile = await fetch('./_js/dataBase/dataBase.json');
+//     const jsonExport = await getFile.json();
+//     return await(jsonExport)
+//     // return await (jsonExport[id])
+//     // return await ()
+//   }
+
+
+
+async function callPower(){    
+    ficha = JSON
+    ficha = await getJson(pathFicha)
+    
+    console.log(pathFicha)    
+
     buildPower = new chosePower();
-    buildPower.loopPower(power)
+    buildPower.loopPower(ficha['characters'][0]['powers'])
+    
+
 }
 
 // função utilizada para construir itens dos arranjos
-function tablePowerItem(powerItens){
+async function tablePowerItem(powerItens){
     reBuild = new chosePower()
     var html = ''
     
     for(i = 0; i <= powerItens.length - 1; i++){  
-        html += (reBuild.startSelect(powerItens[i]))
-        
+        html += await (reBuild.startSelect(powerItens[i]))
     }
-    return(html)
-    
-    
+    return(html)  
 
 }
 
@@ -63,7 +78,7 @@ class powerLayout{
         
 
         //Extras fora distância
-        for(i=0; i <= nowPower['extras'].length - 1; i++){
+        for (i=0; i <= nowPower['extras'].length - 1; i++){
             
             console.log(nowPower['extras'][i]['id'])
             if (!(nowPower['extras'][i]['id'] == 10017)){
@@ -120,39 +135,58 @@ class powerLayout{
         
     }
     //Poderes combinados pergunte pro bernardo
-    multiPower(nowPower){
+    async multiPower(nowPower){
         var table_html
         table_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
-        table_html += tablePowerItem(nowPower['powers'])
+        table_html += await tablePowerItem(nowPower['powers'])
         table_html += '</td></tr></table>'
         
         return (table_html)
         
     }
     //Aranjo de Poder
-    powerArry(nowPower){
+    async powerArry(nowPower){
         var arry_html
         arry_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
-        arry_html += tablePowerItem(nowPower['alternateEffects'])
+        arry_html += await tablePowerItem(nowPower['alternateEffects'])
         arry_html += '</td></tr></table>'
         return (arry_html)
         
     }
 }
 class chosePower extends powerLayout{
-    loopPower(powers){
+    efeito = JSON
+    async loopPower(powers){
+        
         var html = ''
         var i
-        for(i=0; i <= (powers.length - 1); i++){             
-            
-            html = this.startSelect(powers[i])
+        for(i=0; i <= (powers.length - 1); i++){                         
+            html = await this.startSelect(powers[i])
             document.getElementById('poderes').innerHTML += html
         }
-
     }
-    startSelect(powers){
-        var i 
+    async startSelect(powers){
+        //Declaração de Variáveis
         var html = ''
+        this.efeito = await getJson('./_js/dataBase/dataBase.json')
+        var parametro
+        console.log(powers)
+        //Tabela de Poderes
+        console.log(powers["isAlternateEffect"])
+        console.log(powers["isAlternateEffect"])
+        if(powers["isAlternateEffect"] == true){ // Efeito de Arranjo
+            parametro = this.efeito[powers['effectID']].name
+        }else{ 
+            if(!(powers['effect'] === undefined)){ //Efeitos alternativos não Tabelas
+                if(powers['powers'] === undefined){
+                    parametro = powers['effect']['name']
+                } //Não multipowers
+                
+            }
+
+            }
+        
+        
         switch (powers['effectID']){
             case 5046: //Múltiplos Efeitos                
                 html = this.multiPower(powers)
@@ -161,23 +195,19 @@ class chosePower extends powerLayout{
                 html = this.powerArry(powers)                                
                 break;
 //              Lista de EFeitos individuais                    
-            case 5013: //Dano                    
-                html = this.outherPower(powers, 'Dano')
+            case 5013: //Dano
+
+                html = this.outherPower(powers, parametro )
                 break;
             case 5001: // Aflição
                 html = this.afflictionPower(powers)
                 break;
-            case 5002:
-                html = this.outherPower(powers, 'Alongamento')
-                break;
-            case 5003:
-                html = this.outherPower(powers, 'Ambiente')
-                break
             default:
-                html = this.outherPower(powers, 'Desonhecido')
-
-        }     
+                
+                html = this.outherPower(powers, parametro)
+        }
         
         return (html)
+        
     }
 }
