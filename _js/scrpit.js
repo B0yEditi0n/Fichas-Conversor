@@ -2,7 +2,7 @@
 //Importar json
 // Personagem nº.json
 // Nolham - Caio.json
-pathFicha = 'Nolham - Caio.json'
+pathFicha = 'Personagem nº.json'
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))
