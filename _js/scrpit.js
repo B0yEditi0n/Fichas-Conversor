@@ -2,13 +2,14 @@
 //Importar json
 // Personagem nº.json
 // Nolham - Caio.json
-pathFicha = 'Personagem nº.json'
+pathFicha = './Personagem nº 1.json'
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))
 //   )
 async function getJson(patch) {
   const getFile = await fetch(patch);
+  console.log(getFile)
   const Exportjson = await getFile.json();
   return(Exportjson)
 }

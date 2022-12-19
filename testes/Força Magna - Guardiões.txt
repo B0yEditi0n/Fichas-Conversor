@@ -1,0 +1,603 @@
+Guardião Grifo - NP 11
+HABILIDADES (-2 pontos)
+• Força 1/9
+• Vigor -
+• Agilidade 6
+• Destreza 0
+• Luta 7
+• Intelecto -
+• Prontidão 0
+• Presença -
+
+DEFESAS (17 pontos):
+• Esquiva Bônus +9 (Total +11)
+• Aparar Bônus +8 (Total +11)
+• Resistência Bônus +16 (Total +11)
+• Fortitude Bônus +0 (Total Imune)
+• Vontade Bônus +0 (Total +0)
+
+PERÍCIAS (0 pontos):
+Acrobacias 0 (Total +6), Atletismo 0 (Total +9), Enganação 0 (Total -5), Furtividade 0 (Total -2), Intimidação 0 (Total -1), Intuição 0 (Total +0), Investigação 0 (Total -5), Percepção 0 (Total +0), Persuasão 0 (Total -5), Prestidigitação 0 (Total +0), Tecnologia 0 (Total -5), Tratamento 0 (Total -5), Veículos 0 (Total +0).
+
+VANTAGENS (1 pontos):
+Ação de Movimento.
+
+PODERES (107 pontos):
+
+  • Auto Reparo: Regeneração 1 • 1 pontos
+
+      -1 Penalidade em Resistência a cada 10 rodadas.
+
+  • Bico e Garras: Dano baseado em Força 2 (Fixos: Acurado +2, Dividido +1.)• 5 pontos
+  • Crescimento 8 (Fixos: Inato +1. Extras: Proteção em vez de Vigor +0. Falhas: Permanente -0.)• 17 pontos
+
+      • Tamanho 2, Massa +8
+        • Força +8, Proteção 8, • Intimidação +4.
+        • Defesas Ativas -4, Furtividade -8.
+        • Velocidade +1.
+
+  • Imunidade 30 (Efeitos de Fortitude 30.)• 30 pontos
+  • Membros Extras 2 • 2 pontos
+
+      Bônus de 2 para agarrar com todos braços.
+
+      Descrição Duas asas
+
+  • Proteção 3 • 3 pontos
+  • Sentidos 1 (Elo de Comunicação [Base e outros Guardiões].)• 1 pontos
+  • Sistema de Armas: Arranjo (Poder Base:  Raio de Luz Dourada) • 35 pontos
+
+      EA: Raio de Luz Dourada: Dano 11 (Extras: Área +1 [Linha].)• 22 pontos
+
+      EA: Raio de Luz Dourada: Dano 10 (Fixos: Acurado +4. Extras: Distância Aumentada +1, Multiataque +1.)• 34 pontos
+
+  • Voo 6 • 13 pontos
+
+      Velocidade de voo de 500 m/ação de movimento e 250 km/hora.
+
+      EA: Velocidade 8 • 8 pontos
+
+          Velocidade terrestre de 2 km/movimento e 1.000 km/hora.
+
+OFENSIVA
+
+  Iniciativa 6
+  Corpo-a-corpo: Bônus +7
+
+    Desarmado: Bônus +7, Crit 20 (CD 24 vs Resistência)
+    Agarrar: Bônus +7, Crit 20 (CD 19 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Bico e Garras: Dano, Bônus 11, Crit 20 (CD 26 vs Resistência.)
+    Sistema de Armas  - Raio de Luz Dourada: Dano, (CD 26 vs Resistência. CD 21 vs Esquiva para metade do efeito em Área Linha de 2 m de largura por 8 m de comprimento.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 24 vs Resistência)
+    Sistema de Armas  - Raio de Luz Dourada: Dano, Bônus 8, Crit 20 (CD 25 vs Resistência.)
+
+PONTOS DE PODER:Habilidades -2 + Defesas 17 + Perícias 0 (0 graduações) + Vantagens 1 + Poderes 107 = 123 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 15 toneladas.
+  Tamanho Grad. 0, até 8 m.
+  Velocidade Terrestre 4 km/ação de movimento - 2.000 km/hora.
+  Velocidade de Voo 250 m/ação de movimento - 120 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Guardião Grifo.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Guardião Kraken - NP 11
+HABILIDADES (-2 pontos)
+• Força 5/13
+• Vigor -
+• Agilidade 4
+• Destreza 0
+• Luta 5
+• Intelecto -
+• Prontidão 0
+• Presença -
+
+DEFESAS (15 pontos):
+• Esquiva Bônus +8 (Total +8)
+• Aparar Bônus +7 (Total +8)
+• Resistência Bônus +19 (Total +14)
+• Fortitude Bônus +0 (Total Imune)
+• Vontade Bônus +0 (Total +0)
+
+PERÍCIAS (0 pontos):
+Acrobacias 0 (Total +4), Atletismo 0 (Total +13), Enganação 0 (Total -5), Furtividade 0 (Total -4), Intimidação 0 (Total -1), Intuição 0 (Total +0), Investigação 0 (Total -5), Percepção 0 (Total +0), Persuasão 0 (Total -5), Prestidigitação 0 (Total +0), Tecnologia 0 (Total -5), Tratamento 0 (Total -5), Veículos 0 (Total +0).
+
+VANTAGENS (1 pontos):
+Agarrar Aprimorado.
+
+PODERES (106 pontos):
+
+  • Aquático: Múltiplos Efeitos • 10 pontos
+
+      Movimento 1 (Adaptação ao Ambiente [Submarino].)• 2 pontos
+      Natação 6 • 7 pontos
+
+          Velocidade aquática de 500 m/ação de movimento e 250 km/hora.
+
+          EA: Muitas pernas: Velocidade 6 • 6 pontos
+
+              Velocidade terrestre de 500 m/movimento e 250 km/hora.
+
+      Sentidos 1 (Visão na Penumbra.)• 1 pontos
+
+  • Auto Reparo: Regeneração 1 (Extras: Persistente +1.)• 2 pontos
+
+      -1 Penalidade em Resistência a cada 10 rodadas.
+
+  • Crescimento 8 (Fixos: Inato +1. Extras: Proteção em vez de Vigor +0. Falhas: Permanente -0.)• 17 pontos
+
+      • Tamanho 2, Massa +8
+        • Força +8, Proteção 8, • Intimidação +4.
+        • Defesas Ativas -4, Furtividade -8.
+        • Velocidade +1.
+
+  • Defesa Impenetrável 14 (Resistência.)• 14 pontos
+
+      Você ignora efeitos com graduação menor ou igual a 7
+
+  • Disparo da Tempestade do Kraken: Dano 11 (Extras: Área +1 [Cone].)• 22 pontos
+  • Imunidade 30 (Efeitos de Fortitude 30.)• 30 pontos
+  • Membros Extras 4 • 4 pontos
+
+      Bônus de 4 para agarrar com todos braços.
+
+      Descrição 4 Tentáculos
+
+  • Proteção 6 • 6 pontos
+  • Sentidos 1 (Elo de Comunicação [Base e outros Guardiões].)• 1 pontos
+
+OFENSIVA
+
+  Iniciativa 4
+  Corpo-a-corpo: Bônus +5
+
+    Desarmado: Bônus +5, Crit 20 (CD 28 vs Resistência)
+    Agarrar: Bônus +5, Crit 20 (CD 23 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Disparo da Tempestade do Kraken: Dano, (CD 26 vs Resistência. CD 21 vs Esquiva para metade do efeito em Área Cone de 15 m de altura, comprimento e largura.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 28 vs Resistência)
+
+PONTOS DE PODER:Habilidades -2 + Defesas 15 + Perícias 0 (0 graduações) + Vantagens 1 + Poderes 106 = 120 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 250 toneladas.
+  Tamanho Grad. 0, até 8 m.
+  Velocidade Terrestre 1 km/ação de movimento - 500 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Guardião Kraken.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Guardião Dragão - NP 11
+HABILIDADES (-2 pontos)
+• Força 3/11
+• Vigor -
+• Agilidade 3
+• Destreza 0
+• Luta 8
+• Intelecto -
+• Prontidão 0
+• Presença -
+
+DEFESAS (17 pontos):
+• Esquiva Bônus +11 (Total +10)
+• Aparar Bônus +6 (Total +10)
+• Resistência Bônus +17 (Total +12)
+• Fortitude Bônus +0 (Total Imune)
+• Vontade Bônus +0 (Total +0)
+
+PERÍCIAS (0 pontos):
+Acrobacias 0 (Total +3), Atletismo 0 (Total +11), Enganação 0 (Total -5), Furtividade 0 (Total -5), Intimidação 0 (Total -1), Intuição 0 (Total +0), Investigação 0 (Total -5), Percepção 0 (Total +0), Persuasão 0 (Total -5), Prestidigitação 0 (Total +0), Tecnologia 0 (Total -5), Tratamento 0 (Total -5), Veículos 0 (Total +0).
+
+VANTAGENS (0 pontos):
+
+PODERES (105 pontos):
+
+  • Asas: Voo 7 • 14 pontos
+
+      Velocidade de voo de 1 km/ação de movimento e 500 km/hora.
+
+  • Crescimento 8 (Fixos: Inato +1. Extras: Proteção em vez de Vigor +0. Falhas: Permanente -0.)• 17 pontos
+
+      • Tamanho 2, Massa +8
+        • Força +8, Proteção 8, • Intimidação +4.
+        • Defesas Ativas -4, Furtividade -8.
+        • Velocidade +1.
+
+  • Defesa Impenetrável 12 (Resistência.)• 12 pontos
+
+      Você ignora efeitos com graduação menor ou igual a 6
+
+  • Imunidade 30 (Efeitos de Fortitude 30.)• 30 pontos
+  • Membros Extras 3 • 3 pontos
+
+      Bônus de 3 para agarrar com todos braços.
+
+      Descrição Cauda e duas asas
+
+  • Proteção 4 • 4 pontos
+  • Sentidos 1 (Elo de Comunicação [Base e outros Guardiões].)• 1 pontos
+  • Sopro de Gelo do Dragão: Aflição 11 (Resistido por Esquiva, Superado por Força. 1º Grau: Impedido e Vulnerável, 2º Grau: Imóvel e Indefenso. Extras: Condição Extra +1, Distância Aumentada +1. Falhas: Grau Limitado -1.)• 23 pontos
+
+      EA: Criar 6 (Fixos: Inato +1. Extras: Duração Aumentada +1.)• 19 pontos
+
+          Total de volume igual a 2 m³.
+
+  • Auto Reparo: Regeneração 1 • 1 pontos
+
+      -1 Penalidade em Resistência a cada 10 rodadas.
+
+OFENSIVA
+
+  Iniciativa 3
+  Corpo-a-corpo: Bônus +8
+
+    Desarmado: Bônus +8, Crit 20 (CD 26 vs Resistência)
+    Agarrar: Bônus +8, Crit 20 (CD 21 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 26 vs Resistência)
+    Criar: Bônus 0, Crit 20 (CD 16 vs Esquiva.)
+    Sopro de Gelo do Dragão: Aflição, Bônus 0, Crit 20 (CD 21 vs Resistido por Esquiva, Superado por Força. 1º Grau: Impedido e Vulnerável, 2º Grau: Imóvel e Indefenso.)
+
+PONTOS DE PODER:Habilidades -2 + Defesas 17 + Perícias 0 (0 graduações) + Vantagens 0 + Poderes 105 = 120 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 60 toneladas.
+  Tamanho Grad. 0, até 8 m.
+  Velocidade Terrestre 15 m/ação de movimento - 8 km/hora.
+  Velocidade de Voo 500 m/ação de movimento - 250 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Guardião Dragão.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Guardião Unicórnio - NP 11
+HABILIDADES (-2 pontos)
+• Força 0/8
+• Vigor -
+• Agilidade 7
+• Destreza 0
+• Luta 7
+• Intelecto -
+• Prontidão 0
+• Presença -
+
+DEFESAS (20 pontos):
+• Esquiva Bônus +10 (Total +13)
+• Aparar Bônus +10 (Total +13)
+• Resistência Bônus +14 (Total +9)
+• Fortitude Bônus +0 (Total Imune)
+• Vontade Bônus +0 (Total +0)
+
+PERÍCIAS (0 pontos):
+Acrobacias 0 (Total +7), Atletismo 0 (Total +8), Enganação 0 (Total -5), Furtividade 0 (Total -1), Intimidação 0 (Total -1), Intuição 0 (Total +0), Investigação 0 (Total -5), Percepção 0 (Total +0), Persuasão 0 (Total -5), Prestidigitação 0 (Total +0), Tecnologia 0 (Total -5), Tratamento 0 (Total -5), Veículos 0 (Total +0).
+
+VANTAGENS (1 pontos):
+Ação de Movimento.
+
+PODERES (101 pontos):
+
+  • Auto Reparo: Regeneração 1 • 1 pontos
+
+      -1 Penalidade em Resistência a cada 10 rodadas.
+
+  • Crescimento 8 (Fixos: Inato +1. Extras: Proteção em vez de Vigor +0. Falhas: Permanente -0.)• 17 pontos
+
+      • Tamanho 2, Massa +8
+        • Força +8, Proteção 8, • Intimidação +4.
+        • Defesas Ativas -4, Furtividade -8.
+        • Velocidade +1.
+
+  • Imunidade 30 (Efeitos de Fortitude 30.)• 30 pontos
+  • Luz Brilhante: Ilusão 11 (Visual e Auditivo.)• 37 pontos
+
+      Área num total de volume igual a 60 m³.
+
+      EA: Camuflagem 4 (Visual (Total) 4.)• 8 pontos
+
+      EA: Chifre Brilhante: Dano baseado em Força 3 (Fixos: Acurado +2.)• 5 pontos
+
+      EA: Cura 8 (Extras: Afeta Objetos +1, Energizante +1.)• 32 pontos
+
+      EA: Raio de Luz: Dano 11 (Extras: Área +1 [Linha].)• 22 pontos
+
+  • Passo Leve: Movimento 3 (Andar na Água, Estabilidade 2.)• 6 pontos
+  • Proteção 1 • 1 pontos
+  • Sentidos 1 (Elo de Comunicação [Base e outros Guardiões].)• 1 pontos
+  • Velocidade 8 • 8 pontos
+
+      Velocidade terrestre de 2 km/movimento e 1.000 km/hora.
+
+OFENSIVA
+
+  Iniciativa 7
+  Corpo-a-corpo: Bônus +7
+
+    Desarmado: Bônus +7, Crit 20 (CD 23 vs Resistência)
+    Agarrar: Bônus +7, Crit 20 (CD 18 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Chifre Brilhante: Dano, Bônus 11, Crit 20 (CD 26 vs Resistência.)
+    Raio de Luz: Dano, (CD 26 vs Resistência. CD 21 vs Esquiva para metade do efeito em Área Linha de 2 m de largura por 8 m de comprimento.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 23 vs Resistência)
+
+  Percepção
+
+    Luz Brilhante: Ilusão, em Alcance Percepção (CD 21 vs Vontade.)
+
+PONTOS DE PODER:Habilidades -2 + Defesas 20 + Perícias 0 (0 graduações) + Vantagens 1 + Poderes 101 = 120 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 8 toneladas.
+  Tamanho Grad. 0, até 8 m.
+  Velocidade Terrestre 4 km/ação de movimento - 2.000 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Guardião Unicórnio.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Guardião Fênix - NP 11
+HABILIDADES (-2 pontos)
+• Força 2/6
+• Vigor -
+• Agilidade 12
+• Destreza 0
+• Luta 0
+• Intelecto -
+• Prontidão 0
+• Presença -
+
+DEFESAS (20 pontos):
+• Esquiva Bônus +4 (Total +14)
+• Aparar Bônus +16 (Total +14)
+• Resistência Bônus +13 (Total +8)
+• Fortitude Bônus +0 (Total Imune)
+• Vontade Bônus +0 (Total +0)
+
+PERÍCIAS (0 pontos):
+Acrobacias 0 (Total +12), Atletismo 0 (Total +6), Enganação 0 (Total -5), Furtividade 0 (Total +8), Intimidação 0 (Total -3), Intuição 0 (Total +0), Investigação 0 (Total -5), Percepção 0 (Total +0), Persuasão 0 (Total -5), Prestidigitação 0 (Total +0), Tecnologia 0 (Total -5), Tratamento 0 (Total -5), Veículos 0 (Total +0).
+
+VANTAGENS (0 pontos):
+
+PODERES (102 pontos):
+
+  • Asas: Voo 10 • 21 pontos
+
+      Velocidade de voo de 8 km/ação de movimento e 4.000 km/hora.
+
+      EA: Asas Cósmicas: Movimento 2 (Adaptação ao Ambiente [Gravidade Zero], Viagem Espacial.)• 4 pontos
+
+  • Auto Reparo: Regeneração 1 • 1 pontos
+
+      -1 Penalidade em Resistência a cada 10 rodadas.
+
+  • Chamas Flamejantes da Fênix: Dano 7 (Fixos: Acurado +7, Perigosa +1. Extras: Distância Aumentada +1.)• 23 pontos
+
+      EA: Aflição 11 (Resistido por Fortitude, Superado por Fortitude. 1º Grau: Tonto, 2º Grau: Atordoar, 3º Grau: Incapacitado. Extras: Área +1 [Cone].)• 22 pontos
+
+  • Crescimento 4 (Fixos: Inato +1. Extras: Proteção em vez de Vigor +0. Falhas: Permanente -0.)• 9 pontos
+
+      • Tamanho 1, Massa +4
+        • Força +4, Proteção 4, • Intimidação +2.
+        • Defesas Ativas -2, Furtividade -4.
+        • Velocidade +0.
+
+  • Imunidade 30 (Efeitos de Fortitude 30.)• 30 pontos
+  • Proteção 4 • 4 pontos
+  • Rastreador Cósmico: Sentidos 13 (Contra-ataca Camuflagem 2 [Visão], Estendido 2 [Percepção: Cósmica], Estendido 2 [Visão], Percepção [Cósmica], Rastrear 2 [Percepção: Cósmica], Sentido de Direção, Sentido de Distância, Sentido de Tempo, Ultravisão.)• 13 pontos
+  • Sentidos 1 (Elo de Comunicação [Base e outros Guardiões].)• 1 pontos
+
+OFENSIVA
+
+  Iniciativa 12
+  Corpo-a-corpo: Bônus +0
+
+    Desarmado: Bônus +0, Crit 20 (CD 21 vs Resistência)
+    Agarrar: Bônus +0, Crit 20 (CD 16 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Aflição: (CD 21 vs Resistido por Fortitude, Superado por Fortitude. 1º Grau: Tonto, 2º Grau: Atordoar, 3º Grau: Incapacitado. CD 21 vs Esquiva para metade do efeito em Área Cone de 15 m de altura, comprimento e largura.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 21 vs Resistência)
+    Chamas Flamejantes da Fênix: Dano, Bônus 14, Crit 19-20 (CD 22 vs Resistência.)
+
+PONTOS DE PODER:Habilidades -2 + Defesas 20 + Perícias 0 (0 graduações) + Vantagens 0 + Poderes 102 = 120 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 2 toneladas.
+  Tamanho Grad. -1, até 4 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+  Velocidade de Voo 4 km/ação de movimento - 2.000 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Guardião Fênix.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Rei Magna - NP 15
+HABILIDADES (-2 pontos)
+• Força 0/16
+• Vigor -
+• Agilidade 3
+• Destreza 3
+• Luta 4
+• Intelecto -
+• Prontidão 4
+• Presença -
+
+DEFESAS (37 pontos):
+• Esquiva Bônus +19 (Total +14)
+• Aparar Bônus +18 (Total +14)
+• Resistência Bônus +21 (Total +16)
+• Fortitude Bônus +0 (Total Imune)
+• Vontade Bônus +0 (Total +4)
+
+PERÍCIAS (0 pontos):
+Acrobacias 0 (Total +3), Atletismo 0 (Total +16), Enganação 0 (Total -5), Furtividade 0 (Total -13), Intimidação 0 (Total +3), Intuição 0 (Total +4), Investigação 0 (Total -5), Percepção 0 (Total +4), Persuasão 0 (Total -5), Prestidigitação 0 (Total +3), Tecnologia 0 (Total -5), Tratamento 0 (Total -5), Veículos 0 (Total +3).
+
+VANTAGENS (9 pontos):
+Ataque Corpo-a-corpo 4, Atraente, Avaliação, Duro de Matar, Esforço Supremo (Resistência), Tomar Iniciativa.
+
+PODERES (181 pontos):
+
+  • Auto Reparo: Regeneração 1 • 1 pontos
+
+      -1 Penalidade em Resistência a cada 10 rodadas.
+
+  • Motores Cósmicos: Arranjo (Poder Base:  Vôo da Fênix) • 25 pontos
+
+      EA: Barbatana do Kraken: Natação 6 • 6 pontos
+
+          Velocidade aquática de 500 m/ação de movimento e 250 km/hora.
+
+      EA: Portão Magna: Movimento 3 (Viagem Espacial 3.)• 6 pontos
+
+      EA: Velocidade do Grifo: Velocidade 6 • 6 pontos
+
+          Velocidade terrestre de 500 m/movimento e 250 km/hora.
+
+      EA: Vôo da Fênix: Voo 11 • 22 pontos
+
+          Velocidade de voo de 15 km/ação de movimento e 8.000 km/hora.
+
+  • Panóplia Magna (Facilmente Removível): Arranjo (Poder Base:  Escudo do Kraken) • 11 pontos
+
+      EA: Escudo do Kraken: Defesa Impenetrável 16 (Resistência.)• 16 pontos
+
+          Você ignora efeitos com graduação menor ou igual a 8
+
+      EA: Lâmina Magna: Feitos de Força 16 (Fixos: Penetrante +16.)• 16 pontos
+
+  • Robô de Combate Gigante: Múltiplos Efeitos • 107 pontos
+
+      Crescimento 16 (Fixos: Inato +1. Extras: Afeta Apenas Objetos +0, Proteção em vez de Vigor +0. Falhas: Permanente -0.)• 33 pontos
+
+          • Tamanho 4, Massa +16
+            • Força +16, Proteção 16, • Intimidação +8.
+            • Defesas Ativas -8, Furtividade -16.
+            • Velocidade +2.
+
+      Estabilizadores: Movimento 3 (Andar na Água, Estabilidade 2.)• 6 pontos
+      Imunidade 30 (Efeitos de Fortitude 30.)• 30 pontos
+      Imunidade (aos Pilotos): Imunidade 21 (Efeito de Dano 5 [Frio], Efeito de Dano 5 [Fogo], Envelhecimento, Suporte Vital 10. Extras: Afeta Apenas Outros +0.)• 21 pontos
+      Sistema de Sensores: Sentidos 17 (Analítico [Percepção Cósmica], Contra-ataca Todas Camuflagens 5 [Visão], Estendido 2 [Visão], Estendido 2 [Percepção: Cósmica], Percepção [Cósmica], Rastrear 2 [Percepção: Cósmica], Sentido de Direção, Sentido de Distância, Sentido de Perigo, Sentido de Tempo.)• 17 pontos
+
+  • Sistema de Armas: Arranjo (Poder Base:  Disparo do Kraken) • 37 pontos
+
+      EA: Disparo do Kraken: Dano 11 (Fixos: Penetrante +11. Extras: Área +1 [Cone].)• 33 pontos
+
+      EA: Fogo Destrutivo da Fênix: Dano 14 (Fixos: Acurado +4. Extras: Distância Aumentada +1.)• 32 pontos
+
+      EA: Lança de Luz do Grifo: Dano 15 (Extras: Área +1 [Linha].)• 30 pontos
+
+      EA: Piscar do Unicórnio: Camuflagem 4 (Visual (Total) 4.)• 8 pontos
+
+      EA: Sopro de Gelo do Dragão: Aflição 14 (Resistido por Esquiva, Superado por Esquiva. 1º Grau: Impedido e Vulnerável, 2º Grau: Indefenso e Imóvel. Fixos: Acurado +4. Extras: Condição Extra +1, Distância Aumentada +1. Falhas: Grau Limitado -1.)• 32 pontos
+
+OFENSIVA
+
+  Iniciativa 3
+  Corpo-a-corpo: Bônus +8
+
+    Desarmado: Bônus +8, Crit 20 (CD 31 vs Resistência)
+    Agarrar: Bônus +8, Crit 20 (CD 26 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Panóplia Magna  - Lâmina Magna: Feitos de Força, Bônus 8, Crit 20 (CD 26 vs Resistência.)
+    Robô de Combate Gigante  - Imunidade (aos Pilotos): Imunidade, Bônus 8, Crit 20 (CD 31 vs Nenhum.)
+    Sistema de Armas  - Disparo do Kraken: Dano, (CD 26 vs Resistência. CD 21 vs Esquiva para metade do efeito em Área Cone de 15 m de altura, comprimento e largura.)
+    Sistema de Armas  - Lança de Luz do Grifo: Dano, (CD 30 vs Resistência. CD 25 vs Esquiva para metade do efeito em Área Linha de 2 m de largura por 8 m de comprimento.)
+
+  À Distância: Bônus +3
+
+    Arremesso: Bônus +3, Crit 20 (CD 31 vs Resistência)
+    Sistema de Armas  - Fogo Destrutivo da Fênix: Dano, Bônus 11, Crit 20 (CD 29 vs Resistência.)
+    Sistema de Armas  - Sopro de Gelo do Dragão: Aflição, Bônus 11, Crit 20 (CD 24 vs Resistido por Esquiva, Superado por Esquiva. 1º Grau: Impedido e Vulnerável, 2º Grau: Indefenso e Imóvel.)
+
+PONTOS DE PODER:Habilidades -2 + Defesas 37 + Perícias 0 (0 graduações) + Vantagens 9 + Poderes 181 = 225 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 2.000 t.
+  Tamanho Grad. 2, até 30 m.
+  Velocidade Terrestre 2 km/ação de movimento - 1.000 km/hora.
+  Velocidade de Voo 8 km/ação de movimento - 4.000 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Rei Magna.
+  Idade: 2500000.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Não Tem.
+
+Erros:
+Sem erros.

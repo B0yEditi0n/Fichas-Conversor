@@ -1,0 +1,624 @@
+O Cúspide (Bruno Drake) - NP 15
+HABILIDADES (60 pontos)
+• Força 1
+• Vigor 5
+• Agilidade 1
+• Destreza 3
+• Luta 3
+• Intelecto 5
+• Prontidão 7
+• Presença 5
+
+DEFESAS (45 pontos):
+• Esquiva Bônus +15 (Total +16)
+• Aparar Bônus +12 (Total +15)
+• Resistência Bônus +0 (Total +5)
+• Fortitude Bônus +9 (Total +14)
+• Vontade Bônus +9 (Total +16)
+
+PERÍCIAS (34 pontos):
+Acrobacias 0 (Total +1), Atletismo 0 (Total +1), Combate Corpo-a-corpo: Desarmado 12 (Total +15) [Desarmado], Enganação 5 (Total +10), Especialidade: História (INT) 5 (Total +10), Especialidade: Quadrinhos (INT) 12 (Total +17), Furtividade 10 (Total +11), Intimidação 5 (Total +10), Intuição 7 (Total +14), Investigação 3 (Total +8), Percepção 9 (Total +16), Persuasão 0 (Total +5), Prestidigitação 0 (Total +3), Tecnologia 0 (Total +5), Tratamento 0 (Total +5), Veículos 0 (Total +3).
+
+VANTAGENS (36 pontos):
+Ação de Movimento, Armas Improvisadas 5, Ataque À Distância 12, Avaliação, Bem Informado, Bem Relacionado, Contatos, Evasão, Iniciativa Aprimorada 3, Maestria em Arremesso 5, Memória Eidética, Saque Rápido, Sorte, Sorte de Principiante, Transe.
+
+PODERES (63 pontos):
+
+  • Baluarte Cronológico: Característica 1 • 1 pontos
+
+      Descrição Não é afetado imediatamente por mudanças no fluxo temporal
+
+  • Lendo o Roteiro: Sentidos 8 (Póscognição 4, Precognição 4.)• 8 pontos
+  • Personagem Recorrente: Múltiplos Efeitos • 10 pontos
+
+      Imortalidade 1 • 2 pontos
+
+          Volta a vida em 2 semanas.
+
+      Imunidade 8 (Aprisionamento 5, Doenças, Envelhecimento, Venenos.)• 8 pontos
+
+  • Re-Escrever: Arranjo (Poder Base:  Eliminar) • 32 pontos
+
+      EA: Eliminar: Teleporte 15 (Extras: Ataque +0 [Vontade].)• 30 pontos
+
+          Teleporta dentro de 250 km.
+
+      EA: Re-Elecar: Aflição 15 (Resistido por Vontade, Superado por Vontade. 1º Grau: Impedido, 2º Grau: Desabilitado, 3º Grau: Transformado. Extras: Distância Aumentada +1.)• 30 pontos
+
+      EA: Remover: Aflição 15 (Resistido por Vontade, Superado por Vontade. 1º Grau: Tonto, 2º Grau: Atordoado, 3º Grau: Paralisado. Extras: Distância Aumentada +1.)• 30 pontos
+
+  • Virar as Paginas: Movimento 3 (Viagem Temporal 3. Extras: Personalizado +2 [Portal].)• 12 pontos
+
+OFENSIVA
+
+  Iniciativa 13
+  Corpo-a-corpo: Bônus +3
+
+    Desarmado: Bônus +15, Crit 20 (CD 16 vs Resistência)
+    Agarrar: Bônus +3, Crit 20 (CD 11 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +15
+
+    Arremesso: Bônus +15, Crit 20 (CD 21 vs Resistência)
+    Re-Escrever  - Re-Elecar: Aflição, Bônus 15, Crit 20 (CD 25 vs Resistido por Vontade, Superado por Vontade. 1º Grau: Impedido, 2º Grau: Desabilitado, 3º Grau: Transformado.)
+    Re-Escrever  - Remover: Aflição, Bônus 15, Crit 20 (CD 25 vs Resistido por Vontade, Superado por Vontade. 1º Grau: Tonto, 2º Grau: Atordoado, 3º Grau: Paralisado.)
+
+PONTOS DE PODER:Habilidades 60 + Defesas 45 + Perícias 34 (68 graduações) + Vantagens 36 + Poderes 63 = 238 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 60 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Fraqueza (selenita)
+  Motivação—Niilismo
+
+PESSOAL
+
+  Nome Heroico: O Cúspide.
+  Nome real: Bruno Drake.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Barão Blemish - NP 11
+HABILIDADES (60 pontos)
+• Força 4
+• Vigor 6
+• Agilidade 4
+• Destreza 0
+• Luta 8
+• Intelecto 0
+• Prontidão 3
+• Presença 5
+
+DEFESAS (27 pontos):
+• Esquiva Bônus +10 (Total +14)
+• Aparar Bônus +4 (Total +12)
+• Resistência Bônus +2 (Total +8/6 vulnerável)
+• Fortitude Bônus +5 (Total +11)
+• Vontade Bônus +8 (Total +11)
+
+PERÍCIAS (37 pontos):
+Acrobacias 5 (Total +9), Atletismo 6 (Total +10), Combate À Distância: Pedra Negra 11 (Total +11), Enganação 8 (Total +13), Especialidade: Magia (INT) 8 (Total +8), Especialidade: Tática (INT) 10 (Total +10), Furtividade 0 (Total +4), Intimidação 10 (Total +15), Intuição 7 (Total +10), Investigação 0 (Total +0), Percepção 8 (Total +11), Persuasão 0 (Total +5), Prestidigitação 0 (Total +0), Tecnologia 0 (Total +0), Tratamento 0 (Total +0), Veículos 0 (Total +0).
+
+VANTAGENS (15 pontos):
+Ação de Movimento, Artífice, Assustar, Ataque Corpo-a-corpo 2, Ataque Defensivo, Ataque Poderoso, Avaliação, Crítico Aprimorado: Machado de Ônix, Desarmar Aprimorado, Iniciativa Aprimorada, Orientação, Quebrar Arma, Rolamento Defensivo 2.
+
+PODERES (39 pontos):
+
+  • Criar Pedra Negra: Arranjo (Poder Base:  Objetos de Ônix) • 39 pontos
+
+      EA: Amarras de Ônix: Aflição 11 (Resistido por Esquiva, Superado por Força. 1º Grau: Impedido e Vulnerável, 2º Grau: Imóvel e Indefeso. Fixos: Dividido +2. Extras: Condição Extra +1, Distância Aumentada +1. Falhas: Grau Limitado -1.)• 24 pontos
+
+      EA: Machado de Ônix: Dano baseado em Força 8 (Fixos: Penetrante +12, Perigosa +1.)• 21 pontos
+
+      EA: Objetos de Ônix: Criar 9 (Extras: Impenetrável +1, Móvel +1.)• 36 pontos
+
+          Total de volume igual a 15 m³.
+
+      EA: Pancada de Ônix: Dano 11 (Fixos: Penetrante +11. Extras: Distância Aumentada +1.)• 33 pontos
+
+OFENSIVA
+
+  Iniciativa 8
+  Corpo-a-corpo: Bônus +10
+
+    Desarmado: Bônus +10, Crit 20 (CD 19 vs Resistência)
+    Agarrar: Bônus +10, Crit 20 (CD 14 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Criar Pedra Negra  - Machado de Ônix: Dano, Bônus 10, Crit 18-20 (CD 27 vs Resistência.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 19 vs Resistência)
+    Criar Pedra Negra  - Amarras de Ônix: Aflição, Bônus 0, Crit 20 (CD 21 vs Resistido por Esquiva, Superado por Força. 1º Grau: Impedido e Vulnerável, 2º Grau: Imóvel e Indefeso.)
+    Criar Pedra Negra  - Objetos de Ônix: Criar, Bônus 0, Crit 20 (CD 19 vs Esquiva.)
+    Criar Pedra Negra  - Pancada de Ônix: Dano, Bônus 0, Crit 20 (CD 26 vs Resistência.)
+
+PONTOS DE PODER:Habilidades 60 + Defesas 27 + Perícias 37 (73 graduações) + Vantagens 15 + Poderes 39 = 178 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 500 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Barão Blemish.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Homem Interior (Miguel Espinoza) - NP 10
+HABILIDADES (44 pontos)
+• Força 2/12
+• Vigor 2/12
+• Agilidade 2
+• Destreza 2
+• Luta 6
+• Intelecto 3
+• Prontidão 2
+• Presença 3
+
+DEFESAS (14 pontos):
+• Esquiva Bônus +6 (Total +8)
+• Aparar Bônus +2 (Total +8)
+• Resistência Bônus +0 (Total +12)
+• Fortitude Bônus +0 (Total +12)
+• Vontade Bônus +6 (Total +8)
+
+PERÍCIAS (16 pontos):
+Acrobacias 0 (Total +2), Atletismo 2 (Total +14), Combate À Distância: Arremesso 6 (Total +8) [Arremesso], Combate Corpo-a-corpo: Desarmado 2 (Total +8) [Desarmado], Enganação 0 (Total +3), Especialidade: Filosofia (INT) 6 (Total +9), Furtividade 0 (Total +2), Intimidação 0 (Total +3), Intuição 4 (Total +6), Investigação 2 (Total +5), Percepção 4 (Total +6), Persuasão 5 (Total +8), Prestidigitação 0 (Total +2), Tecnologia 0 (Total +3), Tratamento 0 (Total +3), Veículos 0 (Total +2).
+
+VANTAGENS (7 pontos):
+Armação, Atraente, Bem Relacionado, Benefício (Riqueza), Equipamento, Esforço Extraordinário, Trabalho em Equipe.
+
+PODERES (69 pontos):
+
+  • Baluarte Cronológico: Característica 1 • 1 pontos
+
+      Descrição Não é afetado imediatamente por mudanças no fluxo temporal
+
+  • Fortitude Interior: Múltiplos Efeitos • 68 pontos
+
+      Clareza Interior: Rapidez 4 (Falhas: Limitado -1 [Somente em Espaços Fechados].)• 2 pontos
+      Cura Interior: Regeneração 5 (Extras: Persistente +1. Falhas: Limitado -1 [Somente em Espaços Fechados].)• 5 pontos
+
+          -1 Penalidade em Resistência a cada 2 rodadas.
+
+      Força Interior: Característica Aumentada 20 (Modificações: Força +10. Falhas: Limitado -1 [Somente em Espaços Fechados].)• 10 pontos
+      Paz Interior: Imunidade 12 (Envelhecimento, Sono, Suporte Vital 10. Falhas: Limitado -1 [Somente em Espaços Fechados].)• 6 pontos
+      Resiliência Interior: Característica Aumentada 20 (Modificações: Vigor +10. Falhas: Limitado -1 [Somente em Espaços Fechados].)• 10 pontos
+      Resistência Interior: Defesa Impenetrável 12 (Resistência. Falhas: Limitado -1 [Somente em Espaços Fechados].)• 6 pontos
+
+          Você ignora efeitos com graduação menor ou igual a 6
+
+      Sabedoria Interior: Característica Aumentada 10 (Falhas: Limitado -1 [Somente em Espaços Fechados]. Vantagens Aumentadas: Ataque Dominó 2, Defesa Aprimorada, Esquiva Fabulosa, Evasão 2, Iniciativa Aprimorada 4.)• 5 pontos
+      Segredos Interiores: Teleporte 4 (Fixos: Giro +1, Mudar a Direção +1, Mudar a Velocidade +1, Sutil +1 [move-se normalmente, mas por outra dimensão]. Extras: Acurado +1. Falhas: Limitado -1 [Somente em Espaços Fechados].)• 12 pontos
+
+          Teleporta dentro de 120 m.
+
+      Visão Interior: Sentido Remoto 6 (Visão e Audição. Falhas: Limitado -1 [Somente em Espaços Fechados].)• 12 pontos
+
+          Expande sentido em um local dentro de 500 m.
+
+EQUIPAMENTOS (5 pontos):
+
+  Celular (Smartphone) • 2 pontos
+  Contribuição da Equipe • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 18
+  Corpo-a-corpo: Bônus +6
+
+    Desarmado: Bônus +8, Crit 20 (CD 27 vs Resistência)
+    Agarrar: Bônus +6, Crit 20 (CD 22 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +2
+
+    Arremesso: Bônus +8, Crit 20 (CD 27 vs Resistência)
+
+PONTOS DE PODER:Habilidades 44 + Defesas 14 + Perícias 16 (31 graduações) + Vantagens 7 + Poderes 69 = 150 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 120 toneladas.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Agorafobia: Miguel sempre teve um leve medo de grandes espaços abertos, e a fraqueza de seus superpoderes só exacerbou esse problema.
+  Inimigo—Família: A família extensa de Miguel odeia sua ridícula "fase" de super-herói e deseja que ele assuma uma profissão respeitável. Eles contrataram “especialistas” no passado para trazê-lo de volta à família.
+  Motivação—Tenho Que Fazer Alguma Coisa: Homem Interior está entediado e precisa de direção em sua vida, e impedir que toda a criação seja radicalmente reescrita parece um uso bastante decente de seu tempo.
+
+PESSOAL
+
+  Nome Heroico: Homem Interior.
+  Nome real: Miguel Espinoza.
+  Idade: 26.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Castanho.
+
+Erros:
+Sem erros.Lady Diamante (Claire Diamante) - NP 10
+HABILIDADES (50 pontos)
+• Força 2
+• Vigor 6
+• Agilidade 3
+• Destreza 0
+• Luta 6
+• Intelecto 0
+• Prontidão 5
+• Presença 3
+
+DEFESAS (23 pontos):
+• Esquiva Bônus +9 (Total +12)
+• Aparar Bônus +5 (Total +11)
+• Resistência Bônus +2 (Total +8/6 vulnerável)
+• Fortitude Bônus +4 (Total +10)
+• Vontade Bônus +5 (Total +10)
+
+PERÍCIAS (27 pontos):
+Acrobacias 6 (Total +9), Atletismo 7 (Total +9), Combate À Distância: Diamantes 10 (Total +10), Combate Corpo-a-corpo: Espadas 1 (Total +10), Enganação 0 (Total +3), Especialidade: Táticas (INT) 5 (Total +5), Furtividade 0 (Total +3), Intimidação 7 (Total +10), Intuição 10 (Total +15), Investigação 0 (Total +0), Percepção 8 (Total +13), Persuasão 0 (Total +3), Prestidigitação 0 (Total +0), Tecnologia 0 (Total +0), Tratamento 0 (Total +0), Veículos 0 (Total +0).
+
+VANTAGENS (14 pontos):
+Assustar, Ataque Corpo-a-corpo 3, Ataque Defensivo, Ataque Imprudente, Desarmar Aprimorado, Destemido, Duro de Matar, Equipamento, Iniciativa Aprimorada, Liderança, Rolamento Defensivo 2.
+
+PODERES (36 pontos):
+
+  • Baluarte Cronológico: Característica 1 • 1 pontos
+
+      Descrição Não é afetado imediatamente por mudanças no fluxo temporal
+
+  • Geração de Diamantes: Arranjo (Poder Base:  Formas de Diamante) • 35 pontos
+
+      EA: Armadilha de Diamante: Aflição 10 (Resistido por Esquiva, Superado por Força. 1º Grau: Impedido e Vulnerável, 2º Grau: Imóvel e Indefeso. Fixos: Dividido +2. Extras: Condição Extra +1, Distância Aumentada +1. Falhas: Grau Limitado -1.)• 22 pontos
+
+      EA: Espada de Diamante: Dano baseado em Força 8 (Fixos: Penetrante +10, Perigosa +1.)• 19 pontos
+
+      EA: Formas de Diamante: Criar 8 (Extras: Móvel +1, Impenetrável +1.)• 32 pontos
+
+          Total de volume igual a 8 m³.
+
+      EA: Fragmentos de Diamante: Dano 10 (Extras: Distância Aumentada +1, Multiataque +1.)• 30 pontos
+
+EQUIPAMENTOS (5 pontos):
+
+  Celular (Smartphone) • 2 pontos
+  Contribuição da Equipe • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 7
+  Corpo-a-corpo: Bônus +9
+
+    Desarmado: Bônus +9, Crit 20 (CD 17 vs Resistência)
+    Agarrar: Bônus +9, Crit 20 (CD 12 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Geração de Diamantes  - Espada de Diamante: Dano, Bônus 10, Crit 19-20 (CD 25 vs Resistência.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 17 vs Resistência)
+    Geração de Diamantes  - Armadilha de Diamante: Aflição, Bônus 10, Crit 20 (CD 20 vs Resistido por Esquiva, Superado por Força. 1º Grau: Impedido e Vulnerável, 2º Grau: Imóvel e Indefeso.)
+    Geração de Diamantes  - Formas de Diamante: Criar, Bônus 10, Crit 20 (CD 18 vs Esquiva.)
+    Geração de Diamantes  - Fragmentos de Diamante: Dano, Bônus 10, Crit 20 (CD 25 vs Resistência.)
+
+PONTOS DE PODER:Habilidades 50 + Defesas 23 + Perícias 27 (54 graduações) + Vantagens 14 + Poderes 36 = 150 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 120 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Legado: Muitos outros nativos de Luster escaparam da destruição de seu plano e se lembram de Lady Diamante, vendo-a como sua última esperança ou culpando-a pelo fim catastrófico da dimensão.
+  Motivação—Niilismo: Claire não é assombrada pela culpa tanto quanto ela está entorpecida. Ela luta e se joga de cara no perigo apenas para sentir as coisas novamente, mesmo que essas coisas sejam dor.
+  Transtorno de Estresse Pós-traumático: Claire tem TEPT - completo com mudanças de humor, flashbacks, alucinações leves e dificuldade com relacionamentos pessoais - graças à guerra em Luster, e eles tendem a se manifestar sua vida também está calma.
+
+PESSOAL
+
+  Nome Heroico: Lady Diamante.
+  Nome real: Claire Diamante.
+  Idade: 22.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Platinados.
+
+Erros:
+Sem erros.Partes Desconhecidas (Aaron Dolby) - NP 10
+HABILIDADES (56 pontos)
+• Força 3
+• Vigor 6
+• Agilidade 4
+• Destreza 2
+• Luta 9
+• Intelecto 1
+• Prontidão 1
+• Presença 2
+
+DEFESAS (19 pontos):
+• Esquiva Bônus +7 (Total +11)
+• Aparar Bônus +2 (Total +11)
+• Resistência Bônus +3 (Total +9/6 vulnerável)
+• Fortitude Bônus +4 (Total +10)
+• Vontade Bônus +6 (Total +7)
+
+PERÍCIAS (19 pontos):
+Acrobacias 3 (Total +7), Atletismo 5 (Total +8), Combate Corpo-a-corpo: Desarmado 3 (Total +12) [Desarmado], Enganação 6 (Total +8), Especialidade: Performance (PRE) 7 (Total +9), Furtividade 2 (Total +6), Intimidação 0 (Total +2), Intuição 9 (Total +10), Investigação 0 (Total +1), Percepção 3 (Total +4), Persuasão 0 (Total +2), Prestidigitação 0 (Total +2), Tecnologia 0 (Total +1), Tratamento 0 (Total +1), Veículos 0 (Total +2).
+
+VANTAGENS (20 pontos):
+Ação de Movimento, Agarrar Aprimorado, Agarrar Rápido, Armas Improvisadas, Ataque Imprudente, Ataque Poderoso, Benefício (Status) ("Eu Sou Famoso No Japão"), Derrubar Aprimorado, Equipamento, Estrangular, Fascinar (Especialidade), Idiomas 2 (Inglês (nativo), Espanhol, Japonês), Imobilizar Aprimorado, Rolamento Defensivo 3, Tontear (Enganação), Trabalho em Equipe, Zombar.
+
+PODERES (36 pontos):
+
+  • Baluarte Cronológico: Característica 1 • 1 pontos
+
+      Descrição Não é afetado imediatamente por mudanças no fluxo temporal
+
+  • Forma Mutante: Variável 7 (Forma Física. Extras: Duração Aumentada +1. Falhas: Lento -1, Limitado -1 [a Membros e Cabeça], Incontrolável -1.)• 35 pontos
+
+      Efeitos até um total de 35 pontos.
+
+EQUIPAMENTOS (5 pontos):
+
+  Celular (Smartphone) • 2 pontos
+  Contribuição da Equipe • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 4
+  Corpo-a-corpo: Bônus +9
+
+    Desarmado: Bônus +12, Crit 20 (CD 18 vs Resistência)
+    Agarrar: Bônus +9, Crit 20 (CD 13 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +2
+
+    Arremesso: Bônus +2, Crit 20 (CD 18 vs Resistência)
+
+PONTOS DE PODER:Habilidades 56 + Defesas 19 + Perícias 19 (38 graduações) + Vantagens 20 + Poderes 36 = 150 pontos
+
+Idiomas
+Nativo: Inglês (nativo). Adicionais: Espanhol, Japonês.
+
+Outras Características
+
+  Carga 250 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Maldição Demoníaca: Além de sua transformação descontrolada, a maldição de Aaron o manchou com essência demoníaca. Ele é detectado como demoníaco aos sentidos sobrenaturais, feitiços e armas destinados a prejudicar ou prender demônios têm efeito total sobre ele.
+  Motivação—Fazer o Bem: Aaron tem um forte senso de comunidade e uma necessidade de ajudar os outros quando ele pode, mesmo que eles possam estar com medo dele agora.
+  Preconceito: Aaron raramente parece totalmente humano, e sua constante mudança torna difícil desenvolver uma boa técnica para esconder seus traços não naturais, deixando-o em grande parte incapaz de interagir com a sociedade normal.
+
+PESSOAL
+
+  Nome Heroico: Partes Desconhecidas.
+  Nome real: Aaron Dolby.
+  Idade: 29.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Loiro.
+
+Erros:
+Sem erros.Shell (Tiro) - NP 10
+HABILIDADES (24 pontos)
+• Força 9
+• Vigor -
+• Agilidade 0
+• Destreza 0
+• Luta 4
+• Intelecto 3
+• Prontidão 1
+• Presença 0
+
+DEFESAS (24 pontos):
+• Esquiva Bônus +10 (Total +10)
+• Aparar Bônus +6 (Total +10)
+• Resistência Bônus +15 (Total +10)
+• Fortitude Bônus +0 (Total Imune)
+• Vontade Bônus +8 (Total +9)
+
+PERÍCIAS (14 pontos):
+Acrobacias 0 (Total +0), Atletismo 0 (Total +9), Combate À Distância: Sistema de Armas 8 (Total +8), Combate Corpo-a-corpo: Desarmado 7 (Total +11) [Desarmado], Enganação 0 (Total +0), Especialidade: Ciência (INT) 8 (Total +11), Furtividade 0 (Total +0), Intimidação 0 (Total +0), Intuição 0 (Total +1), Investigação 0 (Total +3), Percepção 0 (Total +1), Persuasão 0 (Total +0), Prestidigitação 0 (Total +0), Tecnologia 5 (Total +8), Tratamento 0 (Total +3), Veículos 0 (Total +0).
+
+VANTAGENS (4 pontos):
+Equipamento, Memória Eidética, Sorte, Sorte de Principiante.
+
+PODERES (84 pontos):
+
+  • Armadura Oca: Múltiplos Efeitos • 47 pontos
+
+      Compreender 2 (Máquinas 2.)• 4 pontos
+      Imunidade 30 (Efeitos de Fortitude 30.)• 30 pontos
+      Proteção 10 • 10 pontos
+      Sentidos 3 (Infravisão, Sentido de Distância, Visão na Penumbra.)• 3 pontos
+
+  • Baluarte Cronológico: Característica 1 • 1 pontos
+
+      Descrição Não é afetado imediatamente por mudanças no fluxo temporal
+
+  • Jatos de Salto: Múltiplos Efeitos • 12 pontos
+
+      Movimento 1 (Queda Suave.)• 2 pontos
+      Salto 10 • 10 pontos
+
+          Salta um total de 2 km.
+
+  • Sistema de Armas: Arranjo (Poder Base:  Rajada Contusiva) • 24 pontos
+
+      EA: Chuva de Misseis: Dano 6 (Fixos: Acurado +2, Teleguiado +1. Extras: Multiataque +1, Distância Aumentada +1.)• 21 pontos
+
+      EA: Explosão Contusiva: Dano 10 (Extras: Área +1 [Explosão].)• 20 pontos
+
+      EA: Rajada Contusiva: Dano 10 (Fixos: Dividido +1, Acurado +1. Extras: Distância Aumentada +1.)• 22 pontos
+
+EQUIPAMENTOS (5 pontos):
+
+  Celular (Smartphone) • 2 pontos
+  Contribuição da Equipe • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 0
+  Corpo-a-corpo: Bônus +4
+
+    Desarmado: Bônus +11, Crit 20 (CD 24 vs Resistência)
+    Agarrar: Bônus +4, Crit 20 (CD 19 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Sistema de Armas  - Explosão Contusiva: Dano, (CD 25 vs Resistência. CD 20 vs Esquiva para metade do efeito em Área Explosão de 8 m de raio.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 24 vs Resistência)
+    Sistema de Armas  - Chuva de Misseis: Dano, Bônus 12, Crit 20 (CD 21 vs Resistência.)
+    Sistema de Armas  - Rajada Contusiva: Dano, Bônus 10, Crit 20 (CD 25 vs Resistência.)
+
+PONTOS DE PODER:Habilidades 24 + Defesas 24 + Perícias 14 (28 graduações) + Vantagens 4 + Poderes 84 = 150 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 15 toneladas.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Homem Oco: Como um exoesqueleto motorizado, Shell precisa de um objeto em forma de humano ou humanóide para andar dentro dele para se mover e operar adequadamente. Sem ele, a Shell é tratada como Desativada para ações físicas
+  Motivação—Buscando um Propósito Maior: Depois de renascer como um ser verdadeiramente senciente, Shell deseja descobrir seu verdadeiro propósito na vida e expiar suas ações passadas.
+
+  Segredo: Shell não revelou todos os detalhes de seu passado – sua fúria assassina e a morte de seu criador – para seus companheiros de equipe e teme a rejeição deles caso descubram.
+
+PESSOAL
+
+  Nome Heroico: Shell.
+  Nome real: Tiro.
+  Idade: 0.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Sismo (Karen Stiles) - NP 10
+HABILIDADES (32 pontos)
+• Força 0
+• Vigor 1
+• Agilidade 1
+• Destreza 2
+• Luta 3
+• Intelecto 5
+• Prontidão 1
+• Presença 3
+
+DEFESAS (35 pontos):
+• Esquiva Bônus +10 (Total +11)
+• Aparar Bônus +8 (Total +11)
+• Resistência Bônus +8 (Total +9)
+• Fortitude Bônus +6 (Total +7)
+• Vontade Bônus +11 (Total +12)
+
+PERÍCIAS (15 pontos):
+Acrobacias 0 (Total +1), Atletismo 0 (Total +0), Combate À Distância: Controle Vibracional 2 (Total +4), Enganação 2 (Total +5), Especialidade: Negócios (INT) 4 (Total +9), Especialidade: Tecnologia (INT) 4 (Total +9), Furtividade 0 (Total +1), Intimidação 0 (Total +3), Intuição 1 (Total +2), Investigação 3 (Total +8), Percepção 5 (Total +6), Persuasão 0 (Total +3), Prestidigitação 0 (Total +2), Tecnologia 6 (Total +11), Tratamento 0 (Total +5), Veículos 2 (Total +4).
+
+VANTAGENS (10 pontos):
+Ataque Defensivo, Bem Informado, Benefício (Riqueza) 4, Contatos, Equipamento, Esforço Extraordinário, Maestria em Perícia (Intuição).
+
+PODERES (58 pontos):
+
+  • Baluarte Cronológico: Característica 1 • 1 pontos
+
+      Descrição Não é afetado imediatamente por mudanças no fluxo temporal
+
+  • Absorção de Choque: Imunidade 2 (Descritor Incomum 2 [Vibração].)• 2 pontos
+  • Barreira de Terremoto: Proteção 8 (Extras: Impenetrável +1.)• 16 pontos
+  • Matriz de Terremoto: Arranjo (Poder Base:  Rajada Vibracional) • 39 pontos
+
+      EA: Agitação Subatômica: Enfraquecer 10 (Resistência. Fixos: Preciso +1. Extras: Afeta Objetos +1.)• 21 pontos
+
+      EA: Campo Vibracional: Dano 10 (Fixos: Penetrante +5. Extras: Área +1 [Explosão], Duração Aumentada +1.)• 35 pontos
+
+      EA: Frequência Antinatural: Intangibilidade 4 (Extras: Afeta Objetos +1, Afeta Outros +1.)• 28 pontos
+
+          Espectral
+
+      EA: Rajada Vibracional: Dano 12 (Extras: Distância Aumentada +1, Efeito Secundário +1.)• 36 pontos
+
+EQUIPAMENTOS (5 pontos):
+
+  Celular (Smartphone) • 2 pontos
+  Contribuição da Equipe • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 1
+  Corpo-a-corpo: Bônus +3
+
+    Desarmado: Bônus +3, Crit 20 (CD 15 vs Resistência)
+    Agarrar: Bônus +3, Crit 20 (CD 10 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Matriz de Terremoto  - Agitação Subatômica: Enfraquecer, Bônus 3, Crit 20 (CD 20 vs Fortitude.)
+    Matriz de Terremoto  - Campo Vibracional: Dano, (CD 25 vs Resistência. CD 20 vs Esquiva para metade do efeito em Área Explosão de 8 m de raio.)
+    Matriz de Terremoto  - Frequência Antinatural: Intangibilidade, Bônus 3, Crit 20 (CD 14 vs Nenhum.)
+
+  À Distância: Bônus +2
+
+    Arremesso: Bônus +2, Crit 20 (CD 15 vs Resistência)
+    Matriz de Terremoto  - Rajada Vibracional: Dano, Bônus 2, Crit 20 (CD 27 vs Resistência.)
+
+PONTOS DE PODER:Habilidades 32 + Defesas 35 + Perícias 15 (29 graduações) + Vantagens 10 + Poderes 58 = 150 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 30 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Coração Partido: Embora o transplante de coração de Sismo tenha sido um sucesso, há um sério perigo de seu corpo rejeitar o transplante quando ela age de forma egoísta ou se recusa a ajudar os outros.
+
+  Fama: Como um magnata da tecnologia reconhecido publicamente, Karen é uma pequena celebridade. Quando ela fala consigo mesma, o mundo inteiro ouve (ás vezes).
+  Motivação—Fazer o Bem (Relutante): Karen não quer ser uma boa pessoa, mas também não consegue parar.
+  Tremores: Recentemente, o Sismo começou a ter vibrações incontroláveis. Ela teme que seu corpo esteja rejeitando seu transplante ou transformando-a ainda mais. Ela manteve esses medos e episódios em segredo da equipe até agora.
+
+PESSOAL
+
+  Nome Heroico: Sismo.
+  Nome real: Karen Stiles.
+  Idade: 32.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.

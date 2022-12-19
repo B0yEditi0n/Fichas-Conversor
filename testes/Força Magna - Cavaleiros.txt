@@ -1,0 +1,568 @@
+Null (Magna Blanc) - NP 13
+HABILIDADES (108 pontos)
+• Força 6
+• Vigor 10
+• Agilidade 5
+• Destreza 6
+• Luta 10
+• Intelecto 5
+• Prontidão 8
+• Presença 4
+
+DEFESAS (14 pontos):
+• Esquiva Bônus +6 (Total +11)
+• Aparar Bônus +2 (Total +12)
+• Resistência Bônus +4 (Total +14)
+• Fortitude Bônus +2 (Total +12)
+• Vontade Bônus +4 (Total +12)
+
+PERÍCIAS (35 pontos):
+Acrobacias 5 (Total +10), Atletismo 0 (Total +6), Enganação 0 (Total +4), Especialidade: História Galáctica (INT) 12 (Total +17), Especialidade: Tecnologia Preservadora (INT) 14 (Total +19), Furtividade 0 (Total +5), Intimidação 10 (Total +14), Intuição 4 (Total +12), Investigação 0 (Total +5), Percepção 0 (Total +8), Persuasão 0 (Total +4), Prestidigitação 0 (Total +6), Tecnologia 10 (Total +15), Tratamento 5 (Total +10), Veículos 10 (Total +16).
+
+VANTAGENS (21 pontos):
+Agarrar Aprimorado, Agarrar Rápido, Assustar, Ataque À Distância 6, Ataque Corpo-a-corpo 2, Ataque Imprudente, Destemido, Estrangular, Imobilizar Aprimorado, Iniciativa Aprimorada, Inventor, Maestria em Perícia (Intimidação), Prender Arma, Saque Rápido, Tomar Iniciativa.
+
+PODERES (89 pontos):
+
+  • Infusão da Matriz-Magna: Múltiplos Efeitos • 22 pontos
+
+      Imortalidade 1 • 2 pontos
+
+          Volta a vida em 2 semanas.
+
+      Imunidade 11 (Envelhecimento, Suporte Vital 10.)• 11 pontos
+      Proteção 4 • 4 pontos
+      Regeneração 5 • 5 pontos
+
+          -1 Penalidade em Resistência a cada 2 rodadas.
+
+  • Bastão do Poder Preservador (Facilmente Removível): Arranjo (Poder Base:  Dano) • 18 pontos
+
+      EA: Dano 14 (Fixos: Incurável +1. Extras: Distância Aumentada +1.)• 29 pontos
+
+      EA: Dano baseado em Força 5 (Fixos: Incurável +1, Penetrante +11.)• 17 pontos
+
+  • Tecno-Feitiçaria: Arranjo (Poder Base:  Crescimento) • 49 pontos
+
+      EA: Animar Bonecas do Vazio: Invocar 3 (Extras: Ativo +1, Capangas Múltiplos +9, Tipo Variável +1 [Amplo: Bonecas do Vazio].)• 39 pontos
+
+          Capanga com 45 pontos de poder.
+
+      EA: Crescimento 9 (Extras: Afeta Outros +1, Distância Aumentada +2.)• 45 pontos
+
+          • Tamanho 2, Massa +9
+            • Força +9, Vigor 9, • Intimidação +4.
+            • Defesas Ativas -4, Furtividade -9.
+            • Velocidade +1.
+
+      EA: Deslocamento Espacial: Teleporte 13 (Fixos: Aumentar Massa +6. Extras: Afeta Outros +1, Estendido +1. Falhas: Limitado a Estendido -1.)• 45 pontos
+
+          Teleporta dentro de 60 km e Estendido 15.000 km.
+
+      EA: Deslocamento Planetário: Movimento 1 (Viagem Espacial. Fixos: Aumentar Massa +6. Extras: Afeta Outros +1.)• 9 pontos
+
+      EA: Evolução Monstruosa: Aflição 13 (Resistido por Fortitude, Superado por Fortitude. , 3º Grau: Transformada. Extras: Distância Aumentada +2, Duração Aumentada +1. Falhas: Limitado a Terceiro Grau -1.)• 39 pontos
+
+OFENSIVA
+
+  Iniciativa 9
+  Corpo-a-corpo: Bônus +12
+
+    Desarmado: Bônus +12, Crit 20 (CD 21 vs Resistência)
+    Agarrar: Bônus +12, Crit 20 (CD 16 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Bastão do Poder Preservador  - Dano: Bônus 12, Crit 20 (CD 26 vs Resistência.)
+    Tecno-Feitiçaria  - Animar Bonecas do Vazio: Invocar, Bônus 12, Crit 20 (CD 13 vs Nenhum.)
+    Tecno-Feitiçaria  - Deslocamento Planetário: Movimento, Bônus 12, Crit 20 (CD 11 vs Nenhum.)
+
+  À Distância: Bônus +12
+
+    Arremesso: Bônus +12, Crit 20 (CD 21 vs Resistência)
+    Bastão do Poder Preservador  - Dano: Bônus 12, Crit 20 (CD 29 vs Resistência.)
+
+  Percepção
+
+    Tecno-Feitiçaria  - Crescimento: em Alcance Percepção (CD 19 vs Nenhum.)
+    Tecno-Feitiçaria  - Evolução Monstruosa: Aflição, em Alcance Percepção (CD 23 vs Resistido por Fortitude, Superado por Fortitude. , 3º Grau: Transformada.)
+
+PONTOS DE PODER:Habilidades 108 + Defesas 14 + Perícias 35 (70 graduações) + Vantagens 21 + Poderes 89 = 267 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 2 toneladas.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+Sem Complicações.
+
+PESSOAL
+
+  Nome Heroico: Null.
+  Nome real: Magna Blanc.
+  Idade: 2500.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Magna Amarela (Carmen Moreno) - NP 8
+HABILIDADES (26 pontos)
+• Força 0/4
+• Vigor 2
+• Agilidade 4/8
+• Destreza 4
+• Luta 2/6
+• Intelecto 0
+• Prontidão 0
+• Presença 1
+
+DEFESAS (6 pontos):
+• Esquiva Bônus +0 (Total +8)
+• Aparar Bônus +2 (Total +8)
+• Resistência Bônus +6 (Total +8/6 vulnerável)
+• Fortitude Bônus +0/+2 com Poderes (Total +4)
+• Vontade Bônus +4/+6 com Poderes (Total +6)
+
+PERÍCIAS (15 pontos):
+Acrobacias 8 (Total +16), Atletismo 0 (Total +4), Enganação 8 (Total +9), Especialidade: Negócios (INT) 4 (Total +4), Furtividade 0 (Total +8), Intimidação 0 (Total +1), Intuição 0 (Total +0), Investigação 0 (Total +0), Percepção 0 (Total +0), Persuasão 6 (Total +7), Prestidigitação 0 (Total +4), Tecnologia 0 (Total +0), Tratamento 0 (Total +0), Veículos 4 (Total +8).
+
+VANTAGENS (10 pontos):
+Ataque Defensivo, Defesa Aprimorada, Equipamento, Interpor-se, Liderança, Redirecionar, Rolamento Defensivo 2, Trabalho em Equipe, Zombar.
+
+PODERES (63 pontos):
+
+  • Transformação em Cavaleiro Magna: Forma Alternativa (Fixos: Ativação -2.)• 63 pontos
+
+      Adaga Giratória do Grifo: Arranjo (Poder Base:  Deflexão) • 17 pontos
+
+          EA: Dano baseado em Força 4 (Fixos: Acurado +1.)• 5 pontos
+
+          EA: Deflexão 8 (Extras: Redirecionar +1, Reflexão +1. Falhas: Distância Reduzida -1.)• 16 pontos
+
+      Armadura Magna: Efeitos Ligados • 14 pontos
+
+          Imunidade 10 (Suporte Vital 10.)• 10 pontos
+          Proteção 4 • 4 pontos
+
+      Bio-Fortaleciento: Característica Aumentada 28 (Modificações: Agilidade +4, Força +4, Fortitude +2, Luta +4, Vontade +2.)• 28 pontos
+      Salto 6 • 6 pontos
+
+          Salta um total de 120 m.
+
+EQUIPAMENTOS (5 pontos):
+
+  Comunicador • 2 pontos.
+      Comunicador • 1 pontos
+      GPS • 1 pontos
+
+  Contribuição para o QG • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 8
+  Corpo-a-corpo: Bônus +6
+
+    Desarmado: Bônus +6, Crit 20 (CD 19 vs Resistência)
+    Agarrar: Bônus +6, Crit 20 (CD 14 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Adaga Giratória do Grifo  - Dano: Bônus 8, Crit 20 (CD 23 vs Resistência.)
+    Adaga Giratória do Grifo  - Deflexão: Bônus 6, Crit 20 (CD 18 vs Nenhum.)
+
+  À Distância: Bônus +4
+
+    Arremesso: Bônus +4, Crit 20 (CD 19 vs Resistência)
+
+PONTOS DE PODER:Habilidades 26 + Defesas 6 + Perícias 15 (30 graduações) + Vantagens 10 + Poderes 63 = 120 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 500 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Coulrofobia: Carmen tem pavor de palhaços e monstros com tema de palhaço após um acidente de aniversário quando criança.
+  Honra: Os membros da Força Magna não podem aumentar o Nível de Poder de uma luta, exceto para responder aos seus inimigos fazendo o mesmo.
+  Motivação—Reparação: Carmen ainda se sente culpada por ser tão horrível com os outros quando era mais jovem, e secretamente espera que ser uma heroína possa ajudá-la a desfazer parte da dor que causou quando tinha um tipo diferente de poder.
+  Perda de Poder: Todos os Cavaleiros extraem seu poder da Matriz Magna, e falhas na matriz podem remover o acesso a alguns ou todos os poderes.
+
+PESSOAL
+
+  Nome Heroico: Magna Amarela.
+  Nome real: Carmen Moreno.
+  Idade: 19.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Preto.
+
+Erros:
+Sem erros.Magna Azul (Daniel “Danny” Nguyen) - NP 8
+HABILIDADES (26 pontos)
+• Força 4/8
+• Vigor 4
+• Agilidade 1/5
+• Destreza 0
+• Luta 2/6
+• Intelecto 0
+• Prontidão -1
+• Presença 3
+
+DEFESAS (8 pontos):
+• Esquiva Bônus +1 (Total +6)
+• Aparar Bônus +1 (Total +7)
+• Resistência Bônus +5 (Total +9/8 vulnerável)
+• Fortitude Bônus +3/+5 com Poderes (Total +9)
+• Vontade Bônus +3/+5 com Poderes (Total +4)
+
+PERÍCIAS (18 pontos):
+Acrobacias 4 (Total +9), Atletismo 8 (Total +16), Enganação 0 (Total +3), Especialidade: Cultura Popular (INT) 6 (Total +6), Furtividade 0 (Total +5), Intimidação 0 (Total +3), Intuição 0 (Total -1), Investigação 0 (Total +0), Percepção 5 (Total +4), Persuasão 6 (Total +9), Prestidigitação 0 (Total +0), Tecnologia 0 (Total +0), Tratamento 0 (Total +0), Veículos 6 (Total +6).
+
+VANTAGENS (11 pontos):
+Ataque Imprudente, Atraente, Equipamento, Esforço Supremo (Resistência), Imobilizar Aprimorado, Iniciativa Aprimorada, Liderança, Quebrar Aprimorado, Rolamento Defensivo, Sorte de Principiante, Trabalho em Equipe.
+
+PODERES (59 pontos):
+
+  • Transformação em Cavaleiro Magna: Forma Alternativa (Fixos: Ativação -2.)• 59 pontos
+
+      Adaptação Aquática: Natação 2 • 2 pontos
+
+          Velocidade aquática de 30 m/ação de movimento e 15 km/hora.
+
+      Armadura Magna: Efeitos Ligados • 14 pontos
+
+          Imunidade 10 (Suporte Vital 10.)• 10 pontos
+          Proteção 4 • 4 pontos
+
+      Bio-Fortalecimento: Característica Aumentada 28 (Modificações: Agilidade +4, Força +4, Fortitude +2, Luta +4, Vontade +2.)• 28 pontos
+      Lança Broca do Kraken: Dano baseado em Força 2 (Fixos: Penetrante +10, Perigosa +1.)• 13 pontos
+      Salto 4 • 4 pontos
+
+          Salta um total de 30 m.
+
+EQUIPAMENTOS (5 pontos):
+
+  Comunicador • 2 pontos.
+      Comunicador • 1 pontos
+      GPS • 1 pontos
+
+  Contribuição para o QG • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 9
+  Corpo-a-corpo: Bônus +6
+
+    Desarmado: Bônus +6, Crit 20 (CD 23 vs Resistência)
+    Agarrar: Bônus +6, Crit 20 (CD 18 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Transformação em Cavaleiro Magna  - Lança Broca do Kraken: Dano, Bônus 6, Crit 19-20 (CD 25 vs Resistência.)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 23 vs Resistência)
+
+PONTOS DE PODER:Habilidades 26 + Defesas 8 + Perícias 18 (35 graduações) + Vantagens 11 + Poderes 59 = 122 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 8 toneladas.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Deficiência: Danny tem dislexia grave e deve ser bem-sucedido em um teste de Prontidão para manter seu foco o suficiente para ler sob estresse. O Mestre determina a CD deste teste baseado no estresse ao redor.
+  Honra: Os membros da Força Magna não podem aumentar o Nível de Poder de uma luta, exceto para responder aos seus inimigos fazendo o mesmo.
+  Motivação—Fazer o Bem: Embora ele possa ser um pouco míope ou desinformado às vezes, Danny, em última análise, só quer ajudar os outros.
+  Perda de Poder: Todos os Cavaleiros extraem seu poder da Matriz Magna, e falhas na matriz podem remover o acesso a alguns ou todos os poderes.
+
+PESSOAL
+
+  Nome Heroico: Magna Azul.
+  Nome real: Daniel “Danny” Nguyen.
+  Idade: 18.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Pretos.
+
+Erros:
+
+  Total de Pontos Gastos 122 está passando do limite de pontos (NP * 15 + Progressões = 120 pontos).
+Magna Rosa (Joshua Grayson) - NP 8
+HABILIDADES (28 pontos)
+• Força 2/6
+• Vigor 2
+• Agilidade 2/6
+• Destreza 1
+• Luta 3/7
+• Intelecto 1
+• Prontidão 2
+• Presença 1
+
+DEFESAS (7 pontos):
+• Esquiva Bônus +2 (Total +8)
+• Aparar Bônus +1 (Total +8)
+• Resistência Bônus +6 (Total +8/6 vulnerável)
+• Fortitude Bônus +2/+4 com Poderes (Total +6)
+• Vontade Bônus +2/+4 com Poderes (Total +6)
+
+PERÍCIAS (18 pontos):
+Acrobacias 4 (Total +10), Atletismo 4 (Total +10), Combate À Distância: Guardião 4 (Total +5), Combate Corpo-a-corpo: Chicotes 1 (Total +8), Enganação 0 (Total +1), Furtividade 0 (Total +6), Intimidação 0 (Total +1), Intuição 6 (Total +8), Investigação 0 (Total +1), Percepção 7 (Total +9), Persuasão 0 (Total +1), Prestidigitação 0 (Total +1), Tecnologia 0 (Total +1), Tratamento 6 (Total +7), Veículos 4 (Total +5).
+
+VANTAGENS (7 pontos):
+Benefício (Geral) (Ataque em Equipe Re-Enegizante*), Equipamento, Liderança, Rolamento Defensivo 2, Trabalho em Equipe, Tratamento Aprimorado.
+
+PODERES (61 pontos):
+
+  • Transformação em Cavaleiro Magna: Forma Alternativa (Fixos: Ativação -2.)• 61 pontos
+
+      Armadura Magna: Efeitos Ligados • 14 pontos
+
+          Imunidade 10 (Suporte Vital 10.)• 10 pontos
+          Proteção 4 • 4 pontos
+
+      Bio-Fortalecimento: Característica Aumentada 28 (Modificações: Agilidade +4, Força +4, Fortitude +2, Luta +4, Vontade +2.)• 28 pontos
+      Chicote da Cauda do Dragão: Efeitos Ligados • 17 pontos
+
+          Aflição 8 (Resistido por Fortitude, Superado por Fortitude. 1º Grau: Tonto, 2º Grau: Atordoado, 3º Grau: Incapacitado. Fixos: Alcance +2.)• 10 pontos
+          Dano baseado em Força 1 (Fixos: Alcance +2. Vantagens Aumentadas: Agarrar Aprimorado, Derrubar Aprimorado, Desarmar Aprimorado, Imobilizar Aprimorado.)• 7 pontos
+
+      Salto 4 • 4 pontos
+
+          Salta um total de 30 m.
+
+EQUIPAMENTOS (5 pontos):
+
+  Comunicador • 2 pontos.
+      Comunicador • 1 pontos
+      GPS • 1 pontos
+
+  Contribuição para o QG • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 6
+  Corpo-a-corpo: Bônus +7
+
+    Desarmado: Bônus +7, Crit 20 (CD 21 vs Resistência)
+    Agarrar: Bônus +7, Crit 20 (CD 16 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Chicote da Cauda do Dragão  - Aflição: Bônus 7, Crit 20 (CD 18 vs Resistido por Fortitude, Superado por Fortitude. 1º Grau: Tonto, 2º Grau: Atordoado, 3º Grau: Incapacitado.)
+    Chicote da Cauda do Dragão  - Dano: Bônus 7, Crit 20 (CD 22 vs Resistência.)
+
+  À Distância: Bônus +1
+
+    Arremesso: Bônus +1, Crit 20 (CD 21 vs Resistência)
+
+PONTOS DE PODER:Habilidades 28 + Defesas 7 + Perícias 18 (36 graduações) + Vantagens 7 + Poderes 61 = 121 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 2 toneladas.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Honra: Os membros da Força Magna não podem aumentar o Nível de Poder de uma luta, exceto para responder aos seus inimigos fazendo o mesmo.
+  Motivação—Proteger Outros: Josh tem muita empatia e não suporta que os outros se machuquem.
+  Perda de Poder: Todos os Cavaleiros extraem seu poder da Matriz Magna, e falhas na matriz podem remover o acesso a alguns ou todos os poderes.
+  Relacionamento—Familia: A mãe de Josh, que o enviou a faculdade, e seu irmão, Michael, continuam sendo prioridade. Fazer malabarismo com responsabilidades é um fardo pesado para Josh, mas ele nunca vai reclamar.
+
+PESSOAL
+
+  Nome Heroico: Magna Rosa.
+  Nome real: Joshua Grayson.
+  Idade: 21.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+
+  Total de Pontos Gastos 121 está passando do limite de pontos (NP * 15 + Progressões = 120 pontos).
+Magna Verde (Casey Lee Boland) - NP 8
+HABILIDADES (24 pontos)
+• Força 0
+• Vigor 1
+• Agilidade 2
+• Destreza 4
+• Luta 1
+• Intelecto 1
+• Prontidão 3
+• Presença 0
+
+DEFESAS (9 pontos):
+• Esquiva Bônus +2 (Total +4)
+• Aparar Bônus +3 (Total +4)
+• Resistência Bônus +3 (Total +4/1 vulnerável)
+• Fortitude Bônus +2 (Total +3)
+• Vontade Bônus +2 (Total +5)
+
+PERÍCIAS (13 pontos):
+Acrobacias 2 (Total +4), Atletismo 2 (Total +2), Enganação 0 (Total +0), Furtividade 8 (Total +10), Intimidação 0 (Total +0), Intuição 0 (Total +3), Investigação 6 (Total +7), Percepção 0 (Total +3), Persuasão 0 (Total +0), Prestidigitação 0 (Total +4), Tecnologia 8 (Total +9), Tratamento 0 (Total +1), Veículos 0 (Total +4).
+
+VANTAGENS (11 pontos):
+Armas Improvisadas, Ataque Acurado, Ataque Corpo-a-corpo 3, Equipamento, Esquiva Fabulosa, Rolamento Defensivo 3, Trabalho em Equipe.
+
+PODERES (63 pontos):
+
+  • Transformação em Cavaleiro Magna: Forma Alternativa (Fixos: Ativação -2.)• 63 pontos
+
+      Armadura Magna: Efeitos Ligados • 14 pontos
+
+          Imunidade 10 (Suporte Vital 10.)• 10 pontos
+          Proteção 4 • 4 pontos
+
+      Bio-Fortalecimento: Característica Aumentada 28 (Modificações: Agilidade +4, Força +4, Fortitude +2, Luta +4, Vontade +2.)• 28 pontos
+      Cifre do Unicórnio: Dano 8 (Extras: Distância Aumentada +1.)• 16 pontos
+      Salto 4 • 4 pontos
+
+          Salta um total de 30 m.
+
+      Sentidos do Guardião: Sentidos 3 (Ultra-Audição, Visão no Escuro 2.)• 3 pontos
+
+EQUIPAMENTOS (5 pontos):
+
+  Comunicador • 2 pontos.
+      Comunicador • 1 pontos
+      GPS • 1 pontos
+
+  Contribuição para o QG • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 2
+  Corpo-a-corpo: Bônus +4
+
+    Desarmado: Bônus +4, Crit 20 (CD 15 vs Resistência)
+    Agarrar: Bônus +4, Crit 20 (CD 10 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +4
+
+    Arremesso: Bônus +4, Crit 20 (CD 15 vs Resistência)
+    Cifre do Unicórnio: Dano, Bônus 4, Crit 20 (CD 23 vs Resistência.)
+
+PONTOS DE PODER:Habilidades 24 + Defesas 9 + Perícias 13 (26 graduações) + Vantagens 11 + Poderes 63 = 120 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 30 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Honra: Os membros da Força Magna não podem aumentar o Nível de Poder de uma luta, exceto para responder aos seus inimigos fazendo o mesmo.
+  Motivação—Justiça: Casey quer ajudar, mas o que os move mais do que tudo é a necessidade de fazer Null responder por toda a dor e destruição que ela causou.
+  Perda de Poder: Todos os Cavaleiros extraem seu poder da Matriz Magna, e falhas na matriz podem remover o acesso a alguns ou todos os poderes.
+  Temperamento: Casey odeia injustiça, abuso e bullying dos fortes sobre os fracos, e pode facilmente ser incitado a ações precipitadas para detê-los.
+
+PESSOAL
+
+  Nome Heroico: Magna Verde.
+  Nome real: Casey Lee Boland.
+  Idade: 17.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Vários.
+
+Erros:
+Sem erros.Magna Vermelha (Mikayla Stewart) - NP 8
+HABILIDADES (30 pontos)
+• Força 1/3
+• Vigor 2
+• Agilidade 1/5
+• Destreza 1
+• Luta 4/8
+• Intelecto 2
+• Prontidão 3
+• Presença 1
+
+DEFESAS (8 pontos):
+• Esquiva Bônus +3 (Total +8)
+• Aparar Bônus +0 (Total +8)
+• Resistência Bônus +6 (Total +8/6 vulnerável)
+• Fortitude Bônus +2/+4 com Poderes (Total +6)
+• Vontade Bônus +3/+5 com Poderes (Total +8)
+
+PERÍCIAS (15 pontos):
+Acrobacias 4 (Total +9), Atletismo 4 (Total +7), Combate À Distância: Guardião 2 (Total +3), Enganação 0 (Total +1), Especialidade: Atualidades (INT) 4 (Total +6), Especialidade: Ciência (INT) 4 (Total +6), Furtividade 0 (Total +5), Intimidação 0 (Total +1), Intuição 0 (Total +3), Investigação 0 (Total +2), Percepção 0 (Total +3), Persuasão 4 (Total +5), Prestidigitação 0 (Total +1), Tecnologia 0 (Total +2), Tratamento 0 (Total +2), Veículos 8 (Total +9).
+
+VANTAGENS (13 pontos):
+Ação de Movimento, Ataque Poderoso, Equipamento, Esforço Extraordinário, Evasão, Faz-Tudo, Inspirar 2, Luta no Chão, Memória Eidética, Rolamento Defensivo 2, Trabalho em Equipe.
+
+PODERES (44 pontos):
+
+  • Transformação em Cavaleiro Magna: Forma Alternativa (Fixos: Ativação -2.)• 44 pontos
+
+      Armadura Magna: Efeitos Ligados • 14 pontos
+
+          Imunidade 10 (Suporte Vital 10.)• 10 pontos
+          Proteção 4 • 4 pontos
+
+      Bio-Fortalecimento: Característica Aumentada 24 (Modificações: Agilidade +4, Força +2, Fortitude +2, Luta +4, Vontade +2.)• 24 pontos
+      Espada Flamejante da Fênix: Dano baseado em Força 1 (Fixos: Alcance +2, Perigosa +1.)• 4 pontos
+      Salto 4 • 4 pontos
+
+          Salta um total de 30 m.
+
+EQUIPAMENTOS (5 pontos):
+
+  Comunicador • 2 pontos.
+      Comunicador • 1 pontos
+      GPS • 1 pontos
+
+  Contribuição para o QG • 3 pontos
+
+OFENSIVA
+
+  Iniciativa 5
+  Corpo-a-corpo: Bônus +8
+
+    Desarmado: Bônus +8, Crit 20 (CD 18 vs Resistência)
+    Agarrar: Bônus +8, Crit 20 (CD 13 vs Esquiva ou Força/Acrobacias ou Atletismo)
+    Transformação em Cavaleiro Magna  - Espada Flamejante da Fênix: Dano, Bônus 8, Crit 19-20 (CD 19 vs Resistência.)
+
+  À Distância: Bônus +1
+
+    Arremesso: Bônus +1, Crit 20 (CD 18 vs Resistência)
+
+PONTOS DE PODER:Habilidades 30 + Defesas 8 + Perícias 15 (30 graduações) + Vantagens 13 + Poderes 44 = 110 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 250 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Honra: Os membros da Força Magna não podem aumentar o Nível de Poder de uma luta, exceto para responder aos seus inimigos fazendo o mesmo.
+  Perda de Poder: Todos os Cavaleiros extraem seu poder da Matriz Magna, e falhas na matriz podem remover o acesso a alguns ou todos os poderes.
+
+PESSOAL
+
+  Nome Heroico: Magna Vermelha.
+  Nome real: Mikayla Stewart.
+  Idade: 16.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Pretos.
+
+Erros:
+Sem erros.

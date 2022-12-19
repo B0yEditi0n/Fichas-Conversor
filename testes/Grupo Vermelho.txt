@@ -1,0 +1,494 @@
+Macaco Mafioso - NP 6
+HABILIDADES (64 pontos)
+• Força 3/2
+• Vigor 4
+• Agilidade 6
+• Destreza 3
+• Luta 3
+• Intelecto 6
+• Prontidão 4
+• Presença 3
+
+DEFESAS (5 pontos):
+• Esquiva Bônus +0 (Total +8)
+• Aparar Bônus +2 (Total +7)
+• Resistência Bônus +0 (Total +4)
+• Fortitude Bônus +1 (Total +5)
+• Vontade Bônus +2 (Total +6)
+
+PERÍCIAS (30 pontos):
+Acrobacias 0 (Total +6), Atletismo 4 (Total +6), Combate À Distância: Armas de Fogo 4 (Total +7) [Submetralhadora Leve], Combate Corpo-a-corpo: Desarmado 2 (Total +5) [Desarmado], Enganação 8 (Total +11), Especialidade: Atualidade (INT) 6 (Total +12), Especialidade: Manha (INT) 8 (Total +14), Especialidade: Química (INT) 8 (Total +14), Furtividade 0 (Total +10), Intimidação 6 (Total +7), Intuição 4 (Total +8), Investigação 0 (Total +6), Percepção 2 (Total +6), Persuasão 6 (Total +9), Prestidigitação 0 (Total +3), Tecnologia 0 (Total +6), Tratamento 0 (Total +6), Veículos 2 (Total +5).
+
+VANTAGENS (18 pontos):
+Agarrar Aprimorado, Armação, Bem Informado, Bem Relacionado, Benefício (Riqueza), Contatos, Empatia com Animais, Equipamento 6, Evasão, Memória Eidética, Redirecionar, Tontear (Enganação), Zombar.
+
+PODERES (13 pontos):
+
+  • Encolhimento 4 (Fixos: Inato +1. Falhas: Permanente -0.)• 9 pontos
+
+      • Tamanho/Força -1 + Massa -4.
+        • Defesas Ativas +2, Furtividade +4.
+        • Intimidação -2.
+        • Velocidade -0.
+
+  • Sentidos 2 (Aguçado [Faro], Ultra-Audição.)• 2 pontos
+  • Pés Manipuladores: Membros Extras 2 • 2 pontos
+
+      Bônus de 2 para agarrar com todos braços.
+
+EQUIPAMENTOS (30 pontos):
+
+  Celular (Smartphone) • 2 pontos
+  Equipamento Adicional • 11 pontos
+  Limusine • 8 pontos.
+      Tamanho: Enorme.
+      Força: 9
+      Resistência: 9.
+      Defesa: 6.
+      Poderes:
+
+          Velocidade 5 • 5 pontos
+
+              Velocidade terrestre de 250 m/movimento e 120 km/hora.
+
+    • Submetralhadora Leve: Dano 3 (Extras: Distância Aumentada +1, Multiataque +1. Descritores: Balístico, Perfurante.)• 9 pontos
+
+OFENSIVA
+
+  Iniciativa 6
+  Corpo-a-corpo: Bônus +3
+
+    Desarmado: Bônus +5, Crit 20 (CD 17 vs Resistência)
+    Agarrar: Bônus +3, Crit 20 (CD 12 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +3
+
+    Arremesso: Bônus +3, Crit 20 (CD 17 vs Resistência)
+    Submetralhadora Leve: Dano, Bônus 7, Crit 20 (CD 18 vs Resistência. Descritores: Balístico, Perfurante)
+
+PONTOS DE PODER:Habilidades 64 + Defesas 5 + Perícias 30 (60 graduações) + Vantagens 18 + Poderes 13 = 130 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 120 kg.
+  Tamanho Grad. -3, até 1 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Dependente de Drogas: Rhesus precisa de um suprimento constante de drogas cognitivas SOMBRA ou então seu Intelecto diminui a uma taxa de 1 ponto a cada semana, 
+  Macaco: Rhesus não pode operar facilmente no mundo, 
+  Motivação—Ego: Rhesus não resiste em provar que é a pessoa mais inteligente da sala.
+
+PESSOAL
+
+  Nome Heroico: Macaco Mafioso.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Jessica Agnes Baker - NP 5
+HABILIDADES (28 pontos)
+• Força 1
+• Vigor 2
+• Agilidade 1
+• Destreza 1
+• Luta 2
+• Intelecto 5
+• Prontidão 3
+• Presença -1
+
+DEFESAS (10 pontos):
+• Esquiva Bônus +3 (Total +4)
+• Aparar Bônus +2 (Total +4)
+• Resistência Bônus +4 (Total +6/4 vulnerável)
+• Fortitude Bônus +2 (Total +4)
+• Vontade Bônus +3 (Total +6)
+
+PERÍCIAS (13 pontos):
+Acrobacias 0 (Total +1), Atletismo 0 (Total +1), Combate À Distância: Armas de Fogo 2 (Total +3) [Pistola Energética da AEGIS], Enganação 0 (Total -1), Especialidade: Atualidade (INT) 6 (Total +11), Especialidade: Criminologia (INT) 8 (Total +13), Furtividade 0 (Total +1), Intimidação 0 (Total -1), Intuição 0 (Total +3), Investigação 6 (Total +11), Percepção 0 (Total +3), Persuasão 0 (Total -1), Prestidigitação 0 (Total +1), Tecnologia 2 (Total +7), Tratamento 0 (Total +5), Veículos 2 (Total +3).
+
+VANTAGENS (18 pontos):
+Ataque Acurado, Bem Informado, Benefício (Acesso de Segurança) (Agente da AEGIS), Benefício (Cifrado), Benefício (Geral) (Código de Equipe*), Defesa Aprimorada, Equipamento 4, Esforço Supremo (Especialidade: Criminologia), Inspirar 3, Rolamento Defensivo 2, Tomar Iniciativa, Velocidade do Pensamento.
+
+PODERES (6 pontos):
+
+  • Atenção aos Padrões: Sentidos 4 (Precognição 4. Fixos: Exige Teste -3 [Especialidade: Criminologia].)• 1 pontos
+  • Eu Conheço um Lugar: Variável 1 (a Instalações e Veículos. Falhas: Lento -1, Limitado -1 [a Vantagens].)• 5 pontos
+
+      Efeitos até um total de 5 pontos.
+
+EQUIPAMENTOS (20 pontos):
+
+  Celular (Smartphone) • 2 pontos
+
+    • Armadura de Fibra Oculta da AEGIS: Proteção 2 (Fixos: Sutil +1 [parecem roupas comuns].)• 3 pontos
+
+  Contribuição para o veículo • 3 pontos
+  Gravador de áudio • 1 pontos
+  Microfone Parabólico • 1 pontos
+
+    • Pistola Energética da AEGIS: Dano 5 (Extras: Distância Aumentada +1. Descritores: Energético, Perfurante.)• 10 pontos
+
+OFENSIVA
+
+  Iniciativa 5
+  Corpo-a-corpo: Bônus +2
+
+    Desarmado: Bônus +2, Crit 20 (CD 16 vs Resistência)
+    Agarrar: Bônus +2, Crit 20 (CD 11 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +1
+
+    Arremesso: Bônus +1, Crit 20 (CD 16 vs Resistência)
+    Pistola Energética da AEGIS: Dano, Bônus 3, Crit 20 (CD 20 vs Resistência. Descritores: Energético, Perfurante)
+
+PONTOS DE PODER:Habilidades 28 + Defesas 10 + Perícias 13 (26 graduações) + Vantagens 18 + Poderes 6 = 75 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 60 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Motivação—Reconhecimento: Baker sabe o que é melhor mais do que qualquer agente anterior da AEGIS e só quer que as pessoas ao seu redor reconheçam esse simples fato.
+
+  Rivalidade: Ainda mais do que o resto da equipe, Baker tem muitos adversários e rivais dentro da AEGIS que ocasionalmente interferem diretamente em seu trabalho.
+  Temperamento: Baker se irrita facilmente quando as pessoas ao seu redor não conseguem ver o que ela considera óbvio.
+
+PESSOAL
+
+  Nome Heroico: Jessica Agnes Baker.
+  Idade: 28.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Lyla Chen (Desconhecido) - NP 5
+HABILIDADES (28 pontos)
+• Força 0
+• Vigor 0
+• Agilidade 2
+• Destreza 2
+• Luta 2
+• Intelecto 0
+• Prontidão 3
+• Presença 5
+
+DEFESAS (9 pontos):
+• Esquiva Bônus +2 (Total +4)
+• Aparar Bônus +2 (Total +4)
+• Resistência Bônus +2 (Total +2)
+• Fortitude Bônus +4 (Total +4)
+• Vontade Bônus +1 (Total +4)
+
+PERÍCIAS (19 pontos):
+Acrobacias 0 (Total +2), Atletismo 0 (Total +0), Combate Corpo-a-corpo: Desarmado 2 (Total +4) [Desarmado], Enganação 6 (Total +11), Especialidade: Manha (INT) 10 (Total +10), Furtividade 4 (Total +6), Intimidação 0 (Total +5), Intuição 2 (Total +5), Investigação 0 (Total +0), Percepção 8 (Total +11), Persuasão 0 (Total +5), Prestidigitação 6 (Total +8), Tecnologia 0 (Total +0), Tratamento 0 (Total +0), Veículos 0 (Total +2).
+
+VANTAGENS (19 pontos):
+Ação de Movimento, Armação, Atraente, Bem Informado, Bem Relacionado, Benefício (Acesso de Segurança) (Agente da AEGIS), Benefício (Cifrado), Benefício (Geral) (Código de Equipe*), Destemido, Equipamento 4, Fascinar (Persuasão), Idiomas 2 (Inglês (nativo), Mandarim, Russo), Sorte, Sorte de Principiante, Zombar.
+
+PODERES (0 pontos):
+
+EQUIPAMENTOS (20 pontos):
+
+  Celular (Smartphone) • 2 pontos
+
+    • Armadura de Fibra Oculta da AEGIS: Proteção 2 (Fixos: Sutil +1 [parecem roupas comuns].)• 3 pontos
+
+  Contribuição para o veículo • 3 pontos
+  Microfone Escondido • 1 pontos
+  Mini-rastreador • 1 pontos
+
+    • Pistola Energética da AEGIS: Dano 5 (Extras: Distância Aumentada +1. Descritores: Energético, Perfurante.)• 10 pontos
+
+OFENSIVA
+
+  Iniciativa 2
+  Corpo-a-corpo: Bônus +2
+
+    Desarmado: Bônus +4, Crit 20 (CD 15 vs Resistência)
+    Agarrar: Bônus +2, Crit 20 (CD 10 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +2
+
+    Arremesso: Bônus +2, Crit 20 (CD 15 vs Resistência)
+    Pistola Energética da AEGIS: Dano, Bônus 2, Crit 20 (CD 20 vs Resistência. Descritores: Energético, Perfurante)
+
+PONTOS DE PODER:Habilidades 28 + Defesas 9 + Perícias 19 (38 graduações) + Vantagens 19 + Poderes 0 = 75 pontos
+
+Idiomas
+Nativo: Inglês (nativo). Adicionais: Mandarim, Russo.
+
+Outras Características
+
+  Carga 30 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Inimigos: Chen trabalhou - e roubou - de uma variedade de supervilões no passado, alguns dos quais adorariam ter a chance de recuperar seu dinheiro e ensiná-la um pouco de respeito.
+  Motivação—Aceitação: A maior parte da arrogância e independência de Chen é apenas para mostrar. Na verdade, ela está sozinha e fugindo há tanto tempo que quer desesperadamente pessoas em quem possa confiar e um lugar para pertencer.
+  Você chama isso de ego. Eu chamo isso de estilo: Lyla pensa muito em si mesma e precisa ter certeza de que todo mundo também. Mesmo que amaldiçoem o nome dela, pelo menos sabem o nome dela.
+
+PESSOAL
+
+  Nome Heroico: Lyla Chen.
+  Nome real: Desconhecido.
+  Idade: 27.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Pretos.
+
+Erros:
+Sem erros.Lee Franks (Lee Aaron Franks) - NP 5
+HABILIDADES (34 pontos)
+• Força 4
+• Vigor 4
+• Agilidade 2
+• Destreza 2
+• Luta 4
+• Intelecto 0
+• Prontidão 0
+• Presença 1
+
+DEFESAS (8 pontos):
+• Esquiva Bônus +2 (Total +4)
+• Aparar Bônus +0 (Total +4)
+• Resistência Bônus +2 (Total +6)
+• Fortitude Bônus +2 (Total +6)
+• Vontade Bônus +4 (Total +4)
+
+PERÍCIAS (18 pontos):
+Acrobacias 0 (Total +2), Atletismo 4 (Total +8), Enganação 0 (Total +1), Especialidade: Politica (INT) 8 (Total +8), Furtividade 4 (Total +6), Intimidação 8 (Total +9), Intuição 0 (Total +0), Investigação 0 (Total +0), Percepção 6 (Total +6), Persuasão 0 (Total +1), Prestidigitação 0 (Total +2), Tecnologia 0 (Total +0), Tratamento 0 (Total +0), Veículos 6 (Total +8).
+
+VANTAGENS (15 pontos):
+Armas Improvisadas, Ataque À Distância 3, Benefício (Acesso de Segurança) (Agente da AEGIS), Benefício (Cifrado), Benefício (Geral) (Código de Equipe*), Equipamento 4, Imobilizar Aprimorado, Iniciativa Aprimorada, Interpor-se, Maestria em Arremesso.
+
+PODERES (0 pontos):
+
+EQUIPAMENTOS (20 pontos):
+
+  Algemas • 1 pontos
+  Celular (Smartphone) • 2 pontos
+
+    • Armadura de Fibra Oculta da AEGIS: Proteção 2 (Fixos: Sutil +1 [parecem roupas comuns].)• 3 pontos
+
+  Contribuição para o veículo • 3 pontos
+  Gazua Automática • 1 pontos
+
+    • Pistola Energética da AEGIS: Dano 5 (Extras: Distância Aumentada +1. Descritores: Energético, Perfurante.)• 10 pontos
+
+OFENSIVA
+
+  Iniciativa 6
+  Corpo-a-corpo: Bônus +4
+
+    Desarmado: Bônus +4, Crit 20 (CD 19 vs Resistência)
+    Agarrar: Bônus +4, Crit 20 (CD 14 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +5
+
+    Arremesso: Bônus +5, Crit 20 (CD 20 vs Resistência)
+    Pistola Energética da AEGIS: Dano, Bônus 5, Crit 20 (CD 20 vs Resistência. Descritores: Energético, Perfurante)
+
+PONTOS DE PODER:Habilidades 34 + Defesas 8 + Perícias 18 (36 graduações) + Vantagens 15 + Poderes 0 = 75 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 500 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Fraqueza—Joelho Fraco: O joelho esquerdo de Franks é uma reconstrução total depois de ser atingido por um estilhaço em Kansas City. Ele é especialmente vulnerável a tentativas de derrubar (–5 para resistir) e pode ter problemas inesperados em uma corrida ou escalada.
+  Honra: Franks tem seu próprio senso de honra. Ele não vai machucar inocentes ou começar uma briga em qualquer lugar que os espectadores possam se machucar, ele protege as pessoas antes de causar danos e ele não escala a violência, apenas usando dano suficiente para terminar o trabalho.
+  Motivação—Responsabilidade: Franks sabe que tem o dever como agente da AEGIS de manter sua equipe segura, não importa em que situações ridículas eles se coloquem.
+
+PESSOAL
+
+  Nome Heroico: Lee Franks.
+  Nome real: Lee Aaron Franks.
+  Idade: 37.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Pretos.
+
+Erros:
+Sem erros.Matti Scoggins (Matthew Angus Scoggins) - NP 5
+HABILIDADES (24 pontos)
+• Força 0
+• Vigor 2
+• Agilidade 3
+• Destreza 3
+• Luta 1
+• Intelecto 0
+• Prontidão 2
+• Presença 1
+
+DEFESAS (11 pontos):
+• Esquiva Bônus +2 (Total +5)
+• Aparar Bônus +4 (Total +5)
+• Resistência Bônus +2 (Total +4)
+• Fortitude Bônus +2 (Total +4)
+• Vontade Bônus +3 (Total +5)
+
+PERÍCIAS (24 pontos):
+Acrobacias 5 (Total +8), Atletismo 3 (Total +3), Combate À Distância: Armas de Fogo 2 (Total +5) [Pistola Energética da AEGIS], Enganação 4 (Total +5), Especialidade: Finanças (INT) 10 (Total +10), Especialidade: História da Arte (INT) 6 (Total +6), Furtividade 6 (Total +9), Intimidação 0 (Total +1), Intuição 4 (Total +6), Investigação 0 (Total +0), Percepção 0 (Total +2), Persuasão 0 (Total +1), Prestidigitação 8 (Total +11), Tecnologia 0 (Total +0), Tratamento 0 (Total +0), Veículos 0 (Total +3).
+
+VANTAGENS (14 pontos):
+Ataque Acurado, Benefício (Acesso de Segurança) (Agente da AEGIS), Benefício (Cifrado), Benefício (Geral) (Código de Equipe*), Benefício (Riqueza), Equipamento 5, Evasão, Finta Ágil, Maestria em Perícia (Furtividade), Segunda Chance (Prestidigitação).
+
+PODERES (2 pontos):
+
+  • Equilíbrio Perfeito: Movimento 2 (Escalar Paredes 2. Falhas: Limitado -1 [Movimento Vertical].)• 2 pontos
+
+EQUIPAMENTOS (21 pontos):
+
+  Celular (Smartphone) • 2 pontos
+
+    • Armadura de Fibra Oculta da AEGIS: Proteção 2 (Fixos: Sutil +1 [parecem roupas comuns].)• 3 pontos
+
+  Contribuição para o veículo • 3 pontos
+  Óculos de Visão Noturna • 2 pontos
+
+    • Pistola Energética da AEGIS: Dano 5 (Extras: Distância Aumentada +1. Descritores: Energético, Perfurante.)• 10 pontos
+
+  Roupas Camufladas • 1 pontos
+
+OFENSIVA
+
+  Iniciativa 3
+  Corpo-a-corpo: Bônus +1
+
+    Desarmado: Bônus +1, Crit 20 (CD 15 vs Resistência)
+    Agarrar: Bônus +1, Crit 20 (CD 10 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +3
+
+    Arremesso: Bônus +3, Crit 20 (CD 15 vs Resistência)
+    Pistola Energética da AEGIS: Dano, Bônus 5, Crit 20 (CD 20 vs Resistência. Descritores: Energético, Perfurante)
+
+PONTOS DE PODER:Habilidades 24 + Defesas 11 + Perícias 24 (48 graduações) + Vantagens 14 + Poderes 2 = 75 pontos
+
+Idiomas
+Nativo: Língua Nativa.
+
+Outras Características
+
+  Carga 30 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Motivação—Ganância: O resto do Grupo Vermelho pode estar nisso para fazer o que é certo, mas Scoggins vê os ângulos e quer transformar essa posição com a AEGIS em mais um esquema de ganhar dinheiro.
+  Obsessão: Scoggins adora tesouros e artefatos históricos - não por qualquer apreciação real da história, mas pelo prestígio de propriedade.
+  Vício: Scoggins é um alcoólatra - um alcoólatra funcional por seu próprio diagnóstico. Quando a pressão piora, ele usa bebidas alcoólicas para acalmar os nervos, o que prejudica suas habilidades.
+
+PESSOAL
+
+  Nome Heroico: Matti Scoggins.
+  Nome real: Matthew Angus Scoggins.
+  Idade: 25.
+  Altura: 170.
+  Peso: 70 kgs.
+
+Erros:
+Sem erros.Hamid Zarifa (“Crash & Burn”) - NP 5
+HABILIDADES (26 pontos)
+• Força 0
+• Vigor 1
+• Agilidade 1
+• Destreza 0
+• Luta 3
+• Intelecto 4
+• Prontidão 2
+• Presença 2
+
+DEFESAS (13 pontos):
+• Esquiva Bônus +4 (Total +5)
+• Aparar Bônus +3 (Total +6)
+• Resistência Bônus +3 (Total +4/3 vulnerável)
+• Fortitude Bônus +3 (Total +4)
+• Vontade Bônus +3 (Total +5)
+
+PERÍCIAS (17 pontos):
+Acrobacias 0 (Total +1), Atletismo 3 (Total +3), Combate À Distância: Armas de Fogo 2 (Total +2) [Pistola Energética da AEGIS], Enganação 0 (Total +10), Especialidade: Segurança (INT) 6 (Total +10), Furtividade 4 (Total +5), Intimidação 0 (Total +2), Intuição 4 (Total +6), Investigação 0 (Total +4), Percepção 2 (Total +4), Persuasão 0 (Total +2), Prestidigitação 0 (Total +0), Tecnologia 10 (Total +14), Tratamento 0 (Total +4), Veículos 2 (Total +2).
+
+VANTAGENS (17 pontos):
+Ataque Defensivo, Benefício (Acesso de Segurança) (Agente da AEGIS), Benefício (Cifrado), Benefício (Geral) (Código de Equipe*), Benefício (Identidade Alternativa) (Identidade online como Crash & Burn), Desarmar Aprimorado, Duro de Matar, Equipamento 5, Fascinar (Enganação), Idiomas (Inglês (nativo), Árabe), Inventor, Maestria em Perícia (Tecnologia), Rolamento Defensivo.
+
+PODERES (2 pontos):
+
+  • Rosto Honesto: Característica Aumentada 4 (Modificações: Enganação +8. Falhas: Limitado -1 [para Mentir].)• 2 pontos
+
+EQUIPAMENTOS (22 pontos):
+
+  Celular (Smartphone) • 2 pontos
+
+    • Armadura de Fibra Oculta da AEGIS: Proteção 2 (Fixos: Sutil +1 [parecem roupas comuns].)• 3 pontos
+
+  Contribuição para o veículo • 3 pontos
+  Gravador de Vídeo • 1 pontos
+  Microfone Escondido • 1 pontos
+  Microfone Parabólico • 1 pontos
+  Mini-rastreador • 1 pontos
+
+    • Pistola Energética da AEGIS: Dano 5 (Extras: Distância Aumentada +1. Descritores: Energético, Perfurante.)• 10 pontos
+
+OFENSIVA
+
+  Iniciativa 1
+  Corpo-a-corpo: Bônus +3
+
+    Desarmado: Bônus +3, Crit 20 (CD 15 vs Resistência)
+    Agarrar: Bônus +3, Crit 20 (CD 10 vs Esquiva ou Força/Acrobacias ou Atletismo)
+
+  À Distância: Bônus +0
+
+    Arremesso: Bônus +0, Crit 20 (CD 15 vs Resistência)
+    Pistola Energética da AEGIS: Dano, Bônus 2, Crit 20 (CD 20 vs Resistência. Descritores: Energético, Perfurante)
+
+PONTOS DE PODER:Habilidades 26 + Defesas 13 + Perícias 17 (33 graduações) + Vantagens 17 + Poderes 2 = 75 pontos
+
+Idiomas
+Nativo: Inglês (nativo). Adicionais: Árabe.
+
+Outras Características
+
+  Carga 30 kg.
+  Tamanho Grad. -2, até 2 m.
+  Velocidade Terrestre 8 m/ação de movimento - 4 km/hora.
+
+Complicações
+
+  Identidade: O pseudônimo de hacker de Zarifa, "Crash & Burn", é muito mais conhecido do que seu nome ou rosto real e pode atrair atenção indesejada quando ele o revela.
+  Motivação—Adrenalina: Zarifa adora fazer as coisas da maneira mais difícil e se desafiar constantemente.
+  Rivalidade: Zarifa provoca brigas regularmente no resto da comunidade de hackers e não resiste a deixar que outros especialistas em segurança saibam quem os derrotou.
+
+PESSOAL
+
+  Nome Heroico: Hamid Zarifa.
+  Nome real: “Crash & Burn”.
+  Idade: 21.
+  Altura: 170.
+  Peso: 70 kgs.
+  Cor do Cabelo: Preto.
+
+Erros:
+Sem erros.
