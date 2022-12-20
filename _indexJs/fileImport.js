@@ -1,7 +1,4 @@
-const patchFile 
+const patchFile =  preencheFichaPatch
 function fichaPatch(){
     
-}
-function preencheFichaPatch(filepatch){
-    patchFile = filepatch
 }

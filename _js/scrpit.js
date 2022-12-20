@@ -1,4 +1,3 @@
-
 //Importar json
 // Personagem nº.json
 // Nolham - Caio.json
@@ -7,14 +6,17 @@ pathFicha = './Personagem nº 1.json'
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))
 //   )
+
+Inicio()
+
 async function getJson(patch) {
   const getFile = await fetch(patch);
-  console.log(getFile)
   const Exportjson = await getFile.json();
   return(Exportjson)
 }
-callPower()
-gera_modelo()
+async function Inicio(){
+  await callPower()  
+}
 
 
 //Atomatizador de Trocas de Dados
@@ -24,27 +26,31 @@ function Elemento(idElemento, pJson){
 
 // não é possivel fazer ponteiros...
 async function gera_modelo(){
+  // Alguns poderes precisma ser carregados primeiro
+  
   ficha = JSON
   ficha = await getJson(pathFicha)
+  
   /**********************************************************************************
    * Titulo da Ficha
   ***********************************************************************************/
   Elemento('nPersonage', ficha['characters'][0]['name'])
   Elemento('nJogador', ficha['characters'][0]['playerName'])
   Elemento('NivelPoder', ficha['characters'][0]['powerLevel'])
-
   
+  modificacaoPower = new powerHabilidade
   /**********************************************************************************
    * Atributos principais
-  ***********************************************************************************/
-  Elemento('aForca', ficha['characters'][0]['abilities'][0]['rank'])
-  Elemento('aVigor', ficha['characters'][0]['abilities'][1]['rank'])
-  Elemento('aAgilidade', ficha['characters'][0]['abilities'][2]['rank'])
-  Elemento('aDestreza', ficha['characters'][0]['abilities'][3]['rank'])
-  Elemento('aLuta', ficha['characters'][0]['abilities'][4]['rank'])
-  Elemento('aIntelecto', ficha['characters'][0]['abilities'][5]['rank'])
-  Elemento('aProntidao', ficha['characters'][0]['abilities'][6]['rank'])
-  Elemento('aPresenca', ficha['characters'][0]['abilities'][7]['rank'])
+  ***********************************************************************************/ 
+  modificacaoPower.habilidade(ficha['characters'][0]['abilities'])
+  Elemento('aForca', ficha['characters'][0]['abilities'][0]['rank'] + modificacaoPower.forca)
+  Elemento('aVigor', ficha['characters'][0]['abilities'][1]['rank'] + modificacaoPower.vigor)
+  Elemento('aAgilidade', ficha['characters'][0]['abilities'][2]['rank'] + modificacaoPower.agilidade)
+  Elemento('aDestreza', ficha['characters'][0]['abilities'][3]['rank'] + modificacaoPower.destreza)
+  Elemento('aLuta', ficha['characters'][0]['abilities'][4]['rank'] + modificacaoPower.luta)
+  Elemento('aIntelecto', ficha['characters'][0]['abilities'][5]['rank'] + modificacaoPower.intelecto)
+  Elemento('aProntidao', ficha['characters'][0]['abilities'][6]['rank'] + modificacaoPower.prontidao)
+  Elemento('aPresenca', ficha['characters'][0]['abilities'][7]['rank'] + modificacaoPower.presenca)
   
   /**********************************************************************************
    * Defesas

@@ -1,4 +1,3 @@
-//import data from ;
 //src/Database/Effects.ts
 // async function getJson(patch) {
 //     const getFile = await fetch('./_js/dataBase/dataBase.json');
@@ -18,6 +17,8 @@ async function callPower(){
     buildPower = new chosePower();
     buildPower.loopPower(ficha['characters'][0]['powers'])
     
+    setTimeout(gera_modelo, 500) // um dia isso deve ser arrumado
+    return(1)
 
 }
 
@@ -48,7 +49,6 @@ class powerLayout{
         if(options != undefined){
             html_options = '('
             for(var i = 0; i <= options.length - 1; i++){
-                console.log(options.name)
                 html_options += options[i].name + ', '
                 if(options[i].traitText != ""){
                     html_options = html_options.substring(0, html_options.length - 2) // remover ultimo espaço
@@ -267,6 +267,19 @@ class powerLayout{
         item_html += await this.checaAlternatives(nowPower)
         return (item_html);
     }
+    async enhancedTrait(nowPower){
+        console.log(nowPower)
+        for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
+            //é uma habilidade
+            //Qual
+            modifyHabilidade[0].push(nowPower.enhancedTraits[i].affectedTraitID)
+            //Quanto
+            modifyHabilidade[1].push(nowPower.enhancedTraits[i].rank)                
+        }
+        
+        
+        
+    }
 
     //Poderes combinados, pergunte pro bernardo
     async multiPower(nowPower){
@@ -289,11 +302,9 @@ class powerLayout{
     }
     async LinkPower(nowPower){
         var link_html = ''
-        console.log(nowPower.powers.length)
-        for(var i = 0; i <= nowPower.powers.length -1; i++){
-            console.log(nowPower.powers)
-            link_html += await concatLinkPowers(nowPower.powers[i])            
 
+        for(var i = 0; i <= nowPower.powers.length -1; i++){
+            link_html += await concatLinkPowers(nowPower.powers[i])            
             link_html  = link_html.substring(0, link_html .length - 10) // tirar BR
             // 1 br 4 charteres, 2 8
             if(i == 0){
@@ -349,9 +360,6 @@ class chosePower extends powerLayout{
             }
 
             }
-
-        
-
         switch (escolha){
             case 5046: //Múltiplos Efeitos                
                 html = this.multiPower(powers)
@@ -369,7 +377,8 @@ class chosePower extends powerLayout{
             case 5045: // Efeioto ligado
                 html = this.LinkPower(powers)
                 break;
-            case 5006:
+            case 5006: // Carateristica aumentada
+                this.enhancedTrait(powers)
                 break;
             default:
                 html = this.outherPower(powers, parametro)
