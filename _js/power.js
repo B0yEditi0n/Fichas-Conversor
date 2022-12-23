@@ -59,11 +59,23 @@ function returnJson(id, number){
         ficha.characters[0].defenses[i].extraRank = number
     }
     //Perícias 3001
-    if(3001 <= id && 3013 <= id){
-        i = id - 3001
+    if(3001 <= id && 3013 >= id){
+        i = id - 3001        
         ficha.characters[0].skills[i].extraRank = new Object
         ficha.characters[0].skills[i].extraRank = number
     }
+    //Perícias Extras
+    
+    for(var j=0; j<=ficha.characters[0].extraSkills.length-1; j++){
+        //console.log(ficha.characters[0].extraSkills[j], id)
+        if(id == ficha.characters[0].extraSkills[j].id){
+            
+            ficha.characters[0].extraSkills[j].extraRank = new Object
+            ficha.characters[0].extraSkills[j].extraRank = number
+            console.log(ficha.characters[0].extraSkills[j])
+        }
+    }
+    
 
 }
 
@@ -273,8 +285,11 @@ class powerLayout{
         }
 
         condit_html += '] '
-        //Resistido por
-        resistedBy = `Resistido por ${nowPower.resistedBy}, `
+        //Resistido por, e se Superado
+        resistedBy = `Resistido por ${nowPower.resistedBy}`
+        if(nowPower.overcomedBy != ''){
+            resistedBy += ` e Superado por ${nowPower.overcomedBy}, ` 
+        }else{resistedBy += ', '}
         modify_html = this.buildModify(nowPower)
             
         afflict_html += condit_html + resistedBy + modify_html 
@@ -303,6 +318,7 @@ class powerLayout{
         item_html += await this.checaAlternatives(nowPower)
         return (item_html);
     }
+    // Caracteristica Aumetada
     async enhancedTrait(nowPower){
         
         for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
@@ -334,19 +350,45 @@ class powerLayout{
         return (arry_html)
         
     }
+    // Poderes Ligados
     async LinkPower(nowPower){
         var link_html = `<strong>${nowPower.name}: </strong> `
         for(var i = 0; i <= nowPower.powers.length -1; i++){
             link_html += await concatLinkPowers(nowPower.powers[i])            
-            link_html  = link_html.substring(0, link_html .length - 10) // tirar BR
+            link_html  = link_html.substring(0, link_html .length - 5) // tirar BR
             // 1 br 4 charteres, 2 8
             if(i == 0){
                 link_html += ' <strong>Ligado: </strong'
             }
         }
-
-        //link_html += await tablePowerItem(nowPower['powers'])
+        link_html += '</br>'
+        link_html += await this.checaAlternatives(nowPower)
         return(link_html)
+    }
+    //Imunidade
+    async imunity(nowPower){
+        var imunity_html = ''
+        imunity_html = this.checkEffects(nowPower.isAlternateEffect)//é ea?
+        imunity_html += `<strong>${nowPower.name}</strong> ` 
+        // Opções
+        imunity_html += '('
+        for (var i = 0; i <= nowPower.powerOptions.length - 1; i++){
+            imunity_html += `${nowPower.powerOptions[i].name}`
+            if (nowPower.powerOptions[i].traitText != ''){
+                imunity_html += ` ${nowPower.powerOptions[i].rank}: ${nowPower.powerOptions[i].traitText}, `
+            }
+            else{
+                imunity_html += ` ${nowPower.powerOptions[i].rank}, `
+            }
+        }
+        imunity_html = imunity_html.substring(0, imunity_html.length - 2)
+        imunity_html += ')'
+        
+        imunity_html += this.buildModify(nowPower)  // modificadores
+        imunity_html += `</br>`
+        imunity_html += await this.checaAlternatives(nowPower)     //EAs
+
+        return(imunity_html)
     }
 }
 class chosePower extends powerLayout{
@@ -369,25 +411,30 @@ class chosePower extends powerLayout{
         var name = ''
         name = this.efeito[powers['effectID']].name
         switch (powers['effectID']){
-            case 5046: //Múltiplos Efeitos                
-                html = this.multiPower(powers)
-                break;
-            case 5042: //Arranjo           
-                html = this.powerArry(powers)                                
-                break;
-//              Lista de EFeitos individuais                    
             case 5001: // Aflição
                 html = this.afflictionPower(powers)
-                break;
-            case 5016:
-                html = this.Weakeness(powers)
-                break;
-            case 5045: // Efeioto ligado
-                html = this.LinkPower(powers)
-                break;
+                break
             case 5006: // Carateristica aumentada
                 this.enhancedTrait(powers)
-                break;
+                break
+            case 5016: //Enfraquecimento
+                html = this.Weakeness(powers)
+                break
+            case 5020: //Imunidade
+                html = this.imunity(powers)   
+                break        
+            case 5042: //Arranjo           
+                html = this.powerArry(powers)                                
+                break
+            case 5045: // Efeioto ligado
+                html = this.LinkPower(powers)
+                break
+            case 5046: //Múltiplos Efeitos                
+                html = this.multiPower(powers)
+                break                    
+            
+            
+            
             default:
                 html = this.outherPower(powers, name)
         }

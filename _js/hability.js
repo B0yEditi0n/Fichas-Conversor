@@ -140,79 +140,132 @@
                 
             }
         }
-
+        
         HTML_Pericia1 = ''
         HTML_Pericia2 = ''
 
-        pericia(pericias){
+        pericia(pericias, EXTpericias){
             var Pericianome = ''
             var GradPericia = 0            
             var bonus = 0
-            for (i = 0; (i) <= pericias.length - 1; i++) {
+            var extraBonus = ''
+            var arryPericias = []
+            /*******************************************************************************
+             * Pericias Comuns
+             *******************************************************************************/
+            
+            for (i = 0; i <= pericias.length - 1; i++) {
                 Pericianome = pericias[i]['name']
                 GradPericia = pericias[i]['rank']
 
                 switch (pericias[i]['id']) {
                     case 3001: //Acrobacias
-                        bonus += this.bAgilidade
+                        bonus = this.bAgilidade + GradPericia
                         break;
                     case 3002: //Atletismo
-                        bonus += this.bForca
+                        bonus = this.bForca + GradPericia
                         break;
                     case 3003: //Enganação
-                        bonus += this.bPresenca
+                        bonus = this.bPresenca + GradPericia
                         break;
                     case 3004: //Furtividade 
-                        bonus += this.bAgilidade
+                        bonus = this.bAgilidade + GradPericia
                         break;
                     case 3005: //Intimidação
-                        bonus += this.bPresenca
+                        bonus = this.bPresenca + GradPericia
                         break;
                     case 3006: //Intuição
-                        bonus += this.bProntidao
+                        bonus = this.bProntidao + GradPericia
                         break;
                     case 3007: //Investigação
                         if (GradPericia == 0){bonus = 0;}
-                        else {bonus += this.bIntelecto}
+                        else {bonus = this.bIntelecto + GradPericia}
                         break;
                     case 3008: //Percepção
-                        bonus += this.bProntidao
+                        bonus = this.bProntidao + GradPericia
                         break;
                     case 3009: //Persuasão
-                        bonus += this.bPresenca
+                        bonus = this.bPresenca + GradPericia
                         break;
                     case 3010: //Prestidigitação
                         if(GradPericia == 0){bonus = 0}
-                        else{ bonus += this.bDestreza}
+                        else{ bonus = this.bDestreza + GradPericia}
                         break;
                     case 3011: //Tecnologia
                         if(GradPericia == 0){bonus = 0}
-                        else { bonus += this.bIntelecto}
+                        else { bonus = this.bIntelecto + GradPericia}
                         break;
                     case 3012: //Tratamento
                         if (GradPericia == 0) {bonus = 0}
-                        else{bonus += this.bIntelecto}
+                        else{bonus += this.bIntelecto + GradPericia}
                         break;
                     case 3013: //Veiculos
-                        bonus += this.bDestreza
+                        bonus += this.bDestreza + GradPericia
                         break;
 
                 }
-                //console.log(GradPericia)
+                if(pericias[i].extraRank != undefined){extraBonus = `* +${(pericias[i].extraRank + bonus)}`}
+                else{extraBonus = ''}
+                arryPericias.push(`<tr><td>${Pericianome}[${GradPericia}]: +${bonus}${extraBonus}</td></tr>`)
+            }
+            /*******************************************************************************
+             * Pericias Extras
+             *******************************************************************************/
+            //Limpeza de Variáveis
+            Pericianome = ''
+            GradPericia = 0            
+            bonus = 0
+            extraBonus = ''
+
+            for(var i = 0; i <= EXTpericias.length -1; i++){
+                Pericianome = EXTpericias[i].name
+                GradPericia = EXTpericias[i].rank
+
+                switch(EXTpericias[i].abilityID){
+                    case 1001: // forca
+                        bonus = this.bforca + EXTpericias[i].rank
+                        break
+                    case 1002: // Vigor
+                        bonus = this.bVigor + + EXTpericias[i].rank
+                        break
+                    case 1003: //Agilidade                                
+                        bonus = this.bAgilidade + EXTpericias[i].rank
+                        break
+                    case 1004: //Destreza
+                        bonus = this.bDestreza + EXTpericias[i].rank
+                        break
+                    case 1005: //Luta
+                        bonus = this.bLuta + EXTpericias[i].rank
+                        break
+                    case 1006: //Intelecto
+                        bonus = this.bIntelecto + EXTpericias[i].rank
+                        break 
+                    case 1007: //Prontidão
+                        bonus = this.bProntidao + EXTpericias[i].rank
+                        break
+                    case 1008: //Presença
+                        bonus = this.bPresenca + EXTpericias[i].rank
+                        break
+                }
                 
-                //Quebra de Coluna
-                if(Math.ceil(pericias.length / 2 ) >= i + 1){
-                    this.HTML_Pericia1 += `<tr><td>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</td></tr>`    
+                if(EXTpericias[i].extraRank != undefined){
+                    extraBonus = `* + ${bonus + EXTpericias[i].extraRank}`
                 }
                 else{
-                    this.HTML_Pericia2 += `<tr><td>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</td></tr>`
+                    extraBonus = ''
                 }
-
-
-            }
-
-
+                arryPericias.push(`<tr><td>${Pericianome}[${GradPericia}]: +${bonus}${extraBonus}<tr><td>`)
+            }            
+            
+            // Quebra de Coluna
+            for(var i = 1; i<= ((pericias.length) + (EXTpericias.length)); i++){
+                if(i <= Math.ceil((pericias.length + EXTpericias.length) / 2 )){
+                    this.HTML_Pericia1 += arryPericias[i-1]
+                }else{
+                    this.HTML_Pericia2 += arryPericias[i-1]
+                }
         }
+    }
         
         HTML_vantagem1 = ''
         HTML_vantagem2 = ''

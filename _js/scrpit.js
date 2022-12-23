@@ -28,7 +28,7 @@ function Elemento(idElemento, pJson){
 
 // não é possivel fazer ponteiros...
 async function gera_modelo(ficha){
-  console.log(ficha)
+
   // Alguns poderes precisma ser carregados primeiro
   /**********************************************************************************
    * Titulo da Ficha
@@ -54,7 +54,6 @@ async function gera_modelo(ficha){
   /**********************************************************************************
    * Defesas
   ***********************************************************************************/
-  console.log(ficha['characters'][0]['defenses'])
   modificacaoPower.defesa(ficha['characters'][0]['defenses'])
   
   Elemento('dEsquiva', modificacaoPower.htmlEsquiva)
@@ -67,13 +66,15 @@ async function gera_modelo(ficha){
    * Perícia
   ***********************************************************************************/ 
   
-  modificacaoPower.pericia(ficha['characters'][0]['skills'])
+  modificacaoPower.pericia(ficha['characters'][0]['skills'], ficha['characters'][0]['extraSkills'])
   document.getElementById('pericias_padrao1').innerHTML = '<table>' + modificacaoPower.HTML_Pericia1 + `</table>`;
   document.getElementById('pericias_padrao2').innerHTML = '<table>' + modificacaoPower.HTML_Pericia2 + `</table>`;
 
   /**********************************************************************************
    * Pericias Extras
    * ********************************************************************************/
+  /*modificacaoPower.extraPericia(ficha['characters'][0]['Skills'], )
+  modificacaoPower.HTML_extPericia
   var htmlDado
   htmlDado += `<table>`
   
@@ -95,11 +96,11 @@ async function gera_modelo(ficha){
     
     htmlDado += `<tr><td>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</td></tr>`
     
-  }  
+  } 
   htmlDado += '</table>'
 
   document.getElementById('extra_pericias').innerHTML = htmlDado;
-
+  */
   /**********************************************************************************
   * Vantagem
   ***********************************************************************************/     
