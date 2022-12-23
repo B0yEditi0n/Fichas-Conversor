@@ -1,13 +1,15 @@
 //Importar json
 // Personagem nº.json
 // Nolham - Caio.json
-pathFicha = './Personagem nº 1.json'
+pathFicha = 'Personagem 1.json'
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))
 //   )
 
-Inicio()
+//***********************************
+  Inicio()
+//***********************************
 
 async function getJson(patch) {
   const getFile = await fetch(patch);
@@ -25,126 +27,54 @@ function Elemento(idElemento, pJson){
 }
 
 // não é possivel fazer ponteiros...
-async function gera_modelo(){
+async function gera_modelo(ficha){
+  console.log(ficha)
   // Alguns poderes precisma ser carregados primeiro
-  
-  ficha = JSON
-  ficha = await getJson(pathFicha)
-  
   /**********************************************************************************
    * Titulo da Ficha
   ***********************************************************************************/
   Elemento('nPersonage', ficha['characters'][0]['name'])
   Elemento('nJogador', ficha['characters'][0]['playerName'])
   Elemento('NivelPoder', ficha['characters'][0]['powerLevel'])
-  
+
   modificacaoPower = new powerHabilidade
   /**********************************************************************************
    * Atributos principais
   ***********************************************************************************/ 
   modificacaoPower.habilidade(ficha['characters'][0]['abilities'])
-  Elemento('aForca', ficha['characters'][0]['abilities'][0]['rank'] + modificacaoPower.forca)
-  Elemento('aVigor', ficha['characters'][0]['abilities'][1]['rank'] + modificacaoPower.vigor)
-  Elemento('aAgilidade', ficha['characters'][0]['abilities'][2]['rank'] + modificacaoPower.agilidade)
-  Elemento('aDestreza', ficha['characters'][0]['abilities'][3]['rank'] + modificacaoPower.destreza)
-  Elemento('aLuta', ficha['characters'][0]['abilities'][4]['rank'] + modificacaoPower.luta)
-  Elemento('aIntelecto', ficha['characters'][0]['abilities'][5]['rank'] + modificacaoPower.intelecto)
-  Elemento('aProntidao', ficha['characters'][0]['abilities'][6]['rank'] + modificacaoPower.prontidao)
-  Elemento('aPresenca', ficha['characters'][0]['abilities'][7]['rank'] + modificacaoPower.presenca)
+  Elemento('aForca', modificacaoPower.htmlForca)
+  Elemento('aVigor', modificacaoPower.htmlVigor)
+  Elemento('aAgilidade', modificacaoPower.htmlAgilidade)
+  Elemento('aDestreza', modificacaoPower.htmlDestreza)
+  Elemento('aLuta', modificacaoPower.htmlLuta)
+  Elemento('aIntelecto', modificacaoPower.htmlIntelecto)
+  Elemento('aProntidao', modificacaoPower.htmlProntidao)
+  Elemento('aPresenca', modificacaoPower.htmlPresenca)
   
   /**********************************************************************************
    * Defesas
   ***********************************************************************************/
-  Elemento('dEsquiva', ficha['characters'][0]['defenses'][0]['rank'])
-  Elemento('dAparar', ficha['characters'][0]['defenses'][1]['rank'])
-  Elemento('dResistencia', ficha['characters'][0]['defenses'][2]['rank'])
-  Elemento('dFortitude', ficha['characters'][0]['defenses'][3]['rank'])
-  Elemento('dVontade', ficha['characters'][0]['defenses'][4]['rank'])
+  console.log(ficha['characters'][0]['defenses'])
+  modificacaoPower.defesa(ficha['characters'][0]['defenses'])
+  
+  Elemento('dEsquiva', modificacaoPower.htmlEsquiva)
+  Elemento('dAparar', modificacaoPower.htmlAparar)
+  Elemento('dResistencia', modificacaoPower.htmlResistencia)
+  Elemento('dFortitude', modificacaoPower.htmlFortitude)
+  Elemento('dVontade', modificacaoPower.htmlVontade)
 
   /**********************************************************************************
    * Perícia
   ***********************************************************************************/ 
-
-  htmlDado = '<table>'
-  for(i=0;(i) <= ficha['characters'][0]['skills'].length - 1; i++){
-    Pericianome = ficha['characters'][0]['skills'][i]['name']  
-    GradPericia = ficha['characters'][0]['skills'][i]['rank']
-
-    //baseado em qual habilidade?
-    //força 0 Vigor 1 Agilidade 2 Destreza 3 Luta 4 Intelecto 5 Prontidao 6 Presença 7
-    switch (ficha['characters'][0]['skills'][i]['id']){
-      case 3001: //Acrobacias
-
-        bonus = ficha['characters'][0]['abilities'][2]['rank']
-        break;
-      case 3002: //Atletismo
-        bonus = ficha['characters'][0]['abilities'][0]['rank']
-        break;
-      case 3003: //Enganação
-        bonus = ficha['characters'][0]['abilities'][7]['rank']
-        break;
-      case 3004: //Furtividade 
-        bonus = ficha['characters'][0]['abilities'][2]['rank']
-        break;
-      case 3005: //Intimidação
-        bonus = ficha['characters'][0]['abilities'][7]['rank']
-        break;
-      case 3006: //Intuição
-        bonus = ficha['characters'][0]['abilities'][6]['rank']
-        break; 
-      case 3007: //Investigação
-        if(GradPericia == 0){
-          bonus = 0;
-        }else{bonus = ficha['characters'][0]['abilities'][5]['rank']}
-        break; 
-      case 3008: //Percepção
-        bonus = ficha['characters'][0]['abilities'][6]['rank']
-        break;
-      case 3009: //Persuasão
-        bonus = ficha['characters'][0]['abilities'][7]['rank']
-        break;
-      case 3010: //Prestidigitação
-        if(GradPericia == 0){ 
-          bonus = 0
-        }
-        else{bonus = ficha['characters'][0]['abilities'][3]['rank']}
-        
-        break;
-      case 3011: //Tecnologia
-        if(GradPericia == 0){ 
-          bonus = 0
-        }
-        else{bonus = ficha['characters'][0]['abilities'][5]['rank']}
-        break;
-      case 3012: //Tratamento
-        if(GradPericia == 0){
-          bonus = 0
-        }
-        else{bonus = ficha['characters'][0]['abilities'][5]['rank']}        
-        break;
-      case 3013: //Veiculos
-        bonus = ficha['characters'][0]['abilities'][3]['rank']
-        break;        
-
-    }
-        
-    htmlDado += `<tr><td>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</td></tr>`
-       
-
-    //quebra de pagina
-    if( i == Math.floor(ficha['characters'][0]['skills'].length/2)){
-      htmlDado += `</tr><tr>`
-    }
-    
-  }
-  htmlDado += `</table>`
-
-  document.getElementById('pericias_padrao').innerHTML = htmlDado;
+  
+  modificacaoPower.pericia(ficha['characters'][0]['skills'])
+  document.getElementById('pericias_padrao1').innerHTML = '<table>' + modificacaoPower.HTML_Pericia1 + `</table>`;
+  document.getElementById('pericias_padrao2').innerHTML = '<table>' + modificacaoPower.HTML_Pericia2 + `</table>`;
 
   /**********************************************************************************
    * Pericias Extras
    * ********************************************************************************/
-
+  var htmlDado
   htmlDado += `<table>`
   
   for(i=0; i <= ficha['characters'][0]['extraSkills'].length -1; i++){
@@ -173,17 +103,11 @@ async function gera_modelo(){
   /**********************************************************************************
   * Vantagem
   ***********************************************************************************/     
-    htmlDado = '<table>'
-    for(i=0; i <= ficha['characters'][0]['advantages'].length - 1; i++){
-      if (ficha['characters'][0]['advantages'][i]['rank'] > 1){
-        htmlDado += `<tr><td>${ficha['characters'][0]['advantages'][i]['name']}[${ficha['characters'][0]['advantages'][i]['rank']}]</td></tr>`
-      }
-      else{
-        htmlDado += `<tr><td>${ficha['characters'][0]['advantages'][i]['name']}</td></tr>`  
-      }
-    }
-    htmlDado += `</table>`
-    document.getElementById('vantagens').innerHTML = htmlDado
+    htmlDado = ''
+    modificacaoPower.vantagem(ficha['characters'][0]['advantages'])
+    document.getElementById('vantagens1').innerHTML = `<table>` + modificacaoPower.HTML_vantagem1 +`</table>`
+    document.getElementById('vantagens2').innerHTML = `<table>` + modificacaoPower.HTML_vantagem2 + `</table>`
+        
 
     /**********************************************************************************
      * Complicações

@@ -10,14 +10,16 @@ const PowerOptionsList = [5003, 5004, 5007, 5009, 5020, 5027, 5035];
 const MultiplePowersList = [5043, 5045, 5046, 5048];
 
 
-async function callPower(){    
+async function callPower(){
     ficha = JSON
     ficha = await getJson(pathFicha)
 
     buildPower = new chosePower();
-    buildPower.loopPower(ficha['characters'][0]['powers'])
-    
-    setTimeout(gera_modelo, 500) // um dia isso deve ser arrumado
+    buildPower.jsonFicha = ficha['characters'][0]
+    await buildPower.loopPower(ficha['characters'][0]['powers']),
+
+    gera_modelo(ficha)
+//    setTimeout(gera_modelo, 1000) // um dia isso deve ser arrumado
     return(1)
 
 }
@@ -25,6 +27,7 @@ async function callPower(){
 // função utilizada para construir itens dos arranjos
 async function tablePowerItem(powerItens){
     reBuild = new chosePower()
+    reBuild.jsonFicha = ficha
     var html = ''
     
     for(i = 0; i <= powerItens.length - 1; i++){  
@@ -40,7 +43,37 @@ async function concatLinkPowers(linkpower){
     return (await powerLink.startSelect(linkpower))
 }
 
+function returnJson(id, number){
+    //Habilidades
+    var i
+    if(number)
+    if(1001 <= id && 1008 >= id){
+        i = id - 1001 
+        ficha.characters[0].abilities[i].extraRank = new Object 
+        ficha.characters[0].abilities[i].extraRank = number
+    }
+    //Defesas
+    if(2001 <= id && 2005 >= id){
+        i = id - 2001
+        ficha.characters[0].defenses[i].extraRank = new Object
+        ficha.characters[0].defenses[i].extraRank = number
+    }
+    //Perícias 3001
+    if(3001 <= id && 3013 <= id){
+        i = id - 3001
+        ficha.characters[0].skills[i].extraRank = new Object
+        ficha.characters[0].skills[i].extraRank = number
+    }
+
+}
+
+/***************************************************************************************** 
+ * CLASSES DO EFEITO
+*******************************************************************************************/
+
 class powerLayout{
+    jsonFicha = {}
+
     sumPower(nowPower){
 
     }
@@ -57,6 +90,10 @@ class powerLayout{
             }
             html_options = html_options.substring(0, html_options.length - 2)
             html_options += ') '
+            
+            if (options.length == 0){
+                html_options = '() '
+            }
 
             return(html_options)
         }
@@ -186,6 +223,7 @@ class powerLayout{
             return ('')
         }
     }
+
     async checaAlternatives(nowPower){
         if(nowPower.alternateEffects.length > 0){
             
@@ -194,8 +232,6 @@ class powerLayout{
         else return('')
 
     }
-
-
     //Poderes comuns
     async outherPower(nowPower, effect){
         var item_html = ''
@@ -205,7 +241,7 @@ class powerLayout{
         item_html += this.optionsPower(nowPower.powerOptions)    //possui opções?
         item_html += nowPower['rank'] + ' '                      //Graduação
         item_html += this.buildModify(nowPower)                  //Extras
-        item_html += `</br></br>`
+        item_html += `</br>`
         item_html += await this.checaAlternatives(nowPower)     //EAs
         return (item_html);
     }
@@ -243,7 +279,7 @@ class powerLayout{
             
         afflict_html += condit_html + resistedBy + modify_html 
 
-        afflict_html += `</br></br>`
+        afflict_html += `</br>`
 
         // Adiciona efeitos alternativos
         afflict_html += await this.checaAlternatives(nowPower)
@@ -261,24 +297,22 @@ class powerLayout{
         item_html += nowPower['rank'] + ' '                     //Graduação
         item_html += `Resistido por ${nowPower.resistedBy}, `
         item_html += this.buildModify(nowPower)                 //Extras
-        item_html += `</br></br>`
+        item_html += `</br>`
 
         // Adiciona efeitos alternativos
         item_html += await this.checaAlternatives(nowPower)
         return (item_html);
     }
     async enhancedTrait(nowPower){
-        console.log(nowPower)
+        
         for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
-            //é uma habilidade
-            //Qual
-            modifyHabilidade[0].push(nowPower.enhancedTraits[i].affectedTraitID)
+            returnJson(nowPower.enhancedTraits[i].affectedTraitID, nowPower.enhancedTraits[i].rank)
+        
+            //ficha.
             //Quanto
-            modifyHabilidade[1].push(nowPower.enhancedTraits[i].rank)                
+            modifyHabilidade[1].push(nowPower.enhancedTraits[i].rank)
+            
         }
-        
-        
-        
     }
 
     //Poderes combinados, pergunte pro bernardo
@@ -286,7 +320,7 @@ class powerLayout{
         var table_html
         table_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
         table_html += await tablePowerItem(nowPower['powers'])
-        table_html += '</td></tr></table></br></br>'
+        table_html += '</td></tr></table></br>'
         
         return (table_html)
         
@@ -296,13 +330,12 @@ class powerLayout{
         var arry_html
         arry_html = `<table><tr><th>${nowPower['name']}</th></tr><tr><td>`
         arry_html += await tablePowerItem(nowPower['alternateEffects'])
-        arry_html += '</td></tr></table></br></br>'
+        arry_html += '</td></tr></table></br>'
         return (arry_html)
         
     }
     async LinkPower(nowPower){
-        var link_html = ''
-
+        var link_html = `<strong>${nowPower.name}: </strong> `
         for(var i = 0; i <= nowPower.powers.length -1; i++){
             link_html += await concatLinkPowers(nowPower.powers[i])            
             link_html  = link_html.substring(0, link_html .length - 10) // tirar BR
@@ -317,7 +350,7 @@ class powerLayout{
     }
 }
 class chosePower extends powerLayout{
-    efeito = JSON
+
     async loopPower(powers){
         
         var html = ''
@@ -327,40 +360,15 @@ class chosePower extends powerLayout{
             document.getElementById('poderes').innerHTML += html
         }
     }
+    
     async startSelect(powers){
         //Declaração de Variáveis
         var escolha = ''
         var html = ''
-        this.efeito = await getJson('./_js/dataBase/dataBase.json')
-        var parametro
-
-        //Tabela de Poderes
-        if(powers["isAlternateEffect"] == true){ // Efeito de Repertorio e Multipower
-            //Multipoderes e Repertorio
-            if(powers.effectID != undefined){
-                parametro = this.efeito[powers['effectID']].name
-                escolha = powers['effectID']
-            }
-            //Arranjo
-            if(powers.effect != undefined){
-                parametro = this.efeito[powers['effect']['id']].name
-                escolha = powers['effect']['id']
-            }
-        }else{ 
-            if(!(MultiplePowersList.includes(powers['effectID']))){ //Efeitos alternativos não Tabelas
-                if(powers['effect'] === undefined){
-                    parametro = this.efeito[powers['effectID']].name
-                    escolha = powers['effectID']
-                }
-                else{
-                    parametro = powers['effect']['name']
-                    escolha = powers['effect']['id']
-                }
-                
-            }
-
-            }
-        switch (escolha){
+        this.efeito = _EffectsList[0]
+        var name = ''
+        name = this.efeito[powers['effectID']].name
+        switch (powers['effectID']){
             case 5046: //Múltiplos Efeitos                
                 html = this.multiPower(powers)
                 break;
@@ -381,7 +389,7 @@ class chosePower extends powerLayout{
                 this.enhancedTrait(powers)
                 break;
             default:
-                html = this.outherPower(powers, parametro)
+                html = this.outherPower(powers, name)
         }
         
         return (html)
