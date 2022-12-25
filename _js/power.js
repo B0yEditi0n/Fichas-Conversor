@@ -170,22 +170,21 @@ class powerLayout{
         //pontos
         var totalRanks = 0  
 
-        console.log(nowPower.effectID)
         // Opções de Poderes
-        if(PowerOptList.indexOf(nowPower.effectID) > -1){
-            console.log(nowPower.powerOptions)
+        if(PowerOptList.indexOf(nowPower.effectID) > -1){   
             for(var i = 0; i <= nowPower.powerOptions.length -1; i++){
                 totalRanks += nowPower.powerOptions[i].rank
             }        
         }
         // Conjunto de Poderes
         else if(GroupPowList.indexOf(nowPower.effectID) > -1){
-            console.log(nowPower.powers)
+            // Tem que contar a Soma disso
+            var powListGrad = 0
             for(var i = 0; i <= nowPower.powers.length -1; i++){
+                powListGrad = this.findRank(nowPower.powers[i])
+                totalRanks = this.numberSumPower(powListGrad, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)
                 //totalRanks += this.filterSumPower(nowPower.power[i])
-
             }
-        
         }
         // Arranjo
         else if(Arranjo.indexOf(nowPower.effectID) > -1){
@@ -206,7 +205,7 @@ class powerLayout{
         else{
             totalRanks = nowPower.rank
         }
-
+        console.log('Nome; ',nowPower.name, ' Graduação; ', totalRanks)
         return(totalRanks)
     }
     optionsPower(options){
@@ -441,14 +440,11 @@ class powerLayout{
     }
     // Caracteristica Aumetada
     async enhancedTrait(nowPower){
-
+        var enhancedTrait_HTML = ''
+        enhancedTrait_HTML = `<strong>${nowPower.name}:</strong> `
         for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
             returnJson(nowPower.enhancedTraits[i].affectedTraitID, nowPower.enhancedTraits[i].rank)
-
-            //ficha.
-            //Quanto
-            modifyHabilidade[1].push(nowPower.enhancedTraits[i].rank)
-
+            // Aumenta o que?
         }
         //Somatorio de Poderes
     }
@@ -662,7 +658,6 @@ class powerLayout{
 class chosePower extends powerLayout{
 
     async loopPower(powers){
-
         var html = ''
         var i
         for(i=0; i <= (powers.length - 1); i++){
@@ -674,6 +669,7 @@ class chosePower extends powerLayout{
     async startSelect(powers){
         //Declaração de Variáveis
         //var escolha = ''
+        console.log(powers)
         var html = ''
         this.efeito = _EffectsList[0]
         var name = ''
