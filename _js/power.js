@@ -107,6 +107,7 @@ function returnJson(id, number, duracao){
 class powerLayout{
     jsonFicha = {}
     numberSumPower(Rank, baseCost, Extra, Falha, Flat){
+        //Calcula o valor brugo dos itens
         var Total_custo
         var totalFalhas = 0
         var totalExtras = 0
@@ -149,11 +150,64 @@ class powerLayout{
 
     }
     sumPower(Rank, baseCost, Extra, Falha, Flat, EA){
+        //Formata o efeito
         var Total_custo = 0
         Total_custo = this.numberSumPower(Rank, baseCost, Extra, Falha, Flat)
+        
         if(EA == true){return('<i> - ' + Total_custo + ' Pontos</i>')}
         else{return('<b> - ' + Total_custo + ' Pontos</b>')}
 
+    }
+    findRank(nowPower){
+    // Essa função tem como objetivo definir o Tipo de Efeito e calcular
+    // como suas graduações        
+        //Poderes  de Opção
+        const PowerOptList = [5004, 5007, 5049, 5020, 5027, 5035]
+        const GroupPowList = [5043, 5045, 5046]
+        const Arranjo = [5042]
+        const caractAumentado = [5006]
+        
+        //pontos
+        var totalRanks = 0  
+
+        console.log(nowPower.effectID)
+        // Opções de Poderes
+        if(PowerOptList.indexOf(nowPower.effectID) > -1){
+            console.log(nowPower.powerOptions)
+            for(var i = 0; i <= nowPower.powerOptions.length -1; i++){
+                totalRanks += nowPower.powerOptions[i].rank
+            }        
+        }
+        // Conjunto de Poderes
+        else if(GroupPowList.indexOf(nowPower.effectID) > -1){
+            console.log(nowPower.powers)
+            for(var i = 0; i <= nowPower.powers.length -1; i++){
+                //totalRanks += this.filterSumPower(nowPower.power[i])
+
+            }
+        
+        }
+        // Arranjo
+        else if(Arranjo.indexOf(nowPower.effectID) > -1){
+            //Arranjo não tem graduação, mas um algoritimo
+            // para contar pontos deverá ser feito 
+        }
+        // Caracteristica Aumentada 
+        else if(nowPower.id == caractAumentado){
+            for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
+                totalRanks += nowPower.enhancedTraits[i].rank   
+            }
+            for(var j = 0; j <= nowPower.enhancedAdvantages.length -1; j++){
+                totalRanks += nowPower.enhancedAdvantages[i].rank
+            }
+                
+        }
+        //Poderes Comuns
+        else{
+            totalRanks = nowPower.rank
+        }
+
+        return(totalRanks)
     }
     optionsPower(options){
         var html_options = ''
@@ -396,6 +450,7 @@ class powerLayout{
             modifyHabilidade[1].push(nowPower.enhancedTraits[i].rank)
 
         }
+        //Somatorio de Poderes
     }
     async protection(nowPower){
         returnJson(2003, nowPower.rank, nowPower.durationID)
@@ -416,12 +471,11 @@ class powerLayout{
 
         // Soma de poderes
         for(var i = 0; i <= nowPower.powers.length - 1; i++){
-            pRank   = nowPower.powers[i].rank
+            pRank   = this.findRank(nowPower)
             pCust   = nowPower.powers[i].baseCost
             pExtras = nowPower.powers[i].extras
             pFalhas = nowPower.powers[i].flaws
             pFlats  = nowPower.powers[i].flats
-
             point += this.numberSumPower(pRank, pCust, pExtras, pFalhas, pFlats)
         }
         switch(nowPower.removable){
@@ -447,6 +501,7 @@ class powerLayout{
         var arry_html = ''
         var remove = ''
         var points = 0
+        var principal = 0
         //*****************/
         var EARank = 0
         var EACust = 0
@@ -458,12 +513,18 @@ class powerLayout{
         //Somando os pontos dos poderes
         for(var i = 0; i <= nowPower.alternateEffects.length - 1; i++){
             EARank   = nowPower.alternateEffects[i].rank
+            if(nowPower.alternateEffects[i].rank <= 0){//Caso existam Power Options
+                
+            }
             EACust   = nowPower.alternateEffects[i].baseCost
+            
             EAExtras = nowPower.alternateEffects[i].extras
             EAFalhas = nowPower.alternateEffects[i].flaws
             EAFlats  = nowPower.alternateEffects[i].flats
             if(points < this.numberSumPower(EARank, EACust, EAExtras, EAFalhas, EAFlats)){
                 points = this.numberSumPower(EARank, EACust, EAExtras, EAFalhas, EAFlats)
+                
+                principal = i
             }
         }
 
@@ -476,7 +537,8 @@ class powerLayout{
                 points +=  points - (Math.trunc(points/5) * 2)
                 remove = ' Facilmente Removível'
         }
-
+        //Definindo Efeito Principal
+        nowPower.alternateEffects[principal].isAlternateEffect = false
         arry_html = `<table><tr><th>${nowPower.name}<R>${remove} - ${points}+${(nowPower.alternateEffects.length - 1)}EA : </R>${(points + nowPower.alternateEffects.length - 1)} pontos</th></tr><tr><td>`
         arry_html += await tablePowerItem(nowPower['alternateEffects'])
 
@@ -512,7 +574,6 @@ class powerLayout{
             linksPower_html = linksPower_html.substring(0, linksPower_html .length - 5) // tirar BR
             linksPower_html = linksPower_html.replace('<b>', '<i>')
             linksPower_html = linksPower_html.replace('</b>', '</i>')
-            console.log(linksPower_html)
 
             link_html += linksPower_html
             //Soma
