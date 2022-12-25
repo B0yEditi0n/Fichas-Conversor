@@ -158,14 +158,14 @@ class powerLayout{
         else{return('<b> - ' + Total_custo + ' Pontos</b>')}
 
     }
-    findRank(nowPower){
+    async findRank(nowPower){
     // Essa função tem como objetivo definir o Tipo de Efeito e calcular
     // como suas graduações        
         //Poderes  de Opção
         const PowerOptList = [5004, 5007, 5049, 5020, 5027, 5035]
         const GroupPowList = [5043, 5045, 5046]
-        const Arranjo = [5042]
-        const caractAumentado = [5006]
+        const Arranjo = 5042
+        const caractAumentado = 5006
         
         //pontos
         var totalRanks = 0  
@@ -181,18 +181,19 @@ class powerLayout{
             // Tem que contar a Soma disso
             var powListGrad = 0
             for(var i = 0; i <= nowPower.powers.length -1; i++){
-                powListGrad = this.findRank(nowPower.powers[i])
+                powListGrad = await this.findRank(nowPower.powers[i])
                 totalRanks = this.numberSumPower(powListGrad, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)
                 //totalRanks += this.filterSumPower(nowPower.power[i])
             }
         }
         // Arranjo
-        else if(Arranjo.indexOf(nowPower.effectID) > -1){
+        else if(Arranjo == nowPower.effectID){
             //Arranjo não tem graduação, mas um algoritimo
             // para contar pontos deverá ser feito 
         }
         // Caracteristica Aumentada 
-        else if(nowPower.id == caractAumentado){
+        else if(nowPower.effectID == caractAumentado){
+            console.log(nowPower)
             for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
                 totalRanks += nowPower.enhancedTraits[i].rank   
             }
@@ -205,7 +206,7 @@ class powerLayout{
         else{
             totalRanks = nowPower.rank
         }
-        console.log('Nome; ',nowPower.name, ' Graduação; ', totalRanks)
+        
         return(totalRanks)
     }
     optionsPower(options){
@@ -423,6 +424,7 @@ class powerLayout{
         return (afflict_html);
 
     }
+    //Enfraquecimento
     async Weakeness(nowPower){
         var item_html = ''
 
@@ -438,14 +440,41 @@ class powerLayout{
         item_html += await this.checaAlternatives(nowPower)
         return (item_html);
     }
-    // Caracteristica Aumetada
+    //Caracteristica Aumetada
     async enhancedTrait(nowPower){
         var enhancedTrait_HTML = ''
+        var TraitName = ''
+        var rank = 0
+        var total_ranks = 0
+        var number = 0
+
         enhancedTrait_HTML = `<strong>${nowPower.name}:</strong> `
         for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
             returnJson(nowPower.enhancedTraits[i].affectedTraitID, nowPower.enhancedTraits[i].rank)
             // Aumenta o que?
+            if(_EffectsList.indexOf(nowPower.enhancedTraits[i].affectedTraitID) > -1){
+                number = _EffectsList.indexOf(nowPower.enhancedTraits[i].affectedTraitID)
+                TraitName = _EffectsList[number].name
+                rank = nowPower.enhancedTraits[i].affectedTraitID.rank
+                total_ranks += rank
+                enhancedTrait_HTML += `${TraitName} Aumetado ${rank},`
+            }             
         }
+        enhancedTrait_HTML = enhancedTrait_HTML.substring(0, enhancedTrait_HTML.length - 1);
+        for(var i = 0; i <= nowPower.enhancedAdvantages.length -1; i++){
+            enhancedTrait_HTML += ' ' + nowPower.enhancedAdvantages[i].name
+            if(nowPower.enhancedAdvantages[i].rank > 1){
+                enhancedTrait_HTML += nowPower.enhancedAdvantages[i].rank + ','
+            }else{
+                enhancedTrait_HTML += ','
+            }
+        }
+        enhancedTrait_HTML = enhancedTrait_HTML.substring(0, enhancedTrait_HTML.length - 1)
+        total_ranks = await this.findRank(nowPower)
+        enhancedTrait_HTML += this.sumPower(total_ranks, nowPower.baseCost, nowPower.extras, nowPower.flaws, nowPower.flats, nowPower.alternateEffects)
+        enhancedTrait_HTML += '</br>'
+
+        return(enhancedTrait_HTML)
         //Somatorio de Poderes
     }
     async protection(nowPower){
@@ -669,7 +698,6 @@ class chosePower extends powerLayout{
     async startSelect(powers){
         //Declaração de Variáveis
         //var escolha = ''
-        console.log(powers)
         var html = ''
         this.efeito = _EffectsList[0]
         var name = ''
@@ -679,7 +707,7 @@ class chosePower extends powerLayout{
                 html = this.afflictionPower(powers)
                 break
             case 5006: // Carateristica aumentada
-                this.enhancedTrait(powers)
+                html = this.enhancedTrait(powers)
                 break
             case 5016: //Enfraquecimento
                 html = this.Weakeness(powers)
@@ -709,7 +737,6 @@ class chosePower extends powerLayout{
             default:
                 html = this.outherPower(powers, name)
         }
-
         return (html)
 
     }

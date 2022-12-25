@@ -2,48 +2,48 @@
 const _Skills = [
   {
     3001: {
-      name: Acrobacias
+      name: 'Acrobacias'
     },
     3002: {
-      name: Atletismo
+      name: 'Atletismo'
     },
     3003: {
-      name: Enganação
+      name: 'Enganação'
     },
     3004: {
-      name: Furtividade
+      name: 'Furtividade'
     },
     3005: {
-      name: Intimidação
+      name: 'Intimidação'
     },
     3006: {
-      name: Intuição
+      name: 'Intuição'
     },
     3007: {
-      name: Investigação
+      name: 'Investigação'
     },
     3008: {
-      name: Percepção
+      name: 'Percepção'
     },
     3009: {
-      name: Persuasão
+      name: 'Persuasão'
     },
     3010: {
-      name: Prestidigitação
+      name: 'Prestidigitação'
     },
     3011: {
-      name: Tecnologia
+      name: 'Tecnologia'
     },
     3012: {
-      name: Tratamento
+      name: 'Tratamento'
     },
     3013: {
-      name: Veículos
+      name: 'Veículos'
     }
   }
 ]
 
-var _EffectsList = [
+const _EffectsList = [
     {
         5001: {
           name: "Aflição",
@@ -612,7 +612,7 @@ var _EffectsList = [
       }
 ];
 
-var _Defenses = [
+const _Defenses = [
   {
     2001:{
       name: "Esquiva"
@@ -632,7 +632,7 @@ var _Defenses = [
   }
 ]
 
-var _Abilities = [
+const _Abilities = [
   {
     1001:{
       name: "Força",
