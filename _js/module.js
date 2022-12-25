@@ -1,3 +1,4 @@
+//Duração  1 instantânea, 2 concentração, 3 Sustentada, 4*continuo, 5 permanente
 const _Skills = [
     // Acrobacias
     {

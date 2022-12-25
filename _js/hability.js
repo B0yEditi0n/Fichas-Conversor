@@ -271,7 +271,7 @@
         HTML_vantagem2 = ''
         vantagem(vantagens){
             var htmlVant = ''
-            for(i=0; i <= vantagens.length - 1; i++){
+            for(var i=0; i <= vantagens.length - 1; i++){
                 if (vantagens[i]['rank'] > 1){
                     htmlVant = `<tr><td>${vantagens[i]['name']}[${vantagens[i]['rank']}]</td></tr>`
                 }

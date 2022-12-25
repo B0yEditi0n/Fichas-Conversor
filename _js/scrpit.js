@@ -1,7 +1,8 @@
 //Importar json
 // Personagem nº.json
 // Nolham - Caio.json
-pathFicha = 'Personagem 1.json'
+// Jonny Texte.json
+pathFicha = './Texte_2.json'
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))
@@ -65,42 +66,10 @@ async function gera_modelo(ficha){
   /**********************************************************************************
    * Perícia
   ***********************************************************************************/ 
-  
   modificacaoPower.pericia(ficha['characters'][0]['skills'], ficha['characters'][0]['extraSkills'])
   document.getElementById('pericias_padrao1').innerHTML = '<table>' + modificacaoPower.HTML_Pericia1 + `</table>`;
   document.getElementById('pericias_padrao2').innerHTML = '<table>' + modificacaoPower.HTML_Pericia2 + `</table>`;
 
-  /**********************************************************************************
-   * Pericias Extras
-   * ********************************************************************************/
-  /*modificacaoPower.extraPericia(ficha['characters'][0]['Skills'], )
-  modificacaoPower.HTML_extPericia
-  var htmlDado
-  htmlDado += `<table>`
-  
-  for(i=0; i <= ficha['characters'][0]['extraSkills'].length -1; i++){
-    //Especialidade 
-
-    if(ficha['characters'][0]['extraSkills'][i]['name'].startsWith('Especialidade')){
-      bonus = ficha['characters'][0]['abilities'][5]['rank']
-    }
-    if(ficha['characters'][0]['extraSkills'][i]['name'].startsWith('Combate À Distância')){
-      bonus = ficha['characters'][0]['abilities'][3]['rank']
-    }
-    if(ficha['characters'][0]['extraSkills'][i]['name'].startsWith('Combate Corpo-a-corpo')){
-      bonus = ficha['characters'][0]['abilities'][4]['rank']
-    }
-
-    Pericianome = ficha['characters'][0]['extraSkills'][i]['name']
-    GradPericia = ficha['characters'][0]['extraSkills'][i]['rank']
-    
-    htmlDado += `<tr><td>${Pericianome}[${GradPericia}]: +${GradPericia + bonus}</td></tr>`
-    
-  } 
-  htmlDado += '</table>'
-
-  document.getElementById('extra_pericias').innerHTML = htmlDado;
-  */
   /**********************************************************************************
   * Vantagem
   ***********************************************************************************/     
