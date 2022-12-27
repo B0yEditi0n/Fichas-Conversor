@@ -44,6 +44,7 @@ async function concatLinkPowers(linkpower){
 }
 
 function returnJson(id, number, duracao){
+    console.log(id, number)
     //Atributo permanente ou temporário?
     var Type = 1
     if(duracao == 3 || duracao == 4){
@@ -56,10 +57,14 @@ function returnJson(id, number, duracao){
     if(1001 <= id && 1008 >= id){
         i = id - 1001
         if(Type == 1){
-            ficha.characters[0].abilities[i].extraRank = new Object
-            ficha.characters[0].abilities[i].extraRank = number
+            if(ficha.characters[0].abilities[i].extraRank == undefined){
+                ficha.characters[0].abilities[i].extraRank = new Object
+                ficha.characters[0].abilities[i].extraRank = 0
+            }
+            
+            ficha.characters[0].abilities[i].extraRank += number
         }else{
-            ficha.characters[0].abilities[i].rank = number
+            ficha.characters[0].abilities[i].rank += number
         }
 
     }
@@ -67,10 +72,14 @@ function returnJson(id, number, duracao){
     if(2001 <= id && 2005 >= id){
         i = id - 2001
         if(Type == 1){
-            ficha.characters[0].defenses[i].extraRank = new Object
-            ficha.characters[0].defenses[i].extraRank = number
+            if(ficha.characters[0].defenses[i].extraRank != undefined){
+                ficha.characters[0].defenses[i].extraRank = new Object
+                ficha.characters[0].defenses[i].extraRank = 0
+            }
+            
+            ficha.characters[0].defenses[i].extraRank += number
         }else{
-            ficha.characters[0].defenses[i].rank = number
+            ficha.characters[0].defenses[i].rank += number
         }
 
     }
@@ -78,11 +87,15 @@ function returnJson(id, number, duracao){
     if(3001 <= id && 3013 >= id){
         i = id - 3001
         if(Type == 1){
-            ficha.characters[0].skills[i].extraRank = new Object
-            ficha.characters[0].skills[i].extraRank = number
+            if(ficha.characters[0].skills[i].extraRank += undefined){
+                ficha.characters[0].skills[i].extraRank = new Object
+                ficha.characters[0].skills[i].extraRank = 0
+            }
+            
+            ficha.characters[0].skills[i].extraRank += number
         }
         else{
-            ficha.characters[0].skills[i].rank = number
+            ficha.characters[0].skills[i].rank += number
         }
     }
     //Perícias Extras
@@ -90,11 +103,15 @@ function returnJson(id, number, duracao){
     for(var j=0; j<=ficha.characters[0].extraSkills.length-1; j++){
         if(id == ficha.characters[0].extraSkills[j].id){
             if(Type == 1){
-                ficha.characters[0].extraSkills[j].extraRank = new Object
-                ficha.characters[0].extraSkills[j].extraRank = number
+                if(ficha.characters[0].extraSkills[j].extraRank = undefined){
+                    ficha.characters[0].extraSkills[j].extraRank = new Object
+                    ficha.characters[0].extraSkills[j].extraRank = 0
+                }
+                
+                ficha.characters[0].extraSkills[j].extraRank += number
             }
             else{
-                ficha.characters[0].extraSkills[j].rank = number
+                ficha.characters[0].extraSkills[j].rank += number
             }
         }
     }
@@ -345,15 +362,15 @@ class powerLayout{
         //Caso a distancia seja modificada
         if(rangeModify == true){
             if ( arryModify.rangeID == 1 ){
-                rage_html = 'Perto '
+                rage_html = 'Perto'
             }
             else{
                 if(arryModify.rangeID == 2){
-                    rage_html = 'a Distância '
+                    rage_html = 'a Distância'
                 }
                 else{
                     if(arryModify.rangeID ){
-                        rage_html += 'a Percepção '
+                        rage_html += ' a Percepção'
                     }
                 }
 
@@ -384,11 +401,11 @@ class powerLayout{
         }
         //Extras Graduados
 
-        var f_html = rage_html + extras_html + flaws_html + flat_html
-
+        var f_html = rage_html + ', ' + extras_html + flaws_html + flat_html
+        
         f_html = f_html.substring(0, f_html.length - 2); // Remove a ultima virgula
 
-        return(f_html)
+        return(f_html)    
 
 
     }
@@ -436,7 +453,7 @@ class powerLayout{
         item_html += `<strong>${nowPower['name']}:</strong> `    //Nome
         item_html += effect + ' '                                //Efeito
         item_html += this.optionsPower(nowPower.powerOptions)    //possui opções?
-        item_html += nowPower['rank'] + ' '                      //Graduação
+        item_html += nowPower['rank']                            //Graduação
         item_html += this.buildModify(nowPower)                  //Extras
         item_html += await this.Somatorioformatado(nowPower, 1)
         //item_html += await this.sumPower(nowPower.rank, nowPower.baseCost, nowPower.extras, nowPower.flaws, nowPower.flats, nowPower.alternateEffects)
@@ -459,7 +476,7 @@ class powerLayout{
 
         // CONDIÇÔES
 
-        condit_html = '['
+        condit_html = '('
         if(nowPower['conditions']['firstDegree'] != ''){
             condit_html += `${nowPower['conditions']['firstDegree']}`
         if(nowPower['conditions']['secondDegree'] != '')
@@ -470,21 +487,42 @@ class powerLayout{
         }else{ // Efeit de apenas 3º grau
             condit_html += nowPower['conditions']['thirdDegree']
         }
-        condit_html += '] '
+        condit_html += ') '
         //Resistido por, e se Superado
-        resistedBy = `Resistido por ${nowPower.resistedBy}`
-        if(nowPower.overcomedBy != '' || nowPower.overcomedBy == resistedBy){
-            resistedBy += ` e Superado por ${nowPower.overcomedBy}, `
-        }else{resistedBy += ', '}
+        resistedBy = `Resistido por ${nowPower.resistedBy} `
+        if((nowPower.overcomedBy != '') && (nowPower.overcomedBy != nowPower.resistedBy)){
+            resistedBy += `e Superado por ${nowPower.overcomedBy} `
+        }
 
         modify_html = this.buildModify(nowPower)
-        afflict_html += condit_html + resistedBy + modify_html
+        afflict_html += condit_html + modify_html + resistedBy
         afflict_html += await this.Somatorioformatado(nowPower, 1)
         afflict_html += `</br>`
         afflict_html += await this.checaAlternatives(nowPower)
 
         return (afflict_html);
 
+    }
+    // Dano
+    async dano(nowPower){
+        var damageHTML = ''
+        var rank = nowPower.rank
+        var modify_html = ''
+
+        damageHTML = this.checkEffects(nowPower.isAlternateEffect)
+        damageHTML += `<strong>${nowPower.name}</strong>: `
+        damageHTML += 'Dano '
+        if(nowPower.strengthBased == true){
+            damageHTML += 'Baseado em Força '
+            rank += nowPower.strengthRanks
+        }
+        modify_html += await this.buildModify(nowPower)
+        damageHTML += rank + modify_html
+        damageHTML += await this.Somatorioformatado(nowPower)
+        damageHTML += '</br>'
+        damageHTML += await this.checaAlternatives(nowPower)
+
+        return(damageHTML)
     }
     //Enfraquecimento
     async Weakeness(nowPower){
@@ -538,6 +576,112 @@ class powerLayout{
 
         return(enhancedTrait_HTML)
         //Somatorio de Poderes
+    }
+    // meche no tamanho
+    async htmlSizeModify(nowPower, effect){
+
+    }
+    async sizemodify(nowPower){
+        var Forca_Vigor = 0
+        var tamanho_forca = 0
+        var defesas_intimidar = 0
+        var futividade = 0
+        var tamanho_alcance = 0
+        var velocidade = 0
+        var robot = false
+        var normalForca = 0
+
+        if(nowPower.effectID == 5010){
+            //Crecimento
+            Forca_Vigor = nowPower.rank
+            defesas_intimidar = Math.trunc(nowPower.rank/2)
+            tamanho_alcance = Math.trunc(nowPower.rank/4)
+            velocidade = Math.trunc(nowPower.rank/8)
+            // Apenas Tamanho
+            for(var i = 0; i <= nowPower.extras.length -1; i++){
+                if(nowPower.extras[i].id == 501001){
+                    //Densidade
+                    if(nowPower.extras[i].parcial != 0){
+                        tamanho_alcance -= Math.trunc(nowPower.extras[i].parcial/8)
+                        velocidade -= Math.trunc(nowPower.extras[i].parcial/8)
+                    }else{                        
+                        defesas_intimidar = 0
+                        defesas_intimidar = 0
+                        velocidade += - Math.trunc(nowPower.rank/8) 
+                    }
+                }
+                if(nowPower.extras[i].id == 501002){
+                    //Proteção em vez de Vigor
+                    robot = true 
+                }
+            }
+            for(var i = 0; i <= nowPower.flaws.length -1; i++){
+                if(nowPower.flaws[i] == 501003){
+                    //Somente Aumentar Tamanho
+                    if(nowPower.flaws[i].parcial != 0){
+                        Forca_Vigor -= nowPower.flaws[i].parcial 
+                    }else{
+                        Forca_Vigor = 0
+
+                    }
+                }
+            }
+            if(nowPower.isAlternateEffect == false){
+                // Força 
+                returnJson(1001, Forca_Vigor, nowPower.durationID)
+                if(robot == false){
+                    // Vigor
+                    returnJson(1002, Forca_Vigor, nowPower.durationID)
+                }else{
+                    // Resistência
+                    returnJson(2003, Forca_Vigor, nowPower.durationID)
+                }
+                // Furividade
+                returnJson(3004, Forca_Vigor, nowPower.durationID)
+                // defesas Esquiva e Aparar 
+                returnJson(2001, (-defesas_intimidar), nowPower.durationID)
+                returnJson(2002, (-defesas_intimidar), nowPower.durationID)
+                returnJson(3005, defesas_intimidar, nowPower.durationID)
+
+            }
+        }
+
+        if(nowPower.effectID == 5015){
+            //Ecolhimento
+            futividade = nowPower.rank
+            defesas_intimidar = Math.trunc(nowPower.rank/2)
+            tamanho_forca = Math.trunc(nowPower.rank/4)
+            velocidade = Math.trunc(nowPower.rank/8)
+            console.log(nowPower.extras.length)
+            for(var i = 0; i <= nowPower.extras.length -1; i++){
+                if(nowPower.extras[i].id == 501502){
+                    if(nowPower.extras[i].parcial != 0){
+                        normalForca = nowPower.extras[i].parcial
+                    }
+                    else{
+                        normalForca = nowPower.rank
+                    }
+                }
+            }
+            if(normalForca > 0){
+                defesas_intimidar -= Math.trunc(normalForca/2)
+                tamanho_forca -= Math.trunc(normalForca/4)
+            }
+            if(nowPower.isAlternateEffect == false){
+                //  Furtividade
+                returnJson(3004, futividade, nowPower.durationID)
+                // Defesas Esquiva e Aparar
+                returnJson(2001, defesas_intimidar, nowPower.durationID)
+                returnJson(2002, defesas_intimidar, nowPower.durationID)
+                // Intimidar
+                returnJson(2002, defesas_intimidar, nowPower.durationID)
+                // Força
+                returnJson(1001, tamanho_forca, nowPower.durationID)
+            }
+            
+            
+        }
+        return ('Crescimento </br>') //htmlSizeModify()
     }
     async protection(nowPower){
         returnJson(2003, nowPower.rank, nowPower.durationID)
@@ -733,7 +877,7 @@ class powerLayout{
         ilusion_html += this.optionsPower(nowPower.powerOptions)    //possui opções?
         ilusion_html += nowPower['rank'] + ' '                      //Graduação
         ilusion_html += this.buildModify(nowPower)                  //Extras
-        ilusion_html += Somatorioformatado(nowPower, 1)
+        ilusion_html += this.Somatorioformatado(nowPower, 1)
         ilusion_html += `</br>`
         ilusion_html += await this.checaAlternatives(nowPower)     //EAs
         return (ilusion_html);
@@ -763,6 +907,13 @@ class chosePower extends powerLayout{
                 break
             case 5006: // Carateristica aumentada
                 html = this.enhancedTrait(powers)
+                break
+            /*case 5010: //Crescimento
+            case 5015: //Encolhimento
+                html = await this.sizemodify(powers)
+                break*/
+            case 5013: // Dano
+                html = this.dano(powers)
                 break
             case 5016: //Enfraquecimento
                 html = this.Weakeness(powers)

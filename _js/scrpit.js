@@ -91,9 +91,9 @@ async function gera_modelo(ficha){
     document.getElementById('complicacoes').innerHTML = htmlDado
     
     /**********************************************************************************
-    * Poderes
+    * Ofensiva
     ***********************************************************************************/
-
+    startOfense(ficha)
   
   
 } 
