@@ -2,7 +2,7 @@
 // Personagem nº.json
 // Nolham - Caio.json
 // Jonny Texte.json
-pathFicha = './Nolham - Caio.json'
+pathFicha = './Ofensivo.json'
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))

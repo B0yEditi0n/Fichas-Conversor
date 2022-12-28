@@ -44,7 +44,6 @@ async function concatLinkPowers(linkpower){
 }
 
 function returnJson(id, number, duracao){
-    console.log(id, number)
     //Atributo permanente ou temporário?
     var Type = 1
     if(duracao == 3 || duracao == 4){
@@ -269,10 +268,10 @@ class powerLayout{
                     EApoint = pcusto + nowPower.alternateEffects.length - 1
             }
             if(nowPower.alternateEffects.length == 1){
-                return(`${EAstr}EA : ${removeStr}<b>${EApoint - removePoints}</b>`)       
+                return(`${EAstr}EA : ${removeStr}<b>${EApoint - removePoints} pontos</b>`)       
             }
             else{
-                return(`${EAstr}EAs : ${removeStr}<b>${EApoint - removePoints}</b>`)
+                return(`${EAstr}EAs : ${removeStr}<b>${EApoint - removePoints} pontos</b>`)
             }
             
         }
@@ -487,9 +486,9 @@ class powerLayout{
         }else{ // Efeit de apenas 3º grau
             condit_html += nowPower['conditions']['thirdDegree']
         }
-        condit_html += ') '
+        condit_html += ')'
         //Resistido por, e se Superado
-        resistedBy = `Resistido por ${nowPower.resistedBy} `
+        resistedBy = `, Resistido por ${nowPower.resistedBy} `
         if((nowPower.overcomedBy != '') && (nowPower.overcomedBy != nowPower.resistedBy)){
             resistedBy += `e Superado por ${nowPower.overcomedBy} `
         }
@@ -517,8 +516,8 @@ class powerLayout{
             rank += nowPower.strengthRanks
         }
         modify_html += await this.buildModify(nowPower)
-        damageHTML += rank + modify_html
-        damageHTML += await this.Somatorioformatado(nowPower)
+        damageHTML += rank + modify_html + ' '
+        damageHTML += await this.Somatorioformatado(nowPower, 1)
         damageHTML += '</br>'
         damageHTML += await this.checaAlternatives(nowPower)
 
@@ -534,6 +533,7 @@ class powerLayout{
         item_html += nowPower['rank'] + ' '                     //Graduação
         item_html += `Resistido por ${nowPower.resistedBy}, `
         item_html += this.buildModify(nowPower)                 //Extras
+        item_html += await this.Somatorioformatado(nowPower, 1)
         item_html += `</br>`
 
         // Adiciona efeitos alternativos
@@ -652,7 +652,6 @@ class powerLayout{
             defesas_intimidar = Math.trunc(nowPower.rank/2)
             tamanho_forca = Math.trunc(nowPower.rank/4)
             velocidade = Math.trunc(nowPower.rank/8)
-            console.log(nowPower.extras.length)
             for(var i = 0; i <= nowPower.extras.length -1; i++){
                 if(nowPower.extras[i].id == 501502){
                     if(nowPower.extras[i].parcial != 0){

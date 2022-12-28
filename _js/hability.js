@@ -220,7 +220,7 @@
             for(var i = 0; i <= EXTpericias.length -1; i++){
                 Pericianome = EXTpericias[i].name
                 GradPericia = EXTpericias[i].rank
-
+                //Especialidades
                 switch(EXTpericias[i].abilityID){
                     case 1001: // forca
                         bonus = this.bforca + EXTpericias[i].rank
@@ -246,6 +246,16 @@
                     case 1008: //Presença
                         bonus = this.bPresenca + EXTpericias[i].rank
                         break
+                }
+                //Ataques corpo a corpo
+                if(EXTpericias[i].chosenAttacks != undefined){
+                    if(EXTpericias[i].isRanged == true){
+                        bonus = this.bDestreza + EXTpericias[i].rank
+                    }
+                    else(
+                        bonus = this.bLuta + EXTpericias[i].rank
+                    )
+
                 }
                 
                 if(EXTpericias[i].extraRank != undefined){

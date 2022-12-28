@@ -1,10 +1,10 @@
 {
-    "id": 1404170745761.9329,
-    "portName": "Personagem 1",
+    "id": 1125160696037.6213,
+    "portName": "Ofensivo",
     "characters": [
         {
-            "id": 919619805294.4681,
-            "name": "Personagem nº 1",
+            "id": 1227030828361.5684,
+            "name": "Ofensivo",
             "playerName": "",
             "powerLevel": 10,
             "pointsPerLevel": 15,
@@ -17,7 +17,7 @@
                     "name": "Força",
                     "abrev": "FOR",
                     "description": "A Força mede o poder muscular puro, e a habilidade de usá-lo. O seu modificador de Força se aplica a: <br/>• Dano causado pelo seu ataque desarmado e ataques baseados em força; <br/>• Quão longe pode saltar (baseado na perícia Atletismo); <br/>• O quanto de peso consegue levantar, carregar e arremessar; <br/>• Perícia de Atletismo.",
-                    "rank": 0,
+                    "rank": 6,
                     "isNull": false
                 },
                 {
@@ -49,7 +49,7 @@
                     "name": "Luta",
                     "abrev": "LUT",
                     "description": "Luta mede a habilidade de seu personagem em combate corpo-a-corpo, desde atingir o alvo até desviar de qualquer contra-ataque. O valor de Luta se aplica a: <br/>• Testes de ataques corpo-a-corpo; <br/>• Defesa <b>Aparar</b>, para evitar ataques corpo-a-corpo.",
-                    "rank": 0,
+                    "rank": 4,
                     "isNull": false
                 },
                 {
@@ -191,98 +191,128 @@
             ],
             "extraSkills": [
                 {
-                    "id": 700268857503.2323,
-                    "name": "Combate Corpo-a-corpo: Pancada Menal",
-                    "rank": 10,
+                    "id": 1035231676576.6232,
+                    "name": "Combate Corpo-a-corpo: Ataque Pancada",
+                    "rank": 4,
                     "description": "",
                     "chosenAttacks": {
-                        "id": 700268857503.2323,
+                        "id": 1035231676576.6232,
                         "descriptor": "",
                         "list": [
-                            593791070299.4025,
-                            0,
-                            323700122176.5188,
-                            250432159976.03302
+                            1322904621575.0068
                         ]
                     },
                     "isRanged": false
+                },
+                {
+                    "id": 1347384585623.0308,
+                    "name": "Combate À Distância",
+                    "rank": 0,
+                    "description": "",
+                    "chosenAttacks": {
+                        "id": 1347384585623.0308,
+                        "descriptor": "",
+                        "list": [
+                            -1
+                        ]
+                    },
+                    "isRanged": true
                 }
             ],
-            "advantages": [],
+            "advantages": [
+                {
+                    "id": 4001,
+                    "name": "Ação de Movimento",
+                    "rank": 1,
+                    "description": "<p>Quando tomando uma ação padrão e uma ação de movimento, você pode se mover antes e depois de sua ação, desde que a distância percorrida não seja maior que sua velocidade normal.</p>",
+                    "instanceID": 1251772305833.451,
+                    "ranked": false,
+                    "exclusive": true,
+                    "hasTrait": false,
+                    "traitText": "",
+                    "maxRank": 1
+                },
+                {
+                    "id": 4011,
+                    "name": "Ataque À Distância",
+                    "rank": 5,
+                    "description": "<p>Você tem o bônus de +1 em ataques à distância por graduação nesta vantagem. Seu bônus de ataque total ainda é limitado pelo nível de poder.</p>",
+                    "instanceID": 1346005723383.4985,
+                    "ranked": true,
+                    "exclusive": true,
+                    "hasTrait": false,
+                    "traitText": "",
+                    "maxRank": -1
+                },
+                {
+                    "id": 4039,
+                    "name": "Crítico Aprimorado: Aflição",
+                    "rank": 2,
+                    "description": "<p>Aumente a ameaça de crítico com um ataque em particular (escolhida quando adquirir esta vantagem) por 1, permitindo causar um acerto crítico em um dado natural 19 ou 20. Apenas um 20 natural é um acerto automático, entretanto, e um ataque que erre não é um crítico. Cada graduação adicional aplica-se a um ataque diferente ou aumenta a ameaça do ataque por 1 amais, para um máximo de 16-20 com 4 graduações.</p>",
+                    "instanceID": 669275416631.6362,
+                    "ranked": true,
+                    "exclusive": false,
+                    "hasTrait": false,
+                    "traitText": "",
+                    "maxRank": 4,
+                    "chosenAttacks": {
+                        "id": 669275416631.6362,
+                        "descriptor": "",
+                        "list": [
+                            710514222249.0481
+                        ]
+                    }
+                },
+                {
+                    "id": 4039,
+                    "name": "Crítico Aprimorado: Ataque Pancada",
+                    "rank": 1,
+                    "description": "<p>Aumente a ameaça de crítico com um ataque em particular (escolhida quando adquirir esta vantagem) por 1, permitindo causar um acerto crítico em um dado natural 19 ou 20. Apenas um 20 natural é um acerto automático, entretanto, e um ataque que erre não é um crítico. Cada graduação adicional aplica-se a um ataque diferente ou aumenta a ameaça do ataque por 1 amais, para um máximo de 16-20 com 4 graduações.</p>",
+                    "instanceID": 1574445857979.7034,
+                    "ranked": true,
+                    "exclusive": false,
+                    "hasTrait": false,
+                    "traitText": "",
+                    "maxRank": 4,
+                    "chosenAttacks": {
+                        "id": 1574445857979.7034,
+                        "descriptor": "",
+                        "list": [
+                            1322904621575.0068
+                        ]
+                    }
+                }
+            ],
             "languages": [
                 {
-                    "id": 1186716014953.4592,
+                    "id": 33066668587.42961,
                     "text": "Língua Nativa"
                 }
             ],
             "powers": [
                 {
-                    "id": 1017876320893.3433,
-                    "name": "Campo Gravitacional",
-                    "rank": 1,
+                    "id": 1322904621575.0068,
+                    "name": "Ataque Pancada",
+                    "rank": 4,
                     "description": "",
-                    "effectID": 5001,
+                    "effectID": 5013,
                     "baseCost": 1,
                     "maxRank": -1,
-                    "resistedBy": "Esquiva",
-                    "affectedTrait": "",
+                    "resistedBy": "Resistência",
+                    "affectedTrait": "Nenhum",
                     "descriptors": [],
                     "isActive": true,
                     "typeID": 1,
                     "actionID": 1,
-                    "rangeID": 1,
+                    "rangeID": 2,
                     "durationID": 1,
                     "extras": [
                         {
-                            "id": 10010,
-                            "name": "Área",
+                            "id": 10017,
+                            "name": "Distância Aumentada",
                             "rank": 1,
                             "description": "",
                             "extra": true,
-                            "flat": false,
-                            "ranked": true,
-                            "maxRank": -1,
-                            "hasTrait": false,
-                            "traitText": "Explosão",
-                            "parcial": 0,
-                            "instanceID": -1
-                        },
-                        {
-                            "id": 500101,
-                            "name": "Condição Extra",
-                            "rank": 1,
-                            "description": "",
-                            "extra": true,
-                            "flat": false,
-                            "ranked": true,
-                            "maxRank": 3,
-                            "hasTrait": false,
-                            "traitText": "",
-                            "parcial": 0,
-                            "instanceID": -1
-                        },
-                        {
-                            "id": 500103,
-                            "name": "Cumulativo",
-                            "rank": 1,
-                            "description": "",
-                            "extra": true,
-                            "flat": false,
-                            "ranked": false,
-                            "maxRank": 1,
-                            "hasTrait": false,
-                            "traitText": "",
-                            "parcial": 0,
-                            "instanceID": -1
-                        }
-                    ],
-                    "flaws": [
-                        {
-                            "id": 500105,
-                            "name": "Grau Limitado",
-                            "rank": 1,
-                            "description": "",
-                            "extra": false,
                             "flat": false,
                             "ranked": true,
                             "maxRank": 2,
@@ -292,64 +322,47 @@
                             "instanceID": -1
                         }
                     ],
-                    "flats": [],
-                    "alternateEffects": [],
-                    "removable": 0,
-                    "extraEfforts": [],
-                    "enhancedAdvantages": [],
-                    "isAlternateEffect": false,
-                    "isDynamicEffect": false,
-                    "conditions": {
-                        "firstDegree": "Tonto e Vulnerável",
-                        "secondDegree": "Atordoado e Indefeso",
-                        "thirdDegree": ""
-                    },
-                    "overcomedBy": "Esquiva"
-                },
-                {
-                    "id": 593791070299.4025,
-                    "name": "Pancada Menal",
-                    "rank": 6,
-                    "description": "",
-                    "effectID": 5013,
-                    "baseCost": 1,
-                    "maxRank": -1,
-                    "resistedBy": "Vontade",
-                    "affectedTrait": "Nenhum",
-                    "descriptors": [],
-                    "isActive": true,
-                    "typeID": 1,
-                    "actionID": 1,
-                    "rangeID": 1,
-                    "durationID": 1,
-                    "extras": [
+                    "flaws": [],
+                    "flats": [
                         {
-                            "id": 10030,
-                            "name": "Resistência Alternativa",
+                            "id": 10001,
+                            "name": "Acurado",
                             "rank": 1,
                             "description": "",
                             "extra": true,
-                            "flat": false,
-                            "ranked": false,
-                            "maxRank": 1,
-                            "hasTrait": true,
-                            "traitText": "Vontade",
+                            "flat": true,
+                            "ranked": true,
+                            "maxRank": -1,
+                            "hasTrait": false,
+                            "traitText": "",
+                            "parcial": 0,
+                            "instanceID": -1
+                        },
+                        {
+                            "id": 501311,
+                            "name": "Perigosa",
+                            "rank": 3,
+                            "description": "",
+                            "extra": true,
+                            "flat": true,
+                            "ranked": true,
+                            "maxRank": 4,
+                            "hasTrait": false,
+                            "traitText": "",
                             "parcial": 0,
                             "instanceID": -1
                         }
                     ],
-                    "flaws": [],
-                    "flats": [],
                     "alternateEffects": [
                         {
-                            "id": 250432159976.03302,
-                            "name": "Acertar nervo",
-                            "rank": 10,
+                            "id": 710514222249.0481,
+                            "name": "Aflição",
+                            "rank": 1,
                             "description": "",
                             "effectID": 5001,
                             "baseCost": 1,
                             "maxRank": -1,
-                            "resistedBy": "Esquiva",
+                            "resistedBy": "",
                             "affectedTrait": "",
                             "descriptors": [],
                             "isActive": false,
@@ -367,63 +380,22 @@
                             "isAlternateEffect": true,
                             "isDynamicEffect": false,
                             "conditions": {
-                                "firstDegree": "Tonto",
-                                "secondDegree": "Atordoado",
-                                "thirdDegree": "Incapacitado"
+                                "firstDegree": "",
+                                "secondDegree": "",
+                                "thirdDegree": ""
                             },
-                            "overcomedBy": "Vontade"
+                            "overcomedBy": ""
                         },
                         {
-                            "id": 439460140690.12665,
-                            "name": "Ataque direcionado",
-                            "rank": 8,
+                            "id": 504936702810.1214,
+                            "name": "Rajada de Ar",
+                            "rank": 5,
                             "description": "",
-                            "effectID": 5026,
-                            "baseCost": 2,
-                            "maxRank": -1,
-                            "resistedBy": "Esquiva ou Força/Acrobacias ou Atletismo",
-                            "affectedTrait": "",
-                            "descriptors": [],
-                            "isActive": false,
-                            "typeID": 2,
-                            "actionID": 1,
-                            "rangeID": 1,
-                            "durationID": 3,
-                            "extras": [],
-                            "flaws": [
-                                {
-                                    "id": 11007,
-                                    "name": "Distância Reduzida",
-                                    "rank": 1,
-                                    "description": "",
-                                    "extra": false,
-                                    "flat": false,
-                                    "ranked": true,
-                                    "maxRank": 2,
-                                    "hasTrait": false,
-                                    "traitText": "",
-                                    "parcial": 0,
-                                    "instanceID": -1
-                                }
-                            ],
-                            "flats": [],
-                            "alternateEffects": [],
-                            "removable": 0,
-                            "extraEfforts": [],
-                            "enhancedAdvantages": [],
-                            "isAlternateEffect": true,
-                            "isDynamicEffect": false
-                        },
-                        {
-                            "id": 323700122176.5188,
-                            "name": "Enfraquecer",
-                            "rank": 4,
-                            "description": "",
-                            "effectID": 5016,
+                            "effectID": 5013,
                             "baseCost": 1,
                             "maxRank": -1,
-                            "resistedBy": "Fortitude",
-                            "affectedTrait": "Vigor",
+                            "resistedBy": "Resistência",
+                            "affectedTrait": "Nenhum",
                             "descriptors": [],
                             "isActive": false,
                             "typeID": 1,
@@ -432,13 +404,58 @@
                             "durationID": 1,
                             "extras": [],
                             "flaws": [],
-                            "flats": [],
+                            "flats": [
+                                {
+                                    "id": 10016,
+                                    "name": "Dimensional",
+                                    "rank": 1,
+                                    "description": "",
+                                    "extra": true,
+                                    "flat": true,
+                                    "ranked": true,
+                                    "maxRank": 3,
+                                    "hasTrait": true,
+                                    "traitText": "Rajada ",
+                                    "parcial": 0,
+                                    "instanceID": -1
+                                },
+                                {
+                                    "id": 11013,
+                                    "name": "Impreciso",
+                                    "rank": 2,
+                                    "description": "",
+                                    "extra": false,
+                                    "flat": true,
+                                    "ranked": true,
+                                    "maxRank": -1,
+                                    "hasTrait": false,
+                                    "traitText": "",
+                                    "parcial": 0,
+                                    "instanceID": -1
+                                },
+                                {
+                                    "id": 501311,
+                                    "name": "Perigosa",
+                                    "rank": 3,
+                                    "description": "",
+                                    "extra": true,
+                                    "flat": true,
+                                    "ranked": true,
+                                    "maxRank": 4,
+                                    "hasTrait": false,
+                                    "traitText": "",
+                                    "parcial": 0,
+                                    "instanceID": -1
+                                }
+                            ],
                             "alternateEffects": [],
                             "removable": 0,
                             "extraEfforts": [],
                             "enhancedAdvantages": [],
                             "isAlternateEffect": true,
-                            "isDynamicEffect": false
+                            "isDynamicEffect": false,
+                            "strengthBased": false,
+                            "strengthRanks": 6
                         }
                     ],
                     "removable": 0,
@@ -447,15 +464,46 @@
                     "isAlternateEffect": false,
                     "isDynamicEffect": false,
                     "strengthBased": true,
-                    "strengthRanks": 0
+                    "strengthRanks": 6
                 }
             ],
             "equipment": [],
             "complicationCount": 0,
             "complications": [],
-            "errors": [],
+            "errors": [
+                {
+                    "errorCode": 9005,
+                    "traitID": 710514222249.0481,
+                    "description": "Em \"Aflição\", Aflição, está faltando a defesa resistida do efeito."
+                },
+                {
+                    "errorCode": 9005,
+                    "traitID": 710514222249.0481,
+                    "description": "Em \"Aflição\", Aflição, está faltando a característica de superar o efeito."
+                },
+                {
+                    "errorCode": 9005,
+                    "traitID": 710514222249.0481,
+                    "description": "Em \"Aflição\", Aflição, está faltando a primeira condição do efeito."
+                },
+                {
+                    "errorCode": 9005,
+                    "traitID": 710514222249.0481,
+                    "description": "Em \"Aflição\", Aflição, está faltando a segunda condição do efeito."
+                },
+                {
+                    "errorCode": 9005,
+                    "traitID": 710514222249.0481,
+                    "description": "Em \"Aflição\", Aflição, está faltando a terceira condição do efeito."
+                },
+                {
+                    "errorCode": 9005,
+                    "traitID": 1322904621575.0068,
+                    "description": "Poder Ataque Pancada com acerto 11 e graduação 10 está passando do limite para o Nível de Poder (NP 10 * 2 = 20)."
+                }
+            ],
             "personalInfo": {
-                "heroicName": "Personagem nº 1",
+                "heroicName": "Ofensivo",
                 "realName": "",
                 "gender": "",
                 "age": 25,
