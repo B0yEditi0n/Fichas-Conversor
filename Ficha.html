@@ -9,77 +9,89 @@
     <link rel="stylesheet" href="./style/estilo_ficha.css">
     <link rel="stylesheet" href="./style/pericias.css">
     <link rel="stylesheet" href="./style/vantagens.css">
+    <link rel="stylesheet" href="./style/imagem.css">
 
 </head>
 <body>
     <!-- #Titulo Ficha -->
-    <h1 id="nPersonage">Nome do Personage</h1>
+    <section class="topoPrincipal">
+        <h1 id="nPersonage">Nome do Personage</h1>
     
-    <div class="Informações da Ficha">
-        <p id="nJogador"></p>
-        <p id="NivelPoder"></p>
-    </div>
-
-    <!-- #Habilidades -->
-    <div class="Separador">
-        <h2>Habilidades</h2>
-    </div>
-
-    <table>
-        <tr>
-            <tr>
-                <th>Força</th>
-                <th>Agilidade</th>
-                <th>Luta</th>
-                <th>Prontidao</th>
-            </tr>
-
-            <tr>
-                <td id="aForca"></td>
-                <td id="aAgilidade"></td>
-                <td id="aLuta"></td>
-                <td id="aProntidao"></td>
-            </tr>
-        </tr>
-            <tr>
+        <div class="Informações_da_Ficha">
+            <p id="nJogador"></p>
+            <p id="NivelPoder"></p>
+        </div>
+    
+        <!-- Imagem de Personagem -->
+        <div class = 'Image'>
+            <img src="" id='imgPersonagem'>
+        </div>
+    
+        <!-- #Habilidades -->
+        <div class="Separador">
+            <h2>Habilidades</h2>
+        </div>
+        <div class="habilidade">
+            <table>
                 <tr>
-                    <th>Vigor</th>
-                    <th>Destreza</th>
-                    <th>Intelecto</th>
-                    <th>Presença</th>
+                    <tr>
+                        <th>Força</th>
+                        <th>Agilidade</th>
+                        <th>Luta</th>
+                        <th>Prontidao</th>
+                    </tr>
+        
+                    <tr>
+                        <td id="aForca"></td>
+                        <td id="aAgilidade"></td>
+                        <td id="aLuta"></td>
+                        <td id="aProntidao"></td>
+                    </tr>
                 </tr>
-
+                    <tr>
+                        <tr>
+                            <th>Vigor</th>
+                            <th>Destreza</th>
+                            <th>Intelecto</th>
+                            <th>Presença</th>
+                        </tr>
+        
+                        <tr>
+                            <td id="aVigor"></td>
+                            <td id="aDestreza"></td>
+                            <td id="aIntelecto"></td>
+                            <td id="aPresenca"></td>
+                        </tr>
+                    </tr>
+                </tr>
+            </table>
+        </div>
+    
+        <!-- #Defesas -->
+        <div class="Separador">
+            <h2>Defesas</h2>
+        </div>
+        <div class="defesas">
+            <table>
                 <tr>
-                    <td id="aVigor"></td>
-                    <td id="aDestreza"></td>
-                    <td id="aIntelecto"></td>
-                    <td id="aPresenca"></td>
+                    <th>Aparar</th>
+                    <th>Esquiva</th>
+                    <th>Fortitude</th>
+                    <th>Resitência</th>
+                    <th>Vontade</th>
                 </tr>
-            </tr>
-        </tr>
-    </table>
-
-    <!-- #Defesas -->
-    <div class="Separador">
-        <h2>Defesas</h2>
-    </div>
-    <table class="defesas">
-        <tr>
-            <th>Aparar</th>
-            <th>Esquiva</th>
-            <th>Fortitude</th>
-            <th>Resitência</th>
-            <th>Vontade</th>
-        </tr>
-        <tr>
-            <td id="dAparar"></td>
-            <td id="dEsquiva"></td>
-            <td id="dFortitude"></td>
-            <td id="dResistencia"></td>
-            <td id="dVontade"></td>
-        </tr>
-    </table>
-
+                <tr>
+                    <td id="dAparar"></td>
+                    <td id="dEsquiva"></td>
+                    <td id="dFortitude"></td>
+                    <td id="dResistencia"></td>
+                    <td id="dVontade"></td>
+                </tr>
+            </table>
+        </div>
+        
+    </section>
+    
     <div class="Separador">
         <h2>Ofensiva</h2>
     </div>

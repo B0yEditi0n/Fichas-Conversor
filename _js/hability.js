@@ -18,22 +18,25 @@
         bPresenca = 0
         
         // Defesas
-        htmlEsquiva
-        bEsquiva
-        htmlApara
-        bAparar
-        htmlResistencia
-        bResistencia
-        htmlFortitude
-        bFortitude
-        htmlVontade
-        bVontade
+        htmlEsquiva = ''
+        bEsquiva = 0
+        htmlApara = ''
+        bAparar = 0
+        htmlResistencia = ''
+        bResistencia = 0 
+        htmlFortitude = ''
+        bFortitude = 0
+        htmlVontade = ''
+        bVontade = 0
+
+        rolamentoDefensivo = 0
         
         // Pericias
 
         habilidade(habilidade){         
             var valor = 0
             var html = ''
+            
             for(var i = 0; i <= habilidade.length - 1; i++){
                 //Habilidades Nulas
                 if(habilidade[i].extraRank != undefined){
@@ -101,7 +104,7 @@
 
                 switch (defesas[i].id){
                     case 2001: //Esquiva
-                        this.bEsquiva = this.bAgilidade + valor 
+                        this.bEsquiva += this.bAgilidade + valor 
                         this.htmlEsquiva = this.bAgilidade + defesas[i].rank
                         if(eAumentado == true){
                             this.htmlEsquiva += ' / ' + this.bEsquiva
@@ -116,10 +119,10 @@
                         }
                         break
                     case 2003: // Resistencia
-                        this.bResistencia = this.bVigor + valor
-                        this.htmlResistencia = this.bVigor + defesas[i].rank
-                        if(eAumentado == true){
-                            this.htmlResistencia += ' / ' + this.bResistencia 
+                        this.bResistencia += this.bVigor + valor
+                        this.htmlResistencia += this.bVigor + defesas[i].rank
+                        if(eAumentado == true || this.rolamentoDefensivo > 0){
+                            this.htmlResistencia += ' / ' + (this.bResistencia + this.rolamentoDefensivo)
                         }
                         break
                     case 2004: // Fortitude/
@@ -282,18 +285,27 @@
         vantagem(vantagens){
             var htmlVant = ''
             for(var i=0; i <= vantagens.length - 1; i++){
+                //Se graduada
                 if (vantagens[i]['rank'] > 1){
-                    htmlVant = `<tr><td>${vantagens[i]['name']}[${vantagens[i]['rank']}]</td></tr>`
+                    htmlVant = `<tr><td>${vantagens[i]['name']} [${vantagens[i]['rank']}]</td></tr>`
                 }
                 else{
                     htmlVant = `<tr><td>${vantagens[i]['name']}</td></tr>`  
                 }
 
+                // Separar em duas barras
                 if( Math.ceil(vantagens.length / 2) >= (i+1)){
                     this.HTML_vantagem1 += htmlVant
                 }
                 else{
                     this.HTML_vantagem2 += htmlVant
+                }
+                //Vantagens que modificam a ficha
+                switch(vantagens[i].id){
+                    case 4083:
+                        //Rolamento Defensivo
+                        this.rolamentoDefensivo = vantagens[i].rank
+                        break
                 }
             }
         }

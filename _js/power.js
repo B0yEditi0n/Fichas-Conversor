@@ -14,6 +14,8 @@ async function callPower(){
     ficha = JSON
     ficha = await getJson(pathFicha)
 
+    geraImage(ficha.characters[0].gallery[0])
+
     buildPower = new chosePower();
     buildPower.jsonFicha = ficha['characters'][0]
     await buildPower.loopPower(ficha['characters'][0]['powers']),
@@ -315,7 +317,7 @@ class powerLayout{
 
                 }
 
-                if(arryModify.extras[i].hasTrait == true){ // Descrição
+                if(arryModify.extras[i].hasTrait == true || (arryModify.extras[i].traitText != '' && arryModify.extras[i].traitText != undefined)){ // Descrição
                     extras_html += ' ('
                     extras_html += arryModify.extras[i].traitText
                     extras_html += ')'
@@ -761,7 +763,7 @@ class powerLayout{
             nowPower.alternateEffects[principal] = ObjetoSubstuido
         }
 
-        arry_html = `<table><tr><th>${nowPower.name} ${await this.Somatorioformatado(nowPower, 2)} pontos</th></tr><tr><td>`
+        arry_html = `<table><tr><th>${nowPower.name} ${await this.Somatorioformatado(nowPower, 2)}</th></tr><tr><td>`
         arry_html += await tablePowerItem(nowPower['alternateEffects'])
 
         arry_html += '</td></tr></table></br>'

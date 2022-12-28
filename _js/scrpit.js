@@ -2,7 +2,7 @@
 // Personagem nº.json
 // Nolham - Caio.json
 // Jonny Texte.json
-pathFicha = './Ofensivo.json'
+pathFicha = 'Michel Jackson.json'
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))
@@ -18,9 +18,17 @@ async function getJson(patch) {
   return(Exportjson)
 }
 async function Inicio(){
+
   await callPower()  
+  //Chama imagem
+  
 }
 
+async function geraImage(img){
+  if(img != undefined){
+    document.getElementById('imgPersonagem').src = img
+  }
+}
 
 //Atomatizador de Trocas de Dados
 function Elemento(idElemento, pJson){
@@ -51,6 +59,14 @@ async function gera_modelo(ficha){
   Elemento('aIntelecto', modificacaoPower.htmlIntelecto)
   Elemento('aProntidao', modificacaoPower.htmlProntidao)
   Elemento('aPresenca', modificacaoPower.htmlPresenca)
+
+  /**********************************************************************************
+  * Vantagem
+  ***********************************************************************************/     
+   htmlDado = ''
+   modificacaoPower.vantagem(ficha['characters'][0]['advantages'])
+   document.getElementById('vantagens1').innerHTML = `<table>` + modificacaoPower.HTML_vantagem1 +`</table>`
+   document.getElementById('vantagens2').innerHTML = `<table>` + modificacaoPower.HTML_vantagem2 + `</table>`
   
   /**********************************************************************************
    * Defesas
@@ -71,29 +87,20 @@ async function gera_modelo(ficha){
   document.getElementById('pericias_padrao2').innerHTML = '<table>' + modificacaoPower.HTML_Pericia2 + `</table>`;
 
   /**********************************************************************************
-  * Vantagem
-  ***********************************************************************************/     
-    htmlDado = ''
-    modificacaoPower.vantagem(ficha['characters'][0]['advantages'])
-    document.getElementById('vantagens1').innerHTML = `<table>` + modificacaoPower.HTML_vantagem1 +`</table>`
-    document.getElementById('vantagens2').innerHTML = `<table>` + modificacaoPower.HTML_vantagem2 + `</table>`
-        
-
-    /**********************************************************************************
-     * Complicações
-     **********************************************************************************/
-    
-    htmlDado = '<UL>'
-    for(i = 0; i <= ficha['characters'][0]['complications'].length - 1; i++){
-      htmlDado += `<LI><strong>${ficha['characters'][0]['complications'][i]['title']}:</strong> ${ficha['characters'][0]['complications'][i]['description']}</LI>`
-    }
-    htmlDado += '</UL>'
-    document.getElementById('complicacoes').innerHTML = htmlDado
-    
-    /**********************************************************************************
-    * Ofensiva
-    ***********************************************************************************/
-    startOfense(ficha)
+   * Complicações
+   **********************************************************************************/
   
+  htmlDado = '<UL>'
+  for(i = 0; i <= ficha['characters'][0]['complications'].length - 1; i++){
+    htmlDado += `<LI><strong>${ficha['characters'][0]['complications'][i]['title']}:</strong> ${ficha['characters'][0]['complications'][i]['description']}</LI>`
+  }
+  htmlDado += '</UL>'
+  document.getElementById('complicacoes').innerHTML = htmlDado
+  
+  /**********************************************************************************
+  * Ofensiva
+  ***********************************************************************************/
+  startOfense(ficha)
+
   
 } 

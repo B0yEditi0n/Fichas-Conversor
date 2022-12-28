@@ -4,7 +4,8 @@ async function startOfense(ficha){
     BuildOfense.habilidade = ficha.characters[0].abilities
     BuildOfense.pericias = ficha.characters[0].extraSkills
     BuildOfense.vantagens = ficha.characters[0].advantages
-    document.getElementById('Ofensiva'). innerHTML = await BuildOfense.filtragemdeEfeitos(ficha.characters[0].powers)
+    document.getElementById('Ofensiva'). innerHTML = await BuildOfense.iniciativa()
+    document.getElementById('Ofensiva'). innerHTML += await BuildOfense.filtragemdeEfeitos(ficha.characters[0].powers)
 }
 
 class Ofensiva{
@@ -81,8 +82,10 @@ class Ofensiva{
     }
     checkRange(extras, distancia){
         for(var i = 0; i <= extras.length -1; i++){
+            console.log('é em Area', extras[i].id)
             if(extras[i].id == 10010){
                 // é efeito em Area
+                
                 if(extras[i].parcial == 0){
                     // não é parcial
                     return(5)
@@ -93,6 +96,7 @@ class Ofensiva{
                 }
             }
             else{
+
                 return(distancia)
             }
         }
@@ -130,7 +134,7 @@ class Ofensiva{
     checkCritcal(){
 
     }
-    async Acerto(id, range, bonus){
+    async Acerto(id, range, bonus, extras){
         //*********************** */
         // Declaração de Variáveis
         //*********************** */
@@ -139,7 +143,9 @@ class Ofensiva{
         var PDistancia = 0
         var PPerto = 0
         //definindo tipo de distânca
-        switch(range){
+
+        distancia = this.checkRange(extras, range)
+        switch(distancia){
             case 1:
             //perto
                 distancia = 0
@@ -163,10 +169,10 @@ class Ofensiva{
                 break
 
             default:
-                distancia = this.checkRange(extras, distancia)
+                
         }
 
-        
+        console.log('alcance', distancia)
         
         this.startBonus()
         
@@ -183,16 +189,21 @@ class Ofensiva{
                 }
             }
         }
-        console.log(range)
-        if(range == 1){
+        if(distancia == 1){
             acerto = `+ ${this.Luta + this.VPerto + PPerto + bonus}`
         }
-        if(range == 2){
-            console.log(this.Destreza, this.VDistancia, PDistancia, bonus)
+        if(distancia == 2){
             acerto = `+ ${this.Destreza + this.VDistancia + PDistancia + bonus}`
         }
-        if(range == 3){
-            acerto =  'Percepção'
+        if(distancia == 3){
+            acerto =  'Automático'
+        }
+        if(distancia == 5){
+            console.log('wiork')
+            acerto =  'Área'
+        }
+        if(distancia == 6){
+            acerto = 'Área' + acerto
         }
         return(acerto)
     }
@@ -331,9 +342,8 @@ class Ofensiva{
         // Nome
         ofensiva_String += `<strong>${ataque.name}</strong>: `
         // Acerto
-        console.log(ataque)
         ofensiva_String += "<b>Acerto</b> "
-        ofensiva_String += await this.Acerto(ataque.id, ataque.rangeID, ataque.acertoBonus) + ' | '
+        ofensiva_String += await this.Acerto(ataque.id, ataque.rangeID, ataque.acertoBonus, ataque.extras) + ' | '
         // Efeito
         ofensiva_String += `<b>${_EffectsList[0][ataque.effectID].name}</b> ${ataque.rank}`
         ofensiva_String += this.modificadores(ataque)
@@ -369,5 +379,22 @@ class Ofensiva{
             
         }
         return(html)
+    }
+    iniciativa(ficha){
+        //Velocidade do Pensamento e Iniciativa
+        var iniciativa = 0
+        for(var i = 0; i <= this.vantagens.length -1; i++){
+            if(this.vantagens[i].id == 4061){
+                //Inicitiva aprimorada
+                iniciativa += vantagens[i].rank * 4
+            }
+            if(this.vantagens[i].id == 4096){
+                iniciativa += this.habilidade[5].rank
+            }
+            else{
+                iniciativa += this.habilidade[2].rank
+            }
+        }
+        return(`<div class='txtIniciativa'><b>Iniciativa</b> +${iniciativa}<div></br>`)
     }
 }
