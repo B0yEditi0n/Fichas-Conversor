@@ -14,8 +14,8 @@ class Ofensiva{
     vantagens = {}
 
     // Bonus Gerais
-    Destreza
-    Luta
+    Destreza = modificacaoPower.bDestreza
+    Luta = modificacaoPower.bLuta
     VDistancia = 0
     VPerto = 0
 
@@ -74,6 +74,11 @@ class Ofensiva{
                     break                
             }
         }
+        for(var i = 0; i <= this.vantagens.length -1; i++){
+            if(this.vantagens[i].id == 4039){
+                //Critico aprimorado
+            }
+        }
         //Percepção e Area Parcial
         //Bonus de Acerto
         //Efeitos Ligados
@@ -82,7 +87,6 @@ class Ofensiva{
     }
     checkRange(extras, distancia){
         for(var i = 0; i <= extras.length -1; i++){
-            console.log('é em Area', extras[i].id)
             if(extras[i].id == 10010){
                 // é efeito em Area
                 
@@ -100,26 +104,13 @@ class Ofensiva{
                 return(distancia)
             }
         }
+        return(distancia)
         
     }
     startBonus(){
         //*********************** */
         // Preenchendo Variáveis
         //*********************** */
-        if(this.habilidade[3].extraRank != undefined){
-            this.Destreza = this.habilidade[3].rank + this.habilidade[4].extraRank
-        }
-        else{
-            this.Destreza = this.habilidade[3].rank
-        }
-
-        if(this.habilidade[4].extraRank != undefined){
-            this.Luta = this.habilidade[4].rank + this.habilidade[4].extraRank
-        }
-        else{
-            this.Luta = this.habilidade[4].rank
-        }
-
         for(var i = 0; i <= this.vantagens.length -1; i++){
             if(this.vantagens[i].id == 4011){
                 //Acerto a Distanacia
@@ -143,43 +134,23 @@ class Ofensiva{
         var PDistancia = 0
         var PPerto = 0
         //definindo tipo de distânca
-
+        
         distancia = this.checkRange(extras, range)
         switch(distancia){
             case 1:
-            //perto
                 distancia = 0
                 break
             case 2:
-            //distancia
                 distancia = 1
                 break
-            case 3:
-            //percepçaco
-                distancia = 3
-                break
-            case 4:
-            //Percepção Parcial
-                break
-            case 5:
-            //Area
-                break
-            case 6:
-            //Area Parcial
-                break
-
-            default:
-                
+//3 - percepçaco 4 - Percepção Parcial 5 - Area 6 - Area Parcial                
         }
 
-        console.log('alcance', distancia)
-        
         this.startBonus()
         
         for(var i = 0; i <= this.pericias.length -1; i++){
             if(this.pericias[i].chosenAttacks != undefined && this.pericias[i].isRanged == distancia){
                 if(this.pericias[i].chosenAttacks.list.indexOf(id) > -1){
-                    
                     if(range == 1){
                         PPerto = (this.pericias[i].rank * 2)
                     }
@@ -189,17 +160,16 @@ class Ofensiva{
                 }
             }
         }
-        if(distancia == 1){
+        if(range == 1){
             acerto = `+ ${this.Luta + this.VPerto + PPerto + bonus}`
         }
-        if(distancia == 2){
+        if(range == 2){
             acerto = `+ ${this.Destreza + this.VDistancia + PDistancia + bonus}`
         }
         if(distancia == 3){
             acerto =  'Automático'
         }
         if(distancia == 5){
-            console.log('wiork')
             acerto =  'Área'
         }
         if(distancia == 6){
@@ -327,8 +297,16 @@ class Ofensiva{
     }
 
     critico(ataque){
-        if(ataque.Critico > 0){
-            return(' <b>CD:</b>' + (20 - ataque.Critico))
+        var Critico = 0
+        // for(var i = 0; i <= ataque.flats.length -1; i++){
+        //     if(ataque.flats[i].id == 501311){
+        //         Critico += ataque.flats[i].rank
+        //     }
+        // }
+        Critico += ataque.Critico
+        console.log(ataque)
+        if(Critico > 0){
+            return(' <b>Critico:</b>' + (20 - Critico))
         }
         else{
             return('')
@@ -343,6 +321,7 @@ class Ofensiva{
         ofensiva_String += `<strong>${ataque.name}</strong>: `
         // Acerto
         ofensiva_String += "<b>Acerto</b> "
+        
         ofensiva_String += await this.Acerto(ataque.id, ataque.rangeID, ataque.acertoBonus, ataque.extras) + ' | '
         // Efeito
         ofensiva_String += `<b>${_EffectsList[0][ataque.effectID].name}</b> ${ataque.rank}`
@@ -380,8 +359,9 @@ class Ofensiva{
         }
         return(html)
     }
-    iniciativa(ficha){
+    async iniciativa(){
         //Velocidade do Pensamento e Iniciativa
+
         var iniciativa = 0
         for(var i = 0; i <= this.vantagens.length -1; i++){
             if(this.vantagens[i].id == 4061){
@@ -389,12 +369,12 @@ class Ofensiva{
                 iniciativa += vantagens[i].rank * 4
             }
             if(this.vantagens[i].id == 4096){
-                iniciativa += this.habilidade[5].rank
-            }
-            else{
-                iniciativa += this.habilidade[2].rank
+                iniciativa -= modificacaoPower.bAgilidade
+                iniciativa += modificacaoPower.bIntelecto
+
             }
         }
+        iniciativa += modificacaoPower.bAgilidade
         return(`<div class='txtIniciativa'><b>Iniciativa</b> +${iniciativa}<div></br>`)
     }
 }

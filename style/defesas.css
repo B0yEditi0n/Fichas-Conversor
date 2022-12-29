@@ -1,0 +1,14 @@
+.defesas table{
+    text-align: center;
+    border-collapse: collapse;
+
+}
+.defesas table td, .defesas table th{
+    border: 1px solid black;
+    padding: 5px;
+
+}
+.defesas table th{
+    background-color: black;
+    color: white;
+}

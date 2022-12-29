@@ -91,8 +91,7 @@
         defesa(defesas){
             var valor = 0
             var eAumentado 
-            for(var i = 0; i <= defesas.length -1; i++){
-                
+            for(var i = 0; i <= defesas.length -1; i++){     
                 if(defesas[i].extraRank != undefined){
                     valor = defesas[i].rank + defesas[i].extraRank
                     eAumentado = true 
@@ -140,7 +139,20 @@
                         }
                         break
                 }
-                
+                if(defesas[i].isImune == true){
+                    switch(defesas[i].id){
+                        case 2003: // Resistência
+                            this.htmlResistencia = 'Imune'
+                            break
+                        case 2004: // Fortitude
+                            this.htmlFortitude = 'Imune'
+                            break
+                        case 2005: // Vontade
+                            this.htmlVontade = 'Imune'
+                            break
+
+                    }
+                }
             }
         }
         

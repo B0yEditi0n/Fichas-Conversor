@@ -2,7 +2,9 @@
 // Personagem nº.json
 // Nolham - Caio.json
 // Jonny Texte.json
-pathFicha = 'Michel Jackson.json'
+// Ofensivo.json
+pathFicha = 'Jonny Texte.json'
+modificacaoPower = new powerHabilidade
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
 //   .then(json => gera_modelo(json)))
@@ -27,6 +29,10 @@ async function Inicio(){
 async function geraImage(img){
   if(img != undefined){
     document.getElementById('imgPersonagem').src = img
+    if(img == undefined || img == ''){
+      document.getElementById('imgPersonagem').class = 'ImgOFF'
+      document.getElementById('imgPersonagem').style = 'border: 0px solid'
+    }
   }
 }
 
@@ -46,7 +52,6 @@ async function gera_modelo(ficha){
   Elemento('nJogador', ficha['characters'][0]['playerName'])
   Elemento('NivelPoder', ficha['characters'][0]['powerLevel'])
 
-  modificacaoPower = new powerHabilidade
   /**********************************************************************************
    * Atributos principais
   ***********************************************************************************/ 

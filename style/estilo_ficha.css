@@ -8,6 +8,25 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    padding: 2cm;    
+
+    width: 100%;
+    height: 100%;
+    
+}
+body div{
+    width: 80%;
+}
+
+.Separador h2{
+    background-color: black;
+    color: white;
+    padding: 0.1cm;
+
+    border-bottom: 2px solid;
+}
+
 h1{
     font-family: 'Anton', sans-serif;
     text-decoration-line: underline;

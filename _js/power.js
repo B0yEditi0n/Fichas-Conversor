@@ -9,9 +9,10 @@
 const PowerOptionsList = [5003, 5004, 5007, 5009, 5020, 5027, 5035];
 const MultiplePowersList = [5043, 5045, 5046, 5048];
 
+//Ficha
+ficha = JSON
 
 async function callPower(){
-    ficha = JSON
     ficha = await getJson(pathFicha)
 
     geraImage(ficha.characters[0].gallery[0])
@@ -247,7 +248,15 @@ class powerLayout{
                 removeStr = ' Facilmente Removível'
                 removePoints = (Math.trunc(points/5) * 2)
         }
-
+        if(nowPower.powers != undefined){
+            //Efeitos Ligados
+            for(var i = 0; i<=nowPower.powers.length -1; i++){
+                prank = await this.findRank(nowPower.powers[i])
+                pcusto += await this.numberSumPower(prank, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)
+            }
+            return(pcusto)
+        
+        }
         if(nowPower.alternateEffects.length > 0){
             // Com Efeitos Alternativos
             switch(type){
@@ -266,8 +275,10 @@ class powerLayout{
                         }
                     
                     }
+                    
                     EAstr = `- ${pcusto}+${nowPower.alternateEffects.length - 1}`
                     EApoint = pcusto + nowPower.alternateEffects.length - 1
+                    break                    
             }
             if(nowPower.alternateEffects.length == 1){
                 return(`${EAstr}EA : ${removeStr}<b>${EApoint - removePoints} pontos</b>`)       
@@ -688,7 +699,7 @@ class powerLayout{
         returnJson(2003, nowPower.rank, nowPower.durationID)
         return( await this.outherPower(nowPower, 'Proteção'))
     }
-    //Poderes combinados, pergunte pro bernardo
+    //Parece repiente mas não tem modificadores
     async multiPower(nowPower){
         var table_html = ''
         var remove = ''
@@ -803,13 +814,13 @@ class powerLayout{
             link_html += linksPower_html
             //Soma
             LinkRank = await this.findRank(nowPower)
-            pontos += this.numberSumPower(nowPower.powers[i].rank, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)
             //pontos = this.numberSumPower(LinkRank, )
             if(i <= nowPower.powers.length -2){
                 link_html += ' <strong>Ligado: </strong>'
             }
 
         }
+        pontos += await this.Somatorioformatado(nowPower, 3)
         link_html += `, <b>${pontos} pontos</b></br>`
         link_html += await this.checaAlternatives(nowPower)
         //link_html += this.sumPower(sumPoints, nowPower.baseCost, nowPower.extras, nowPower.flaws, nowPower.flats)
@@ -820,6 +831,9 @@ class powerLayout{
         var optionP_html = ''
         var sumPoints = 0
         var html_list_opt = ''
+        
+        if(nowPower.effectID == 5020){await this.imunity(nowPower)}
+
         optionP_html = this.checkEffects(nowPower.isAlternateEffect)//é ea?
         optionP_html += `<strong>${nowPower.name}:</strong> `
         optionP_html += effect
@@ -845,30 +859,27 @@ class powerLayout{
         return(optionP_html)
     }
     //Imunidade
-    async imunity(nowPower){
-        var imunity_html = ''
-        imunity_html = this.checkEffects(nowPower.isAlternateEffect)//é ea?
-        imunity_html += `<strong>${nowPower.name}</strong> `
-        // Opções
-        imunity_html += '('
+    async imunity(imunity){
+        for(var i = 0; i <= imunity.powerOptions.length -1; i++){
+            switch(imunity.powerOptions[i].id){
+                case 502013:
+                    //Fortitude
+                    ficha.characters[0].defenses[3].isImune = new Object
+                    ficha.characters[0].defenses[3].isImune = true
+                    break
+                case 502015:
+                    ficha.characters[0].defenses[2].isImune = new Object
+                    ficha.characters[0].defenses[2].isImune = true
+                    //Resistência
+                    break
+                case 502017:
+                    ficha.characters[0].defenses[4].isImune = new Object
+                    ficha.characters[0].defenses[4].isImune = true
+                    //Vontade
+                    break
+            }
 
-        for (var i = 0; i <= nowPower.powerOptions.length - 1; i++){
-            imunity_html += `${nowPower.powerOptions[i].name}`
-            if (nowPower.powerOptions[i].traitText != ''){
-                imunity_html += ` ${nowPower.powerOptions[i].rank}: ${nowPower.powerOptions[i].traitText}, `
-            }
-            else{
-                imunity_html += ` ${nowPower.powerOptions[i].rank}, `
-            }
         }
-        imunity_html = imunity_html.substring(0, imunity_html.length - 2)
-        imunity_html += ')'
-
-        imunity_html += this.buildModify(nowPower)  // modificadores
-        imunity_html += `</br>`
-        imunity_html += await this.checaAlternatives(nowPower) //EAs
-
-        return(imunity_html)
     }
     async ilusion(nowPower){
         var ilusion_html = ''
