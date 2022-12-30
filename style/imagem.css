@@ -1,23 +1,32 @@
 .topoPrincipal{
     display: grid;
-    grid-template-columns: 50% 0%;
+    /*grid-template-columns: 0% 0%;*/
     grid-template-areas: 'infoBlock imgBlock'
                          'infoBlock imgBlock'
                          'infoBlock imgBlock'
                          'infoBlock imgBlock'
                          'infoBlock imgBlock'
                          'infoBlock imgBlock'
-    ;
+                         'infoBlock imgBlock';
+    justify-content: space-between;                         
 }
 .Image{
     position:sticky;
-    grid-area: imgBlock;    
-}
-.Image img{
+    grid-area: imgBlock; 
+    
+    width: 280px;   
     height: 400px;
+    
+}
+.Image img{ 
+    height: 100%;
+    width: 100%;
+
     border-radius: 25px;
     border: 5px solid;
     border-color: black;
+    
+    object-fit:cover
 }
 
 .Informações_da_Ficha .Separador .habilidade .defesas{

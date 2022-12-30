@@ -1,0 +1,61 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.optCombat{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  /*margin: 50px;*/
+}
+.ContaCondit{
+  opacity: 1;
+  background-color: white;
+  /**/
+
+  display: flex;
+  flex-direction: column;
+  width:  400px;
+  font-size: 11px;
+
+  padding-left: 50px;
+
+  border-left: 2px solid black;
+}
+.AflictCondit{
+  display: flex; 
+  flex-direction: row;
+}
+.danoCondit{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  padding: 12px;
+}
+.danoCondit input{
+  width: 40px;
+  text-align: center;
+}
+.FirstConditAflict, .SecondConditAflict, .ThirdConditAflict{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.FirstConditAflict, .SecondConditAflict{
+  border-right: black 1px solid;
+}
+/*Box individual*/
+.FirstConditAflict div, .SecondConditAflict div, .ThirdConditAflict div{
+  display: flex;
+  flex-direction: row;
+}
+.TransformTxt {
+  width: 100px;
+}
+
+.AflictCondit{
+
+}

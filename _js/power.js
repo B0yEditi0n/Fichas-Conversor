@@ -603,7 +603,7 @@ class powerLayout{
         var velocidade = 0
         var robot = false
         var normalForca = 0
-
+        console.log(nowPower)
         if(nowPower.effectID == 5010){
             //Crecimento
             Forca_Vigor = nowPower.rank
@@ -920,10 +920,10 @@ class chosePower extends powerLayout{
             case 5006: // Carateristica aumentada
                 html = this.enhancedTrait(powers)
                 break
-            /*case 5010: //Crescimento
+            case 5010: //Crescimento
             case 5015: //Encolhimento
                 html = await this.sizemodify(powers)
-                break*/
+                break
             case 5013: // Dano
                 html = this.dano(powers)
                 break

@@ -1,5 +1,12 @@
 .vantagens{
     display: flex;
     flex-direction: row;
+}
 
+#vantagens1{
+    padding-right: 25px;
+    border-right: 2px black solid;
+}
+#vantagens2{
+    padding-left: 25px;
 }

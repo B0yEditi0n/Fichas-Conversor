@@ -304,7 +304,6 @@ class Ofensiva{
         //     }
         // }
         Critico += ataque.Critico
-        console.log(ataque)
         if(Critico > 0){
             return(' <b>Critico:</b>' + (20 - Critico))
         }

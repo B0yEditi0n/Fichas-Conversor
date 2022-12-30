@@ -3,7 +3,7 @@
 // Nolham - Caio.json
 // Jonny Texte.json
 // Ofensivo.json
-pathFicha = 'Jonny Texte.json'
+pathFicha = 'Ele_(Pedro).json'
 modificacaoPower = new powerHabilidade
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
@@ -19,6 +19,7 @@ async function getJson(patch) {
   const Exportjson = await getFile.json();
   return(Exportjson)
 }
+
 async function Inicio(){
 
   await callPower()  
@@ -38,7 +39,7 @@ async function geraImage(img){
 
 //Atomatizador de Trocas de Dados
 function Elemento(idElemento, pJson){
-    document.getElementById(idElemento).innerText = pJson    
+  document.getElementById(idElemento).innerText = pJson    
 }
 
 // não é possivel fazer ponteiros...
@@ -49,8 +50,10 @@ async function gera_modelo(ficha){
    * Titulo da Ficha
   ***********************************************************************************/
   Elemento('nPersonage', ficha['characters'][0]['name'])
-  Elemento('nJogador', ficha['characters'][0]['playerName'])
-  Elemento('NivelPoder', ficha['characters'][0]['powerLevel'])
+  document.getElementById('InfoPersonagem_N1').innerText = ficha['characters'][0]['playerName']
+  document.getElementById('InfoPersonagem_N1').innerText += ' NP '+ ficha['characters'][0]['powerLevel']
+  console.log(document.getElementById('tituloTAB'))
+  Elemento('tituloTAB', ficha.portName)
 
   /**********************************************************************************
    * Atributos principais
@@ -95,17 +98,20 @@ async function gera_modelo(ficha){
    * Complicações
    **********************************************************************************/
   
-  htmlDado = '<UL>'
+  htmlDado = '<ul>'
   for(i = 0; i <= ficha['characters'][0]['complications'].length - 1; i++){
-    htmlDado += `<LI><strong>${ficha['characters'][0]['complications'][i]['title']}:</strong> ${ficha['characters'][0]['complications'][i]['description']}</LI>`
+    htmlDado += `<li><strong>${ficha['characters'][0]['complications'][i]['title']}:</strong> ${ficha['characters'][0]['complications'][i]['description']}</li>`
   }
-  htmlDado += '</UL>'
+  htmlDado += '</ul>'
   document.getElementById('complicacoes').innerHTML = htmlDado
   
   /**********************************************************************************
   * Ofensiva
   ***********************************************************************************/
-  startOfense(ficha)
+  await equipamentos(ficha.characters[0].equipment)
+  await startOfense(ficha)
+
+  console.log(await document.getElementsByTagName('body')[0].innerHTML)
 
   
 } 
