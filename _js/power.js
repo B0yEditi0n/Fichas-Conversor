@@ -12,12 +12,11 @@ const MultiplePowersList = [5043, 5045, 5046, 5048];
 //Ficha
 ficha = JSON
 
-async function callPower(){
-    ficha = await JSON.parse(localStorage.getItem('JSONfile'))
+async function callPower(ficha){
     geraImage(ficha.characters[0].gallery[0])
     buildPower = new chosePower();
     buildPower.jsonFicha = ficha['characters'][0]
-    await buildPower.loopPower(ficha['characters'][0]['powers']),
+    await buildPower.loopPower(await ficha['characters'][0]['powers']),
 
     gera_modelo(ficha)
 //    setTimeout(gera_modelo, 1000) // um dia isso deve ser arrumado
@@ -44,7 +43,8 @@ async function concatLinkPowers(linkpower){
     return (await powerLink.startSelect(linkpower))
 }
 
-function returnJson(id, number, duracao){
+async function returnJson(id, number, duracao){
+    await ficha
     //Atributo permanente ou temporário?
     var Type = 1
     if(duracao == 3 || duracao == 4){
@@ -859,10 +859,11 @@ class powerLayout{
     }
     //Imunidade
     async imunity(imunity){
+        await ficha
         for(var i = 0; i <= imunity.powerOptions.length -1; i++){
             switch(imunity.powerOptions[i].id){
                 case 502013:
-                    //Fortitude
+                    //Fortitude/
                     ficha.characters[0].defenses[3].isImune = new Object
                     ficha.characters[0].defenses[3].isImune = true
                     break

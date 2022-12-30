@@ -6,10 +6,15 @@ async function fct(evento){
     reader.onload = onReaderLoad;
     reader.readAsText(evento.target.files[0])
 }
-function onReaderLoad(evento){
+async function onReaderLoad(evento){
     var obj = JSON.parse(evento.target.result);
-    localStorage.setItem('JSONfile', JSON.stringify(obj));
-    window.open('./Ficha.html') 
+    window.sessionStorage.setItem('JSONfile', JSON.stringify(obj));
+    window.location.href="./Ficha.html";
+    //console.log(window.localStorage.getItem('JSONfile'))
+    /*window.open('./Ficha.html', '_self') */
+    if(window.confirm()){
+        //window.open('./Ficha.html', '_self')
+    }
 }
 
 

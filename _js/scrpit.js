@@ -14,6 +14,8 @@ modificacaoPower = new powerHabilidade
   Inicio()
 //***********************************
 
+var ficha = JSON
+
 async function getJson(patch) {
   const getFile = await fetch(patch);
   const Exportjson = await getFile.json();
@@ -21,7 +23,8 @@ async function getJson(patch) {
 }
 
 async function Inicio(){
-  await callPower()  
+  ficha = await JSON.parse(window.sessionStorage.getItem('JSONfile'))
+  await callPower(ficha)  
   //Chama imagem
   
 }
