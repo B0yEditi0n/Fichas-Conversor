@@ -13,10 +13,8 @@ const MultiplePowersList = [5043, 5045, 5046, 5048];
 ficha = JSON
 
 async function callPower(){
-    ficha = await getJson(pathFicha)
-
+    ficha = await JSON.parse(localStorage.getItem('JSONfile'))
     geraImage(ficha.characters[0].gallery[0])
-
     buildPower = new chosePower();
     buildPower.jsonFicha = ficha['characters'][0]
     await buildPower.loopPower(ficha['characters'][0]['powers']),
@@ -125,6 +123,7 @@ function returnJson(id, number, duracao){
 
 class powerLayout{
     jsonFicha = {}
+    efeito = _EffectsList[0]
 //********************************************************* */
 //  Ferramentas de funções
 //********************************************************* */
@@ -603,7 +602,7 @@ class powerLayout{
         var velocidade = 0
         var robot = false
         var normalForca = 0
-        console.log(nowPower)
+        
         if(nowPower.effectID == 5010){
             //Crecimento
             Forca_Vigor = nowPower.rank
@@ -910,7 +909,6 @@ class chosePower extends powerLayout{
         //Declaração de Variáveis
         //var escolha = ''
         var html = ''
-        this.efeito = _EffectsList[0]
         var name = ''
         name = this.efeito[powers['effectID']].name
         switch (powers['effectID']){

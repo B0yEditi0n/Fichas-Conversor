@@ -21,7 +21,6 @@ async function getJson(patch) {
 }
 
 async function Inicio(){
-
   await callPower()  
   //Chama imagem
   
@@ -30,10 +29,10 @@ async function Inicio(){
 async function geraImage(img){
   if(img != undefined){
     document.getElementById('imgPersonagem').src = img
-    if(img == undefined || img == ''){
-      document.getElementById('imgPersonagem').class = 'ImgOFF'
-      document.getElementById('imgPersonagem').style = 'border: 0px solid'
-    }
+  }
+  if(img == undefined || img == ''){
+    document.getElementById('imgPersonagem').class = 'ImgOFF'
+    document.getElementById('imgPersonagem').style = 'border: 0px solid'
   }
 }
 
@@ -52,7 +51,6 @@ async function gera_modelo(ficha){
   Elemento('nPersonage', ficha['characters'][0]['name'])
   document.getElementById('InfoPersonagem_N1').innerText = ficha['characters'][0]['playerName']
   document.getElementById('InfoPersonagem_N1').innerText += ' NP '+ ficha['characters'][0]['powerLevel']
-  console.log(document.getElementById('tituloTAB'))
   Elemento('tituloTAB', ficha.portName)
 
   /**********************************************************************************
@@ -110,8 +108,6 @@ async function gera_modelo(ficha){
   ***********************************************************************************/
   await equipamentos(ficha.characters[0].equipment)
   await startOfense(ficha)
-
-  console.log(await document.getElementsByTagName('body')[0].innerHTML)
 
   
 } 
