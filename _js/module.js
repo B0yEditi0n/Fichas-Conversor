@@ -42,7 +42,6 @@ const _Skills = [
     }
   }
 ]
-
 const _EffectsList = [
     {
         5001: {
@@ -608,6 +607,34 @@ const _EffectsList = [
           duration: "3",
           resistedBy: "Nenhum",
           affectedTrait: ""
+        },
+        5050: {
+          name: "Levantamento de Carga",
+          baseCost: 1,
+          rank: 1,
+          maxRank: -1,
+          type: 0, // Geral
+          range: 0, // Pessoal
+          action: 3, // Livre
+          duration: 3, // Sustentada,
+          resistedBy: "Nenhum",
+          affectedTrait: "",
+          exclusiveModifiers: [],
+          unavaliableModifiers: []
+        },
+        5048: {
+          name: "Forma Alternativa",
+          type: 0, // Geral
+          action: 3, // Livre
+          range: 0, // Pessoal
+          duration: 3, // Sustentada
+          baseCost: 0,
+          rank: 0,
+          maxRank: -1,
+          resistedBy: "Nenhum",
+          affectedTrait: "",
+          exclusiveModifiers: [],
+          unavaliableModifiers: [],
         }
       }
 ];

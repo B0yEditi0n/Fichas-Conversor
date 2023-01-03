@@ -238,15 +238,7 @@ class powerLayout{
         var removeStr = '' 
         var removePoints = 0
         //var mostCust = 0
-        switch(nowPower.removable){
-            case 1:
-                removeStr = ' Removível'
-                removePoints = Math.trunc(points/5)
-                break
-            case 2:
-                removeStr = ' Facilmente Removível'
-                removePoints = (Math.trunc(points/5) * 2)
-        }
+
         if(nowPower.powers != undefined){
             //Efeitos Ligados
             for(var i = 0; i<=nowPower.powers.length -1; i++){
@@ -255,6 +247,15 @@ class powerLayout{
             }
             return(pcusto)
         
+        }
+        switch(nowPower.removable){
+            case 1:                
+                removeStr = ' Removível'
+                removePoints = Math.trunc(pcusto/5)
+                break
+            case 2:
+                removeStr = ' Facilmente Removível'
+                removePoints = (Math.trunc(pcusto/5) * 2)
         }
         if(nowPower.alternateEffects.length > 0){
             // Com Efeitos Alternativos
@@ -280,10 +281,10 @@ class powerLayout{
                     break                    
             }
             if(nowPower.alternateEffects.length == 1){
-                return(`${EAstr}EA : ${removeStr}<b>${EApoint - removePoints} pontos</b>`)       
+                return(`${EAstr}EA : ${removeStr}<b>${EApoint - removePoints - removePoints} pontos</b>`)       
             }
             else{
-                return(`${EAstr}EAs : ${removeStr}<b>${EApoint - removePoints} pontos</b>`)
+                return(`${EAstr}EAs : ${removeStr}<b>${EApoint - removePoints - removePoints} pontos</b>`)
             }
             
         }
@@ -293,6 +294,7 @@ class powerLayout{
             // Sem efeitos Alternativos
 
         }
+        
     }
     async checaAlternatives(nowPower){
         //Checa a necessidade de construir outros efeitos alternativos
@@ -911,6 +913,7 @@ class chosePower extends powerLayout{
         //var escolha = ''
         var html = ''
         var name = ''
+        console.log(powers)
         name = this.efeito[powers['effectID']].name
         switch (powers['effectID']){
             case 5001: // Aflição
