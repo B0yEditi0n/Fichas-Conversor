@@ -3,7 +3,7 @@
 // Nolham - Caio.json
 // Jonny Texte.json
 // Ofensivo.json
-pathFicha = 'Ele_(Pedro).json'
+// pathFicha = 'Ele_(Pedro).json'
 modificacaoPower = new powerHabilidade
 // (fetch('Nolham - Caio.json')
 //   .then(res => res.json()
@@ -25,8 +25,21 @@ async function getJson(patch) {
 async function Inicio(){
   ficha = await JSON.parse(window.sessionStorage.getItem('JSONfile'))
   await callPower(ficha)  
-  //Chama imagem
+  //define a configruação de visão
+    configuraLayoutPage()
+        
+  }
   
+function configuraLayoutPage(){
+  if (window.sessionStorage.getItem('setViewType') == 2){
+    document.getElementById('optCombat').style = "display: block;"
+    document.getElementById('conditbox').style = "display: none"
+    document.getElementById('Ofensiva').style = 'padding-right: 0px;'
+    document.getElementById('img').style = 'width: 200px; height: 300px;'
+    document.getElementById('corpo').style = 'display: block; padding-left: 0.7cm; padding-top: 0cm;'
+    window.getSelection(html).style = 'background-color: black'
+  }
+
 }
 
 async function geraImage(img){
@@ -44,73 +57,6 @@ function Elemento(idElemento, pJson){
   document.getElementById(idElemento).innerText = pJson    
 }
 
-// não é possivel fazer ponteiros...
-async function gera_modelo(ficha){
-
-  // Alguns poderes precisma ser carregados primeiro
-  /**********************************************************************************
-   * Titulo da Ficha
-  ***********************************************************************************/
-  Elemento('nPersonage', ficha['characters'][0]['name'])
-  document.getElementById('InfoPersonagem_N1').innerText = ficha['characters'][0]['playerName']
-  document.getElementById('InfoPersonagem_N1').innerText += ' NP '+ ficha['characters'][0]['powerLevel']
-  Elemento('tituloTAB', ficha.portName)
-
-  /**********************************************************************************
-   * Atributos principais
-  ***********************************************************************************/ 
-  modificacaoPower.habilidade(ficha['characters'][0]['abilities'])
-  Elemento('aForca', modificacaoPower.htmlForca)
-  Elemento('aVigor', modificacaoPower.htmlVigor)
-  Elemento('aAgilidade', modificacaoPower.htmlAgilidade)
-  Elemento('aDestreza', modificacaoPower.htmlDestreza)
-  Elemento('aLuta', modificacaoPower.htmlLuta)
-  Elemento('aIntelecto', modificacaoPower.htmlIntelecto)
-  Elemento('aProntidao', modificacaoPower.htmlProntidao)
-  Elemento('aPresenca', modificacaoPower.htmlPresenca)
-
-  /**********************************************************************************
-  * Vantagem
-  ***********************************************************************************/     
-   htmlDado = ''
-   modificacaoPower.vantagem(ficha['characters'][0]['advantages'])
-   document.getElementById('vantagens1').innerHTML = `<table>` + modificacaoPower.HTML_vantagem1 +`</table>`
-   document.getElementById('vantagens2').innerHTML = `<table>` + modificacaoPower.HTML_vantagem2 + `</table>`
-  
-  /**********************************************************************************
-   * Defesas
-  ***********************************************************************************/
-  modificacaoPower.defesa(ficha['characters'][0]['defenses'])
-  
-  Elemento('dEsquiva', modificacaoPower.htmlEsquiva)
-  Elemento('dAparar', modificacaoPower.htmlAparar)
-  Elemento('dResistencia', modificacaoPower.htmlResistencia)
-  Elemento('dFortitude', modificacaoPower.htmlFortitude)
-  Elemento('dVontade', modificacaoPower.htmlVontade)
-
-  /**********************************************************************************
-   * Perícia
-  ***********************************************************************************/ 
-  modificacaoPower.pericia(ficha['characters'][0]['skills'], ficha['characters'][0]['extraSkills'])
-  document.getElementById('pericias_padrao1').innerHTML = '<table>' + modificacaoPower.HTML_Pericia1 + `</table>`;
-  document.getElementById('pericias_padrao2').innerHTML = '<table>' + modificacaoPower.HTML_Pericia2 + `</table>`;
-
-  /**********************************************************************************
-   * Complicações
-   **********************************************************************************/
-  
-  htmlDado = '<ul>'
-  for(i = 0; i <= ficha['characters'][0]['complications'].length - 1; i++){
-    htmlDado += `<li><strong>${ficha['characters'][0]['complications'][i]['title']}:</strong> ${ficha['characters'][0]['complications'][i]['description']}</li>`
-  }
-  htmlDado += '</ul>'
-  document.getElementById('complicacoes').innerHTML = htmlDado
-  
-  /**********************************************************************************
-  * Ofensiva
-  ***********************************************************************************/
-  await equipamentos(ficha.characters[0].equipment)
-  await startOfense(ficha)
-
-  
-} 
+/*********************************************
+* 
+**********************************************/

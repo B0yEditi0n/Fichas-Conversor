@@ -129,6 +129,7 @@ class Ofensiva{
         //*********************** */
         // Declaração de Variáveis
         //*********************** */
+
         var acerto = 0
         var distancia
         var PDistancia = 0
@@ -152,14 +153,15 @@ class Ofensiva{
             if(this.pericias[i].chosenAttacks != undefined && this.pericias[i].isRanged == distancia){
                 if(this.pericias[i].chosenAttacks.list.indexOf(id) > -1){
                     if(range == 1){
-                        PPerto = (this.pericias[i].rank * 2)
+                        PPerto = (this.pericias[i].rank)
                     }
                     if(range == 2){
-                        PDistancia = (this.pericias[i].rank * 2)
+                        PDistancia = (this.pericias[i].rank)
                     }
                 }
             }
         }
+
         if(range == 1){
             acerto = `+ ${this.Luta + this.VPerto + PPerto + bonus}`
         }
