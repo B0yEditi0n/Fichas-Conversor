@@ -13,8 +13,7 @@
 .Image{
     position:sticky;
     grid-area: imgBlock; 
-    
-    width: 280px;   
+    width: 300px;   
     height: 400px;
     
 }

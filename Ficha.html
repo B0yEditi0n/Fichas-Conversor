@@ -12,15 +12,19 @@
     <link rel="stylesheet" href="./style/habilidades.css">
     <link rel="stylesheet" href="./style/defesas.css">
     <link rel="stylesheet" href="./style/ofensiva.css">
+    <link rel="stylesheet" href="./style/poderes.css">
     <link rel="stylesheet" href="./style/pericias.css">
     <link rel="stylesheet" href="./style/vantagens.css">
     <link rel="stylesheet" href="./style/imagem.css">
     <link rel="stylesheet" href="./style/conditPainel.css">
     <link rel="stylesheet" href="./style/ajusteTela.css">
     
+    
 
 </head>
 <body>
+<div id="corpo">
+
     <!-- #Titulo Ficha -->
     <section class="topoPrincipal">
         <div class="Separador"></div>
@@ -31,7 +35,7 @@
         </div>
     
         <!-- Imagem de Personagem -->
-        <div class = 'Image'>
+        <div class = 'Image' id="img">
             <img src="" id='imgPersonagem'>
         </div>
     
@@ -102,13 +106,13 @@
     <div class="Separador">
         <h2>Ofensiva</h2>
     </div>
-    <div class="optCombat">
+    <div class="optCombat" id="optCombat">
         <div class="ofensiva" id="Ofensiva"></div>
-        <div class="ContaCondit">
+        <div class="ContaCondit" id="conditbox">
             <div id="DamageCodit" class="danoCondit">
                 <!--<button><span class="material-symbols-outlined">add</span></button>-->
                 <p>Ferimentos</p>
-                <input type="number">
+                <input type="number" id="contaFerimento">
                 <!--<button><span class="material-symbols-outlined">remove</span></button>-->
             </div>
             
@@ -195,7 +199,7 @@
 
     <div id="complicacoes">
     </div>
-
+</div>
 </body>
     <script src="_js/module.js"></script>
     <script src="_js/hability.js"></script>
@@ -203,6 +207,7 @@
     <script src="_js/equipamentos.js"></script>
     <script src="_js/ofensiva.js"></script> 
     <script src="_js/scrpit.js"></script>
+    <script src="_js/painel_condições.js"></script>
     
     
 </html>

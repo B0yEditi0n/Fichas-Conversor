@@ -29,10 +29,11 @@ async function tablePowerItem(powerItens){
     reBuild = new chosePower()
     reBuild.jsonFicha = ficha
     var html = ''
-
-    for(i = 0; i <= powerItens.length - 1; i++){
+    
+    for(var i = 0; i <= powerItens.length - 1; i++){
         html += await (reBuild.startSelect(powerItens[i]))
     }
+    
     return(html)
 
 }
@@ -42,7 +43,12 @@ async function concatLinkPowers(linkpower){
     var html = ''
     return (await powerLink.startSelect(linkpower))
 }
+async function returnJsonVantage(vantage){
+    
+    vantage.name = '*' + vantage.name
+    ficha.characters[0].advantages[ficha.characters[0].advantages.length] = vantage
 
+}
 async function returnJson(id, number, duracao){
     await ficha
     //Atributo permanente ou temporário?
@@ -134,6 +140,12 @@ class powerLayout{
         var totalExtras = 0
         var totalFlats = 0
 
+        //Multipoderes ou Ligados
+        if (baseCost == 0){
+            baseCost = 1
+        }
+
+        // Caso o Extra seja Parcial
         for(var i = 0; i <= Extra.length - 1; i++){
             if(Extra[i].parcial == 0){
                 totalExtras += Extra[i].rank * await Rank
@@ -141,6 +153,8 @@ class powerLayout{
                 totalExtras += Extra[i].parcial * Extra[i].rank
             }
         }
+
+        // Caso a Falha Seja parcial
         for(var i = 0; i <= Falha.length -1; i++){
             if(Falha[i].parcial == 0){
                 totalFalhas += (Falha[i].rank * await Rank)
@@ -148,14 +162,16 @@ class powerLayout{
                 totalFalhas += (Falha[i].rank * Falha[i].parcial)
             }
         }
+
+        // Fixos
         for(var i = 0; i <= Flat.length -1; i++){
             if(Flat[i].extra == true){
                 totalFlats += Flat[i].rank
             }else{
                 totalFlats -= Flat[i].rank
             }
-
         }
+
         //conta é
         //Falhas Sobrepoem a Extras e Custo Base
         if((await Rank * baseCost) + (totalExtras - totalFalhas) <= 0){
@@ -229,6 +245,7 @@ class powerLayout{
         return(totalRanks)
     }
     async Somatorioformatado(nowPower, type){
+
         var prank = 0
         var pcusto = 0
 //      EA
@@ -239,24 +256,34 @@ class powerLayout{
         var removePoints = 0
         //var mostCust = 0
 
-        if(nowPower.powers != undefined){
-            //Efeitos Ligados
-            for(var i = 0; i<=nowPower.powers.length -1; i++){
-                prank = await this.findRank(nowPower.powers[i])
-                pcusto += await this.numberSumPower(prank, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)
-            }
-            return(pcusto)
-        
-        }
+        // Removivel
         switch(nowPower.removable){
             case 1:                
-                removeStr = ' Removível'
+                removeStr = ' : Removível'
                 removePoints = Math.trunc(pcusto/5)
                 break
             case 2:
-                removeStr = ' Facilmente Removível'
+                removeStr = ' : Facilmente Removível'
                 removePoints = (Math.trunc(pcusto/5) * 2)
+        }        
+        if(nowPower.powers != undefined){
+            //Efeitos Ligados ou Multipoderes
+            for(var i = 0; i<=nowPower.powers.length -1; i++){
+                prank = await this.findRank(nowPower.powers[i])
+                pcusto += await this.numberSumPower(prank, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)                
+            }
+            //caso possua efeitos alternativos
+            if (nowPower.alternateEffects.length > 0){
+                EApoint = nowPower.alternateEffects.length
+                return(`${pcusto}+${EApoint} ${removeStr} - <b>${(pcusto + EApoint) - removePoints} pontos</b>`)
+            }
+            else{
+                return(`${removeStr} - <b>${pcusto - removePoints} pontos</b>`)
+            }
+            
+        
         }
+        // Arranjo
         if(nowPower.alternateEffects.length > 0){
             // Com Efeitos Alternativos
             switch(type){
@@ -270,7 +297,9 @@ class powerLayout{
                 case 2: // Tipo Arry          
                     for(var i = 0; i<=nowPower.alternateEffects.length -1; i++){
                         prank = this.findRank(nowPower.alternateEffects[i])
-                        if(pcusto < await this.numberSumPower(prank, nowPower.alternateEffects[i].baseCost, nowPower.alternateEffects[i].extras, nowPower.alternateEffects[i].flaws, nowPower.alternateEffects[i].flats)){
+                        
+                        if (pcusto < await this.numberSumPower(prank, nowPower.alternateEffects[i].baseCost, nowPower.alternateEffects[i].extras, nowPower.alternateEffects[i].flaws, nowPower.alternateEffects[i].flats)){
+                            //em caso de multipoderes baseCost estará vazio
                             pcusto = await this.numberSumPower(prank, nowPower.alternateEffects[i].baseCost, nowPower.alternateEffects[i].extras, nowPower.alternateEffects[i].flaws, nowPower.alternateEffects[i].flats)
                         }
                     
@@ -281,10 +310,10 @@ class powerLayout{
                     break                    
             }
             if(nowPower.alternateEffects.length == 1){
-                return(`${EAstr}EA : ${removeStr}<b>${EApoint - removePoints - removePoints} pontos</b>`)       
+                return(`${EAstr}EA ${removeStr}<b> ${EApoint - removePoints - removePoints} pontos</b>`)       
             }
             else{
-                return(`${EAstr}EAs : ${removeStr}<b>${EApoint - removePoints - removePoints} pontos</b>`)
+                return(`${EAstr}EAs ${removeStr}<b> ${EApoint - removePoints - removePoints} pontos</b>`)
             }
             
         }
@@ -574,6 +603,11 @@ class powerLayout{
                 enhancedTrait_HTML += `${TraitName} Aumetado ${rank},`
             }             
         }
+        //Vantagens Aumentadas
+        
+        for(var i = 0; i <= nowPower.enhancedAdvantages.length - 1; i++) {
+            returnJsonVantage(nowPower.enhancedAdvantages[i])
+        }
         enhancedTrait_HTML = enhancedTrait_HTML.substring(0, enhancedTrait_HTML.length - 1);
         for(var i = 0; i <= nowPower.enhancedAdvantages.length -1; i++){
             enhancedTrait_HTML += ' ' + nowPower.enhancedAdvantages[i].name
@@ -600,8 +634,6 @@ class powerLayout{
         var tamanho_forca = 0
         var defesas_intimidar = 0
         var futividade = 0
-        var tamanho_alcance = 0
-        var velocidade = 0
         var robot = false
         var normalForca = 0
         
@@ -703,7 +735,6 @@ class powerLayout{
     //Parece repiente mas não tem modificadores
     async multiPower(nowPower){
         var table_html = ''
-        var remove = ''
         var point = 0
         //*****************/
         var pRank = 0
@@ -722,7 +753,7 @@ class powerLayout{
             pFlats  = nowPower.powers[i].flats
             point += await this.numberSumPower(pRank, pCust, pExtras, pFalhas, pFlats)
         }
-        switch(nowPower.removable){
+        /*switch(nowPower.removable){
             case 1:
                 remove = ' Removível'
                 point =  point - Math.trunc(point / 5)
@@ -730,9 +761,9 @@ class powerLayout{
             case 2:
                 point =  point - (Math.trunc(point / 5) * 2)
                 remove = ' Facilmente Removível'
-        }
+        }*/
 
-        table_html = `<table><tr><th>${nowPower['name']}<r>${remove} -</r>  ${point} pontos</th></tr><tr><td>`
+        table_html = `<table><tr><th><b>${nowPower['name']}</b> ${await this.Somatorioformatado(nowPower, 1)}</th></tr><tr><td>`
         table_html += await tablePowerItem(nowPower['powers'])
         table_html += '</td></tr></table></br>'
 
@@ -741,6 +772,7 @@ class powerLayout{
     }
     //Aranjo de Poder
     async powerArry(nowPower){
+        
         //EAs
         var arry_html = ''
         var principal = 0
@@ -774,8 +806,8 @@ class powerLayout{
             nowPower.alternateEffects[0] = nowPower.alternateEffects[principal]
             nowPower.alternateEffects[principal] = ObjetoSubstuido
         }
-
-        arry_html = `<table><tr><th>${nowPower.name} ${await this.Somatorioformatado(nowPower, 2)}</th></tr><tr><td>`
+        
+        arry_html = `<table><tr><th><b>${nowPower.name}</b> ${await this.Somatorioformatado(nowPower, 2)}</th></tr><tr><td>`
         arry_html += await tablePowerItem(nowPower['alternateEffects'])
 
         arry_html += '</td></tr></table></br>'
@@ -911,9 +943,9 @@ class chosePower extends powerLayout{
     async startSelect(powers){
         //Declaração de Variáveis
         //var escolha = ''
+        
         var html = ''
         var name = ''
-        console.log(powers)
         name = this.efeito[powers['effectID']].name
         switch (powers['effectID']){
             case 5001: // Aflição

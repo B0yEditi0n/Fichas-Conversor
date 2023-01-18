@@ -15,7 +15,6 @@
   opacity: 1;
   background-color: white;
   /**/
-
   display: flex;
   flex-direction: column;
   width:  400px;
@@ -54,8 +53,4 @@
 }
 .TransformTxt {
   width: 100px;
-}
-
-.AflictCondit{
-
 }

@@ -12,7 +12,7 @@ async function equipamentos(device){
         `
         document.getElementById('Equipamentos').innerHTML = await Equip.startLayout(device) 
     }   
-    console.log(await Equip.startLayout(device))
+    
 }
 class modeloEquipamentos extends powerLayout{
     EqPoderes = new chosePower
@@ -32,9 +32,10 @@ class modeloEquipamentos extends powerLayout{
     async MakeEquipament(equipamente){
         var deviceHTML = ''
 
-        console.log(equipamente)
-        console.log(equipamente.power)
-        if(equipamente.power.length == 0){
+        deviceHTML = `<b>${equipamente.name}</b> - ${equipamente.cost} </br>`
+
+        //Veiculos ou Quarteis
+        /*if(equipamente.power == undefined){
             deviceHTML = await this.EqPoderes.startSelect(equipamente.power[0])
         }
         else{
@@ -43,7 +44,7 @@ class modeloEquipamentos extends powerLayout{
                 deviceHTML += await this.EqPoderes.startSelect(equipamente.power[i])
             }
             deviceHTML += '</td></tr></table>'
-        }
+        }*/
         return(deviceHTML)
     }
     async startLayout(devices){
@@ -51,6 +52,7 @@ class modeloEquipamentos extends powerLayout{
         //Loop
         for(var i = 0; i <= devices.length -1; i++){
             if(this.Veiculos().indexOf(devices[i].id) > -1){
+                
                 html += await this.buildVeiculos(devices[i])
             }   
             else{ // qualquer equipamentos
