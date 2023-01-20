@@ -4,8 +4,10 @@ async function startOfense(ficha){
     BuildOfense.habilidade = ficha.characters[0].abilities
     BuildOfense.pericias = ficha.characters[0].extraSkills
     BuildOfense.vantagens = ficha.characters[0].advantages
-    document.getElementById('Ofensiva'). innerHTML = await BuildOfense.iniciativa()
-    document.getElementById('Ofensiva'). innerHTML += await BuildOfense.filtragemdeEfeitos(ficha.characters[0].powers)
+    document.getElementById('Ofensiva').innerHTML = await BuildOfense.iniciativa()
+    document.getElementById('Ofensiva').innerHTML += await BuildOfense.nativeEffects()
+    document.getElementById('Ofensiva').innerHTML += await BuildOfense.filtragemdeEfeitos(ficha.characters[0].powers)
+
 }
 
 class Ofensiva{
@@ -163,10 +165,10 @@ class Ofensiva{
         }
 
         if(range == 1){
-            acerto = `+ ${this.Luta + this.VPerto + PPerto + bonus}`
+            acerto = `+${this.Luta + this.VPerto + PPerto + bonus}`
         }
         if(range == 2){
-            acerto = `+ ${this.Destreza + this.VDistancia + PDistancia + bonus}`
+            acerto = `+${this.Destreza + this.VDistancia + PDistancia + bonus}`
         }
         if(distancia == 3){
             acerto =  'Automático'
@@ -359,6 +361,22 @@ class Ofensiva{
             
         }
         return(html)
+    }
+    async nativeEffects(){
+        var html = ''
+        if(window.confirm("Deseja adicionar desarmado")){ // Efeito Desamardos foram requistiados
+            html = '<b>Desarmado: '
+            html += `Acerto</b> ${await this.Acerto(0, 1, 0, {})} `
+            html += `<b>Dano</b> ${modificacaoPower.bforca} </br>`
+            console.log(modificacaoPower.bforca)
+            //Implementar Critico
+            html += `<b>CD:</b> ${modificacaoPower.bForca + 15} Resistência </br>`
+            html += '</br>'
+        }
+        
+        //Fazer loop nas vantagens procurar 
+        
+        return html
     }
     async iniciativa(){
         //Velocidade do Pensamento e Iniciativa

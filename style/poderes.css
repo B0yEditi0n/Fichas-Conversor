@@ -1,7 +1,11 @@
+#poderes{
+    /*page-break-before: always;*//*Quebra para impressões quando ela está no meio da pagina*/
+}
 #poderes table{
     border-collapse: collapse;
     border: 1px solid black;
     padding: 3px;
+    
     
 }
 #poderes table th{

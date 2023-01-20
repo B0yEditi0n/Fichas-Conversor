@@ -14,6 +14,7 @@ async function gera_modelo(ficha){
     ***********************************************************************************/ 
     modificacaoPower.habilidade(ficha['characters'][0]['abilities'])
     Elemento('aForca', modificacaoPower.htmlForca)
+    console.log(modificacaoPower.bforca)
     Elemento('aVigor', modificacaoPower.htmlVigor)
     Elemento('aAgilidade', modificacaoPower.htmlAgilidade)
     Elemento('aDestreza', modificacaoPower.htmlDestreza)

@@ -1,14 +1,5 @@
-//Importar json
-// Personagem nº.json
-// Nolham - Caio.json
-// Jonny Texte.json
-// Ofensivo.json
-// pathFicha = 'Ele_(Pedro).json'
+
 modificacaoPower = new powerHabilidade
-// (fetch('Nolham - Caio.json')
-//   .then(res => res.json()
-//   .then(json => gera_modelo(json)))
-//   )
 
 //***********************************
   Inicio()
@@ -26,8 +17,7 @@ async function Inicio(){
   ficha = await JSON.parse(window.sessionStorage.getItem('JSONfile'))
   await callPower(ficha)  
   //define a configruação de visão
-    configuraLayoutPage()
-        
+    configuraLayoutPage()      
   }
   
 function configuraLayoutPage(){
@@ -37,7 +27,6 @@ function configuraLayoutPage(){
     document.getElementById('Ofensiva').style = 'padding-right: 0px;'
     document.getElementById('img').style = 'width: 200px; height: 300px;'
     document.getElementById('corpo').style = 'display: block; padding-left: 0.7cm; padding-top: 0cm;'
-    window.getSelection(html).style = 'background-color: black'
   }
 
 }
