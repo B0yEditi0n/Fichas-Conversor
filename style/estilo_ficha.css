@@ -4,16 +4,39 @@
 /* # Textos Comuns */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+/**********************************
+* Estilo de Texto
+**********************************/
+
 *{
     font-family: 'Open Sans', sans-serif;
+    color: var(--txt-color);
 }
+
+html[data-theme='Dark'] {
+    --txt-color: white;
+    --background: #121212;
+    --body: #1f1f1f;
+}
+
+html[data-theme='Light'] {
+    --txt-color: rgb(0, 0, 0);
+    --background: #ffffff;
+    --body: white;
+}
+
 html{
     width: 100%;
+    background-color: var(--body);
+    
 }
+
 body{
     margin: 0;
     width: 90vw; 
 }
+
 #corpo{
     padding-top: 1cm;
     padding-left: 0.5cm;
@@ -25,9 +48,11 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: stretch;
+
 }
+
 .Separador h2{
-    background-color: black;
+    background-color: #121212;
     color: white;
     padding: 0.1cm;
 

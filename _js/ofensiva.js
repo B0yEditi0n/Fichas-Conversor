@@ -364,7 +364,7 @@ class Ofensiva{
     }
     async nativeEffects(){
         var html = ''
-        if(window.confirm("Deseja adicionar desarmado")){ // Efeito Desamardos foram requistiados
+        if(window.sessionStorage.getItem('Por_Ofensiva') == 'true'){ // Efeito Desamardos foram requistiados
             html = '<b>Desarmado: '
             html += `Acerto</b> ${await this.Acerto(0, 1, 0, {})} `
             html += `<b>Dano</b> ${modificacaoPower.bforca} </br>`

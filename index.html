@@ -8,13 +8,51 @@
 </head>
 <body>
     <section class="Corpo">
+        <button type="button" id="btnMenu"><span class="material_menu">menu</span></button>
         <label for="uploadFile" class="titleFileTXT">Carregar Ficha</label>
         <label for="uploadFile" class="upFileTXT"><span class="material-symbols-outlined">upload_file</span></label>
         <input type="file" name ="ficha" id="uploadFile"></button>
-        <button type="submit" id="btnShow" class="gerador">Exibir Ficha</button>
-        <button type="submit" id='btnPrint' class="gerador">Imprimir</button>
         
     </section>
+    <section id="menuDiv">
+        
+            <div class="menuOptions">
+                <div class="barraDeTitulo">
+                    <button id="btncloseMenu">
+                        <span class="material_cose">cancel</span>
+                    </button>
+                </div>
+                <!-- Configurações -->
+                <div class="windowBody">
+                    <!--
+                    <button type="submit" id="btnShow" class="gerador">Exibir Ficha</button>
+                    <button type="submit" id='btnPrint' class="gerador">Imprimir</button>
+                    -->
+                    <n>Tipo de Exibição:</n> 
+                    <select id='TypShow'>
+                        <option value="PDF">Exibição para PDF</option>
+                        <option value="PLAY">Exibição Jogador</option>                     
+                    </select>
+                    <br>
+                    <n>Tema</n>
+                    <select id="ColorTheme">
+                        <option value="Dark">Estilo Escuro</option>
+                        <option value="Light">Estilo Claro</option>                     
+                    </select>
+                    <br>
+                    <div><input id='checkDesarmado' type="checkbox"><n>Incluir Ataque Desarmado?</n></div>
+                    
+                </div>
+            </div>
+    </section>
+
+    
+        
+
+
+
+    
+
 </body>
     <script src="./_indexJs/uploadFile.js"></script>
 </html>

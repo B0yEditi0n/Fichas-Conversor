@@ -15,12 +15,16 @@ async function getJson(patch) {
 
 async function Inicio(){
   ficha = await JSON.parse(window.sessionStorage.getItem('JSONfile'))
+  
+  
+
   await callPower(ficha)  
   //define a configruação de visão
-    configuraLayoutPage()      
+  configuraLayoutPage()      
   }
   
 function configuraLayoutPage(){
+  console.log(document.html)
   if (window.sessionStorage.getItem('setViewType') == 2){
     document.getElementById('optCombat').style = "display: block;"
     document.getElementById('conditbox').style = "display: none"
@@ -28,6 +32,10 @@ function configuraLayoutPage(){
     document.getElementById('img').style = 'width: 200px; height: 300px;'
     document.getElementById('corpo').style = 'display: block; padding-left: 0.7cm; padding-top: 0cm;'
   }
+
+  document.documentElement.setAttribute( 'data-theme', window.sessionStorage.getItem('theme'))
+
+  
 
 }
 

@@ -59,7 +59,6 @@ async function returnJson(id, number, duracao){
     else{ Type = 0 }
     //Habilidades
     var i
-    if(number)
     if(1001 <= id && 1008 >= id){
         i = id - 1001
         if(Type == 1){
@@ -593,7 +592,7 @@ class powerLayout{
 
         enhancedTrait_HTML = `<strong>${nowPower.name}:</strong> `
         for(var i = 0; i <= nowPower.enhancedTraits.length -1; i++){
-            returnJson(nowPower.enhancedTraits[i].affectedTraitID, nowPower.enhancedTraits[i].rank)
+            returnJson(nowPower.enhancedTraits[i].affectedTraitID, nowPower.enhancedTraits[i].rank, nowPower.durationID)
             // Aumenta o que?
             if(_EffectsList.indexOf(nowPower.enhancedTraits[i].affectedTraitID) > -1){
                 number = _EffectsList.indexOf(nowPower.enhancedTraits[i].affectedTraitID)
