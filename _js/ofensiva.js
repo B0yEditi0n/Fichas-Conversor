@@ -385,7 +385,7 @@ class Ofensiva{
         for(var i = 0; i <= this.vantagens.length -1; i++){
             if(this.vantagens[i].id == 4061){
                 //Inicitiva aprimorada
-                iniciativa += vantagens[i].rank * 4
+                iniciativa += this.vantagens[i].rank * 4
             }
             if(this.vantagens[i].id == 4096){
                 iniciativa -= modificacaoPower.bAgilidade

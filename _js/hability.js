@@ -369,12 +369,13 @@ async function gera_modelo(ficha){
             var htmlVant = ''
             for(var i=0; i <= vantagens.length - 1; i++){
                 //Se graduada
+                htmlVant = `<tr><td>${vantagens[i]['name']}`
                 if (vantagens[i]['rank'] > 1){
-                    htmlVant = `<tr><td>${vantagens[i]['name']} [${vantagens[i]['rank']}]</td></tr>`
+                    htmlVant += `[${vantagens[i]['rank']}]`
                 }
-                else{
-                    htmlVant = `<tr><td>${vantagens[i]['name']}</td></tr>`  
-                }
+                console.log(vantagens)
+                //if (vantagens)
+                //htmlVant += '</td></tr>'
 
                 // Separar em duas barras
                 if( Math.ceil(vantagens.length / 2) >= (i+1)){

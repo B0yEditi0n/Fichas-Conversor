@@ -29,6 +29,7 @@ html[data-theme='Light'] {
 html{
     width: 100%;
     background-color: var(--body);
+    color: var(--body);
     
 }
 
