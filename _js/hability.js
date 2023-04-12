@@ -14,7 +14,6 @@ async function gera_modelo(ficha){
     ***********************************************************************************/ 
     modificacaoPower.habilidade(ficha['characters'][0]['abilities'])
     Elemento('aForca', modificacaoPower.htmlForca)
-    console.log(modificacaoPower.bforca)
     Elemento('aVigor', modificacaoPower.htmlVigor)
     Elemento('aAgilidade', modificacaoPower.htmlAgilidade)
     Elemento('aDestreza', modificacaoPower.htmlDestreza)
@@ -373,7 +372,6 @@ async function gera_modelo(ficha){
                 if (vantagens[i]['rank'] > 1){
                     htmlVant += `[${vantagens[i]['rank']}]`
                 }
-                console.log(vantagens)
                 //if (vantagens)
                 //htmlVant += '</td></tr>'
 

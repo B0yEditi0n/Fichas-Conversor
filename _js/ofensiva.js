@@ -331,7 +331,7 @@ class Ofensiva{
         ofensiva_String += this.modificadores(ataque)
         // CD
         ofensiva_String += '</br>'
-        ofensiva_String += await this.CD_Resited(ataque.id, ataque.resistedBy, ataque.overcomedBy, ataque.rank)
+        ofensiva_String += await this.CD_Resited(ataque.effectID, ataque.resistedBy, ataque.overcomedBy, ataque.rank)
         ofensiva_String += this.afliction_condig(ataque)
         ofensiva_String += this.critico(ataque)
         ofensiva_String += '</br></br>'
@@ -368,7 +368,6 @@ class Ofensiva{
             html = '<b>Desarmado: '
             html += `Acerto</b> ${await this.Acerto(0, 1, 0, {})} `
             html += `<b>Dano</b> ${modificacaoPower.bforca} </br>`
-            console.log(modificacaoPower.bforca)
             //Implementar Critico
             html += `<b>CD:</b> ${modificacaoPower.bForca + 15} Resistência </br>`
             html += '</br>'

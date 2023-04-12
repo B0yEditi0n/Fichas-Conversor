@@ -1,5 +1,26 @@
 /***************************************************
-Personalização A4
+    Personalização A4
+****************************************************/
+@page { 
+    background-color: var(--body);
+    color: var(--body);;
+    margin: 0;
+
+}
+@media print {
+    #corpo{
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+
+        padding-right: 1.5cm !important; 
+        margin-left: 1.5cm;
+        margin-top: 1cm;
+        
+    }
+}
+/***************************************************
+    Personalização por Monitor
 ****************************************************/
 
 @media screen and (max-width: 890px) and (min-width:  781px){

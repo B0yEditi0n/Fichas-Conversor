@@ -24,7 +24,6 @@ async function Inicio(){
   }
   
 function configuraLayoutPage(){
-  console.log(document.html)
   if (window.sessionStorage.getItem('setViewType') == 2){
     document.getElementById('optCombat').style = "display: block;"
     document.getElementById('conditbox').style = "display: none"

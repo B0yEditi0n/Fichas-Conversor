@@ -243,6 +243,22 @@ class powerLayout{
         
         return(totalRanks)
     }
+    async countRemovePoints(typRemove, cust){
+        var removivelInfo = {
+            str: '',
+            pontos: 0,
+        }
+        switch(typRemove){
+            case 1:                
+                removivelInfo.str    = ' : Removível'
+                removivelInfo.pontos = Math.trunc(cust/5)
+                break
+            case 2:
+                removivelInfo.str    = ' : Facilmente Removível'
+                removivelInfo.pontos = (Math.trunc(cust/5) * 2)   
+        }
+        return(removivelInfo)
+    }
     async Somatorioformatado(nowPower, type){
 
         var prank = 0
@@ -250,34 +266,42 @@ class powerLayout{
 //      EA
         var EAstr = ''
         var EApoint       
-//      Removivel        
+//      Removivel
+        var removivelInfo = {
+            str: '',
+            pontos: 0,
+        }      
         var removeStr = '' 
         var removePoints = 0
         //var mostCust = 0
 
         // Removivel
-        switch(nowPower.removable){
+        /*switch(nowPower.removable){
             case 1:                
                 removeStr = ' : Removível'
                 removePoints = Math.trunc(pcusto/5)
+                console.log('pontos', pcusto)
                 break
             case 2:
                 removeStr = ' : Facilmente Removível'
                 removePoints = (Math.trunc(pcusto/5) * 2)
-        }        
+                console.log('pontos', pcusto)
+        }*/        
         if(nowPower.powers != undefined){
             //Efeitos Ligados ou Multipoderes
             for(var i = 0; i<=nowPower.powers.length -1; i++){
                 prank = await this.findRank(nowPower.powers[i])
-                pcusto += await this.numberSumPower(prank, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)                
+                pcusto += await this.numberSumPower(prank, nowPower.powers[i].baseCost, nowPower.powers[i].extras, nowPower.powers[i].flaws, nowPower.powers[i].flats)
+                removivelInfo = await this.countRemovePoints(nowPower.removable, pcusto)
             }
             //caso possua efeitos alternativos
             if (nowPower.alternateEffects.length > 0){
                 EApoint = nowPower.alternateEffects.length
-                return(`${pcusto}+${EApoint} ${removeStr} - <b>${(pcusto + EApoint) - removePoints} pontos</b>`)
+                return(`${pcusto}+${EApoint} ${removivelInfo.str} - <b>${(pcusto + EApoint) - removivelInfo.pontos} pontos</b>`)
             }
             else{
-                return(`${removeStr} - <b>${pcusto - removePoints} pontos</b>`)
+
+                return(`${removivelInfo.str} - <b>${pcusto - removivelInfo.pontos} pontos</b>`)
             }
             
         
@@ -288,7 +312,7 @@ class powerLayout{
             switch(type){
                 case 1: // Tipo Comum
                     prank = await this.findRank(nowPower)
-                    pcusto = await this.numberSumPower(prank, nowPower.baseCost, nowPower.extras, nowPower.flaws, nowPower.flats)
+                    pcusto = await this.numberSumPower(prank, nowPower.baseCost, nowPower.extras, nowPower.flaws, nowPower.flats)                    
                     EAstr = `- ${pcusto}+${nowPower.alternateEffects.length}`
                     EApoint = pcusto + nowPower.alternateEffects.length
                     break
@@ -308,11 +332,12 @@ class powerLayout{
                     EApoint = pcusto + nowPower.alternateEffects.length - 1
                     break                    
             }
+            removivelInfo = await this.countRemovePoints(nowPower.removable, pcusto)
             if(nowPower.alternateEffects.length == 1){
-                return(`${EAstr}EA ${removeStr}<b> ${EApoint - removePoints - removePoints} pontos</b>`)       
+                return(`${EAstr}EA ${removivelInfo.str}<b> ${EApoint - removivelInfo.pontos} pontos</b>`)       
             }
             else{
-                return(`${EAstr}EAs ${removeStr}<b> ${EApoint - removePoints - removePoints} pontos</b>`)
+                return(`${EAstr}EAs ${removivelInfo.str}<b> ${EApoint - removivelInfo.pontos} pontos</b>`)
             }
             
         }
@@ -407,7 +432,7 @@ class powerLayout{
             }
             else{
                 if(arryModify.rangeID == 2){
-                    rage_html = 'a Distância'
+                    rage_html = ' a Distância'
                 }
                 else{
                     if(arryModify.rangeID ){
