@@ -124,9 +124,9 @@ async function gera_modelo(ficha){
                 switch (habilidade[i].id){
                     case 1001: // forca
                         this.htmlForca = html
-                        this.bforca = valor
+                        this.bForca = valor
                         break
-                    case 1002:
+                    case 1002: // Vigor
                         this.htmlVigor = html
                         this.bVigor = valor
                         break
@@ -242,7 +242,6 @@ async function gera_modelo(ficha){
             for (i = 0; i <= pericias.length - 1; i++) {
                 Pericianome = pericias[i]['name']
                 GradPericia = pericias[i]['rank']
-
                 switch (pericias[i]['id']) {
                     case 3001: //Acrobacias
                         bonus = this.bAgilidade + GradPericia
@@ -282,10 +281,11 @@ async function gera_modelo(ficha){
                         break;
                     case 3012: //Tratamento
                         if (GradPericia == 0) {bonus = 0}
-                        else{bonus += this.bIntelecto + GradPericia}
+                        else{bonus = this.bIntelecto + GradPericia}
                         break;
                     case 3013: //Veiculos
-                        bonus += this.bDestreza + GradPericia
+                        console.log(this.bDestreza, GradPericia)
+                        bonus = this.bDestreza + GradPericia
                         break;
 
                 }

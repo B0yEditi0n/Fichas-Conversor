@@ -50,7 +50,8 @@ async function geraImage(img){
 
 //Atomatizador de Trocas de Dados
 function Elemento(idElemento, pJson){
-  document.getElementById(idElemento).innerText = pJson    
+  document.getElementById(idElemento).innerText = pJson
+  
 }
 
 /*********************************************
