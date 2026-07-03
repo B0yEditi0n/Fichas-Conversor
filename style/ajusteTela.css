@@ -4,7 +4,10 @@
 @page { 
     background-color: var(--body);
     color: var(--body);;
-    margin: 0;
+    margin-left: 0cm;
+    margin-right: 2cm;
+    margin-bottom: 1cm;
+    margin-top: 0.5cm;
 
 }
 @media print {
